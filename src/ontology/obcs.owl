@@ -20,10 +20,11 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="&obo;obcs.owl">
-        <dc:date>2013-04-07</dc:date>
+        <dc:date>2014-02-07</dc:date>
         <dc:subject xml:lang="en">A BFO-aligned Ontology of Biological and Clinical Statistics</dc:subject>
-        <owl:versionInfo xml:lang="en">Development Version: 1.0.06</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Development Version: 1.0.03</owl:versionInfo>
         <obo:IAO_0000116 xml:lang="en">Development version</obo:IAO_0000116>
+        <dc:creator xml:lang="en">Jie Zheng</dc:creator>
         <dc:creator xml:lang="en">Marcy Harris</dc:creator>
         <dc:description xml:lang="en">OBCS is a BFO-aligned Ontology of Biological and Clinical Statistics. It uses OBI as top level ontology. OBCS imports all possible biostatistics terms in OBI and includes many additional biostatistics terms, some of which were proposed and discussed in the OBI face-to-face workshop in Ann Arbor in 2012. </dc:description>
         <dc:title xml:lang="en">OBCS: Ontology of Biological and Clinical Statistics</dc:title>
@@ -42,34 +43,94 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
-    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&rdfs;seeAlso"/>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000116">
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000114"/>
-    <rdf:Description rdf:about="&obo;IAO_0000412">
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
-    </rdf:Description>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119">
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000117">
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
-    </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118">
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
-    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000111">
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000112">
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000116">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000117">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <rdf:Description rdf:about="&obo;IAO_0000412">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;seeAlso"/>
     
 
 
@@ -123,11 +184,47 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
+
+    <rdf:Description rdf:about="&obo;OBI_0000299">
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000417 -->
+
+    <rdf:Description rdf:about="&obo;OBI_0000417">
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000005 -->
+
+    <rdf:Description rdf:about="&obo;IAO_0000005">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
     
 
 
@@ -176,77 +273,19 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
-
-    <owl:Class rdf:about="&obo;OBI_0000011">
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000071 -->
-
-    <owl:Class rdf:about="&obo;OBI_0000071">
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0000673 -->
-
-    <owl:Class rdf:about="&obo;OBI_0000673">
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0200000 -->
-
-    <owl:Class rdf:about="&obo;OBI_0200000">
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0200102 -->
-
-    <owl:Class rdf:about="&obo;OBI_0200102">
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0200103 -->
-
-    <owl:Class rdf:about="&obo;OBI_0200103">
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBI_0500000 -->
-
-    <owl:Class rdf:about="&obo;OBI_0500000">
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBCS_0000001 -->
 
     <owl:Class rdf:about="&obo;OBCS_0000001">
-        <rdfs:label>chi-square distribution</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000066"/>
-        <obo:IAO_0000115>A probability distribution that with k degrees of freedom is the distribution of a sum of the squares of k independent standard normal random variables.</obo:IAO_0000115>
-        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
-        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Chi-square_distribution</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">statistical data analysis</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000122"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
+        <obo:IAO_0000115>a data transformation that has input of mulitple data and report overall trend of the data. </obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -254,11 +293,28 @@
     <!-- http://purl.obolibrary.org/obo/OBCS_0000002 -->
 
     <owl:Class rdf:about="&obo;OBCS_0000002">
-        <rdfs:label>exponential distribution</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000066"/>
-        <obo:IAO_0000115>A continuous probability distribution that describes the time between events in a Poisson process, i.e. a process in which events occur continuously and independently at a constant average rate.</obo:IAO_0000115>
-        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
-        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Exponential_distribution</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">data collection</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000127"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="&obo;IAO_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a planned process that results in a collection of data</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -268,10 +324,10 @@
     <owl:Class rdf:about="&obo;OBCS_0000003">
         <rdfs:label>F distribution</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000066"/>
-        <obo:IAO_0000118>Fisher-Snedecor distribution</obo:IAO_0000118>
-        <obo:IAO_0000119>WEB: http://stattrek.com/probability-distributions/f-distribution.aspx</obo:IAO_0000119>
-        <obo:IAO_0000115>A continuous probability distribution that is associated with the f statistic.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000115>A continuous probability distribution that is associated with the f statistic.</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://stattrek.com/probability-distributions/f-distribution.aspx</obo:IAO_0000119>
+        <obo:IAO_0000118>Fisher-Snedecor distribution</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -282,8 +338,8 @@
         <rdfs:label>gamma distribution</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000066"/>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
-        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Gamma_distribution</obo:IAO_0000119>
         <obo:IAO_0000115>A continuous probability distribution that is a two-parameter family of continuous probability distributions.</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Gamma_distribution</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -293,10 +349,10 @@
     <owl:Class rdf:about="&obo;OBCS_0000005">
         <rdfs:label>normal distribution</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000066"/>
-        <obo:IAO_0000118>Gaussian distribution</obo:IAO_0000118>
-        <obo:IAO_0000115>A continuous probability distribution that has a symmetrical curve, whose position and shape is determined by its location and scale parameters, the mean and standard deviation respectively.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Normal_distribution</obo:IAO_0000119>
+        <obo:IAO_0000115>A continuous probability distribution that has a symmetrical curve, whose position and shape is determined by its location and scale parameters, the mean and standard deviation respectively.</obo:IAO_0000115>
+        <obo:IAO_0000118>Gaussian distribution</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -306,10 +362,10 @@
     <owl:Class rdf:about="&obo;OBCS_0000006">
         <rdfs:label>Student&apos;s t distribution</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000066"/>
-        <obo:IAO_0000118>t-distribution</obo:IAO_0000118>
-        <obo:IAO_0000119>WEB: http://stattrek.com/probability-distributions/t-distribution.aspx</obo:IAO_0000119>
-        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>A continuous probability distribution that is is used to estimate population parameters when the sample size is small and/or when the population variance is unknown.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://stattrek.com/probability-distributions/t-distribution.aspx</obo:IAO_0000119>
+        <obo:IAO_0000118>t-distribution</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -319,9 +375,9 @@
     <owl:Class rdf:about="&obo;OBCS_0000007">
         <rdfs:label>bivariate normality</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000066"/>
+        <obo:IAO_0000119>WEB: SAS users guide</obo:IAO_0000119>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000115>a continuous probability distribution of two varialbes that has the tradtional bell shpe; the distribution of one variable is normal each and every alue of the other variable</obo:IAO_0000115>
-        <obo:IAO_0000119>WEB: SAS users guide</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -331,10 +387,10 @@
     <owl:Class rdf:about="&obo;OBCS_0000008">
         <rdfs:label>log-normal distribution</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000066"/>
-        <obo:IAO_0000119>WEB: http://www.statistics.com</obo:IAO_0000119>
-        <obo:IAO_0000115>a continuous probability that is the distribution of a random variable X if ln(X) is normally distributed</obo:IAO_0000115>
         <obo:IAO_0000118>log normal, lognormal</obo:IAO_0000118>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
+        <obo:IAO_0000115>a continuous probability that is the distribution of a random variable X if ln(X) is normally distributed</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://www.statistics.com</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -355,8 +411,8 @@
     <owl:Class rdf:about="&obo;OBCS_0000010">
         <rdfs:label>probability distribution</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
-        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>a data item that refers to a distribution of a random variable that can be described using a mathematical formula.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -366,10 +422,10 @@
     <owl:Class rdf:about="&obo;OBCS_0000011">
         <rdfs:label>measurement scale</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Level_of_measurement</obo:IAO_0000119>
+        <obo:IAO_0000118>scale of  measurement, level of measurement</obo:IAO_0000118>
         <obo:IAO_0000115>a data item that represents a the type of scale on which a variable is measured, including nominal, ordinal, interval, ratio.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
-        <obo:IAO_0000118>scale of  measurement, level of measurement</obo:IAO_0000118>
-        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Level_of_measurement</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -379,9 +435,9 @@
     <owl:Class rdf:about="&obo;OBCS_0000012">
         <rdfs:label>outlier</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
-        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Outlier</obo:IAO_0000119>
-        <obo:IAO_0000115>a data item that is numerically distant from the rest of the data; often indicative either measurement error or that the population has a high kurtosis</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000115>a data item that is numerically distant from the rest of the data; often indicative either measurement error or that the population has a high kurtosis</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Outlier</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -391,9 +447,9 @@
     <owl:Class rdf:about="&obo;OBCS_0000013">
         <rdfs:label>test statistic</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
-        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Test_statistic</obo:IAO_0000119>
         <obo:IAO_0000115>a data item that is a function of the samples and considered as a numberical summary of a data-set that reduces the data to one value that can be used to perform a hypothesis test. It can be used to test a finding for statistical signifiance</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Test_statistic</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -403,9 +459,9 @@
     <owl:Class rdf:about="&obo;OBCS_0000014">
         <rdfs:label>weighted data</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
-        <obo:IAO_0000115>weights are applied when one wants to adjust the impact of cases in the analysis</obo:IAO_0000115>
-        <obo:IAO_0000119>WEB: SAS users guide</obo:IAO_0000119>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: SAS users guide</obo:IAO_0000119>
+        <obo:IAO_0000115>weights are applied when one wants to adjust the impact of cases in the analysis</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -415,8 +471,8 @@
     <owl:Class rdf:about="&obo;OBCS_0000015">
         <rdfs:label>central tendency</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
-        <obo:IAO_0000115>a data item that represents a typical value of a set of values. This term relates to the way in which quantitative data tend to cluster around some value</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000115>a data item that represents a typical value of a set of values. This term relates to the way in which quantitative data tend to cluster around some value</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Central_tendency</obo:IAO_0000119>
     </owl:Class>
     
@@ -427,8 +483,8 @@
     <owl:Class rdf:about="&obo;OBCS_0000016">
         <rdfs:label>mode</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
-        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Mode_%28statistics%29</obo:IAO_0000119>
+        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000115>a data item that is the value that appears most frequent in a set of data. In a normal distribution the numerical value of the mode is the same as that of the mean and median</obo:IAO_0000115>
     </owl:Class>
     
@@ -439,10 +495,10 @@
     <owl:Class rdf:about="&obo;OBCS_0000017">
         <rdfs:label>cohen&apos;s kappa measurement</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
-        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
-        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Cohen%27s_kappa</obo:IAO_0000119>
-        <obo:IAO_0000118>inter-rater agreement, inter-annotator agreement</obo:IAO_0000118>
         <obo:IAO_0000115>a statistical measure of agreement for categorical data; a measure of inter-rater agreement or inter-annotator agreement</obo:IAO_0000115>
+        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
+        <obo:IAO_0000118>inter-rater agreement, inter-annotator agreement</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Cohen%27s_kappa</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -452,9 +508,9 @@
     <owl:Class rdf:about="&obo;OBCS_0000018">
         <rdfs:label>causal  model</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
-        <obo:IAO_0000115>an abstract, quantitative model of the causal dependencies and other interrelationships among observed or hypothetical models; an ordered triple , where U is a set of exogenous variables whose values are determined by factors outside the model; V is a set of endogenous variables whose values are determined by factors within the model; and E is a set of structural equations that express the value of each endogenous variable as a function of the values of the other variables in U and V.</obo:IAO_0000115>
-        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Causal_model</obo:IAO_0000119>
+        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
+        <obo:IAO_0000115>an abstract, quantitative model of the causal dependencies and other interrelationships among observed or hypothetical models; an ordered triple , where U is a set of exogenous variables whose values are determined by factors outside the model; V is a set of endogenous variables whose values are determined by factors within the model; and E is a set of structural equations that express the value of each endogenous variable as a function of the values of the other variables in U and V.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -465,8 +521,8 @@
         <rdfs:label>correlation statistical analysis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
         <obo:IAO_0000119>WEB: http://www.statistics.com</obo:IAO_0000119>
-        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000115>a meaure of the linear association between two variables that are measured on ordinal, interval or ratio scales</obo:IAO_0000115>
+        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -497,8 +553,8 @@
     <owl:Class rdf:about="&obo;OBCS_0000022">
         <rdfs:label>multilevel model</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
-        <obo:IAO_0000115>statistical models of parameters that vary at more than one level; a type of regression model that explicitly takes into account structured/nested data</obo:IAO_0000115>
         <obo:IAO_0000118>hierarchical models</obo:IAO_0000118>
+        <obo:IAO_0000115>statistical models of parameters that vary at more than one level; a type of regression model that explicitly takes into account structured/nested data</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris        SAS social science</obo:IAO_0000117>
     </owl:Class>
     
@@ -520,9 +576,9 @@
     <owl:Class rdf:about="&obo;OBCS_0000024">
         <rdfs:label>power calculation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
+        <obo:IAO_0000115>a data transformation that is used to calculate the power of a statistical analysis.</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
-        <obo:IAO_0000115>a data transformation that is used to calculate the power of a statistical analysis.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -532,8 +588,8 @@
     <owl:Class rdf:about="&obo;OBCS_0000025">
         <rdfs:label>univariate analysis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
-        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>a data transformation that has only one independent variable</obo:IAO_0000115>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -556,8 +612,8 @@
         <rdfs:label>cochran-armitage test</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
-        <obo:IAO_0000115>a test used in categorical data analysis when the aim is to assess for the presence of an association between a variable with two categories and a variable with k categories</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Cochran%E2%80%93Armitage_test_for_trend</obo:IAO_0000119>
+        <obo:IAO_0000115>a test used in categorical data analysis when the aim is to assess for the presence of an association between a variable with two categories and a variable with k categories</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -567,8 +623,8 @@
     <owl:Class rdf:about="&obo;OBCS_0000028">
         <rdfs:label>collapsing</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
-        <obo:IAO_0000118>bracketing, grouping</obo:IAO_0000118>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000118>bracketing, grouping</obo:IAO_0000118>
         <obo:IAO_0000115>a data transformation that combines categories or ranges of values to produce a smaller number of categories</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: SAS users guide</obo:IAO_0000119>
     </owl:Class>
@@ -580,8 +636,8 @@
     <owl:Class rdf:about="&obo;OBCS_0000029">
         <rdfs:label>covariation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
-        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Covariation</obo:IAO_0000119>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Covariation</obo:IAO_0000119>
         <obo:IAO_0000115>a measure of the extent to which two variables are associated; the extent to which two random variables vary together</obo:IAO_0000115>
     </owl:Class>
     
@@ -604,9 +660,9 @@
     <owl:Class rdf:about="&obo;OBCS_0000031">
         <rdfs:label>kolmogorov-smirnov two sample test</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
-        <obo:IAO_0000115>a nonparametric test for the equality of continuous, one-dimensional probability distributions that can be used to compare a sample with a reference probability distribution (one-sample K–S test), or to compare two samples (two-sample K–S test).</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test</obo:IAO_0000119>
+        <obo:IAO_0000115>a nonparametric test for the equality of continuous, one-dimensional probability distributions that can be used to compare a sample with a reference probability distribution (one-sample K–S test), or to compare two samples (two-sample K–S test).</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -616,9 +672,9 @@
     <owl:Class rdf:about="&obo;OBCS_0000032">
         <rdfs:label>levene&apos;s test</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
-        <obo:IAO_0000115>a data transformation that is specifically an inferential statistic to assess the equality of variances in different sample; tests the null hypothesis that the population variances are equal (called homogeneity of variance or homoscedasticity).</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Levene%27s_test</obo:IAO_0000119>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
+        <obo:IAO_0000115>a data transformation that is specifically an inferential statistic to assess the equality of variances in different sample; tests the null hypothesis that the population variances are equal (called homogeneity of variance or homoscedasticity).</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -640,9 +696,9 @@
     <owl:Class rdf:about="&obo;OBCS_0000034">
         <rdfs:label>mcnemar&apos;s test</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
+        <obo:IAO_0000115>a normal approximation used on nominal data; applied to 2 × 2 contingency tables to determine whether the row and column marginal frequencies are equal (&quot;marginal homogeneity&quot;).</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/McNemar%27s_test</obo:IAO_0000119>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
-        <obo:IAO_0000115>a normal approximation used on nominal data; applied to 2 × 2 contingency tables to determine whether the row and column marginal frequencies are equal (&quot;marginal homogeneity&quot;).</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -652,10 +708,10 @@
     <owl:Class rdf:about="&obo;OBCS_0000035">
         <rdfs:label>statistical model</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
-        <obo:IAO_0000119>WEB: http://www.itl.nist.gov/div898/handbook/pri/section7/pri7.htm; http://en.wikipedia.org/wiki/Statistical_model</obo:IAO_0000119>
         <obo:IAO_0000118>model</obo:IAO_0000118>
-        <obo:IAO_0000115>a data transformation that represents a mathematical relationship which relates changes in a given response to changes in one or more factors. A statistical model is a formalization of relationships between variables in the form of mathematical equations.</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://www.itl.nist.gov/div898/handbook/pri/section7/pri7.htm; http://en.wikipedia.org/wiki/Statistical_model</obo:IAO_0000119>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000115>a data transformation that represents a mathematical relationship which relates changes in a given response to changes in one or more factors. A statistical model is a formalization of relationships between variables in the form of mathematical equations.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -665,9 +721,9 @@
     <owl:Class rdf:about="&obo;OBCS_0000036">
         <rdfs:label>partitioning of variance components</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
-        <obo:IAO_0000118>variance components</obo:IAO_0000118>
-        <obo:IAO_0000115>Partitioning of the overall variation into assignable components</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://www.itl.nist.gov/div898/handbook/pri/section7/pri7.htm</obo:IAO_0000119>
+        <obo:IAO_0000115>Partitioning of the overall variation into assignable components</obo:IAO_0000115>
+        <obo:IAO_0000118>variance components</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -677,10 +733,10 @@
     <owl:Class rdf:about="&obo;OBCS_0000037">
         <rdfs:label>statistical effect</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
-        <obo:IAO_0000118>effect</obo:IAO_0000118>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
-        <obo:IAO_0000115>a data transformation that shows how changing the settings of a factor changes the response. The effect of a single factor is also called a main effect.</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://www.itl.nist.gov/div898/handbook/pri/section7/pri7.htm</obo:IAO_0000119>
+        <obo:IAO_0000115>a data transformation that shows how changing the settings of a factor changes the response. The effect of a single factor is also called a main effect.</obo:IAO_0000115>
+        <obo:IAO_0000118>effect</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -690,8 +746,8 @@
     <owl:Class rdf:about="&obo;OBCS_0000038">
         <rdfs:label>variable specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000033"/>
-        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Variable_%28mathematics%29</obo:IAO_0000119>
         <obo:IAO_0000115>a directive information entity that specifies a statistical variable whose value may change within the scope of a given problem or set of operations</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Variable_%28mathematics%29</obo:IAO_0000119>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
     </owl:Class>
     
@@ -702,9 +758,9 @@
     <owl:Class rdf:about="&obo;OBCS_0000039">
         <rdfs:label>confounding variable specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000033"/>
-        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Mediation_%28statistics%29#Mediator_Variable</obo:IAO_0000119>
         <obo:IAO_0000118>confounders</obo:IAO_0000118>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Mediation_%28statistics%29#Mediator_Variable</obo:IAO_0000119>
         <obo:IAO_0000115>a variable specification that specifie a variable that may have a causal impact on both the independent variable and dependent variable; ignoring a confounding variable may bias empirical estimates of the causal effect of the independent variable.</obo:IAO_0000115>
     </owl:Class>
     
@@ -716,8 +772,8 @@
         <rdfs:label>covariate specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000033"/>
         <obo:IAO_0000119>WEB: http://www.statistics.com</obo:IAO_0000119>
-        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000115>a variable specification that specifies a variable used in statistical analysis to correct, adjust, or modify the values of a dependent variable; an independent variable not manipulated by the investigator</obo:IAO_0000115>
+        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -727,10 +783,10 @@
     <owl:Class rdf:about="&obo;OBCS_0000041">
         <rdfs:label>dichotomous variable specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000033"/>
-        <obo:IAO_0000118>dichotomous variable</obo:IAO_0000118>
         <obo:IAO_0000115>a variable that has only two categories</obo:IAO_0000115>
-        <obo:IAO_0000119>WEB: SAS users guide</obo:IAO_0000119>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
+        <obo:IAO_0000118>dichotomous variable</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: SAS users guide</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -742,8 +798,8 @@
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000033"/>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000115>a variable with only two categories that reflect only part of the information available in a more comprehensive variable</obo:IAO_0000115>
-        <obo:IAO_0000119>WEB: SAS users guide</obo:IAO_0000119>
         <obo:IAO_0000118>dummy variable</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: SAS users guide</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -753,10 +809,10 @@
     <owl:Class rdf:about="&obo;OBCS_0000043">
         <rdfs:label>intervening variable specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000033"/>
-        <obo:IAO_0000118>intervening variable, mediating variable</obo:IAO_0000118>
         <obo:IAO_0000115>A varialbe postulated to be a predictor of one or more dependent variables, and simultaneously predicted by one or more independent variables</obo:IAO_0000115>
-        <obo:IAO_0000119>WEB: SAS Users Guide</obo:IAO_0000119>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: SAS Users Guide</obo:IAO_0000119>
+        <obo:IAO_0000118>intervening variable, mediating variable</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -766,8 +822,8 @@
     <owl:Class rdf:about="&obo;OBCS_0000044">
         <rdfs:label>binomial distribution</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000067"/>
-        <obo:IAO_0000115>A discrete probability distribution that has the number of successes in a sequence of n independent yes/no experiments, each of which yields success with probability p. Such a success/failure experiment is also called a Bernoulli experiment or Bernoulli trial.</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Binomial_distribution</obo:IAO_0000119>
+        <obo:IAO_0000115>A discrete probability distribution that has the number of successes in a sequence of n independent yes/no experiments, each of which yields success with probability p. Such a success/failure experiment is also called a Bernoulli experiment or Bernoulli trial.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
     </owl:Class>
     
@@ -778,9 +834,9 @@
     <owl:Class rdf:about="&obo;OBCS_0000045">
         <rdfs:label>Poisson distribution</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000067"/>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>A discrete probability distribution that expresses the probability of a given number of events occurring in a fixed interval of time and/or space if these events occur with a known average rate and independently of the time since the last event. The Poisson distribution can also be used for the number of events in other specified intervals such as distance, area or volume.</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Poisson_distribution</obo:IAO_0000119>
-        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -790,9 +846,9 @@
     <owl:Class rdf:about="&obo;OBCS_0000046">
         <rdfs:label>negative likelihood ratio</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000118"/>
-        <obo:IAO_0000115>a likelihood ratio that is calculated by dividing 1 minus sensitivity by specificity ((1-sensitivity)/specificity).</obo:IAO_0000115>
-        <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
+        <obo:IAO_0000115>a likelihood ratio that is calculated by dividing 1 minus sensitivity by specificity ((1-sensitivity)/specificity).</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -802,9 +858,9 @@
     <owl:Class rdf:about="&obo;OBCS_0000047">
         <rdfs:label>positive likelihood ratio</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000118"/>
+        <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>a likelihood ratio that is calculated by dividing sensitivity by 1 minus specificity (sensitivity/(1-specificity)).</obo:IAO_0000115>
-        <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -814,9 +870,9 @@
     <owl:Class rdf:about="&obo;OBCS_0000048">
         <rdfs:label>absolute risk</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
-        <obo:IAO_0000115>An observed or calculated probability of occurrence of an event, X, in a population related to exposure to a specific hazard, infection, trauma; the number of persons suffering from a disease when the exposed population is known with certainty.</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://medical-dictionary.thefreedictionary.com/absolute+risk</obo:IAO_0000119>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000115>An observed or calculated probability of occurrence of an event, X, in a population related to exposure to a specific hazard, infection, trauma; the number of persons suffering from a disease when the exposed population is known with certainty.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -826,9 +882,9 @@
     <owl:Class rdf:about="&obo;OBCS_0000049">
         <rdfs:label>accuracy </rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
-        <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
-        <obo:IAO_0000115>a measurement datum that refers to the number of true positives and true negatives divided by the total number of observations.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000115>a measurement datum that refers to the number of true positives and true negatives divided by the total number of observations.</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -838,8 +894,8 @@
     <owl:Class rdf:about="&obo;OBCS_0000050">
         <rdfs:label>censored data</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
-        <obo:IAO_0000119>WEB: SAS users guide</obo:IAO_0000119>
         <obo:IAO_0000118>censoring</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: SAS users guide</obo:IAO_0000119>
         <obo:IAO_0000115>occurs when certain values of a measurement or observation are only partially known, not possible to observe</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
     </owl:Class>
@@ -851,9 +907,9 @@
     <owl:Class rdf:about="&obo;OBCS_0000051">
         <rdfs:label>statistical measure</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
-        <obo:IAO_0000119>WEB: SAS users guide</obo:IAO_0000119>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000115>a measurement datum that represents a number (statistic) whose size indicates the magnitude of some quantity of interest.</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: SAS users guide</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -863,10 +919,10 @@
     <owl:Class rdf:about="&obo;OBCS_0000052">
         <rdfs:label>Incidence rate</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
-        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
-        <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
-        <obo:IAO_0000118>incidence</obo:IAO_0000118>
         <obo:IAO_0000115>A measurement datum that refers to the number of new events that have occurred in a specific time interval divided by the population at risk at the beginning of the time interval. The result gives the likelihood of developing an event in that time interval.</obo:IAO_0000115>
+        <obo:IAO_0000118>incidence</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -876,9 +932,9 @@
     <owl:Class rdf:about="&obo;OBCS_0000053">
         <rdfs:label>likelihood ratio test</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
-        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Likelihood-ratio_test</obo:IAO_0000119>
-        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>a statistical test used to compare the fit of two models, one of which (the null model) is a special case of the other (the alternative model).</obo:IAO_0000115>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Likelihood-ratio_test</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -888,8 +944,8 @@
     <owl:Class rdf:about="&obo;OBCS_0000054">
         <rdfs:label>odds ratio</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
-        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>A measure datum that refers to the odds that an individual with a specific condition has been exposed to a risk factor divided by the odds that a control has been exposed. The odds ratio is used in case-control studies. The odds ratio provides a reasonable estimate of the relative risk for uncommon conditions.</obo:IAO_0000115>
     </owl:Class>
     
@@ -900,10 +956,10 @@
     <owl:Class rdf:about="&obo;OBCS_0000055">
         <rdfs:label>prevalence rate</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000118>prevalence</obo:IAO_0000118>
         <obo:IAO_0000115>A measurement datum that refers to the number of individuals with a given disease at a given point in time divided by the population at risk at that point in time.</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
-        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -913,9 +969,9 @@
     <owl:Class rdf:about="&obo;OBCS_0000056">
         <rdfs:label>relative risk</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
-        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
-        <obo:IAO_0000115>A measurement datum that equals the incidence in exposed individuals divided by the incidence in unexposed individuals. The relative risk can be calculated from studies in which the proportion of patients exposed and unexposed to a risk is known, such as a cohort study.</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
+        <obo:IAO_0000115>A measurement datum that equals the incidence in exposed individuals divided by the incidence in unexposed individuals. The relative risk can be calculated from studies in which the proportion of patients exposed and unexposed to a risk is known, such as a cohort study.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -926,8 +982,8 @@
         <rdfs:label>reliability </rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
         <obo:IAO_0000115>a measurement datum that refers to the extent to which repeated measurements of a relatively stable phenomenon fall closely to each other.</obo:IAO_0000115>
-        <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -950,10 +1006,10 @@
     <owl:Class rdf:about="&obo;OBCS_0000059">
         <rdfs:label>specificity </rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
-        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Sensitivity_and_specificity</obo:IAO_0000119>
-        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>a measurement datum that refers to the proportion of negatives in a binary classification test which are correctly identified</obo:IAO_0000115>
         <obo:IAO_0000118>true negative rate</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Sensitivity_and_specificity</obo:IAO_0000119>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -963,9 +1019,9 @@
     <owl:Class rdf:about="&obo;OBCS_0000060">
         <rdfs:label>validity </rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
-        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>a measurement datum that refers to the extent to which an observation reflects the &quot;truth&quot; of the phenomenon being measured.</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -976,8 +1032,8 @@
         <rdfs:label>polynomial regression</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0200103"/>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Polynomial_regression</obo:IAO_0000119>
-        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000115>A special case of multiple linear regression in which the relationship between the independent variable x and the dependent variable y is modelled as an nth order polynomial</obo:IAO_0000115>
+        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -988,9 +1044,9 @@
         <rdfs:label>sampling plan</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000104"/>
         <obo:IAO_0000119>WEB: http://www.itl.nist.gov/div898/handbook/ppc/section3/ppc33.htm</obo:IAO_0000119>
+        <obo:IAO_0000115>a plan specification that provides a detailed outline of which measurements will be taken at what times, on which material, in what manner, and by whom.</obo:IAO_0000115>
         <obo:IAO_0000118>sampling design</obo:IAO_0000118>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
-        <obo:IAO_0000115>a plan specification that provides a detailed outline of which measurements will be taken at what times, on which material, in what manner, and by whom.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1000,8 +1056,8 @@
     <owl:Class rdf:about="&obo;OBCS_0000063">
         <rdfs:label>random selection</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
-        <obo:IAO_0000119>WEB: http://srmo.sagepub.com/view/the-sage-dictionary-of-social-research-methods/SAGE.xml</obo:IAO_0000119>
         <obo:IAO_0000115>Any method of sampling that uses some form of random selection, that is, one that will ensure that all units in the population have an equal probability or chance of being selected.</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://srmo.sagepub.com/view/the-sage-dictionary-of-social-research-methods/SAGE.xml</obo:IAO_0000119>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
     </owl:Class>
     
@@ -1013,8 +1069,8 @@
         <rdfs:label>period prevalence</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000055"/>
         <obo:IAO_0000115>a prevalence rate that occurs at a specific period of time</obo:IAO_0000115>
-        <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1024,8 +1080,8 @@
     <owl:Class rdf:about="&obo;OBCS_0000065">
         <rdfs:label>point prevalence rate</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000055"/>
-        <obo:IAO_0000115>a prevalence rate that occurs at a specific point of time</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
+        <obo:IAO_0000115>a prevalence rate that occurs at a specific point of time</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
     </owl:Class>
     
@@ -1036,9 +1092,9 @@
     <owl:Class rdf:about="&obo;OBCS_0000066">
         <rdfs:label>continuous probability distribution</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000010"/>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>A probability distribution that is associated with continuous variables and has a probability density function.</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Continuous_probability_distribution#Continuous_probability_distribution</obo:IAO_0000119>
-        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -1048,9 +1104,9 @@
     <owl:Class rdf:about="&obo;OBCS_0000067">
         <rdfs:label>discrete probability distribution</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000010"/>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Continuous_probability_distribution#Discrete_probability_distribution</obo:IAO_0000119>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>A probability distribution that is associated with discrete variables and is characterized by a probability mass function.</obo:IAO_0000115>
-        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Continuous_probability_distribution#Discrete_probability_distribution</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1060,8 +1116,8 @@
     <owl:Class rdf:about="&obo;OBCS_0000068">
         <rdfs:label>frequency distribution</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000010"/>
-        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://statistics.com</obo:IAO_0000119>
+        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000115>a tabular summary of a set of data showing the number of items in each of several non-overlapping classes or groupings</obo:IAO_0000115>
     </owl:Class>
     
@@ -1072,8 +1128,8 @@
     <owl:Class rdf:about="&obo;OBCS_0000069">
         <rdfs:label>cohen&apos;s kappa coefficient</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000071"/>
-        <obo:IAO_0000115>a statistical measure of inter-rater agreement or inter-annotator agreement for qualitative (categorical) items.</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Cohen%27s_kappa</obo:IAO_0000119>
+        <obo:IAO_0000115>a statistical measure of inter-rater agreement or inter-annotator agreement for qualitative (categorical) items.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1083,9 +1139,9 @@
     <owl:Class rdf:about="&obo;OBCS_0000070">
         <rdfs:label>confidence interval</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000071"/>
-        <obo:IAO_0000115>A quantitative confidence value that refers to an interval give values within which there is a high probability (95 percent by convention) that the true population value can be found. The calculation of a confidence interval considers the standard deviation of the data and the number of observations. Thus, a confidence interval narrows as the number of observations increases, or its variance (dispersion) decreases.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
+        <obo:IAO_0000115>A quantitative confidence value that refers to an interval give values within which there is a high probability (95 percent by convention) that the true population value can be found. The calculation of a confidence interval considers the standard deviation of the data and the number of observations. Thus, a confidence interval narrows as the number of observations increases, or its variance (dispersion) decreases.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1108,8 +1164,8 @@
         <rdfs:label>interquartile range</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000071"/>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
-        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>A quantitative confidence value that refers to the upper and lower values defining the central 50 percent of observations. The boundaries are equal to the 25th and 75th percentiles. The interquartile range can be depicted in a box and whiskers plot.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -1131,8 +1187,8 @@
     <owl:Class rdf:about="&obo;OBCS_0000074">
         <rdfs:label>power</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000071"/>
-        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>A quantitative confidence value that refers to the ability of a study to detect a true difference. Negative findings may reflect that the study was underpowered to detect a difference.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
     </owl:Class>
     
@@ -1143,9 +1199,9 @@
     <owl:Class rdf:about="&obo;OBCS_0000075">
         <rdfs:label>random error</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000071"/>
-        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.itl.nist.gov/div898/handbook/pri/section7/pri7.htm</obo:IAO_0000119>
         <obo:IAO_0000115>A component of experimental error that occurs due to natural variation in the process.</obo:IAO_0000115>
+        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -1155,9 +1211,9 @@
     <owl:Class rdf:about="&obo;OBCS_0000076">
         <rdfs:label>range</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000071"/>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>A quantitative confidence value that equals the difference between the largest and smallest observation.</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
-        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -1168,8 +1224,8 @@
         <rdfs:label>standard deviation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000071"/>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
-        <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <obo:IAO_0000115>A quantitative confidence value that measures the variability of data around the mean.</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1179,10 +1235,10 @@
     <owl:Class rdf:about="&obo;OBCS_0000078">
         <rdfs:label>type 1 error rate</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000071"/>
-        <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <obo:IAO_0000118>alpha error</obo:IAO_0000118>
-        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <obo:IAO_0000115>A quantitative confidence value that refers to the probability of incorrectly concluding that there is a statistically significant difference in a dataset. Alpha is the number after a p-value. Thus, a statistically significant difference reported as p&lt;0.05 means that there is less than a 5 percent chance that the difference could have occurred by chance.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -1192,10 +1248,10 @@
     <owl:Class rdf:about="&obo;OBCS_0000079">
         <rdfs:label>type 2 error rate</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000071"/>
-        <obo:IAO_0000115>A quantitative confidence value that refers to the probability of incorrectly concluding that there was no statistically significant difference in a dataset. This error often reflects insufficient power of the study.</obo:IAO_0000115>
-        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000118>beta error</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000115>A quantitative confidence value that refers to the probability of incorrectly concluding that there was no statistically significant difference in a dataset. This error often reflects insufficient power of the study.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1217,8 +1273,8 @@
     <owl:Class rdf:about="&obo;OBCS_0000081">
         <rdfs:label>coefficient of variation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000071"/>
-        <obo:IAO_0000119>WEB: http://www.statistics.com</obo:IAO_0000119>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://www.statistics.com</obo:IAO_0000119>
         <obo:IAO_0000115>A quantitative confidence value that is the standard deviation of a data set divided by the mean of the same data set; a normalized measure of dispersion of a probability distribution</obo:IAO_0000115>
         <obo:IAO_0000118>variation coefficient</obo:IAO_0000118>
     </owl:Class>
@@ -1230,10 +1286,10 @@
     <owl:Class rdf:about="&obo;OBCS_0000082">
         <rdfs:label>statistical error</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000071"/>
+        <obo:IAO_0000119>WEB: http://www.itl.nist.gov/div898/handbook/pri/section7/pri7.htm</obo:IAO_0000119>
+        <obo:IAO_0000118>error</obo:IAO_0000118>
         <obo:IAO_0000115>a quantitative confidence value that represents unexplained variation in a collection of observations; comopnents of error include random error and lack of fit error</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
-        <obo:IAO_0000118>error</obo:IAO_0000118>
-        <obo:IAO_0000119>WEB: http://www.itl.nist.gov/div898/handbook/pri/section7/pri7.htm</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1243,9 +1299,9 @@
     <owl:Class rdf:about="&obo;OBCS_0000083">
         <rdfs:label>expected value</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000071"/>
-        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Expected_value</obo:IAO_0000119>
-        <obo:IAO_0000115>A quantitative confidence value that represents theoretical average value of a statistic over an infinite number of samples from the same population;  the weights correspond to the probabilities in the case of a discrete random variable or densities in the case of a continuous random variable.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
+        <obo:IAO_0000115>A quantitative confidence value that represents theoretical average value of a statistic over an infinite number of samples from the same population;  the weights correspond to the probabilities in the case of a discrete random variable or densities in the case of a continuous random variable.</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Expected_value</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1255,10 +1311,10 @@
     <owl:Class rdf:about="&obo;OBCS_0000084">
         <rdfs:label>intraclass correlation coefficient</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000071"/>
-        <obo:IAO_0000115>a quantitative confidence value that is a descriptive statistic and can be used to describe how strongly units in the same group resemble each other; unlike other correlation measures it operates on data structured as groups, rather than data structured as paired observations.</obo:IAO_0000115>
-        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Intraclass_correlation</obo:IAO_0000119>
-        <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000118>ICC</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Intraclass_correlation</obo:IAO_0000119>
+        <obo:IAO_0000115>a quantitative confidence value that is a descriptive statistic and can be used to describe how strongly units in the same group resemble each other; unlike other correlation measures it operates on data structured as groups, rather than data structured as paired observations.</obo:IAO_0000115>
+        <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -1268,9 +1324,9 @@
     <owl:Class rdf:about="&obo;OBCS_0000085">
         <rdfs:label>standardized coefficient</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000071"/>
-        <obo:IAO_0000115>a quantitative confidence value that has been standardized so that they have variances of 1.0; produces standardized regression coefficients (betas)</obo:IAO_0000115>
-        <obo:IAO_0000119>WEB: SAS users guide</obo:IAO_0000119>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: SAS users guide</obo:IAO_0000119>
+        <obo:IAO_0000115>a quantitative confidence value that has been standardized so that they have variances of 1.0; produces standardized regression coefficients (betas)</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1280,10 +1336,10 @@
     <owl:Class rdf:about="&obo;OBCS_0000086">
         <rdfs:label>logit regression</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0200102"/>
-        <obo:IAO_0000118>logistic regression</obo:IAO_0000118>
-        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
-        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Logistic_regression</obo:IAO_0000119>
         <obo:IAO_0000115>a type of regression analysis used for predicting the outcome of a categorical dependent variable</obo:IAO_0000115>
+        <obo:IAO_0000118>logistic regression</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Logistic_regression</obo:IAO_0000119>
+        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -1293,9 +1349,9 @@
     <owl:Class rdf:about="&obo;OBCS_0000087">
         <rdfs:label>nonlinear regression</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0200102"/>
-        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Nonlinear_regression</obo:IAO_0000119>
-        <obo:IAO_0000115>a form of regression analysis in which observational data are modeled by a function which is a nonlinear combination of the model parameters and depends on one or more independent variables</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
+        <obo:IAO_0000115>a form of regression analysis in which observational data are modeled by a function which is a nonlinear combination of the model parameters and depends on one or more independent variables</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Nonlinear_regression</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1316,8 +1372,8 @@
     <owl:Class rdf:about="&obo;OBCS_0000089">
         <rdfs:label>randomization sampling plan</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000062"/>
-        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000115>a sampling plan that uses randomization for sample selection</obo:IAO_0000115>
+        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -1339,8 +1395,8 @@
     <owl:Class rdf:about="&obo;OBCS_0000091">
         <rdfs:label>nominal scale</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000032"/>
-        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000115>some placing of data into categories, without any order or structure (see related OBI term of categorical measurement datum)</obo:IAO_0000115>
+        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -1350,10 +1406,10 @@
     <owl:Class rdf:about="&obo;OBCS_0000092">
         <rdfs:label>ordinal scale</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000032"/>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Nominal_scale#Ordinal_scale</obo:IAO_0000119>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000115>rankings on which data can be sorted however the size or magnitude of differences between any data points in a class is unknown, just that one ranking is greater than 
 the other</obo:IAO_0000115>
-        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Nominal_scale#Ordinal_scale</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1363,8 +1419,8 @@ the other</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;OBCS_0000093">
         <rdfs:label>ratio scale</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000032"/>
-        <obo:IAO_0000115>a scalar measurement datum that is similar to an interval scale, i.e. a magnitude of a continuous quantity and a unit magnitude of the same kind; the distinguishing feature of a ratio scale is a meaningful zero value that means the absence of whatever is measured</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Nominal_scale#Ratio_scale</obo:IAO_0000119>
+        <obo:IAO_0000115>a scalar measurement datum that is similar to an interval scale, i.e. a magnitude of a continuous quantity and a unit magnitude of the same kind; the distinguishing feature of a ratio scale is a meaningful zero value that means the absence of whatever is measured</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
     </owl:Class>
     
@@ -1375,9 +1431,9 @@ the other</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;OBCS_0000094">
         <rdfs:label>disease test sensitivity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000058"/>
+        <obo:IAO_0000115>a sensitivity that refers to the number of patients with a positive test who have a disease divided by all patients who have the disease. A test with high sensitivity will not miss many patients who have the disease (i.e., few false negative results).</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
-        <obo:IAO_0000115>a sensitivity that refers to the number of patients with a positive test who have a disease divided by all patients who have the disease. A test with high sensitivity will not miss many patients who have the disease (i.e., few false negative results).</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1387,9 +1443,9 @@ the other</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;OBCS_0000095">
         <rdfs:label>disease test specificity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000059"/>
-        <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
-        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>a specificity that refers to the number of patients who have a negative test and do not have the disease divided by the number of patients who do not have the disease. A test with high specificity will infrequently identify patients as having a disease when they do not (i.e., few false positive results).</obo:IAO_0000115>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1400,8 +1456,8 @@ the other</obo:IAO_0000115>
         <rdfs:label>fixed effect</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000037"/>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
-        <obo:IAO_0000119>WEB: http://www.itl.nist.gov/div898/handbook/pri/section7/pri7.htm</obo:IAO_0000119>
         <obo:IAO_0000115>A statistical effect that is associated with an input variable that has a limited number of levels or in which only a limited number of levels are of interest to the experimenter.</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://www.itl.nist.gov/div898/handbook/pri/section7/pri7.htm</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1411,10 +1467,10 @@ the other</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;OBCS_0000097">
         <rdfs:label>interaction effect</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000037"/>
-        <obo:IAO_0000119>WEB: http://www.itl.nist.gov/div898/handbook/pri/section7/pri7.htm</obo:IAO_0000119>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
-        <obo:IAO_0000115>a statistical effect that represents the role of a variable in an estimated model (most often a regression model) and its effect on the dependent variable. A variable that has an interaction effect will have a different effect on the dependent variable, depending on the level of some third variable.</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://www.itl.nist.gov/div898/handbook/pri/section7/pri7.htm</obo:IAO_0000119>
         <obo:IAO_0000118>moderation</obo:IAO_0000118>
+        <obo:IAO_0000115>a statistical effect that represents the role of a variable in an estimated model (most often a regression model) and its effect on the dependent variable. A variable that has an interaction effect will have a different effect on the dependent variable, depending on the level of some third variable.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1424,9 +1480,9 @@ the other</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;OBCS_0000098">
         <rdfs:label>random effect</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000037"/>
-        <obo:IAO_0000115>A statistical effect that is associated with input variables chosen at random from a population having a large or infinite number of possible values.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.itl.nist.gov/div898/handbook/pri/section7/pri7.htm</obo:IAO_0000119>
+        <obo:IAO_0000115>A statistical effect that is associated with input variables chosen at random from a population having a large or infinite number of possible values.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1436,9 +1492,9 @@ the other</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;OBCS_0000099">
         <rdfs:label>lack of fit error</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000082"/>
+        <obo:IAO_0000119>WEB: http://www.itl.nist.gov/div898/handbook/pri/section7/pri7.htm</obo:IAO_0000119>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000115>A statistical error that occurs when the analysis omits one or more important terms or factors from the model</obo:IAO_0000115>
-        <obo:IAO_0000119>WEB: http://www.itl.nist.gov/div898/handbook/pri/section7/pri7.htm</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1448,10 +1504,10 @@ the other</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;OBCS_0000100">
         <rdfs:label>type I error</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000082"/>
-        <obo:IAO_0000118>false positive</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Type_I_and_type_II_errors</obo:IAO_0000119>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000115>the null hypothesis is true but has been rejected; a test result that indicates a given condition has been fulfilled, when it actually has not been fulfilled</obo:IAO_0000115>
+        <obo:IAO_0000118>false positive</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1461,10 +1517,10 @@ the other</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;OBCS_0000101">
         <rdfs:label>type II error</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000082"/>
-        <obo:IAO_0000118>false negative</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Type_I_and_type_II_errors</obo:IAO_0000119>
-        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
+        <obo:IAO_0000118>false negative</obo:IAO_0000118>
         <obo:IAO_0000115>the null hypothesis is false but has been accepted; a test result indicates that a condition failed, while it actually was successful.</obo:IAO_0000115>
+        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -1474,8 +1530,8 @@ the other</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;OBCS_0000102">
         <rdfs:label>F test</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000673"/>
-        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000115>any statistical test in which the test statistic has an F-distribution under the null hypothesis</obo:IAO_0000115>
+        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/F_test</obo:IAO_0000119>
     </owl:Class>
     
@@ -1487,8 +1543,8 @@ the other</obo:IAO_0000115>
         <rdfs:label>mann-whitney U test</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000673"/>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
-        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U</obo:IAO_0000119>
         <obo:IAO_0000118>Wilcoxon rank-sum test</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U</obo:IAO_0000119>
         <obo:IAO_0000115>a non-parametric test of the null hypothesis that two populations are the same against an alternative hypothesis</obo:IAO_0000115>
     </owl:Class>
     
@@ -1500,8 +1556,8 @@ the other</obo:IAO_0000115>
         <rdfs:label>balanced design</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0500000"/>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
-        <obo:IAO_0000115>An experimental design where all cells (i.e. treatment combinations) have the same number of observation</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://www.itl.nist.gov/div898/handbook/pri/section7/pri7.htm</obo:IAO_0000119>
+        <obo:IAO_0000115>An experimental design where all cells (i.e. treatment combinations) have the same number of observation</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1511,8 +1567,8 @@ the other</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;OBCS_0000105">
         <rdfs:label>case-control study design</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0500000"/>
-        <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <obo:IAO_0000115>a study design that starts with the outcome of interest and works backward to the exposure. For instance, patients with a disease are identified and compared with controls for exposure to a risk factor.</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
     </owl:Class>
     
@@ -1524,8 +1580,8 @@ the other</obo:IAO_0000115>
         <rdfs:label>cohort study design</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0500000"/>
         <obo:IAO_0000115>a study design that starts with an exposure and moves forward to the outcome of interest, even if the data are collected retrospectively. As an example, a group of patients who have variable exposure to a risk factor of interest can be followed over time for an outcome.</obo:IAO_0000115>
-        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -1535,9 +1591,9 @@ the other</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;OBCS_0000107">
         <rdfs:label>randomized controlled trial design</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0500000"/>
-        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>a study design in which patients are randomly assigned to two or more interventions.</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -1547,9 +1603,9 @@ the other</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;OBCS_0000108">
         <rdfs:label>complex sample design</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000062"/>
+        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000115>A sampling design that uses something other than simple random selection</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: SAS users guide</obo:IAO_0000119>
-        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -1559,8 +1615,8 @@ the other</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;OBCS_0000109">
         <rdfs:label>kappa statistic</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000013"/>
-        <obo:IAO_0000119>WEB: http://www.statistics.com</obo:IAO_0000119>
         <obo:IAO_0000115>a generic term for several similar measures of agreement used with categorical data; typically used in assessing the degree to which two or more raters, examining the same data, agree on assigning data to categories</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://www.statistics.com</obo:IAO_0000119>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
     </owl:Class>
     
@@ -1572,8 +1628,8 @@ the other</obo:IAO_0000115>
         <rdfs:label>bartlett&apos;s test</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000013"/>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Bartlett%27s_test</obo:IAO_0000119>
-        <obo:IAO_0000115>a statistial test of whether k samples are from populations with equal variances.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
+        <obo:IAO_0000115>a statistial test of whether k samples are from populations with equal variances.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1583,10 +1639,10 @@ the other</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;OBCS_0000111">
         <rdfs:label>mediating variable specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000038"/>
-        <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
-        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Mediation_%28statistics%29#Mediator_Variable</obo:IAO_0000119>
         <obo:IAO_0000118>mediating variable, mediation</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Mediation_%28statistics%29#Mediator_Variable</obo:IAO_0000119>
         <obo:IAO_0000115>a variable specification that specifies a variable describing how, rather than when, effects will occur by accounting for the relationship between the independent and dependent variables. A mediating relationship is one in which the path relating A to C is mediated by a third variable (B).</obo:IAO_0000115>
+        <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -1596,9 +1652,9 @@ the other</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;OBCS_0000112">
         <rdfs:label>moderator variable specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000038"/>
-        <obo:IAO_0000118>moderator, interaction</obo:IAO_0000118>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000115>a variable specification that specifies a variable affecting the direction and/or strength of the relation between dependent and independent variables; occurs when the relationship between two variables depends on a third variable</obo:IAO_0000115>
+        <obo:IAO_0000118>moderator, interaction</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Moderator_variable</obo:IAO_0000119>
     </owl:Class>
     
@@ -1609,9 +1665,9 @@ the other</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;OBCS_0000113">
         <rdfs:label>weighted kappa</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000014"/>
-        <obo:IAO_0000115>a weighted data that measures the agreeement for categorical data; a generalization of the Kappa statistics to situations in which the categories are not equal in some respect so weighted by an objective or subjective function</obo:IAO_0000115>
-        <obo:IAO_0000119>WEB: http://www.statistics.com</obo:IAO_0000119>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://www.statistics.com</obo:IAO_0000119>
+        <obo:IAO_0000115>a weighted data that measures the agreeement for categorical data; a generalization of the Kappa statistics to situations in which the categories are not equal in some respect so weighted by an objective or subjective function</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1622,8 +1678,8 @@ the other</obo:IAO_0000115>
         <rdfs:label>median</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
-        <obo:IAO_0000115>the middle value that separates the higher half from the lower half of the data sample, population, or probability distribution</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Median</obo:IAO_0000119>
+        <obo:IAO_0000115>the middle value that separates the higher half from the lower half of the data sample, population, or probability distribution</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1633,9 +1689,9 @@ the other</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;OBCS_0000115">
         <rdfs:label>mixed model</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000035"/>
-        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
-        <obo:IAO_0000115>a statistical model containing both fixed effects and random effects, that is mixed effects;</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Mixed_model</obo:IAO_0000119>
+        <obo:IAO_0000115>a statistical model containing both fixed effects and random effects, that is mixed effects;</obo:IAO_0000115>
+        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -1645,9 +1701,9 @@ the other</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;OBCS_0000116">
         <rdfs:label>probability density function</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
+        <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000118>density function</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Probability_density_function</obo:IAO_0000119>
-        <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>A data transoformation that represents a mathematical function describing the relative likelihood of a continuous random variable to take on a value</obo:IAO_0000115>
     </owl:Class>
     
@@ -1658,9 +1714,9 @@ the other</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;OBCS_0000117">
         <rdfs:label>rank order</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <obo:IAO_0000119>WEB: http://www.merriam-webster.com/dictionary/rank%20order</obo:IAO_0000119>
         <obo:IAO_0000115>a data item that represents an arrangement according to a rank, i.e., the position of a partiuclar case relative to other cases on a defined scale</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
-        <obo:IAO_0000119>WEB: http://www.merriam-webster.com/dictionary/rank%20order</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -1671,8 +1727,241 @@ the other</obo:IAO_0000115>
         <rdfs:label>likihood ratio</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000071"/>
         <obo:IAO_0000115>a quantitative confidence value that expresses how many times more likely the data are under one model than the other. </obo:IAO_0000115>
-        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Likelihood-ratio_test</obo:IAO_0000119>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000119 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000119">
+        <rdfs:label>chi-square distribution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000066"/>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Chi-square_distribution</obo:IAO_0000119>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000115>A probability distribution that with k degrees of freedom is the distribution of a sum of the squares of k independent standard normal random variables.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000120 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000120">
+        <rdfs:label xml:lang="en">descriptive statistical data analysis</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000123"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000001"/>
+        <obo:IAO_0000115>a statistical data analysis that summarizes the population data by describing what was observed in the sample numerically or graphically.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Statistics</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000121 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000121">
+        <rdfs:label xml:lang="en">inferential statistical data analysis</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000124"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000001"/>
+        <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>a statistical data analysis that  uses patterns in the sample data to draw inferences about the population represented, accounting for randomness.</obo:IAO_0000115>
+        <obo:IAO_0000118>significantly statistical data analysis
+</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Statistics</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000122 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000122">
+        <rdfs:label xml:lang="en">statistical data analysis objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0200166"/>
+        <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>a data transformation objective where the aim is to perform statistical data analysis.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000123 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000123">
+        <rdfs:label xml:lang="en">descriptive statistical data analysis objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000122"/>
+        <obo:IAO_0000115>a statistical data analysis objective where the aim is to summarize the population data. </obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000124 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000124">
+        <rdfs:label xml:lang="en">inferential statistical data analysis objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000122"/>
+        <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>a statistical data analysis objective where the aim is to make inference using population sample data. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000125 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000125">
+        <rdfs:label>exponential distribution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000066"/>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Exponential_distribution</obo:IAO_0000119>
+        <obo:IAO_0000115>A continuous probability distribution that describes the time between events in a Poisson process, i.e. a process in which events occur continuously and independently at a constant average rate.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000127 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000127">
+        <rdfs:label xml:lang="en">data collection objective</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000005"/>
+        <obo:IAO_0000115>an objective specification where the aim is to collect data. </obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000128 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000128">
+        <rdfs:label xml:lang="en">data collection from experiment</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000002"/>
+        <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>a data collection process that results in a collection of data generated from an experiment(s).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000129 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000129">
+        <rdfs:label xml:lang="en">data collection from survey</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000132"/>
+        <obo:IAO_0000115>a data collection by sampling process that results in a collection of data generated from an survey(s).</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000130 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000130">
+        <rdfs:label xml:lang="en">data collection from literature</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000002"/>
+        <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>a data collection process that results in a collection of data from the literature.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000132 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000132">
+        <rdfs:label xml:lang="en">data collection by sampling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000002"/>
+        <obo:IAO_0000118>data sampling</obo:IAO_0000118>
+        <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>a data collection process that results in a collection of data from a sampling process</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000011">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000071 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000071">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000673 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000673">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000675 -->
+
+    <rdf:Description rdf:about="&obo;OBI_0000675">
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000124"/>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200000 -->
+
+    <owl:Class rdf:about="&obo;OBI_0200000">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200102 -->
+
+    <owl:Class rdf:about="&obo;OBI_0200102">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200103 -->
+
+    <owl:Class rdf:about="&obo;OBI_0200103">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200166 -->
+
+    <rdf:Description rdf:about="&obo;OBI_0200166">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0500000 -->
+
+    <owl:Class rdf:about="&obo;OBI_0500000">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </owl:Class>
     
 
@@ -1807,10 +2096,6 @@ the other</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;OBI_0000675">
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;IAO_0000584">
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
@@ -1841,9 +2126,6 @@ the other</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;OBI_0200143">
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;OBI_0000299">
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;OBI_0001620">
@@ -2034,12 +2316,12 @@ the other</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;OBI_0200010">
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;OBI_0200157">
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;OBI_0200010">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;OBI_0001514">
@@ -2142,10 +2424,6 @@ the other</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;OBI_0000997">
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;OBI_0200166">
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;OBI_0200022">
@@ -2801,10 +3079,6 @@ the other</obo:IAO_0000115>
     <rdf:Description rdf:about="&obo;IAO_0000004">
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;IAO_0000005">
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;IAO_0000003">
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
@@ -3209,9 +3483,6 @@ the other</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;OBI_0000417">
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;OBI_0001571">
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
@@ -3558,5 +3829,5 @@ the other</obo:IAO_0000115>
 
 
 
-<!-- Generated by the OWL API (version 3.2.5.1928) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
 
