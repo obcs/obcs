@@ -20,13 +20,13 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="&obo;obcs.owl">
-        <dc:date>2014-02-07</dc:date>
+        <dc:date>2014-02-14</dc:date>
         <dc:subject xml:lang="en">A BFO-aligned Ontology of Biological and Clinical Statistics</dc:subject>
-        <owl:versionInfo xml:lang="en">Development Version: 1.0.03</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Development Version: 1.0.04</owl:versionInfo>
         <obo:IAO_0000116 xml:lang="en">Development version</obo:IAO_0000116>
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
         <dc:creator xml:lang="en">Marcy Harris</dc:creator>
-        <dc:description xml:lang="en">OBCS is a BFO-aligned Ontology of Biological and Clinical Statistics. It uses OBI as top level ontology. OBCS imports all possible biostatistics terms in OBI and includes many additional biostatistics terms, some of which were proposed and discussed in the OBI face-to-face workshop in Ann Arbor in 2012. </dc:description>
+        <dc:description xml:lang="en">OBCS is a Ontology of Biological and Clinical Statistics. It is aligned with the Basic Formal Ontology (BFO) and the Ontology for Biomedical Investigations (OBI). OBCS imports all possible biostatistics terms in OBI and includes many additional biostatistics terms, some of which were proposed and discussed in the OBI face-to-face workshop in Ann Arbor in 2012.  </dc:description>
         <dc:title xml:lang="en">OBCS: Ontology of Biological and Clinical Statistics</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
@@ -192,6 +192,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
+
+    <rdf:Description rdf:about="&obo;BFO_0000055">
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000059 -->
+
+    <rdf:Description rdf:about="&obo;BFO_0000059">
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
 
     <rdf:Description rdf:about="&obo;OBI_0000299">
@@ -234,6 +250,15 @@
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <rdf:Description rdf:about="&obo;IAO_0000030">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
     
 
 
@@ -304,17 +329,29 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000027"/>
+                <owl:allValuesFrom rdf:resource="&obo;IAO_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000059"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBCS_0000137"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="&obo;IAO_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a planned process that results in a collection of data</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>a planned process that gathers and measurs information on variables of interest, in an established systematic fashion that enables one to answer stated research questions, test hypotheses, and evaluate outcomes. Data collection results in a collection of data. </obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Data_collection </obo:IAO_0000119>
     </owl:Class>
     
 
@@ -410,9 +447,10 @@
 
     <owl:Class rdf:about="&obo;OBCS_0000010">
         <rdfs:label>probability distribution</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
-        <obo:IAO_0000115>a data item that refers to a distribution of a random variable that can be described using a mathematical formula.</obo:IAO_0000115>
-        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <obo:IAO_0000117>Yongqun He, Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000115>an information content entity that refers to a distribution of a random variable that can be described using a mathematical formula.</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Probability_distribution</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -744,8 +782,9 @@
     <!-- http://purl.obolibrary.org/obo/OBCS_0000038 -->
 
     <owl:Class rdf:about="&obo;OBCS_0000038">
-        <rdfs:label>variable specification</rdfs:label>
+        <rdfs:label>statistical variable</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000033"/>
+        <obo:IAO_0000118>variable</obo:IAO_0000118>
         <obo:IAO_0000115>a directive information entity that specifies a statistical variable whose value may change within the scope of a given problem or set of operations</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Variable_%28mathematics%29</obo:IAO_0000119>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
@@ -794,11 +833,10 @@
     <!-- http://purl.obolibrary.org/obo/OBCS_0000042 -->
 
     <owl:Class rdf:about="&obo;OBCS_0000042">
-        <rdfs:label>dummy variable specification</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000033"/>
+        <rdfs:label>dummy variable</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000038"/>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
-        <obo:IAO_0000115>a variable with only two categories that reflect only part of the information available in a more comprehensive variable</obo:IAO_0000115>
-        <obo:IAO_0000118>dummy variable</obo:IAO_0000118>
+        <obo:IAO_0000115>a statistical variable with only two categories that reflect only part of the information available in a more comprehensive variable</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: SAS users guide</obo:IAO_0000119>
     </owl:Class>
     
@@ -1041,10 +1079,11 @@
     <!-- http://purl.obolibrary.org/obo/OBCS_0000062 -->
 
     <owl:Class rdf:about="&obo;OBCS_0000062">
-        <rdfs:label>sampling plan</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000104"/>
+        <rdfs:label>data sampling design</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000137"/>
         <obo:IAO_0000119>WEB: http://www.itl.nist.gov/div898/handbook/ppc/section3/ppc33.htm</obo:IAO_0000119>
-        <obo:IAO_0000115>a plan specification that provides a detailed outline of which measurements will be taken at what times, on which material, in what manner, and by whom.</obo:IAO_0000115>
+        <obo:IAO_0000118>sampling plan</obo:IAO_0000118>
+        <obo:IAO_0000115>a plan specification that provides a detailed outline of which measurements will be taken at what times, on which material, in what manner, and by whom. Sampling plans should be designed in such a way that the resulting data will contain a representative sample of the parameters of interest and allow for all questions, as stated in the goals, to be answered. </obo:IAO_0000115>
         <obo:IAO_0000118>sampling design</obo:IAO_0000118>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
     </owl:Class>
@@ -1359,10 +1398,11 @@
     <!-- http://purl.obolibrary.org/obo/OBCS_0000088 -->
 
     <owl:Class rdf:about="&obo;OBCS_0000088">
-        <rdfs:label>non-randomization sampling plan</rdfs:label>
+        <rdfs:label>non-randomization sampling design</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000062"/>
-        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
-        <obo:IAO_0000115>a sampling plan that does not use randomization for sample selection</obo:IAO_0000115>
+        <obo:IAO_0000118>non-randomization sampling plan</obo:IAO_0000118>
+        <obo:IAO_0000115>a data sampling design that does not use randomization for sample selection</obo:IAO_0000115>
+        <obo:IAO_0000117>Marcy Harris, Jie Zheng, Yongqun He</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -1370,10 +1410,11 @@
     <!-- http://purl.obolibrary.org/obo/OBCS_0000089 -->
 
     <owl:Class rdf:about="&obo;OBCS_0000089">
-        <rdfs:label>randomization sampling plan</rdfs:label>
+        <rdfs:label>randomization sampling design</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000062"/>
-        <obo:IAO_0000115>a sampling plan that uses randomization for sample selection</obo:IAO_0000115>
-        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
+        <obo:IAO_0000118>randomization sampling plan</obo:IAO_0000118>
+        <obo:IAO_0000115>a data sampling design that uses randomization for sample selection</obo:IAO_0000115>
+        <obo:IAO_0000117>Marcy Harris, Jie Zheng, Yongqun He</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -1603,8 +1644,8 @@ the other</obo:IAO_0000115>
     <owl:Class rdf:about="&obo;OBCS_0000108">
         <rdfs:label>complex sample design</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000062"/>
+        <obo:IAO_0000115>A data sampling design that uses something other than simple random selection</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
-        <obo:IAO_0000115>A sampling design that uses something other than simple random selection</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: SAS users guide</obo:IAO_0000119>
     </owl:Class>
     
@@ -1637,11 +1678,12 @@ the other</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OBCS_0000111 -->
 
     <owl:Class rdf:about="&obo;OBCS_0000111">
-        <rdfs:label>mediating variable specification</rdfs:label>
+        <rdfs:label>mediating variable</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000038"/>
+        <obo:IAO_0000115>a statistical variable that specifies a variable describing how, rather than when, effects will occur by accounting for the relationship between the independent and dependent variables. A mediating relationship is one in which the path relating A to C is mediated by a third variable (B).</obo:IAO_0000115>
         <obo:IAO_0000118>mediating variable, mediation</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Mediation_%28statistics%29#Mediator_Variable</obo:IAO_0000119>
-        <obo:IAO_0000115>a variable specification that specifies a variable describing how, rather than when, effects will occur by accounting for the relationship between the independent and dependent variables. A mediating relationship is one in which the path relating A to C is mediated by a third variable (B).</obo:IAO_0000115>
+        <obo:IAO_0000118>intervening variable</obo:IAO_0000118>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
     </owl:Class>
     
@@ -1650,10 +1692,10 @@ the other</obo:IAO_0000115>
     <!-- http://purl.obolibrary.org/obo/OBCS_0000112 -->
 
     <owl:Class rdf:about="&obo;OBCS_0000112">
-        <rdfs:label>moderator variable specification</rdfs:label>
+        <rdfs:label>moderator variable</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000038"/>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
-        <obo:IAO_0000115>a variable specification that specifies a variable affecting the direction and/or strength of the relation between dependent and independent variables; occurs when the relationship between two variables depends on a third variable</obo:IAO_0000115>
+        <obo:IAO_0000115>a statistical variable that specifies a variable affecting the direction and/or strength of the relation between dependent and independent variables; occurs when the relationship between two variables depends on a third variable</obo:IAO_0000115>
         <obo:IAO_0000118>moderator, interaction</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Moderator_variable</obo:IAO_0000119>
     </owl:Class>
@@ -1828,6 +1870,18 @@ the other</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000126 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000126">
+        <rdfs:label xml:lang="en">random variable</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000038"/>
+        <obo:IAO_0000115>A statistical variable whose value is subject to variations due to chance (i.e. randomness, in a mathematical sense).</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Random_variable  </obo:IAO_0000119>
+        <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBCS_0000127 -->
 
     <owl:Class rdf:about="&obo;OBCS_0000127">
@@ -1872,14 +1926,98 @@ the other</obo:IAO_0000115>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000131 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000131">
+        <rdfs:label xml:lang="en">independent variable</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000038"/>
+        <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000115>A statistical variable that represents the inputs or causes, or are tested to see if they are the cause in an experiment or a modeling.</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Dependent_and_independent_variables</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBCS_0000132 -->
 
     <owl:Class rdf:about="&obo;OBCS_0000132">
         <rdfs:label xml:lang="en">data collection by sampling</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000059"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBCS_0000062"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000118>data sampling</obo:IAO_0000118>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000115>a data collection process that results in a collection of data from a sampling process</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000133 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000133">
+        <rdfs:label xml:lang="en">dependent variable</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000038"/>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Dependent_and_independent_variables</obo:IAO_0000119>
+        <obo:IAO_0000118>dependent variable</obo:IAO_0000118>
+        <obo:IAO_0000115>A statistical variable that represents the output or effect, or is tested to see if it is the effect in an experiment or a modeling.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000134 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000134">
+        <rdfs:label xml:lang="en">continuous random variable</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000126"/>
+        <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000115>A random variable which can take an infinite number of possible values</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://www.stats.gla.ac.uk/steps/glossary/probability_distributions.html#contvar </obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000135 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000135">
+        <rdfs:label xml:lang="en">discrete random variable</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000126"/>
+        <obo:IAO_0000115>A random variable which may take on only a finite number of distinct values such as 0, 1, 2, 3, 4, ... </obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://www.stats.gla.ac.uk/steps/glossary/probability_distributions.html#contvar </obo:IAO_0000119>
+        <obo:IAO_0000112>Examples of discrete random variables include the number of children in a family, the Friday night attendance at a cinema, the number of patients in a doctor&apos;s surgery, the number of defective light bulbs in a box of ten.</obo:IAO_0000112>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000136 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000136">
+        <rdfs:label xml:lang="en">numeric data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000115>A data item which consists of digits as opposed to letters of the alphabet of special characters</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://www.ask.com/question/what-is-numerical-data</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000137 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000137">
+        <rdfs:label xml:lang="en">data collection design</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000104"/>
+        <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000115>a plan specification that provides a detailed outline of how data is collected.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2002,12 +2140,12 @@ the other</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;OBI_0200131">
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;OBI_0200036">
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;OBI_0200131">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;OBI_0200130">
@@ -2053,15 +2191,15 @@ the other</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </rdf:Description>
+    <rdf:Description rdf:about="&obo;OBI_0200137">
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </rdf:Description>
     <rdf:Description rdf:about="&obo;OBI_0200034">
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;BFO_0000031">
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;OBI_0200137">
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;IAO_0000183">
@@ -2386,11 +2524,11 @@ the other</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;OBI_0200026">
+    <rdf:Description rdf:about="&obo;IAO_0000179">
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;IAO_0000179">
+    <rdf:Description rdf:about="&obo;OBI_0200026">
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </rdf:Description>
@@ -2712,9 +2850,6 @@ the other</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000059">
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="&obo;OBI_0200191">
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
@@ -2799,9 +2934,6 @@ the other</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;OBI_0200199">
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;BFO_0000055">
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;OBI_0000658">
@@ -3249,10 +3381,6 @@ the other</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;IAO_0000136">
-        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
-        <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;IAO_0000030">
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
     </rdf:Description>
