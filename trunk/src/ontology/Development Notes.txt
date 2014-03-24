@@ -3,5 +3,13 @@
 (1) Assert term "statistical hypothesis test objective" To under OBCS term "inferential statistical data analysis objective".
 Note: did not change the process.
 
-(2)
- 
+
+3/24/2014:
+(1) Change OBI: descriptive statistical calculation data transformation
+	(has_specified_output some 'data set of features')
+ 	or (achieves_planned_objective some 'descriptive statistical calculation objective')
+ 	->
+	achieves_planned_objective some 'descriptive statistical calculation objective' 
+	
+Because with OBI original definition, median, mode, etc. will be inferred as 'data set of features' which is not correct.
+(2) Remove imported 'data set of features', have some issues with the term, will submit issue to OBI tracker for discussion
