@@ -36,7 +36,7 @@
     <!-- http://purl.obolibrary.org/obo/OBCS_0000016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000016">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000120"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000051"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000674"/>
     </owl:Class>
     
@@ -61,16 +61,8 @@
     <!-- http://purl.obolibrary.org/obo/OBCS_0000114 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000114">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000120"/>
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000674"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBCS_0000120 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000120">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000051"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000674"/>
     </owl:Class>
     
 
