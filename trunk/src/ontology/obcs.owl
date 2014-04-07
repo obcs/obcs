@@ -8,16 +8,17 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/obcs.owl">
-        <dc:date>2014-03-28</dc:date>
+        <dc:date>2014-04-06</dc:date>
         <dc:subject xml:lang="en">A formal ontology in the domain of biological and clinical statistics</dc:subject>
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
         <dc:creator xml:lang="en">Marcy Harris</dc:creator>
         <dc:description xml:lang="en">OBCS stands for the Ontology of Biological and Clinical Statistics. OBCS is an ontology in the domain of biological and clinical statistics. It is aligned with the Basic Formal Ontology (BFO) and the Ontology for Biomedical Investigations (OBI). OBCS imports all possible biostatistics terms in OBI and includes many additional biostatistics terms, some of which were proposed and discussed in the OBI face-to-face workshop in Ann Arbor in 2012.  </dc:description>
         <dc:title xml:lang="en">OBCS: Ontology of Biological and Clinical Statistics</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
-        <owl:versionInfo xml:lang="en">Version: 1.0.16</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">Version: 1.0.18</owl:versionInfo>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obcs/OBI_existing_stat_allAxioms.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obcs/obo_import.owl"/>
     </owl:Ontology>
     
 
@@ -30,94 +31,34 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
-
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
     </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
-
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116">
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
     </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
-
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
-
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000114"/>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
     </rdf:Description>
-    
-
-
-    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#comment"/>
-    
-
-
-    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#label"/>
-    
-
-
-    <!-- http://www.w3.org/2000/01/rdf-schema#seeAlso -->
-
-    <owl:AnnotationProperty rdf:about="http://www.w3.org/2000/01/rdf-schema#seeAlso"/>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000111">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    </owl:AnnotationProperty>
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+    </owl:AnnotationProperty>
     
 
 
@@ -349,6 +290,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -361,12 +308,6 @@
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000137"/>
                     </owl:Restriction>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
@@ -383,8 +324,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000066"/>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>A continuous probability distribution that is associated with the f statistic.</obo:IAO_0000115>
-        <obo:IAO_0000119>WEB: http://stattrek.com/probability-distributions/f-distribution.aspx</obo:IAO_0000119>
         <obo:IAO_0000118>Fisher-Snedecor distribution</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: http://stattrek.com/probability-distributions/f-distribution.aspx</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -664,8 +605,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000026">
         <rdfs:label>statistical association</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
-        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Association_%28statistics%29</obo:IAO_0000119>
+        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000115>any relationship between two measured quantities that renders them statistically dependent</obo:IAO_0000115>
     </owl:Class>
     
@@ -775,8 +716,8 @@
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
         <obo:IAO_0000118>model</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://www.itl.nist.gov/div898/handbook/pri/section7/pri7.htm; http://en.wikipedia.org/wiki/Statistical_model</obo:IAO_0000119>
-        <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>a data transformation that represents a mathematical relationship which relates changes in a given response to changes in one or more factors. A statistical model is a formalization of relationships between variables in the form of mathematical equations.</obo:IAO_0000115>
+        <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -825,8 +766,8 @@
         <rdfs:label>confounding variable specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
         <obo:IAO_0000118>confounders</obo:IAO_0000118>
-        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Mediation_%28statistics%29#Mediator_Variable</obo:IAO_0000119>
+        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000115>a variable specification that specifie a variable that may have a causal impact on both the independent variable and dependent variable; ignoring a confounding variable may bias empirical estimates of the causal effect of the independent variable.</obo:IAO_0000115>
     </owl:Class>
     
@@ -875,8 +816,8 @@
         <rdfs:label>intervening variable specification</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
         <obo:IAO_0000115>A varialbe postulated to be a predictor of one or more dependent variables, and simultaneously predicted by one or more independent variables</obo:IAO_0000115>
-        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: SAS Users Guide</obo:IAO_0000119>
+        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000118>intervening variable, mediating variable</obo:IAO_0000118>
     </owl:Class>
     
@@ -935,8 +876,8 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000048">
         <rdfs:label>absolute risk</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <obo:IAO_0000119>WEB: http://medical-dictionary.thefreedictionary.com/absolute+risk</obo:IAO_0000119>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://medical-dictionary.thefreedictionary.com/absolute+risk</obo:IAO_0000119>
         <obo:IAO_0000115>A data item of an observed or calculated probability of occurrence of an event, X, in a population related to exposure to a specific hazard, infection, trauma; the number of persons suffering from a disease when the exposed population is known with certainty.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1013,8 +954,8 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000052">
         <rdfs:label>Incidence rate</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-        <obo:IAO_0000118>incidence</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
+        <obo:IAO_0000118>incidence</obo:IAO_0000118>
         <obo:IAO_0000115>A data item that refers to the number of new events that have occurred in a specific time interval divided by the population at risk at the beginning of the time interval. The result gives the likelihood of developing an event in that time interval.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
     </owl:Class>
@@ -1140,8 +1081,8 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
         <obo:IAO_0000119>WEB: http://www.itl.nist.gov/div898/handbook/ppc/section3/ppc33.htm</obo:IAO_0000119>
         <obo:IAO_0000118>sampling plan</obo:IAO_0000118>
         <obo:IAO_0000115>a plan specification that provides a detailed outline of which measurements will be taken at what times, on which material, in what manner, and by whom. Sampling plans should be designed in such a way that the resulting data will contain a representative sample of the parameters of interest and allow for all questions, as stated in the goals, to be answered. </obo:IAO_0000115>
-        <obo:IAO_0000118>sampling design</obo:IAO_0000118>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
+        <obo:IAO_0000118>sampling design</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1176,8 +1117,8 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
         <rdfs:label>point prevalence rate</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000055"/>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
-        <obo:IAO_0000115>a prevalence rate that occurs at a specific point of time</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000115>a prevalence rate that occurs at a specific point of time</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1234,8 +1175,8 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000070">
         <rdfs:label>confidence interval</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000071"/>
-        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>A quantitative confidence value that refers to an interval give values within which there is a high probability (95 percent by convention) that the true population value can be found. The calculation of a confidence interval considers the standard deviation of the data and the number of observations. Thus, a confidence interval narrows as the number of observations increases, or its variance (dispersion) decreases.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1383,8 +1324,8 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000071"/>
         <obo:IAO_0000119>WEB: http://www.itl.nist.gov/div898/handbook/pri/section7/pri7.htm</obo:IAO_0000119>
         <obo:IAO_0000118>error</obo:IAO_0000118>
-        <obo:IAO_0000115>a quantitative confidence value that represents unexplained variation in a collection of observations; comopnents of error include random error and lack of fit error</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000115>a quantitative confidence value that represents unexplained variation in a collection of observations; comopnents of error include random error and lack of fit error</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1432,8 +1373,8 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
         <rdfs:label>logit regression</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200102"/>
         <obo:IAO_0000115>a type of regression analysis used for predicting the outcome of a categorical dependent variable</obo:IAO_0000115>
-        <obo:IAO_0000118>logistic regression</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Logistic_regression</obo:IAO_0000119>
+        <obo:IAO_0000118>logistic regression</obo:IAO_0000118>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
     </owl:Class>
     
@@ -1457,8 +1398,8 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
         <rdfs:label>non-randomization sampling design</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000062"/>
         <obo:IAO_0000118>non-randomization sampling plan</obo:IAO_0000118>
-        <obo:IAO_0000115>a data sampling design that does not use randomization for sample selection</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris, Jie Zheng, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000115>a data sampling design that does not use randomization for sample selection</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1552,8 +1493,8 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000096">
         <rdfs:label>fixed effect</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000037"/>
-        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000115>A statistical effect that is associated with an input variable that has a limited number of levels or in which only a limited number of levels are of interest to the experimenter.</obo:IAO_0000115>
+        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.itl.nist.gov/div898/handbook/pri/section7/pri7.htm</obo:IAO_0000119>
     </owl:Class>
     
@@ -1652,8 +1593,8 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000104">
         <rdfs:label>balanced design</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
-        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.itl.nist.gov/div898/handbook/pri/section7/pri7.htm</obo:IAO_0000119>
+        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000115>An experimental design where all cells (i.e. treatment combinations) have the same number of observation</obo:IAO_0000115>
     </owl:Class>
     
@@ -1676,8 +1617,8 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000106">
         <rdfs:label>cohort study design</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
-        <obo:IAO_0000115>a study design that starts with an exposure and moves forward to the outcome of interest, even if the data are collected retrospectively. As an example, a group of patients who have variable exposure to a risk factor of interest can be followed over time for an outcome.</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
+        <obo:IAO_0000115>a study design that starts with an exposure and moves forward to the outcome of interest, even if the data are collected retrospectively. As an example, a group of patients who have variable exposure to a risk factor of interest can be followed over time for an outcome.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
     </owl:Class>
     
@@ -1849,6 +1790,32 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000120 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000120">
+        <rdfs:label xml:lang="en">collection of data set</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000117>Person: Oliver He, Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000115>A data item that consists of two or more data set.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBCS_0000121 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000121">
@@ -1865,6 +1832,51 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
         <obo:IAO_0000118>significantly statistical data analysis
 </obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Statistics</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000122 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000122">
+        <rdfs:label xml:lang="en">collecllection of transformed data set</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
+                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000123"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
+                        <owl:onClass rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000123"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:minQualifiedCardinality>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000123 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000123">
+        <rdfs:label xml:lang="en">transformed data set</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000100"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <obo:IAO_0000117>A data set that is produced as the output of a data transformation.</obo:IAO_0000117>
+        <obo:IAO_0000117>Person: Jie Zheng, Oliver He</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -2602,12 +2614,12 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </rdf:Description>
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200164">
-        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
-        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
-    </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000995">
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200164">
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200167">
@@ -4000,5 +4012,5 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
 
 
 
-<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.3.1957) http://owlapi.sourceforge.net -->
 
