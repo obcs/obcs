@@ -14,4 +14,5 @@ http://purl.obolibrary.org/obo/BFO_0000051 #has part
 includeNoIntermediates
 
 [Source annotation URIs]
-includeAllAnnotationProperties
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115
