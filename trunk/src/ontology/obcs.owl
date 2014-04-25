@@ -8,15 +8,21 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/obcs.owl">
-        <dc:date>2014-04-07</dc:date>
+        <dc:date>2014-04-25</dc:date>
         <dc:subject xml:lang="en">A formal ontology in the domain of biological and clinical statistics</dc:subject>
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
         <dc:creator xml:lang="en">Marcy Harris</dc:creator>
+        <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
+        <dc:contributor xml:lang="en">Anna Maria Masci</dc:contributor>
+        <dc:contributor xml:lang="en">Barry Smith</dc:contributor>
+        <dc:contributor xml:lang="en">Alfred Hero</dc:contributor>
+        <dc:contributor xml:lang="en">Yu Lin</dc:contributor>
+        <dc:contributor xml:lang="en">Chris Stoeckert </dc:contributor>
         <dc:description xml:lang="en">OBCS stands for the Ontology of Biological and Clinical Statistics. OBCS is an ontology in the domain of biological and clinical statistics. It is aligned with the Basic Formal Ontology (BFO) and the Ontology for Biomedical Investigations (OBI). OBCS imports all possible biostatistics terms in OBI and includes many additional biostatistics terms, some of which were proposed and discussed in the OBI face-to-face workshop in Ann Arbor in 2012.  </dc:description>
         <dc:title xml:lang="en">OBCS: Ontology of Biological and Clinical Statistics</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
-        <owl:versionInfo xml:lang="en">Version: 1.0.21</owl:versionInfo>
-        <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
+        <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
+        <owl:versionInfo xml:lang="en">Version: 1.0.23</owl:versionInfo>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obcs/OBI_existing_stat_allAxioms.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obcs/obo_import.owl"/>
     </owl:Ontology>
@@ -94,6 +100,12 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -106,12 +118,6 @@
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000137"/>
                     </owl:Restriction>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
@@ -506,7 +512,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000034">
         <rdfs:label>mcnemar&apos;s test</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
-        <obo:IAO_0000115>a normal approximation used on nominal data; applied to 2 × 2 contingency tables to determine whether the row and column marginal frequencies are equal (&quot;marginal homogeneity&quot;).</obo:IAO_0000115>
+        <obo:IAO_0000115>a normal approximation used on nominal data; applied to 2?×?2 contingency tables to determine whether the row and column marginal frequencies are equal (&quot;marginal homogeneity&quot;).</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/McNemar%27s_test</obo:IAO_0000119>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
     </owl:Class>
@@ -690,7 +696,7 @@
     <!-- http://purl.obolibrary.org/obo/OBCS_0000049 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000049">
-        <rdfs:label>accuracy </rdfs:label>
+        <rdfs:label>accuracy?</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
@@ -781,7 +787,7 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000055 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000055">
-        <rdfs:label>prevalence rate</rdfs:label>
+        <rdfs:label>prevalence?rate</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000118>prevalence</obo:IAO_0000118>
@@ -806,7 +812,7 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000057 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000057">
-        <rdfs:label>reliability </rdfs:label>
+        <rdfs:label>reliability?</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>a data item that refers to the extent to which repeated measurements of a relatively stable phenomenon fall closely to each other.</obo:IAO_0000115>
@@ -818,7 +824,7 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000058 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000058">
-        <rdfs:label>sensitivity </rdfs:label>
+        <rdfs:label>sensitivity?</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Sensitivity_and_specificity</obo:IAO_0000119>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
@@ -831,7 +837,7 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000059 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000059">
-        <rdfs:label>specificity </rdfs:label>
+        <rdfs:label>specificity?</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000118>true negative rate</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Sensitivity_and_specificity</obo:IAO_0000119>
@@ -844,7 +850,7 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000060 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000060">
-        <rdfs:label>validity </rdfs:label>
+        <rdfs:label>validity?</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <obo:IAO_0000115>a data item that refers to the extent to which an observation reflects the &quot;truth&quot; of the phenomenon being measured.</obo:IAO_0000115>
@@ -977,7 +983,7 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000071 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000071">
-        <rdfs:label>credible interval </rdfs:label>
+        <rdfs:label>credible interval?</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000071"/>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
@@ -1407,7 +1413,7 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000106 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000106">
-        <rdfs:label>cohort study design</rdfs:label>
+        <rdfs:label>cohort study?design</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <obo:IAO_0000115>a study design that starts with an exposure and moves forward to the outcome of interest, even if the data are collected retrospectively. As an example, a group of patients who have variable exposure to a risk factor of interest can be followed over time for an outcome.</obo:IAO_0000115>
@@ -1585,7 +1591,7 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000120 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000120">
-        <rdfs:label xml:lang="en">collection of data set</rdfs:label>
+        <rdfs:label xml:lang="en">set of data set</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1603,7 +1609,7 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
             </owl:Class>
         </owl:equivalentClass>
         <obo:IAO_0000117>Person: Oliver He, Jie Zheng</obo:IAO_0000117>
-        <obo:IAO_0000115>A data item that consists of two or more data set.</obo:IAO_0000115>
+        <obo:IAO_0000115>A data item that consists of two or more data sets.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1631,7 +1637,7 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000122 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000122">
-        <rdfs:label xml:lang="en">collecllection of transformed data set</rdfs:label>
+        <rdfs:label xml:lang="en">set of transformed data set</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1648,6 +1654,8 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <obo:IAO_0000115>A data item that consists of two or more data sets that are produced as the output of a data transformation.</obo:IAO_0000115>
+        <obo:IAO_0000117>Person: Oliver He, Jie Zheng</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -1861,6 +1869,86 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
         </rdfs:subClassOf>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000115>a data collection by sampling process that results in a collection of data generated from an censoring.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000140 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000140">
+        <rdfs:label xml:lang="en">robust multi-array average normalization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200169"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200028"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000666"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>http://www.ncbi.nlm.nih.gov/pubmed/12925520
+http://www.molmine.com/magma/loading/rma.htm</obo:IAO_0000119>
+        <obo:IAO_0000117>Person:Jie Zheng, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>RMA</obo:IAO_0000118>
+        <obo:IAO_0000115>A normalization data transformation that used to create normalized gene expression level from microarray raw data. The raw intensity values are background corrected, log2 transformed and then quantile normalized in the RMA normalization process. </obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000141 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000141">
+        <rdfs:label xml:lang="en">significance analysis of microarrays</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000175"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000124"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119>http://www.ncbi.nlm.nih.gov/pmc/articles/PMC33173/
+http://en.wikipedia.org/wiki/Significance_analysis_of_microarrays
+</obo:IAO_0000119>
+        <obo:IAO_0000117>Person: Jie Zheng, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>A statistical data analysis that is established in 2001 by Virginia Tusher, Robert Tibshirani and Gilbert Chu, for determining whether changes in gene expression are statistically significant. </obo:IAO_0000115>
+        <obo:IAO_0000118>SAM</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000142 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000142">
+        <rdfs:label xml:lang="en">signal-2-noise statistic</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000001"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000124"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000175"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000118>S2N</obo:IAO_0000118>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Signal-to-noise_ratio
+http://www.ncbi.nlm.nih.gov/pubmed/10521349
+</obo:IAO_0000119>
+        <obo:IAO_0000115>A statistical data analysis that calculates  the level of a desired signal to the level of background noise to identify which detected signal is more signal than noise. It can be used to identify differentially expressed genes.</obo:IAO_0000115>
+        <obo:IAO_0000117>Person: Jie Zheng, Oliver He</obo:IAO_0000117>
     </owl:Class>
 </rdf:RDF>
 
