@@ -13,3 +13,24 @@ Note: did not change the process.
 	
 Because with OBI original definition, median, mode, etc. will be inferred as 'data set of features' which is not correct.
 (2) Remove imported 'data set of features', have some issues with the term, will submit issue to OBI tracker for discussion
+Therefore, logic axioms of 'descriptive statistical calculation data transformation' were removed which is:
+	(has_specified_output some 'data set of features') or (achieves_planned_objective some 'descriptive statistical calculation objective')
+
+
+5/6/2014:
+(1) Add eqivalent logical axiom to OBI term: 'descriptive statistical calculation data transformation'
+			achieves_planned_objective some 'descriptive statistical calculation objective'
+In this case, it will correctly classified as subclass of 'statistical data analysis'
+
+(2) Add logical axiom to OBI term: 'statistical hypothesis test'
+			achieves_planned_objective some 'inferential statistical data analysis objective'
+Based on textual definition, 'statistical hypothesis test objective' is a subclass of 'inferential statistical data analysis objective'. To avoid modification of OBI hierarchy, we just add extra axiom to this term. The better approach is to discuss with OBI developers and make consistent representation in both OBI and OBCS.			
+
+(3) achieves_planned_objective some 'inferential statistical data analysis objective' axiom were added in following terms:
+			- OBI:ANOVA
+			- OBI:Likelihood-ratio test
+			- levene's test (also add 'statistical hypothesis test objective')
+			- loglinear analysis (also add 'statistical hypothesis test objective')
+						
+(4) collapsing (http://purl.obolibrary.org/obo/OBCS_0000028)			
+			add axiom: achieves_planned_objective some 'merging objective'
