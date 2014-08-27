@@ -1,0 +1,15 @@
+OBCS example
+
+= Introduction =
+
+We generated an OWL file contained expression of 3 different genes (TNFRST17, MAPK1, CNOT2) on the response to TIV vaccination of 3 persons at day 0, 3, and 7 based on the semantic representation shown in Figure 3. It shows how data item grouped as a data set and data set grouped as a data set of set. The planned processes shown in Figure3 linked the data which collected from experiment to conclusion generated from analysis.
+
+The OWL file shows how microarray data and data workflow can be represented in a well-structured manner. It enables possibility to build data analysis pipeline and automate this process using software.
+
+
+= Details =
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
