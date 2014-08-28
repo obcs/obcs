@@ -14,7 +14,7 @@ https://obcs.googlecode.com/svn/trunk/docs/user/example/Figure3.jpg
 
 All the boxes represent instances, labelled by the class they are instances of. All the relations are italicized.
 
-The ontology terms used in the Figure are listed in the [https://obcs.googlecode.com/svn/trunk/docs/user/example/Figure3 term list.xlsx term list table]
+The ontology terms used in the Figure are listed in the [https://obcs.googlecode.com/svn/trunk/docs/user/example/Figure3%term%list.xlsx term list table]
 
 = OWL Generation  =
 
