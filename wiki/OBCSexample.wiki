@@ -14,29 +14,17 @@ https://obcs.googlecode.com/svn/trunk/docs/user/example/Figure3.jpg
 
 All the boxes represent instances, labelled by the class they are instances of. All the relations are italicized.
 
-The ontology terms used in the Figure are listed in the [https://obcs.googlecode.com/svn/trunk/docs/user/example/Figure3%20term%20list.xlsx term list table]
+The ontology terms used in the Figure are listed in the [https://obcs.googlecode.com/svn/trunk/docs/user/example/Figure3%20term%20list.xlsx term list table].
 
 = OWL Generation  =
 
+An OBCS subset including all the terms, relations, and axioms introduced in the use case was generated using the tool Ontodog [http://ontodog.hegroup.org/ Ontodog]. Instantiating the classes in the OBCS subset, we generated an extended OWL file that contains the information of instance level transcriptional expressions of 3 genes (TNFRST17, MAPK1, and CNOT2) in the PMBCs collected from three persons at day 0, 3, and 7 after an administration of TIV. 
+
+The example OWL file including the subset of OBCS and extra terms needed for describing data and instances described above are available on:
+[https://obcs.googlecode.com/svn/trunk/docs/user/example/example_merged.owl]
+
+The consistency of the OWL file was checked using Hermit 1.3.8.
+
+The OWL file can be viewed using Protege 4.3.
+
 This example shows how OBCS can be used to represent full data analysis process from data collection to drawing a conclusion based on data.
-
-
-
-
-The example web page includes a small OBCS subset that contains all the terms, relations, and axioms introduced in Figure 3 use case. This OBCS subset was generated using the tool Ontodog (http://ontodog.hegroup.org/) (10). Instantiating the classes in the OBCS subset, we generated an extended OWL file that contains the information of instance level transcriptional expressions of 3 genes (TNFRST17, MAPK1, and CNOT2) in the PMBCs collected from three persons at day 0, 3, and 7 after an administration of TIV. This example shows how data items can be grouped as a data set, and data sets grouped as a data set of set. As shown in Figure 3, the planned processes link the data sets collected from experiments to the conclusion based on data drawn from statistical data analysis. 	
-
-
-
-We generated an OWL file contained expression of 3 different genes (TNFRST17, MAPK1, CNOT2) on the response to TIV vaccination of 3 persons at day 0, 3, and 7 based on the semantic representation shown in Figure 3. It shows how data item grouped as a data set and data set grouped as a data set of set. The planned processes shown in Figure3 linked the data which collected from experiment to conclusion generated from analysis.
-
-The OWL file shows how microarray data and data workflow can be represented in a well-structured manner. It enables possibility to build data analysis pipeline and automate this process using software.
-
-
-= Details =
-
-
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
