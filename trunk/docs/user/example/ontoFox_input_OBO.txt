@@ -1,0 +1,83 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/obcs/import_OBO.owl
+
+############################################################
+[Source ontology]
+#comment here
+#List of ontologies: OBI, NCBITaxon, MP, PATO, GO, DOID, IDO, CHEBI, SO, PRO, CL, ENVO, FMA, CARO
+OBI
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OBI_0000295 #is_specified_input_of
+http://purl.obolibrary.org/obo/NCBITaxon_9606 #Homo sapiens
+http://purl.obolibrary.org/obo/OBI_0100026 #organism
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/OBI_0000295 #is_specified_input_of
+subPropertyOf http://purl.obolibrary.org/obo/BFO_0000056 #participates in
+http://purl.obolibrary.org/obo/NCBITaxon_9606 #Homo sapiens: 
+subClassOf http://purl.obolibrary.org/obo/OBI_0100026 #organism
+http://purl.obolibrary.org/obo/OBI_0100026 #organism
+subClassOf http://purl.obolibrary.org/obo/BFO_0000040 #material entity
+
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115
+
+
+
+
+############################################################
+[Source ontology]
+#comment here
+VO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/VO_0000001 #vaccine
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/VO_0000001 #vaccine
+subClassOf http://purl.obolibrary.org/obo/BFO_0000040 #material entity
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115
+
+
+
+############################################################
+[Source ontology]
+#comment here
+OGG
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/OGG_3000004848 #CNOT2
+http://purl.obolibrary.org/obo/OGG_3000005594 #MAPK1
+http://purl.obolibrary.org/obo/OGG_3000000608 #TNFRSF17
+http://purl.obolibrary.org/obo/OGG_0000000002 #gene
+
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/OGG_3000004848 #CNOT2
+subClassOf http://purl.obolibrary.org/obo/OGG_0000000002 #gene
+http://purl.obolibrary.org/obo/OGG_3000005594 #MAPK1
+subClassOf http://purl.obolibrary.org/obo/OGG_0000000002 #gene
+http://purl.obolibrary.org/obo/OGG_3000000608 #TNFRSF17
+subClassOf http://purl.obolibrary.org/obo/OGG_0000000002 #gene
+http://purl.obolibrary.org/obo/OGG_0000000002 #gene
+subClassOf http://purl.obolibrary.org/obo/BFO_0000040 #material entity
+
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+
+[Source annotation URIs]
+includeAllAxioms

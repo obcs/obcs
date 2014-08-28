@@ -1,0 +1,1876 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY obcs "http://purl.obolibrary.org/obo/obcs.owl#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;obcs/example.owl#"
+     xml:base="&obo;obcs/example.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:obcs="&obo;obcs.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <owl:Ontology rdf:about="&obo;obcs/example.owl">
+        <owl:imports rdf:resource="&obo;obcs/import_OBO.owl"/>
+        <owl:imports rdf:resource="&obo;obcs/obcs_subset.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
+
+    <rdf:Description rdf:about="&obo;OBI_0000293">
+        <owl:inverseOf rdf:resource="&obo;OBI_0000295"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000295 -->
+
+    <rdf:Description rdf:about="&obo;OBI_0000295"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002351 -->
+
+    <rdf:Description rdf:about="&obo;RO_0002351"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000022 -->
+
+    <owl:ObjectProperty rdf:about="&obo;obcs.owl#example_0000022">
+        <rdfs:label xml:lang="en">is member of</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&obo;BFO_0000050"/>
+        <owl:inverseOf rdf:resource="&obo;RO_0002351"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000025 -->
+
+    <owl:ObjectProperty rdf:about="&obo;obcs.owl#example_0000025">
+        <rdfs:label xml:lang="en">is about immune response of vaccinee</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000136"/>
+        <rdfs:range rdf:resource="&obo;NCBITaxon_9606"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000026 -->
+
+    <owl:ObjectProperty rdf:about="&obo;obcs.owl#example_0000026">
+        <rdfs:label xml:lang="en">is about immune response on vaccine</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000136"/>
+        <rdfs:range rdf:resource="&obo;VO_0000001"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000027 -->
+
+    <owl:ObjectProperty rdf:about="&obo;obcs.owl#example_0000027">
+        <rdfs:label xml:lang="en">is expression measurement of</rdfs:label>
+        <rdfs:subPropertyOf rdf:resource="&obo;IAO_0000136"/>
+        <rdfs:range rdf:resource="&obo;OGG_0000000002"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000023 -->
+
+    <owl:DatatypeProperty rdf:about="&obo;obcs.owl#example_0000023">
+        <rdfs:label xml:lang="en">has expression level value</rdfs:label>
+        <rdfs:range rdf:resource="&xsd;decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000024 -->
+
+    <owl:DatatypeProperty rdf:about="&obo;obcs.owl#example_0000024">
+        <rdfs:label xml:lang="en">is immune response post vaccination day</rdfs:label>
+        <rdfs:range rdf:resource="&xsd;int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000109 -->
+
+    <owl:DatatypeProperty rdf:about="&obo;obcs.owl#example_0000109">
+        <rdfs:label xml:lang="en">has data value</rdfs:label>
+        <rdfs:range rdf:resource="&xsd;decimal"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000002 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000002">
+        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">person 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000003 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000003">
+        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">person 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000004 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000004">
+        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">person 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000005 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000005">
+        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">person 4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000006 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000006">
+        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">person 5</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000007 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000007">
+        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
+        <rdfs:label xml:lang="en">person 6</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000009 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000009">
+        <rdf:type rdf:resource="&obo;IAO_0000100"/>
+        <rdfs:label xml:lang="en">expression data set in PBMCs at 0 day post TIV vaccination of subject 1</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">0</obcs:example_0000024>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000002"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000013"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000016"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000019"/>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000083"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000010 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000010">
+        <rdf:type rdf:resource="&obo;IAO_0000100"/>
+        <rdfs:label xml:lang="en">expression data set in PBMCs at 3 days post TIV vaccination of subject 1</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">3</obcs:example_0000024>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000002"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000014"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000017"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000020"/>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000083"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000011 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000011">
+        <rdf:type rdf:resource="&obo;IAO_0000100"/>
+        <rdfs:label xml:lang="en">expression data set in PBMCs at 7 days post TIV vaccination of subject 1</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">7</obcs:example_0000024>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000002"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000015"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000018"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000021"/>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000083"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000012 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000012">
+        <rdf:type rdf:resource="&obo;OBCS_0000120"/>
+        <rdfs:label xml:lang="en">expression data in PBMCs of subject 1</rdfs:label>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000002"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000009"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000010"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000011"/>
+        <obo:OBI_0000312 rdf:resource="&obo;obcs.owl#example_0000029"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000013 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000013">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000000608"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">TNFRSF17 expression data in PBMCs at day 0 post TIV vaccination of subject 1</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">0</obcs:example_0000024>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000002"/>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000014 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000014">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000000608"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">TNFRSF17 expression data in PBMCs at day 3 post TIV vaccination of subject 1</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">3</obcs:example_0000024>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000002"/>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000015 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000015">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000000608"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">TNFRSF17 expression data in PBMCs at day 7 post TIV vaccination of subject 1</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">7</obcs:example_0000024>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000002"/>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000016 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000016">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000004848"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">CNOT2 expression data in PBMCs at day 0 post TIV vaccination of subject 1</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">0</obcs:example_0000024>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000002"/>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000017 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000017">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000004848"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">CNOT2 expression data in PBMCs at day 3 post TIV vaccination of subject 1</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">3</obcs:example_0000024>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000002"/>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000018 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000018">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000004848"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">CNOT2 expression data in PBMCs at day 7 post TIV vaccination of subject 1</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">7</obcs:example_0000024>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000002"/>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000019 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000019">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000005594"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">MAPK1 expression data in PBMCs at day 0 post TIV vaccination of subject 1</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">0</obcs:example_0000024>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000002"/>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000020 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000020">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000005594"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">MAPK1 expression data in PBMCs at day 3 post TIV vaccination of subject 1</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">3</obcs:example_0000024>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000002"/>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000021 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000021">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000005594"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">MAPK1 expression data in PBMCs at day 7 post TIV vaccination of subject 1</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">7</obcs:example_0000024>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000002"/>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000028 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000028">
+        <rdf:type rdf:resource="&obo;VO_0000001"/>
+        <rdfs:label xml:lang="en">TIV</rdfs:label>
+        <rdfs:comment>vaccine for seasonal influenza are licensed for use in the USA</rdfs:comment>
+        <obo:IAO_0000118>trivalent inactivated influenza vaccine</obo:IAO_0000118>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000029 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000029">
+        <rdf:type rdf:resource="&obo;OBCS_0000128"/>
+        <rdfs:label xml:lang="en">data collection from vaccination for influenza microarray experiment</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000030 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000030">
+        <rdf:type rdf:resource="&obo;OBCS_0000120"/>
+        <rdfs:label xml:lang="en">expression data in PBMCs of subject 2</rdfs:label>
+        <obo:OBI_0000312 rdf:resource="&obo;obcs.owl#example_0000029"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000030"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000032"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000033"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000034"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000031 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000031">
+        <rdf:type rdf:resource="&obo;OBCS_0000120"/>
+        <rdfs:label xml:lang="en">expression data in PBMCs of subject 3</rdfs:label>
+        <obo:OBI_0000312 rdf:resource="&obo;obcs.owl#example_0000029"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000031"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000035"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000036"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000037"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000032 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000032">
+        <rdf:type rdf:resource="&obo;IAO_0000100"/>
+        <rdfs:label xml:lang="en">expression data set in PBMCs at 0 day post TIV vaccination of subject 2</rdfs:label>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000038"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000044"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000050"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000083"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000033 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000033">
+        <rdf:type rdf:resource="&obo;IAO_0000100"/>
+        <rdfs:label xml:lang="en">expression data set in PBMCs at 3 days post TIV vaccination of subject 2</rdfs:label>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000039"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000045"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000051"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000083"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000034 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000034">
+        <rdf:type rdf:resource="&obo;IAO_0000100"/>
+        <rdfs:label xml:lang="en">expression data set in PBMCs at 7 days post TIV vaccination of subject 2</rdfs:label>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000040"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000046"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000052"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000083"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000035 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000035">
+        <rdf:type rdf:resource="&obo;IAO_0000100"/>
+        <rdfs:label xml:lang="en">expression data set in PBMCs at 0 day post TIV vaccination of subject 3</rdfs:label>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000041"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000047"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000053"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000083"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000036 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000036">
+        <rdf:type rdf:resource="&obo;IAO_0000100"/>
+        <rdfs:label xml:lang="en">expression data set in PBMCs at 3 day post TIV vaccination of subject 3</rdfs:label>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000042"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000048"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000054"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000083"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000037 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000037">
+        <rdf:type rdf:resource="&obo;IAO_0000100"/>
+        <rdfs:label xml:lang="en">expression data set in PBMCs at 7 days post TIV vaccination of subject 3</rdfs:label>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000043"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000049"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000055"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000083"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000038 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000038">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000004848"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">CNOT2 expression data in PBMCs at day 0 post TIV vaccination of subject 2</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">0</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000030"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000039 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000039">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000004848"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">CNOT2 expression data in PBMCs at day 3 post TIV vaccination of subject 2</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">3</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000030"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000040 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000040">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000004848"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">CNOT2 expression data in PBMCs at day 7 post TIV vaccination of subject 2</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">7</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000030"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000041 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000041">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000004848"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">CNOT2 expression data in PBMCs at day 0 post TIV vaccination of subject 3</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">0</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000031"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000042 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000042">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000004848"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">CNOT2 expression data in PBMCs at day 3 post TIV vaccination of subject 3</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">3</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000031"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000043 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000043">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000004848"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">CNOT2 expression data in PBMCs at day 7 post TIV vaccination of subject 3</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">7</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000031"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000044 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000044">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000005594"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">MAPK1 expression data in PBMCs at day 0 post TIV vaccination of subject 2</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">0</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000030"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000045 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000045">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000005594"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">MAPK1 expression data in PBMCs at day 3 post TIV vaccination of subject 2</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">3</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000030"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000046 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000046">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000005594"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">MAPK1 expression data in PBMCs at day 7 post TIV vaccination of subject 2</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">7</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000030"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000047 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000047">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000005594"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">MAPK1 expression data in PBMCs at day 0 post TIV vaccination of subject 3</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">0</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000031"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000048 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000048">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000005594"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">MAPK1 expression data in PBMCs at day 3 post TIV vaccination of subject 3</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">3</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000031"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000049 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000049">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000005594"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">MAPK1 expression data in PBMCs at day 7 post TIV vaccination of subject 3</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">7</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000031"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000050 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000050">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000000608"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">TNFRSF17 expression data in PBMCs at day 0 post TIV vaccination of subject 2</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">0</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000030"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000051 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000051">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000000608"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">TNFRSF17 expression data in PBMCs at day 3 post TIV vaccination of subject 2</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">3</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000030"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000052 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000052">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000000608"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">TNFRSF17 expression data in PBMCs at day 7 post TIV vaccination of subject 2</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">7</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000030"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000053 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000053">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000000608"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">TNFRSF17 expression data in PBMCs at day 0 post TIV vaccination of subject 3</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">0</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000031"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000054 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000054">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000000608"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">TNFRSF17 expression data in PBMCs at day 3 post TIV vaccination of subject 3</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">3</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000031"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000055 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000055">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000000608"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">TNFRSF17 expression data in PBMCs at day 7 post TIV vaccination of subject 3</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">7</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000031"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000056 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000056">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000000608"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">normalized TNFRSF17 expression data in PBMCs at day 0 post TIV vaccination of subject 1</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">0</obcs:example_0000024>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000002"/>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000057 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000057">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000000608"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">normalized TNFRSF17 expression data in PBMCs at day 3 post TIV vaccination of subject 1</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">3</obcs:example_0000024>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000002"/>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000058 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000058">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000000608"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">normalized TNFRSF17 expression data in PBMCs at day 7 post TIV vaccination of subject 1</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">7</obcs:example_0000024>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000002"/>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000059 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000059">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000004848"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">normalized CNOT2 expression data in PBMCs at day 0 post TIV vaccination of subject 1</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">0</obcs:example_0000024>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000002"/>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000060 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000060">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000004848"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">normalized CNOT2 expression data in PBMCs at day 3 post TIV vaccination of subject 1</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">3</obcs:example_0000024>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000002"/>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000061 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000061">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000004848"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">normalized CNOT2 expression data in PBMCs at day 7 post TIV vaccination of subject 1</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">7</obcs:example_0000024>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000002"/>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000062 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000062">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000005594"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">normalized MAPK1 expression data in PBMCs at day 0 post TIV vaccination of subject 1</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">0</obcs:example_0000024>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000002"/>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000063 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000063">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000005594"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">normalized MAPK1 expression data in PBMCs at day 3 post TIV vaccination of subject 1</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">3</obcs:example_0000024>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000002"/>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000064 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000064">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000005594"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">normalized MAPK1 expression data in PBMCs at day 7 post TIV vaccination of subject 1</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">7</obcs:example_0000024>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000002"/>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000065 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000065">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000004848"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">normalized CNOT2 expression data in PBMCs at day 0 post TIV vaccination of subject 2</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">0</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000030"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000066 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000066">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000004848"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">normalized CNOT2 expression data in PBMCs at day 3 post TIV vaccination of subject 2</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">3</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000030"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000067 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000067">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000004848"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">normalized CNOT2 expression data in PBMCs at day 7 post TIV vaccination of subject 2</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">7</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000030"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000068 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000068">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000004848"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">normalized CNOT2 expression data in PBMCs at day 0 post TIV vaccination of subject 3</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">0</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000031"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000069 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000069">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000004848"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">normalized CNOT2 expression data in PBMCs at day 3 post TIV vaccination of subject 3</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">3</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000031"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000070 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000070">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000004848"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">normalized CNOT2 expression data in PBMCs at day 7 post TIV vaccination of subject 3</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">7</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000031"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000071 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000071">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000005594"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">normalized MAPK1 expression data in PBMCs at day 0 post TIV vaccination of subject 2</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">0</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000030"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000072 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000072">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000005594"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">normalized MAPK1 expression data in PBMCs at day 3 post TIV vaccination of subject 2</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">3</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000030"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000078"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000073 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000073">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000005594"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">normalized MAPK1 expression data in PBMCs at day 7 post TIV vaccination of subject 2</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">7</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000030"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000074 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000074">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000005594"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">normalized MAPK1 expression data in PBMCs at day 0 post TIV vaccination of subject 3</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">0</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000031"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000075 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000075">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000005594"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">normalized MAPK1 expression data in PBMCs at day 3 post TIV vaccination of subject 3</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">3</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000031"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000076 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000076">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000005594"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">normalized MAPK1 expression data in PBMCs at day 7 post TIV vaccination of subject 3</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">7</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000031"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000077 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000077">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000000608"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">normalized TNFRSF17 expression data in PBMCs at day 0 post TIV vaccination of subject 2</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">0</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000030"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000078 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000078">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000000608"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">normalized TNFRSF17 expression data in PBMCs at day 3 post TIV vaccination of subject 2</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">3</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000030"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000079 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000079">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000000608"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">normalized TNFRSF17 expression data in PBMCs at day 7 post TIV vaccination of subject 2</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">7</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000030"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000080 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000080">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000000608"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">normalized TNFRSF17 expression data in PBMCs at day 0 post TIV vaccination of subject 3</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">0</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000031"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000081 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000081">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000000608"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">normalized TNFRSF17 expression data in PBMCs at day 3 post TIV vaccination of subject 3</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">3</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000031"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000082 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000082">
+        <rdf:type rdf:resource="&obo;IAO_0000027"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;obcs.owl#example_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGG_3000000608"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdfs:label xml:lang="en">normalized TNFRSF17 expression data in PBMCs at day 7 post TIV vaccination of subject 3</rdfs:label>
+        <obcs:example_0000024 rdf:datatype="&xsd;int">7</obcs:example_0000024>
+        <obcs:example_0000026 rdf:resource="&obo;obcs.owl#example_0000028"/>
+        <obcs:example_0000025 rdf:resource="&obo;obcs.owl#example_0000031"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000083 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000083">
+        <rdf:type rdf:resource="&obo;OBCS_0000140"/>
+        <rdfs:label xml:lang="en">RMA normalization of PBMCs microarray data post TIV vaccination</rdfs:label>
+        <obo:OBI_0000299 rdf:resource="&obo;obcs.owl#example_0000110"/>
+        <obo:OBI_0000299 rdf:resource="&obo;obcs.owl#example_0000111"/>
+        <obo:OBI_0000299 rdf:resource="&obo;obcs.owl#example_0000112"/>
+        <obo:OBI_0000299 rdf:resource="&obo;obcs.owl#example_0000113"/>
+        <obo:OBI_0000299 rdf:resource="&obo;obcs.owl#example_0000114"/>
+        <obo:OBI_0000299 rdf:resource="&obo;obcs.owl#example_0000115"/>
+        <obo:OBI_0000299 rdf:resource="&obo;obcs.owl#example_0000116"/>
+        <obo:OBI_0000299 rdf:resource="&obo;obcs.owl#example_0000117"/>
+        <obo:OBI_0000299 rdf:resource="&obo;obcs.owl#example_0000118"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000084 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000084">
+        <rdf:type rdf:resource="&obo;OBI_0000338"/>
+        <rdfs:label xml:lang="en">drawing a conclusion based on TNFRSF17 expression in PBMCs post TIV vaccination</rdfs:label>
+        <obo:OBI_0000299 rdf:resource="&obo;obcs.owl#example_0000097"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000085 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000085">
+        <rdf:type rdf:resource="&obo;OBI_0000338"/>
+        <rdfs:label xml:lang="en">drawing a conclusion based on MAPK1 expression in PBMCs post TIV vaccination</rdfs:label>
+        <obo:OBI_0000299 rdf:resource="&obo;obcs.owl#example_0000098"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000086 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000086">
+        <rdf:type rdf:resource="&obo;OBI_0000338"/>
+        <rdfs:label xml:lang="en">drawing a conclusion based on CNOT2 expression in PBMCs post TIV vaccination</rdfs:label>
+        <obo:OBI_0000299 rdf:resource="&obo;obcs.owl#example_0000099"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000087 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000087">
+        <rdf:type rdf:resource="&obo;OBI_0200201"/>
+        <rdfs:label xml:lang="en">ANOVA analysis of TNFRSF17 expression data</rdfs:label>
+        <obo:OBI_0000299 rdf:resource="&obo;obcs.owl#example_0000102"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000088 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000088">
+        <rdf:type rdf:resource="&obo;OBI_0200201"/>
+        <rdfs:label xml:lang="en">ANOVA analysis of MAPK1 expression data</rdfs:label>
+        <obo:OBI_0000299 rdf:resource="&obo;obcs.owl#example_0000101"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000089 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000089">
+        <rdf:type rdf:resource="&obo;OBI_0200201"/>
+        <rdfs:label xml:lang="en">ANOVA analysis of CNOT2 expression data</rdfs:label>
+        <obo:OBI_0000299 rdf:resource="&obo;obcs.owl#example_0000100"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000090 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000090">
+        <rdf:type rdf:resource="&obo;OBCS_0000142"/>
+        <rdfs:label xml:lang="en">S2N analysis of TNFRSF17 expression data</rdfs:label>
+        <obo:OBI_0000299 rdf:resource="&obo;obcs.owl#example_0000103"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000091 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000091">
+        <rdf:type rdf:resource="&obo;OBCS_0000142"/>
+        <rdfs:label xml:lang="en">S2N analysis of MAPK1 expression data</rdfs:label>
+        <obo:OBI_0000299 rdf:resource="&obo;obcs.owl#example_0000104"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000092 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000092">
+        <rdf:type rdf:resource="&obo;OBCS_0000142"/>
+        <rdfs:label xml:lang="en">S2N analysis of CNOT2 expression data</rdfs:label>
+        <obo:OBI_0000299 rdf:resource="&obo;obcs.owl#example_0000105"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000093 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000093">
+        <rdf:type rdf:resource="&obo;OBCS_0000141"/>
+        <rdfs:label xml:lang="en">SAM analysis of TNFRSF17 expression data</rdfs:label>
+        <obo:OBI_0000299 rdf:resource="&obo;obcs.owl#example_0000106"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000095 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000095">
+        <rdf:type rdf:resource="&obo;OBCS_0000141"/>
+        <rdfs:label xml:lang="en">SAM analysis of MAPK1 expression data</rdfs:label>
+        <obo:OBI_0000299 rdf:resource="&obo;obcs.owl#example_0000107"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000096 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000096">
+        <rdf:type rdf:resource="&obo;OBCS_0000141"/>
+        <rdfs:label xml:lang="en">SAM analysis of CNOT2 expression data</rdfs:label>
+        <obo:OBI_0000299 rdf:resource="&obo;obcs.owl#example_0000108"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000097 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000097">
+        <rdf:type rdf:resource="&obo;OBI_0001909"/>
+        <rdfs:label xml:lang="en">TNFRSF17 is differentially expressed in PBMCs at 7 days post TIV vaccination</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000098 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000098">
+        <rdf:type rdf:resource="&obo;OBI_0001909"/>
+        <rdfs:label xml:lang="en">MAPK1 is differentially expressed in PBMCs at 3 days post TIV vaccination</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000099 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000099">
+        <rdf:type rdf:resource="&obo;OBI_0001909"/>
+        <rdfs:label xml:lang="en">CNOT2 is differentially expressed in PBMCs at 3 days post TIV vaccination</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000100 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000100">
+        <rdf:type rdf:resource="&obo;OBI_0000175"/>
+        <rdfs:label xml:lang="en">p-value of ANOVA analysis of CNOT2 expression data</rdfs:label>
+        <obcs:example_0000109 rdf:datatype="&xsd;decimal">0.044</obcs:example_0000109>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000086"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000101 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000101">
+        <rdf:type rdf:resource="&obo;OBI_0000175"/>
+        <rdfs:label xml:lang="en">p-value of ANOVA analysis of MAPK1 expression data</rdfs:label>
+        <obcs:example_0000109 rdf:datatype="&xsd;decimal">0.031</obcs:example_0000109>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000085"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000102 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000102">
+        <rdf:type rdf:resource="&obo;OBI_0000175"/>
+        <rdfs:label xml:lang="en">p-value of ANOVA analysis of TNFRSF1 expression data</rdfs:label>
+        <obcs:example_0000109 rdf:datatype="&xsd;decimal">0.012</obcs:example_0000109>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000084"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000103 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000103">
+        <rdf:type rdf:resource="&obo;OBI_0000175"/>
+        <rdfs:label xml:lang="en">p-value of S2N analysis of TNFRSF1 expression data</rdfs:label>
+        <obcs:example_0000109 rdf:datatype="&xsd;decimal">0.017</obcs:example_0000109>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000084"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000104 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000104">
+        <rdf:type rdf:resource="&obo;OBI_0000175"/>
+        <rdfs:label xml:lang="en">p-value of S2N analysis of MAPK1 expression data</rdfs:label>
+        <obcs:example_0000109 rdf:datatype="&xsd;decimal">0.033</obcs:example_0000109>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000085"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000105 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000105">
+        <rdf:type rdf:resource="&obo;OBI_0000175"/>
+        <rdfs:label xml:lang="en">p-value of S2N analysis of CNOT2 expression data</rdfs:label>
+        <obcs:example_0000109 rdf:datatype="&xsd;decimal">0.044</obcs:example_0000109>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000086"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000106 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000106">
+        <rdf:type rdf:resource="&obo;OBI_0000175"/>
+        <rdfs:label xml:lang="en">p-value of SAM analysis of TNFRSF1 expression data</rdfs:label>
+        <obcs:example_0000109 rdf:datatype="&xsd;decimal">0.015</obcs:example_0000109>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000084"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000107 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000107">
+        <rdf:type rdf:resource="&obo;OBI_0000175"/>
+        <rdfs:label xml:lang="en">p-value of SAM analysis of MAPK1 expression data</rdfs:label>
+        <obcs:example_0000109 rdf:datatype="&xsd;decimal">0.034</obcs:example_0000109>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000085"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000108 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000108">
+        <rdf:type rdf:resource="&obo;OBI_0000175"/>
+        <rdfs:label xml:lang="en">p-value of SAM analysis of CNOT2 expression data</rdfs:label>
+        <obcs:example_0000109 rdf:datatype="&xsd;decimal">0.043</obcs:example_0000109>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000086"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000110 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000110">
+        <rdf:type rdf:resource="&obo;IAO_0000100"/>
+        <rdfs:label xml:lang="en">normalized expression data set in PBMCs at 0 day post TIV vaccination of subject 1</rdfs:label>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000056"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000059"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000062"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000111 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000111">
+        <rdf:type rdf:resource="&obo;IAO_0000100"/>
+        <rdfs:label xml:lang="en">normalized expression data set in PBMCs at 0 day post TIV vaccination of subject 2</rdfs:label>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000065"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000071"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000077"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000112 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000112">
+        <rdf:type rdf:resource="&obo;IAO_0000100"/>
+        <rdfs:label xml:lang="en">normalized expression data set in PBMCs at 0 day post TIV vaccination of subject 3</rdfs:label>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000068"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000074"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000080"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000113 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000113">
+        <rdf:type rdf:resource="&obo;IAO_0000100"/>
+        <rdfs:label xml:lang="en">normalized expression data set in PBMCs at 3 days post TIV vaccination of subject 1</rdfs:label>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000057"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000060"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000063"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000114 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000114">
+        <rdf:type rdf:resource="&obo;IAO_0000100"/>
+        <rdfs:label xml:lang="en">normalized expression data set in PBMCs at 3 days post TIV vaccination of subject 2</rdfs:label>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000066"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000072"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000078"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000115 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000115">
+        <rdf:type rdf:resource="&obo;IAO_0000100"/>
+        <rdfs:label xml:lang="en">normalized expression data set in PBMCs at 3 days post TIV vaccination of subject 3</rdfs:label>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000069"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000075"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000081"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000116 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000116">
+        <rdf:type rdf:resource="&obo;IAO_0000100"/>
+        <rdfs:label xml:lang="en">normalized expression data set in PBMCs at 7 days post TIV vaccination of subject 1</rdfs:label>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000058"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000061"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000064"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000117 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000117">
+        <rdf:type rdf:resource="&obo;IAO_0000100"/>
+        <rdfs:label xml:lang="en">normalized expression data set in PBMCs at 7 days post TIV vaccination of subject 2</rdfs:label>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000067"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000073"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000079"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000118 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000118">
+        <rdf:type rdf:resource="&obo;IAO_0000100"/>
+        <rdfs:label xml:lang="en">normalized expression data set in PBMCs at 7 days post TIV vaccination of subject 3</rdfs:label>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000070"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000076"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000082"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000119 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000119">
+        <rdf:type rdf:resource="&obo;IAO_0000100"/>
+        <rdfs:label xml:lang="en">TNFRSF17 expression data set in PBMCs at 0 day post TIV vaccination</rdfs:label>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000056"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000077"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000080"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000087"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000090"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000093"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000120 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000120">
+        <rdf:type rdf:resource="&obo;IAO_0000100"/>
+        <rdfs:label xml:lang="en">TNFRSF17 expression data set in PBMCs at 3 days post TIV vaccination</rdfs:label>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000057"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000078"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000081"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000087"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000090"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000093"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000121 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000121">
+        <rdf:type rdf:resource="&obo;IAO_0000100"/>
+        <rdfs:label xml:lang="en">TNFRSF17 expression data set in PBMCs at 7 days post TIV vaccination</rdfs:label>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000058"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000079"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000082"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000087"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000090"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000093"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000122 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000122">
+        <rdf:type rdf:resource="&obo;IAO_0000100"/>
+        <rdfs:label xml:lang="en">MAPK1 expression data set in PBMCs at 0 day post TIV vaccination</rdfs:label>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000062"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000071"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000074"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000088"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000091"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000095"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000123 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000123">
+        <rdf:type rdf:resource="&obo;IAO_0000100"/>
+        <rdfs:label xml:lang="en">MAPK1 expression data set in PBMCs at 3 days post TIV vaccination</rdfs:label>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000063"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000072"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000075"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000088"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000091"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000095"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000124 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000124">
+        <rdf:type rdf:resource="&obo;IAO_0000100"/>
+        <rdfs:label xml:lang="en">MAPK1 expression data set in PBMCs at 7 days post TIV vaccination</rdfs:label>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000064"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000073"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000076"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000088"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000091"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000095"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000125 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000125">
+        <rdf:type rdf:resource="&obo;IAO_0000100"/>
+        <rdfs:label xml:lang="en">CNOT2 expression data set in PBMCs at 0 day post TIV vaccination</rdfs:label>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000059"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000065"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000068"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000089"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000092"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000096"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000126 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000126">
+        <rdf:type rdf:resource="&obo;IAO_0000100"/>
+        <rdfs:label xml:lang="en">CNOT2 expression data set in PBMCs at 3 days post TIV vaccination</rdfs:label>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000060"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000066"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000069"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000089"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000092"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000096"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/obcs.owl#example_0000127 -->
+
+    <owl:NamedIndividual rdf:about="&obo;obcs.owl#example_0000127">
+        <rdf:type rdf:resource="&obo;IAO_0000100"/>
+        <rdfs:label xml:lang="en">CNOT2 expression data set in PBMCs at 7 days post TIV vaccination</rdfs:label>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000061"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000067"/>
+        <obo:RO_0002351 rdf:resource="&obo;obcs.owl#example_0000070"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000089"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000092"/>
+        <obo:OBI_0000295 rdf:resource="&obo;obcs.owl#example_0000096"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
