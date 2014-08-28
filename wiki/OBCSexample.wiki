@@ -1,14 +1,26 @@
 = Introduction =
 
-For users to explore and understand better about how OBCS can help biomedical data annotation and analysis, we generated an example data set using a use case of gene expression data post vaccination for seasonal influenza in humans [http://www.ncbi.nlm.nih.gov/pubmed/21743478 Ref 1]. 
+For users to explore and understand better about how OBCS can help biomedical data annotation and analysis, we generated an example data set using an influenza microarray study [http://www.ncbi.nlm.nih.gov/pubmed/21743478 [Ref 1]]. 
 
-This example shows how OBCS can be used to represent full data analysis process from data collection to drawing a conclusion based on data.
+In this study, taken from the field of systems vaccinology, 28 enrolled human subjects were vaccinated with Fluarix, a trivalent inactivated influenza vaccine (TIV). At days 0 (baseline), 3 and 7 post vaccination, blood specimens were collected, from which peripheral blood mononuclear cells (PBMCs) were prepared. RNA extracts were prepared from the PBMCs and used in a transcription profiling assay that examines expression of a large number of genes using Affymetrix microarray technology. After RMA data normalization, the gene expression data from different groups (separated on the basis of time) were used for three types of statistical tests (ANOVA, S2N and SAM). Differentially expressed genes induced by vaccination were identified when all 3 analyses (ANOVA, S2N and SAM) were with p-value < 005.
 
 = Ontological representation =
 
-The ontological representation of the influenza microarray study shown as below.
+The ontological representation of the influenza microarray study using OBCS shown as below.
+
 
 https://obcs.googlecode.com/svn/trunk/docs/user/example/Figure3.jpg
+
+
+All the boxes represent instances, labelled by the class they are instances of. All the relations are italicized.
+
+The ontology terms used in the Figure are listed in the [https://obcs.googlecode.com/svn/trunk/docs/user/example/Figure3 term list.xlsx term list table]
+
+= OWL Generation  =
+
+This example shows how OBCS can be used to represent full data analysis process from data collection to drawing a conclusion based on data.
+
+
 
 
 The example web page includes a small OBCS subset that contains all the terms, relations, and axioms introduced in Figure 3 use case. This OBCS subset was generated using the tool Ontodog (http://ontodog.hegroup.org/) (10). Instantiating the classes in the OBCS subset, we generated an extended OWL file that contains the information of instance level transcriptional expressions of 3 genes (TNFRST17, MAPK1, and CNOT2) in the PMBCs collected from three persons at day 0, 3, and 7 after an administration of TIV. This example shows how data items can be grouped as a data set, and data sets grouped as a data set of set. As shown in Figure 3, the planned processes link the data sets collected from experiments to the conclusion based on data drawn from statistical data analysis. 	
