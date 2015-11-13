@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-	<uri name="http://purl.obolibrary.org/obo/obcs.owl" uri="obcs.owl"/>
-	<uri name="http://purl.obolibrary.org/obo/obcs/OBI_existing_stat_allAxioms.owl" uri="OBI_existing_stat_allAxioms.owl"/>
-	<uri name="http://purl.obolibrary.org/obo/obcs/obo_import.owl" uri="obo_import.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obcs.owl" uri="obcs.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obcs/OBI_existing_stat_allAxioms.owl" uri="OBI_existing_stat_allAxioms.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obcs/obo_import.owl" uri="obo_import.owl"/>
 </catalog>
