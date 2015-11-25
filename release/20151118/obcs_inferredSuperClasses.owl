@@ -126,30 +126,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBCS_0000141 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000141">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000121"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBCS_0000142 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000142">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000121"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OBCS_0000147 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000147">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000121"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBCS_0000148 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000148">
