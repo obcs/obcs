@@ -20,8 +20,8 @@
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;obcs.owl">
-        <owl:versionInfo rdf:datatype="&xsd;decimal">1.44</owl:versionInfo>
-        <dc:date>2015-11-23</dc:date>
+        <owl:versionInfo rdf:datatype="&xsd;decimal">1.46</owl:versionInfo>
+        <dc:date>2015-11-24</dc:date>
         <dc:subject xml:lang="en">A formal ontology in the domain of biological and clinical statistics</dc:subject>
         <dc:contributor xml:lang="en">Alfred Hero</dc:contributor>
         <dc:contributor xml:lang="en">Anna Maria Masci</dc:contributor>
@@ -255,13 +255,8 @@
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
-                        <owl:someValuesFrom rdf:resource="&obo;OBCS_0000137"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -272,13 +267,18 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000027"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBCS_0000137"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Data_collection </obo:IAO_0000119>
+        <obo:IAO_0000115>a planned process that gathers and measures information on variables of interest, in an established systematic fashion that enables one to answer stated research questions, test hypotheses, and evaluate outcomes. Data collection results in a collection of data.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
-        <obo:IAO_0000115>a planned process that gathers and measurs information on variables of interest, in an established systematic fashion that enables one to answer stated research questions, test hypotheses, and evaluate outcomes. Data collection results in a collection of data. </obo:IAO_0000115>
     </owl:Class>
     
 
@@ -544,8 +544,10 @@
     <owl:Class rdf:about="&obo;OBCS_0000023">
         <rdfs:label>multivariate analysis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000121"/>
-        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
-        <obo:IAO_0000115>a inferential statistical data analysis that has more than one independent variable</obo:IAO_0000115>
+        <obo:IAO_0000115>a inferential statistical data analysis that is used to analyze data that arises from more than one variable</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://www.camo.com/multivariate_analysis.html</obo:IAO_0000119>
+        <obo:IAO_0000117>Yongqun He, Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000119>MVA</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -661,13 +663,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000675"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000675"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Levene%27s_test</obo:IAO_0000119>
@@ -2124,13 +2126,7 @@ http://www.molmine.com/magma/loading/rma.htm</obo:IAO_0000119>
 
     <owl:Class rdf:about="&obo;OBCS_0000141">
         <rdfs:label xml:lang="en">significance analysis of microarrays</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000124"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000121"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
@@ -2140,8 +2136,8 @@ http://www.molmine.com/magma/loading/rma.htm</obo:IAO_0000119>
         <obo:IAO_0000119>http://www.ncbi.nlm.nih.gov/pmc/articles/PMC33173/
 http://en.wikipedia.org/wiki/Significance_analysis_of_microarrays
 </obo:IAO_0000119>
+        <obo:IAO_0000115>An inferential statistical data analysis that is established in 2001 by Virginia Tusher, Robert Tibshirani and Gilbert Chu, for determining whether changes in gene expression are statistically significant.</obo:IAO_0000115>
         <obo:IAO_0000117>Person: Jie Zheng, Oliver He</obo:IAO_0000117>
-        <obo:IAO_0000115>A statistical data analysis that is established in 2001 by Virginia Tusher, Robert Tibshirani and Gilbert Chu, for determining whether changes in gene expression are statistically significant. </obo:IAO_0000115>
         <obo:IAO_0000118>SAM</obo:IAO_0000118>
     </owl:Class>
     
@@ -2150,14 +2146,8 @@ http://en.wikipedia.org/wiki/Significance_analysis_of_microarrays
     <!-- http://purl.obolibrary.org/obo/OBCS_0000142 -->
 
     <owl:Class rdf:about="&obo;OBCS_0000142">
-        <rdfs:label xml:lang="en">signal-2-noise statistic</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000124"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">signal-2-noise statistical analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000121"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
@@ -2165,8 +2155,9 @@ http://en.wikipedia.org/wiki/Significance_analysis_of_microarrays
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118>S2N</obo:IAO_0000118>
-        <obo:IAO_0000115>A statistical data analysis that calculates  the level of a desired signal to the level of background noise to identify which detected signal is more signal than noise. It can be used to identify differentially expressed genes.</obo:IAO_0000115>
+        <obo:IAO_0000118>signal-2-noise statistic</obo:IAO_0000118>
         <obo:IAO_0000117>Person: Jie Zheng, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>An inferential statistical data analysis that calculates  the level of a desired signal to the level of background noise to identify which detected signal is more signal than noise. It can be used to identify differentially expressed genes.</obo:IAO_0000115>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Signal-to-noise_ratio
 http://www.ncbi.nlm.nih.gov/pubmed/10521349
 </obo:IAO_0000119>
@@ -2231,14 +2222,8 @@ http://www.ncbi.nlm.nih.gov/pubmed/10521349
 
     <owl:Class rdf:about="&obo;OBCS_0000147">
         <rdfs:label xml:lang="en">Gene Set Enrichment Analysis</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000001"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000124"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000115>A statistical data analysis that determines whether an a priori defined set of genes shows statistically significant, concordant differences between two biological states (e.g. phenotypes).</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000121"/>
+        <obo:IAO_0000115>An inferential statistical data analysis that determines whether an a priori defined set of genes shows statistically significant, concordant differences between two biological states (e.g. phenotypes).</obo:IAO_0000115>
         <obo:IAO_0000118>GSEA</obo:IAO_0000118>
         <obo:IAO_0000117>Person: Jie Zheng, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>http://www.pnas.org/content/102/43/15545.abstract
@@ -2251,21 +2236,15 @@ http://www.ncbi.nlm.nih.gov/pubmed/10521349
 
     <owl:Class rdf:about="&obo;OBCS_0000148">
         <rdfs:label xml:lang="en">Wilcoxon signed-rank test</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000001"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000121"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBI_0000675"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000124"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <obo:IAO_0000115>An inferential statistical data analysis used when comparing two related samples, matched samples, or repeated measurements on a single sample to assess whether their population mean ranks differ (i.e. it is a paired difference test). It can be used as an alternative to the paired Student&apos;s t-test, t-test for matched pairs, or the t-test for dependent samples when the population cannot be assumed to be normally distributed.</obo:IAO_0000115>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Wilcoxon_signed-rank_test</obo:IAO_0000119>
-        <obo:IAO_0000115>A statistical data analysis used when comparing two related samples, matched samples, or repeated measurements on a single sample to assess whether their population mean ranks differ (i.e. it is a paired difference test). It can be used as an alternative to the paired Student&apos;s t-test, t-test for matched pairs, or the t-test for dependent samples when the population cannot be assumed to be normally distributed.</obo:IAO_0000115>
         <obo:IAO_0000117>Person: Jie Zheng, Oliver He</obo:IAO_0000117>
     </owl:Class>
     
@@ -2614,6 +2593,207 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
         <dc:source>PRISM</dc:source>
         <obo:IAO_0000119>Jie Zheng</obo:IAO_0000119>
         <obo:IAO_0000115>A data item that is produced as the output of a summing data transformation and represents the total value of the input data.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000171 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000171">
+        <rdfs:label xml:lang="en">data collection from online resource</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBCS_0000062"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a data collection process that is conducted  through an online process.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000172 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000172">
+        <rdfs:label xml:lang="en">data collection from online database</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000171"/>
+        <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Online_database</obo:IAO_0000119>
+        <obo:IAO_0000115>an online data collection process that extracts data from an online database</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000173 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000173">
+        <rdfs:label xml:lang="en">data collection by web crawling</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000171"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBCS_0000175"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000118>data collection using Web spider</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Web_crawler</obo:IAO_0000119>
+        <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000115>an online data collection process that extracts data from online using a web crawler. A Web crawler is an Internet bot which systematically browses the World Wide Web and gets data from WWW.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000174 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000174">
+        <rdfs:label xml:lang="en">collection of incommensurate data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000002"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBCS_0000062"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://www.ncbi.nlm.nih.gov/pubmed/26428398</obo:IAO_0000119>
+        <obo:IAO_0000115>a data collection process that deals with incommensurate fields in the data.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000175 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000175">
+        <rdfs:label xml:lang="en">web crawling software</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0200031"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000058"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBI_0000650"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000118>web spider</obo:IAO_0000118>
+        <obo:IAO_0000119>URL: https://en.wikipedia.org/wiki/Web_crawler</obo:IAO_0000119>
+        <obo:IAO_0000119>URL: http://www.sciencedaily.com/terms/web_crawler.htm</obo:IAO_0000119>
+        <obo:IAO_0000115>A software that is used to browses the World Wide Web in a methodical, automated manner.</obo:IAO_0000115>
+        <obo:IAO_0000118>web robot</obo:IAO_0000118>
+        <obo:IAO_0000118>web crawler</obo:IAO_0000118>
+        <obo:IAO_0000118>web scutter</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000177 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000177">
+        <rdfs:label xml:lang="en">generation of missing data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBCS_0000062"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: https://www.niehs.nih.gov/about/visiting/events/pastmtg/assets/docs_k_m/missingdatar.r</obo:IAO_0000119>
+        <obo:IAO_0000115>a planned process that generates possible values of missing data</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000178 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000178">
+        <rdfs:label xml:lang="en">processing incompatible data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
+        <obo:IAO_0000115>a data transformation process that transforms incompatible data to compatible data.</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Loglinear_analysis</obo:IAO_0000119>
+        <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000180 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000180">
+        <rdfs:label xml:lang="en">factor analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000023"/>
+        <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Multivariate_analysis</obo:IAO_0000119>
+        <obo:IAO_0000117>Yongqun He, Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000115>a multivariate analysis that uncovers the latent structure (dimensions) of a set of variables. It reduces attribute space from a larger number of variables to a smaller number of factors.</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Factor_analysis</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000181 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000181">
+        <rdfs:label xml:lang="en">MANOVA</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000023"/>
+        <obo:IAO_0000115>a multivariate analysis that compares multivariate sample means. As a multivariate procedure, it is used when there are two or more dependent variables.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yongqun He, Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Multivariate_analysis_of_variance</obo:IAO_0000119>
+        <obo:IAO_0000119>multivariate analysis of variance</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000182 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000182">
+        <rdfs:label xml:lang="en">Kriging</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0200102"/>
+        <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Kriging</obo:IAO_0000119>
+        <obo:IAO_0000118>Gaussian process regression</obo:IAO_0000118>
+        <obo:IAO_0000115>a regression method of interpolation for which the interpolated values are modeled by a Gaussian process governed by prior covariances, as opposed to a piecewise-polynomial spline chosen to optimize smoothness of the fitted values.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000183 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000183">
+        <rdfs:label xml:lang="en">Bayesian analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000121"/>
+        <obo:IAO_0000115>An inferential statistical data analysis that estimates parameters of an underlying distribution based on the observed distribution</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://mathworld.wolfram.com/BayesianAnalysis.html</obo:IAO_0000119>
     </owl:Class>
     
 
