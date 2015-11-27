@@ -16,3 +16,96 @@ includeNoIntermediates
 [Source annotation URIs]
 http://www.w3.org/2000/01/rdf-schema#label
 http://purl.obolibrary.org/obo/IAO_0000115
+
+
+[Source ontology]
+STATO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/STATO_0000166 #bar chart
+http://purl.obolibrary.org/obo/STATO_0000267
+http://purl.obolibrary.org/obo/STATO_0000159
+http://purl.obolibrary.org/obo/STATO_0000120 #bean plot
+http://purl.obolibrary.org/obo/STATO_0000243
+http://purl.obolibrary.org/obo/STATO_0000128
+http://purl.obolibrary.org/obo/STATO_0000171
+http://purl.obolibrary.org/obo/STATO_0000066
+http://purl.obolibrary.org/obo/STATO_0000125
+http://purl.obolibrary.org/obo/STATO_0000174
+http://purl.obolibrary.org/obo/STATO_0000147
+http://purl.obolibrary.org/obo/STATO_0000168
+http://purl.obolibrary.org/obo/STATO_0000219
+http://purl.obolibrary.org/obo/STATO_0000186
+http://purl.obolibrary.org/obo/STATO_0000122
+http://purl.obolibrary.org/obo/STATO_0000165
+http://purl.obolibrary.org/obo/STATO_0000241
+http://purl.obolibrary.org/obo/STATO_0000274
+http://purl.obolibrary.org/obo/STATO_0000112
+http://purl.obolibrary.org/obo/STATO_0000263
+http://purl.obolibrary.org/obo/STATO_0000040
+http://purl.obolibrary.org/obo/STATO_0000256
+http://purl.obolibrary.org/obo/STATO_0000126
+http://purl.obolibrary.org/obo/STATO_0000154
+http://purl.obolibrary.org/obo/STATO_0000057
+
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/STATO_0000166 #bar chart
+subClassOf http://purl.obolibrary.org/obo/IAO_0000038 #graph
+http://purl.obolibrary.org/obo/STATO_0000267
+subClassOf http://purl.obolibrary.org/obo/STATO_0000166 #bar chart
+http://purl.obolibrary.org/obo/STATO_0000159
+subClassOf http://purl.obolibrary.org/obo/STATO_0000166 #bar chart
+http://purl.obolibrary.org/obo/STATO_0000120 #bean plot
+subClassOf http://purl.obolibrary.org/obo/IAO_0000038 #graph
+http://purl.obolibrary.org/obo/STATO_0000243
+subClassOf http://purl.obolibrary.org/obo/IAO_0000038 #graph
+http://purl.obolibrary.org/obo/STATO_0000128
+subClassOf http://purl.obolibrary.org/obo/STATO_0000243
+http://purl.obolibrary.org/obo/STATO_0000171
+subClassOf http://purl.obolibrary.org/obo/STATO_0000243
+http://purl.obolibrary.org/obo/STATO_0000066
+subClassOf http://purl.obolibrary.org/obo/IAO_0000037
+http://purl.obolibrary.org/obo/STATO_0000125
+subClassOf http://purl.obolibrary.org/obo/IAO_0000037
+http://purl.obolibrary.org/obo/STATO_0000174
+subClassOf http://purl.obolibrary.org/obo/IAO_0000038 #graph
+http://purl.obolibrary.org/obo/STATO_0000147
+subClassOf http://purl.obolibrary.org/obo/IAO_0000038 #graph
+http://purl.obolibrary.org/obo/STATO_0000075
+subClassOf http://purl.obolibrary.org/obo/IAO_0000573 #line graph
+http://purl.obolibrary.org/obo/STATO_0000168
+subClassOf http://purl.obolibrary.org/obo/IAO_0000573 #line graph
+http://purl.obolibrary.org/obo/STATO_0000219
+subClassOf http://purl.obolibrary.org/obo/IAO_0000573 #line graph
+http://purl.obolibrary.org/obo/STATO_0000186
+subClassOf http://purl.obolibrary.org/obo/IAO_0000038 #graph
+http://purl.obolibrary.org/obo/STATO_0000122
+subClassOf http://purl.obolibrary.org/obo/IAO_0000038 #graph
+http://purl.obolibrary.org/obo/STATO_0000165
+subClassOf http://purl.obolibrary.org/obo/IAO_0000038 #graph
+http://purl.obolibrary.org/obo/STATO_0000241
+subClassOf http://purl.obolibrary.org/obo/IAO_0000038 #graph
+http://purl.obolibrary.org/obo/STATO_0000274
+subClassOf http://purl.obolibrary.org/obo/IAO_0000038 #graph
+http://purl.obolibrary.org/obo/STATO_0000112
+subClassOf http://purl.obolibrary.org/obo/IAO_0000184 #scatter plot
+http://purl.obolibrary.org/obo/STATO_0000263
+subClassOf http://purl.obolibrary.org/obo/IAO_0000184 #scatter plot
+http://purl.obolibrary.org/obo/STATO_0000040
+subClassOf http://purl.obolibrary.org/obo/IAO_0000184 #scatter plot
+http://purl.obolibrary.org/obo/STATO_0000256
+subClassOf http://purl.obolibrary.org/obo/IAO_0000184 #scatter plot
+http://purl.obolibrary.org/obo/STATO_0000126
+subClassOf http://purl.obolibrary.org/obo/IAO_0000184 #scatter plot
+http://purl.obolibrary.org/obo/STATO_0000154
+subClassOf http://purl.obolibrary.org/obo/IAO_0000038 #graph
+http://purl.obolibrary.org/obo/STATO_0000057
+subClassOf http://purl.obolibrary.org/obo/OBI_0001908
+
+[Source term retrieval setting]
+includeNoIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115
