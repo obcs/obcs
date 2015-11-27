@@ -20,7 +20,11 @@
 
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
+        <rdfs:label>definition</rdfs:label>
         <rdfs:label xml:lang="en">definition</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
     </owl:AnnotationProperty>
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
         <rdfs:label xml:lang="en">imported from</rdfs:label>
@@ -70,6 +74,326 @@
         <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/ro.owl"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000037 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000037"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000038 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000038"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000184 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000184"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000573 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000573"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001908 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001908"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000040">
+        <rdfs:label xml:lang="en">MA plot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000184"/>
+        <obo:IAO_0000115 xml:lang="en">an MA plot is a scatter plot of the log intensity ratios M = log_2(T/R) versus the average log intensities A = log_2(T*T)/2, where T and R represent the signal intensities in the test and reference channels respectively.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000057">
+        <rdfs:label xml:lang="en">null hypothesis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001908"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000066">
+        <rdfs:label>Cleveland dot plot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000037"/>
+        <obo:IAO_0000115 xml:lang="en">Cleveland dot plot is a dot plot which plots points that each belong to one of several categories. They are an alternative to bar charts or pie charts, and look somewhat like a horizontal bar chart where the bars are replaced by a dots at the values associated with each category. Compared to (vertical) bar charts and pie charts, Cleveland argues that dot plots allow more accurate interpretation of the graph by readers by making the labels easier to read, reducing non-data ink (or graph clutter) and supporting table look-up.which</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000075 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000075">
+        <rdfs:label xml:lang="en">rarefaction curve</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000573"/>
+        <obo:IAO_0000115 xml:lang="en">a rarefaction curve is a graph used for estimating species richness in ecology studies</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000112 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000112">
+        <rdfs:label xml:lang="en">Funnel plot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000184"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000120 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000120">
+        <rdfs:label>bean plot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000122 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000122">
+        <rdfs:label xml:lang="en">pedigree chart</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
+        <obo:IAO_0000115 xml:lang="en">a pedigree chart is a graph which plots parent child relations</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000125 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000125">
+        <rdfs:label>Wilkinson dot plot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000037"/>
+        <obo:IAO_0000115 xml:lang="en">The dot plot as a representation of a distribution consists of group of data points plotted on a simple scale. Dot plots are used for continuous, quantitative, univariate data. Data points may be labelled if there are few of them.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000126 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000126">
+        <rdfs:label xml:lang="en">volcano plot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000184"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000128 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000128">
+        <rdfs:label>Altman box and whisker plot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000243"/>
+        <obo:IAO_0000115 xml:lang="en">Altman Box and Whisker plot is a variation of Tukey Box and Whisker plot which use the criteria of Altman to create the &#39;whisker&#39; of the plot.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000147 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000147">
+        <rdfs:label xml:lang="en">LD plot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
+        <obo:IAO_0000115 xml:lang="en">Linkage Disequilibrium plot is a graph which represents pairwise linkage disequilibrium measures between SNP as a heatmap</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000154 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000154">
+        <rdfs:label>violin plot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000159 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000159">
+        <rdfs:label>stacked bar chart</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000166"/>
+        <obo:IAO_0000115 xml:lang="en">Stacked bar chart is a bar which is used to compare overall quantities across items while showing the contribution of category to the total amount. Stacked bar chart can be used  for highlighting the total as they visually aggregate all of the categories in a group while indicating a part to whole relationship. The downside is that it becomes harder to compare the sizes of the individual categories. </obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000165 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000165">
+        <rdfs:label xml:lang="en">pie chart</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
+        <obo:IAO_0000115 xml:lang="en">a pie chart is a graph in which a circular graph is divided into sector illustrating numerical proportion, meaning that the arc length of each sector (and consequently its central angle and area), is proportional to the quantity it represents.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000166 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000166">
+        <rdfs:label xml:lang="en">bar chart</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
+        <obo:IAO_0000115>the bart chart is a graph resulting from plotting rectangular bars with lengths proportional to the values that they represent.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000168 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000168">
+        <rdfs:label xml:lang="en">real time quantitative pcr plot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000573"/>
+        <obo:IAO_0000115 xml:lang="en">a real time quantitative pcr plot is a line graph which plots the signal fluorescence intensity as a function of the number of PCR cycle</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000171 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000171">
+        <rdfs:label>Spear box and whisker plot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000243"/>
+        <obo:IAO_0000115 xml:lang="en">Spear Box and Whisker plot is a variation of Tukey Box and Whisker plot which use the criteria of Spear to create the &#39;whisker&#39; of the plot.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000174 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000174">
+        <rdfs:label xml:lang="en">Forest plot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
+        <obo:IAO_0000115 xml:lang="en">A forest plot  is a graph designed to illustrate the relative strength of treatment effects in multiple quantitative scientific studies addressing the same question.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000186 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000186">
+        <rdfs:label xml:lang="en">Lineweaver-Burk plot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000219 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000219">
+        <rdfs:label xml:lang="en">RT-PCR standard curve</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000573"/>
+        <obo:IAO_0000115 xml:lang="en">a real time pcr standard curve is a line graph which plots the fluorescence intensity signal as a function of the concentration of a sample used as reference  and used to determine relative abundance of test samples</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000241 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000241">
+        <rdfs:label xml:lang="en">Q-Q plot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
+        <obo:IAO_0000115 xml:lang="en">Q-Q plot or quantile-quantile plot is the output of a graphical method for comparing two probability distributions by plotting their quantiles against each other</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000243 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000243">
+        <rdfs:label xml:lang="en">box and whisker plot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
+        <obo:IAO_0000115 xml:lang="en">a box plot is a graph which plots datasets relying on their quartiles and the interquartile range to create the box and the whiskers </obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000256 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000256">
+        <rdfs:label xml:lang="en">manhattan plot for gwas</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000184"/>
+        <obo:IAO_0000115 xml:lang="en">a manhattan plot for gwas is a kind of scatter plot used to facilitate presentation of genome-wide association study (GWAS) data. Genomic coordinates are displayed along the X-axis, with the negative logarithm of the association P-value for each single nucleotide polymorphism displayed on the Y-axis.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000263 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000263">
+        <rdfs:label xml:lang="en">Galbraith plot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000184"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000267 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000267">
+        <rdfs:label>grouped bar chart</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000166"/>
+        <obo:IAO_0000115 xml:lang="en">grouped bar chart is a kind of bar chart which juxtaposes the  discrete values for each of the possible value of a given categorical variable, thus providing  within group comparison. Grouped bar charts are good for comparing between each element in the categories, and comparing elements across categories. However, the grouping can make it harder to tell the difference between the total of each group.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000274 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000274">
+        <rdfs:label xml:lang="en">receiver operational characteristics curve</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
+        <obo:IAO_0000115 xml:lang="en">receiver operational characteristics curve is a graphical plot which illustrates the performance of a binary classifier system as its discrimination threshold (aka cut-off point) is varied by plotting  sensitivity vs (1 − specificity)</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
 </rdf:RDF>
 
 
