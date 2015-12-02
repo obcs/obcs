@@ -20,8 +20,8 @@
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;obcs.owl">
-        <owl:versionInfo rdf:datatype="&xsd;decimal">1.49</owl:versionInfo>
-        <dc:date>2015-11-26</dc:date>
+        <owl:versionInfo rdf:datatype="&xsd;decimal">1.51</owl:versionInfo>
+        <dc:date rdf:datatype="&xsd;decimal">2015-12-01</dc:date>
         <dc:subject xml:lang="en">A formal ontology in the domain of biological and clinical statistics</dc:subject>
         <dc:contributor xml:lang="en">Alfred Hero</dc:contributor>
         <dc:contributor xml:lang="en">Anna Maria Masci</dc:contributor>
@@ -256,12 +256,6 @@
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="&obo;IAO_0000027"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
                 <owl:someValuesFrom>
                     <owl:Restriction>
@@ -269,6 +263,12 @@
                         <owl:someValuesFrom rdf:resource="&obo;OBCS_0000137"/>
                     </owl:Restriction>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="&obo;IAO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -664,13 +664,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000675"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000675"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Levene%27s_test</obo:IAO_0000119>
@@ -688,13 +688,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000675"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000675"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
@@ -2445,17 +2445,6 @@ http://www.ncbi.nlm.nih.gov/pubmed/10521349
                 <owl:someValuesFrom rdf:resource="&obo;OBI_0200031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000058"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                        <owl:someValuesFrom rdf:resource="&obo;OBI_0000650"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <obo:IAO_0000119>Storey J.D. (2007) The optimal discovery procedure: A new approach to simultaneous significance testing, Journal of the Royal Statistical Society, Series B, 69: 347-368.
 Storey J.D., Dai J.Y., and Leek J.T. (2007) The optimal discovery procedure for large-scale significance testing, with applications to comparative microarray experiments, Biostatistics, 8: 414-432.
 Leek J.T,. Monsen E.C., Dabney A.R., and Storey J.D. (2006) EDGE: Extraction and analysis of differential gene expression, Bioinformatics, 22: 507-508.
@@ -2478,17 +2467,6 @@ Storey J.D., Xiao W., Leek J.T., Tompkins R.G., and Davis R.W. (2005) Significan
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBI_0200031"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000058"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                        <owl:someValuesFrom rdf:resource="&obo;OBI_0000650"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>PMID:15797908
@@ -2546,8 +2524,8 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
     <!-- http://purl.obolibrary.org/obo/OBCS_0000168 -->
 
     <owl:Class rdf:about="&obo;OBCS_0000168">
-        <rdfs:label xml:lang="en">differential expression analysis data transformation using LIMMA linear models for microarry data</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000650"/>
+        <rdfs:label xml:lang="en">differential expression analysis using LIMMA linear models for microarry data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
@@ -2555,7 +2533,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>WEB: http://www.bioconductor.org/packages/release/bioc/html/limma.html</obo:IAO_0000119>
-        <obo:IAO_0000115>A differential expression analysis data transformation using LIMMA linear model to identify differential expression for microarray data.</obo:IAO_0000115>
+        <obo:IAO_0000115>A differential expression analysis using LIMMA linear model to identify differential expression for microarray data.</obo:IAO_0000115>
         <obo:IAO_0000118>LIMMA</obo:IAO_0000118>
         <obo:IAO_0000117>Person: Oliver He, Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000119>Ritchie ME, Phipson B, Wu D, Hu Y, Law CW, Shi W and Smyth GK (2015). “limma powers differential expression analyses for RNA-sequencing and microarray studies.” Nucleic Acids Research, 43, pp. doi: 10.1093/nar/gkv007.</obo:IAO_0000119>
@@ -2686,29 +2664,18 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000010"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000058"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                        <owl:someValuesFrom rdf:resource="&obo;OBI_0000650"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBI_0200031"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000118>web robot</obo:IAO_0000118>
         <obo:IAO_0000118>web spider</obo:IAO_0000118>
         <obo:IAO_0000119>URL: https://en.wikipedia.org/wiki/Web_crawler</obo:IAO_0000119>
         <obo:IAO_0000119>URL: http://www.sciencedaily.com/terms/web_crawler.htm</obo:IAO_0000119>
-        <obo:IAO_0000115>A software that is used to browses the World Wide Web in a methodical, automated manner.</obo:IAO_0000115>
-        <obo:IAO_0000118>web robot</obo:IAO_0000118>
         <obo:IAO_0000118>web crawler</obo:IAO_0000118>
         <obo:IAO_0000118>web scutter</obo:IAO_0000118>
+        <obo:IAO_0000115>A software that is used to browses the World Wide Web in a methodical, automated manner.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2717,7 +2684,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="&obo;OBCS_0000176">
         <rdfs:label xml:lang="en">permutation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000188"/>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000115>a data transformation process that re-arrange the order of all or part of a set of data items.</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://stattrek.com/statistics/dictionary.aspx?definition=Permutation</obo:IAO_0000119>
@@ -2840,7 +2807,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="&obo;OBCS_0000185">
         <rdfs:label xml:lang="en">sorting</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000188"/>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Sorting_algorithm</obo:IAO_0000119>
         <obo:IAO_0000115>a data transformation process that puts the data items in a set in a certain order.</obo:IAO_0000115>
@@ -2872,6 +2839,51 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000188 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000188">
+        <rdfs:label xml:lang="en">data transformation in statistics</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
+        <obo:IAO_0000115>a data processing that applies a deterministic mathematical function to each point in a data set; that is, each data point zi is replaced with the transformed value yi = f(zi), where f is a function.</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Data_transformation_(statistics)</obo:IAO_0000119>
+        <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000189 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000189">
+        <rdfs:label xml:lang="en">log2 transformation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0200094"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000190 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000190">
+        <rdfs:label xml:lang="en">square root transformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000191 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000191">
+        <rdfs:label xml:lang="en">Anscombe transformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000192 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000192">
+        <rdfs:label xml:lang="en">rank-order transformation</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
     <owl:Class rdf:about="&obo;OBI_0000011"/>
@@ -2890,12 +2902,6 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBI_0000650 -->
-
-    <owl:Class rdf:about="&obo;OBI_0000650"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBI_0000663 -->
 
     <rdf:Description rdf:about="&obo;OBI_0000663">
@@ -2911,7 +2917,9 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000666 -->
 
-    <owl:Class rdf:about="&obo;OBI_0000666"/>
+    <owl:Class rdf:about="&obo;OBI_0000666">
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000188"/>
+    </owl:Class>
     
 
 
@@ -3088,6 +3096,14 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0200093 -->
+
+    <rdf:Description rdf:about="&obo;OBI_0200093">
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000188"/>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0200100 -->
 
     <rdf:Description rdf:about="&obo;OBI_0200100">
@@ -3145,6 +3161,28 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0200125 -->
+
+    <rdf:Description rdf:about="&obo;OBI_0200125">
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200150 -->
+
+    <rdf:Description rdf:about="&obo;OBI_0200150">
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000188"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0200167"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0200166 -->
 
     <owl:Class rdf:about="&obo;OBI_0200166"/>
@@ -3153,7 +3191,9 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <!-- http://purl.obolibrary.org/obo/OBI_0200169 -->
 
-    <owl:Class rdf:about="&obo;OBI_0200169"/>
+    <owl:Class rdf:about="&obo;OBI_0200169">
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000188"/>
+    </owl:Class>
     
 
 
@@ -3177,6 +3217,19 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBCS_0000124"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200181 -->
+
+    <rdf:Description rdf:about="&obo;OBI_0200181">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0200078"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
