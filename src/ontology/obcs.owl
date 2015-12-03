@@ -20,8 +20,8 @@
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;obcs.owl">
-        <owl:versionInfo rdf:datatype="&xsd;decimal">1.51</owl:versionInfo>
-        <dc:date rdf:datatype="&xsd;decimal">2015-12-01</dc:date>
+        <owl:versionInfo rdf:datatype="&xsd;decimal">1.52</owl:versionInfo>
+        <dc:date rdf:datatype="&xsd;decimal">2015-12-02</dc:date>
         <dc:subject xml:lang="en">A formal ontology in the domain of biological and clinical statistics</dc:subject>
         <dc:contributor xml:lang="en">Alfred Hero</dc:contributor>
         <dc:contributor xml:lang="en">Anna Maria Masci</dc:contributor>
@@ -256,6 +256,12 @@
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
                 <owl:someValuesFrom>
                     <owl:Restriction>
@@ -269,12 +275,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
                 <owl:allValuesFrom rdf:resource="&obo;IAO_0000027"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Data_collection </obo:IAO_0000119>
@@ -388,8 +388,8 @@
     <owl:Class rdf:about="&obo;OBCS_0000011">
         <rdfs:label>measurement scale</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
-        <obo:IAO_0000115>an information content entity that represents a  type of scale on which a variable is measured, including nominal, ordinal, interval, ratio.</obo:IAO_0000115>
         <obo:IAO_0000118>level of measurement</obo:IAO_0000118>
+        <obo:IAO_0000115>an information content entity that represents a type of scale on which a variable is measured, including nominal, ordinal, interval, ratio.</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Level_of_measurement</obo:IAO_0000119>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000118>scale of  measure</obo:IAO_0000118>
@@ -688,13 +688,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000675"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000675"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
@@ -1431,6 +1431,7 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
     <owl:Class rdf:about="&obo;OBCS_0000090">
         <rdfs:label>interval scale</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000011"/>
+        <obo:IAO_0000119>WEB: WEB: http://en.wikipedia.org/wiki/Level_of_measurement</obo:IAO_0000119>
         <obo:IAO_0000119>WEB: SAS Users Guide</obo:IAO_0000119>
         <obo:IAO_0000115>A measurement scale consisting of equal-sized units; the distance between any two positions is of known size.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
@@ -2880,6 +2881,228 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="&obo;OBCS_0000192">
         <rdfs:label xml:lang="en">rank-order transformation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000193 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000193">
+        <rdfs:label xml:lang="en">numerical data value</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <obo:IAO_0000118>mathematical data value</obo:IAO_0000118>
+        <obo:IAO_0000115>an information content entity that refers to a number value of a data item.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yongqun He, Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000118>mathematical value</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000194 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000194">
+        <rdfs:label xml:lang="en">continuous data value</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000193"/>
+        <obo:IAO_0000117>Yongqun He, Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000115>a data value that is continuous, i.e., measured.</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: https://www.mathsisfun.com/data/data-discrete-continuous.html</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000195 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000195">
+        <rdfs:label xml:lang="en">discrete data value</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000193"/>
+        <obo:IAO_0000117>Yongqun He, Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: https://www.mathsisfun.com/data/data-discrete-continuous.html</obo:IAO_0000119>
+        <obo:IAO_0000115>a data value that is descrete, ie, counted.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000196 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000196">
+        <rdfs:label xml:lang="en">ordinal data value</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000193"/>
+        <obo:IAO_0000115>a data value that is an ordinal number, ie., a number that tells the position of something in a list.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yongqun He, Jie Zheng</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000197 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000197">
+        <rdfs:label xml:lang="en">cardinal data value</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000193"/>
+        <obo:IAO_0000119>WEB: https://www.mathsisfun.com/numbers/cardinal-ordinal-nominal.html</obo:IAO_0000119>
+        <obo:IAO_0000117>Yongqun He, Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000115>a data value that is a cardinal number, i.e., a number that says how many of something there are, such as one, two, three, four, five.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000199 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000199">
+        <rdfs:label xml:lang="en">nominal data value</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000193"/>
+        <obo:IAO_0000117>Yongqun He, Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: https://www.mathsisfun.com/numbers/cardinal-ordinal-nominal.html</obo:IAO_0000119>
+        <obo:IAO_0000115>a data value that is a nominal number, ie., a number used only as a name, or to identify something (not as an actual value or position)</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000200 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000200">
+        <rdfs:label xml:lang="en">continuous variable</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000038"/>
+        <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000116>We will link continuous variable to measurement scale.</obo:IAO_0000116>
+        <obo:IAO_0000115>A continuous variable over a particular range of the real numbers is one whose value in that range must be such that, if the variable can take values a and b in that range, then it can also take any value between a and b.</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Continuous_and_discrete_variables</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000201 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000201">
+        <rdfs:label xml:lang="en">descrete variable</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000038"/>
+        <obo:IAO_0000116>We will link descrete variable to measurement scale.</obo:IAO_0000116>
+        <obo:IAO_0000118>categorical variable</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: http://www.unesco.org/webworld/idams/advguide/Chapt1_3.htm</obo:IAO_0000119>
+        <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Continuous_and_discrete_variables</obo:IAO_0000119>
+        <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000115>a discrete variable over a particular range of real values is one for which, for any value in the range that the variable is permitted to take on, there is a positive minimum distance to the nearest other permissible value.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000202 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000202">
+        <rdfs:label xml:lang="en">interval-scale variable</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000200"/>
+        <obo:IAO_0000119>WEB: http://www.unesco.org/webworld/idams/advguide/Chapt1_3.htm</obo:IAO_0000119>
+        <obo:IAO_0000115>A continuous variable that has order and equal intervals.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000203 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000203">
+        <rdfs:label xml:lang="en">continuous ordinal variable</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000200"/>
+        <obo:IAO_0000115>A continuous variable that occur when the measurement is continuous</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://www.unesco.org/webworld/idams/advguide/Chapt1_3.htm</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000204 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000204">
+        <rdfs:label xml:lang="en">ratio-scale variable</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000200"/>
+        <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://www.unesco.org/webworld/idams/advguide/Chapt1_3.htm</obo:IAO_0000119>
+        <obo:IAO_0000115>A continuous variable that is a continuous positive measurement on a nonlinear scale</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000205 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000205">
+        <rdfs:label xml:lang="en">nominal variable</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000201"/>
+        <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://www.unesco.org/webworld/idams/advguide/Chapt1_3.htm</obo:IAO_0000119>
+        <obo:IAO_0000115>A descrete variable that allows for only qualitative classification</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000206 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000206">
+        <rdfs:label xml:lang="en">descrete ordinal variable</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000205"/>
+        <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000115>A discrete ordinal variable is a nominal variable, but its different states are ordered in a meaningful sequence</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://www.unesco.org/webworld/idams/advguide/Chapt1_3.htm</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000207 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000207">
+        <rdfs:label xml:lang="en">dummy variable</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000201"/>
+        <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000115>A quantitative variable can be transformed into a categorical variable, called a dummy variable by recoding the values</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://www.unesco.org/webworld/idams/advguide/Chapt1_3.htm</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000208 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000208">
+        <rdfs:label xml:lang="en">preference variable</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000201"/>
+        <obo:IAO_0000119>WEB: http://www.unesco.org/webworld/idams/advguide/Chapt1_3.htm</obo:IAO_0000119>
+        <obo:IAO_0000115>A preference variable is a specific discrete variable, whose value is either in a decreasing or increasing order.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000209 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000209">
+        <rdfs:label xml:lang="en">multiple response variable</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000201"/>
+        <obo:IAO_0000119>WEB: http://www.unesco.org/webworld/idams/advguide/Chapt1_3.htm</obo:IAO_0000119>
+        <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000115>Multiple response variables are those, which can assume more than one value. A typical example is a survey questionnaire about the use of computers in research. The respondents were asked to indicate the purpose(s) for which they use computers in their research work. The respondents could score more than one category.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000210 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000210">
+        <rdfs:label xml:lang="en">histogram distribution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000010"/>
+        <obo:IAO_0000115>A probability distribution that represents the probability distribution corresponding to a histogram of data values.</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: https://reference.wolfram.com/language/ref/HistogramDistribution.html</obo:IAO_0000119>
+        <obo:IAO_0000117>Yongqun He, Jie Zheng</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000211 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000211">
+        <rdfs:label xml:lang="en">Box-Cox distribution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000005"/>
+        <obo:IAO_0000118>power-normal distribution</obo:IAO_0000118>
+        <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Normal_distribution</obo:IAO_0000119>
+        <obo:IAO_0000115>A normal distribution that is the distribution of a random variable X for which the Box–Cox transformation on X follows a truncated normal distribution.</obo:IAO_0000115>
+        <obo:IAO_0000118>Gaussian distribution</obo:IAO_0000118>
     </owl:Class>
     
 
