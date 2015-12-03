@@ -47,7 +47,16 @@ http://purl.obolibrary.org/obo/STATO_0000256
 http://purl.obolibrary.org/obo/STATO_0000126
 http://purl.obolibrary.org/obo/STATO_0000154
 http://purl.obolibrary.org/obo/STATO_0000057
-
+http://purl.obolibrary.org/obo/STATO_0000177
+http://purl.obolibrary.org/obo/STATO_0000023
+http://purl.obolibrary.org/obo/STATO_0000180
+http://purl.obolibrary.org/obo/STATO_0000060
+http://purl.obolibrary.org/obo/STATO_0000103
+http://purl.obolibrary.org/obo/STATO_0000283
+http://purl.obolibrary.org/obo/STATO_0000145
+http://purl.obolibrary.org/obo/STATO_0000262
+http://purl.obolibrary.org/obo/STATO_0000132
+http://purl.obolibrary.org/obo/STATO_0000017
 
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/STATO_0000166 #bar chart
@@ -102,6 +111,26 @@ http://purl.obolibrary.org/obo/STATO_0000154
 subClassOf http://purl.obolibrary.org/obo/IAO_0000038 #graph
 http://purl.obolibrary.org/obo/STATO_0000057
 subClassOf http://purl.obolibrary.org/obo/OBI_0001908
+http://purl.obolibrary.org/obo/STATO_0000177
+subClassOf http://purl.obolibrary.org/obo/OBCS_0000066 #continuous probability distribution
+http://purl.obolibrary.org/obo/STATO_0000023
+subClassOf http://purl.obolibrary.org/obo/OBCS_0000066 #continuous probability distribution
+http://purl.obolibrary.org/obo/STATO_0000180
+subClassOf http://purl.obolibrary.org/obo/OBCS_0000005
+http://purl.obolibrary.org/obo/STATO_0000060
+subClassOf http://purl.obolibrary.org/obo/OBCS_0000067 #discrete probability distribution
+http://purl.obolibrary.org/obo/STATO_0000103
+subClassOf http://purl.obolibrary.org/obo/OBCS_0000067 #discrete probability distribution
+http://purl.obolibrary.org/obo/STATO_0000283
+subClassOf http://purl.obolibrary.org/obo/OBCS_0000067 #discrete probability distribution
+http://purl.obolibrary.org/obo/STATO_0000145
+subClassOf http://purl.obolibrary.org/obo/STATO_0000283
+http://purl.obolibrary.org/obo/STATO_0000262
+subClassOf http://purl.obolibrary.org/obo/OBCS_0000044
+http://purl.obolibrary.org/obo/STATO_0000132
+subClassOf http://purl.obolibrary.org/obo/OBCS_0000010
+http://purl.obolibrary.org/obo/STATO_0000017
+subClassOf http://purl.obolibrary.org/obo/OBCS_0000010
 
 [Source term retrieval setting]
 includeNoIntermediates

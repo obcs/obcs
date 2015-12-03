@@ -112,9 +112,60 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000005 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000005"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000010 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000010"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000044 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000044"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000066 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000066"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000067 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000067"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0001908 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001908"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000017 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000017">
+        <rdfs:label xml:lang="en">Wilk&#39;s lambda distribution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000010"/>
+        <obo:IAO_0000115 xml:lang="en">Wilks&#39; lambda distribution (named for Samuel S. Wilks), is a probability distribution used in multivariate hypothesis testing, especially with regard to the likelihood-ratio test and Multivariate analysis of variance. It is a multivariate generalization of the univariate F-distribution, and generalizes the F-distribution in the same way that the Hotelling&#39;s T-squared distribution generalizes Student&#39;s t-distribution.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000023 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000023">
+        <rdfs:label xml:lang="en">studentized range distribution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000066"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
     
 
 
@@ -139,6 +190,17 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/STATO_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000060">
+        <rdfs:label xml:lang="en">hypergeometric distribution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000067"/>
+        <obo:IAO_0000115 xml:lang="en">hypergeometric distribution is a probability distribution that describes the probability of  k successes in n draws from a finite population of size  N containing  K successes without replacement</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/STATO_0000066 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000066">
@@ -156,6 +218,17 @@
         <rdfs:label xml:lang="en">rarefaction curve</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000573"/>
         <obo:IAO_0000115 xml:lang="en">a rarefaction curve is a graph used for estimating species richness in ecology studies</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000103 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000103">
+        <rdfs:label xml:lang="en">multinomial distribution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000067"/>
+        <obo:IAO_0000115 xml:lang="en">the multinomial distribution is a probability distribution which gives the probability of any particular combination of numbers of successes for various categories defined in the context of  n independent trials each of which leads to a success for exactly one of k categories, with each category having a given fixed success probability.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
     </owl:Class>
     
@@ -219,6 +292,26 @@
         <rdfs:label>Altman box and whisker plot</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000243"/>
         <obo:IAO_0000115 xml:lang="en">Altman Box and Whisker plot is a variation of Tukey Box and Whisker plot which use the criteria of Altman to create the &#39;whisker&#39; of the plot.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000132 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000132">
+        <rdfs:label xml:lang="en">Hotelling T2 distribution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000010"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000145 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000145">
+        <rdfs:label xml:lang="en">geometric distribution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000283"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
     </owl:Class>
     
@@ -311,6 +404,28 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/STATO_0000177 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000177">
+        <rdfs:label>beta distribution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000066"/>
+        <obo:IAO_0000115 xml:lang="en">the beta distribution is a continuous probability distributions defined on the interval [0, 1] parametrized by two positive shape parameters, denoted by α and β, that appear as exponents of the random variable and control the shape of the distribution</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000180 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000180">
+        <rdfs:label xml:lang="en">standard normal distribution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000005"/>
+        <obo:IAO_0000115 xml:lang="en">standard normal distribution is a normal distribution with variance = 1 and mean=0</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/STATO_0000186 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000186">
@@ -365,6 +480,16 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/STATO_0000262 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000262">
+        <rdfs:label xml:lang="en">Bernoulli distribution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000044"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/STATO_0000263 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000263">
@@ -392,6 +517,16 @@
         <rdfs:label xml:lang="en">receiver operational characteristics curve</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
         <obo:IAO_0000115 xml:lang="en">receiver operational characteristics curve is a graphical plot which illustrates the performance of a binary classifier system as its discrimination threshold (aka cut-off point) is varied by plotting  sensitivity vs (1 − specificity)</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000283 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000283">
+        <rdfs:label xml:lang="en">negative binomial distribution</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000067"/>
         <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
     </owl:Class>
 </rdf:RDF>
