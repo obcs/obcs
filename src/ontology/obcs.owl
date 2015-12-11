@@ -20,8 +20,8 @@
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;obcs.owl">
-        <owl:versionInfo rdf:datatype="&xsd;decimal">1.56</owl:versionInfo>
-        <dc:date rdf:datatype="&xsd;decimal">2015-12-08</dc:date>
+        <owl:versionInfo rdf:datatype="&xsd;decimal">1.57</owl:versionInfo>
+        <dc:date rdf:datatype="&xsd;decimal">2015-12-10</dc:date>
         <dc:subject xml:lang="en">A formal ontology in the domain of biological and clinical statistics</dc:subject>
         <dc:contributor xml:lang="en">Alfred Hero</dc:contributor>
         <dc:contributor xml:lang="en">Anna Maria Masci</dc:contributor>
@@ -221,6 +221,12 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000100 -->
 
     <owl:Class rdf:about="&obo;IAO_0000100">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002351"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000118>data list</obo:IAO_0000118>
     </owl:Class>
     
@@ -282,13 +288,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="&obo;IAO_0000027"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000027"/>
+                <owl:allValuesFrom rdf:resource="&obo;IAO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Data_collection </obo:IAO_0000119>
@@ -390,6 +396,12 @@
     <owl:Class rdf:about="&obo;OBCS_0000010">
         <rdfs:label>probability distribution</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000100"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000117>Yongqun He, Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Probability_distribution</obo:IAO_0000119>
         <obo:IAO_0000115>an information content entity that refers to a distribution of a random variable that can be described using a mathematical formula.</obo:IAO_0000115>
@@ -416,6 +428,12 @@
     <owl:Class rdf:about="&obo;OBCS_0000012">
         <rdfs:label>outlier</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Outlier</obo:IAO_0000119>
         <obo:IAO_0000115>a data item that is numerically distant from the rest of the data; often indicative either measurement error or that the population has a high kurtosis</obo:IAO_0000115>
@@ -440,6 +458,12 @@
     <owl:Class rdf:about="&obo;OBCS_0000014">
         <rdfs:label>weighted data</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>weights are applied when one wants to adjust the impact of cases in the analysis</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: SAS users guide</obo:IAO_0000119>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
@@ -452,6 +476,12 @@
     <owl:Class rdf:about="&obo;OBCS_0000015">
         <rdfs:label>central tendency</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0200184"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>a data item that represents a typical value of a set of values. This term relates to the way in which quantitative data tend to cluster around some value</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Central_tendency</obo:IAO_0000119>
@@ -678,13 +708,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000675"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000675"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Levene%27s_test</obo:IAO_0000119>
@@ -898,6 +928,12 @@
     <owl:Class rdf:about="&obo;OBCS_0000048">
         <rdfs:label>absolute risk</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000119>WEB: http://medical-dictionary.thefreedictionary.com/absolute+risk</obo:IAO_0000119>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>A data item of an observed or calculated probability of occurrence of an event, X, in a population related to exposure to a specific hazard, infection, trauma; the number of persons suffering from a disease when the exposed population is known with certainty.</obo:IAO_0000115>
@@ -910,6 +946,12 @@
     <owl:Class rdf:about="&obo;OBCS_0000049">
         <rdfs:label>accuracy</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>a data item that refers to the number of true positives and true negatives divided by the total number of observations.</obo:IAO_0000115>
@@ -943,28 +985,23 @@
     <!-- http://purl.obolibrary.org/obo/OBCS_0000051 -->
 
     <owl:Class rdf:about="&obo;OBCS_0000051">
-        <rdfs:label>statistical measure</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;IAO_0000027"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
-                        <owl:someValuesFrom rdf:resource="&obo;OBCS_0000001"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </owl:equivalentClass>
+        <rdfs:label>statistic</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="&obo;IAO_0000100"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000116>http://en.wikipedia.org/wiki/Statistic
 A statistic (singular) is a single measure of some attribute of a sample (e.g., its arithmetic mean value). It is calculated by applying a function (statistical algorithm) to the values of the items of the sample, which are known together as a set of data.</obo:IAO_0000116>
         <obo:IAO_0000119>WEB: SAS users guide</obo:IAO_0000119>
-        <obo:IAO_0000118>statistic</obo:IAO_0000118>
+        <obo:IAO_0000118>statistical measure</obo:IAO_0000118>
         <obo:IAO_0000115>a measurement datum that represents a number (statistic) whose size indicates the magnitude of some quantity of interest.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
     </owl:Class>
@@ -976,6 +1013,12 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
     <owl:Class rdf:about="&obo;OBCS_0000052">
         <rdfs:label>Incidence rate</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000118>incidence</obo:IAO_0000118>
         <obo:IAO_0000115>A data item that refers to the number of new events that have occurred in a specific time interval divided by the population at risk at the beginning of the time interval. The result gives the likelihood of developing an event in that time interval.</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
@@ -1001,6 +1044,12 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
     <owl:Class rdf:about="&obo;OBCS_0000054">
         <rdfs:label>odds ratio</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>A data item that refers to the odds that an individual with a specific condition has been exposed to a risk factor divided by the odds that a control has been exposed. The odds ratio is used in case-control studies. The odds ratio provides a reasonable estimate of the relative risk for uncommon conditions.</obo:IAO_0000115>
@@ -1013,6 +1062,12 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
     <owl:Class rdf:about="&obo;OBCS_0000055">
         <rdfs:label>prevalence rate</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <obo:IAO_0000115>A data item that refers to the number of individuals with a given disease at a given point in time divided by the population at risk at that point in time.</obo:IAO_0000115>
@@ -1026,6 +1081,12 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
     <owl:Class rdf:about="&obo;OBCS_0000056">
         <rdfs:label>relative risk</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>A data item that equals the incidence in exposed individuals divided by the incidence in unexposed individuals. The relative risk can be calculated from studies in which the proportion of patients exposed and unexposed to a risk is known, such as a cohort study.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
@@ -1038,6 +1099,12 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
     <owl:Class rdf:about="&obo;OBCS_0000057">
         <rdfs:label>reliability</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <obo:IAO_0000115>a data item that refers to the extent to which repeated measurements of a relatively stable phenomenon fall closely to each other.</obo:IAO_0000115>
@@ -1050,6 +1117,12 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
     <owl:Class rdf:about="&obo;OBCS_0000058">
         <rdfs:label>sensitivity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Sensitivity_and_specificity</obo:IAO_0000119>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>a data item that measures the proportion of actual positives which are correctly identified as such (e.g. the percentage of sick people who are correctly identified as having the condition). </obo:IAO_0000115>
@@ -1063,6 +1136,12 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
     <owl:Class rdf:about="&obo;OBCS_0000059">
         <rdfs:label>specificity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000118>true negative rate</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Sensitivity_and_specificity</obo:IAO_0000119>
         <obo:IAO_0000115>a data item that refers to the proportion of negatives in a binary classification test which are correctly identified</obo:IAO_0000115>
@@ -1076,6 +1155,12 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
     <owl:Class rdf:about="&obo;OBCS_0000060">
         <rdfs:label>validity</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:comment>Here is another definition: Validity is the extend to which an observation reflects the &quot;truth&quot; of the phenomenon being measured. Reference: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</rdfs:comment>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
@@ -1784,6 +1869,12 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
     <owl:Class rdf:about="&obo;OBCS_0000117">
         <rdfs:label>rank order</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>a data item that represents an arrangement according to a rank, i.e., the position of a partiuclar case relative to other cases on a defined scale</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://www.merriam-webster.com/dictionary/rank%20order</obo:IAO_0000119>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
@@ -2122,13 +2213,13 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000666"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0200028"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0200028"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000666"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>Person:Jie Zheng, Oliver He</obo:IAO_0000117>
@@ -2284,6 +2375,12 @@ http://www.ncbi.nlm.nih.gov/pubmed/10521349
     <owl:Class rdf:about="&obo;OBCS_0000150">
         <rdfs:label xml:lang="en">standardized mortality ratio</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000118>SMR</obo:IAO_0000118>
         <obo:IAO_0000115>A data item which is the ratio of observed deaths in the study group to expected deaths in the general population.</obo:IAO_0000115>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Standardized_mortality_ratio</obo:IAO_0000119>
@@ -2562,11 +2659,12 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
     <!-- http://purl.obolibrary.org/obo/OBCS_0000169 -->
 
     <owl:Class rdf:about="&obo;OBCS_0000169">
-        <rdfs:label xml:lang="en">summing data transformation</rdfs:label>
+        <rdfs:label xml:lang="en">summing data values</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
         <obo:IAO_0000115>A data transformation that add two or more numbers, magnitudes, quantities, or particulars as determined by or as if by the mathematical process of addition.</obo:IAO_0000115>
         <obo:IAO_0000119>http://dictionary.reference.com/browse/summing</obo:IAO_0000119>
         <dc:source>PRISM</dc:source>
+        <obo:IAO_0000118>summing data transformation</obo:IAO_0000118>
         <obo:IAO_0000117>Person: Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000116>tracker: https://github.com/obcs/obcs/issues/7</obo:IAO_0000116>
     </owl:Class>
@@ -3209,6 +3307,75 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000218 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000218">
+        <rdfs:label xml:lang="en">derived data from statistical analysis</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;IAO_0000027"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBCS_0000001"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000115>A data item that is derived from a statistical data analysis</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://www.ask.com/question/what-is-numerical-data</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000219 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000219">
+        <rdfs:label xml:lang="en">derived data from descriptive statistical analysis</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;IAO_0000027"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBI_0200184"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000218"/>
+        <obo:IAO_0000119>WEB: http://www.ask.com/question/what-is-numerical-data</obo:IAO_0000119>
+        <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000115>A data item that is derived from a statistical data analysis</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000220 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000220">
+        <rdfs:label xml:lang="en">derived data from inferential statistical analysis</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;IAO_0000027"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBCS_0000121"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000218"/>
+        <obo:IAO_0000115>A data item that is derived from a statistical data analysis</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://www.ask.com/question/what-is-numerical-data</obo:IAO_0000119>
+        <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBCS_0000224 -->
 
     <owl:Class rdf:about="&obo;OBCS_0000224">
@@ -3247,7 +3414,14 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000071 -->
 
-    <owl:Class rdf:about="&obo;OBI_0000071"/>
+    <owl:Class rdf:about="&obo;OBI_0000071">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000121"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -3600,6 +3774,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
                 <owl:someValuesFrom rdf:resource="&obo;OBI_0200078"/>
             </owl:Restriction>
         </owl:equivalentClass>
+        <obo:IAO_0000118>descriptive statistical calculation data transformation</obo:IAO_0000118>
     </owl:Class>
     
 
