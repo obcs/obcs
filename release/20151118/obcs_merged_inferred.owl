@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/obcs/obcs_merged.owl#"
-     xml:base="http://purl.obolibrary.org/obo/obcs/obcs_merged.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/obcs.owl#"
+     xml:base="http://purl.obolibrary.org/obo/obcs.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -9,9 +9,21 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/obcs/obcs_merged.owl">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/obcs.owl">
+        <dc:subject xml:lang="en">A formal ontology in the domain of biological and clinical statistics</dc:subject>
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.58</owl:versionInfo>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/obcs/2015-11-18/obcs.owl"/>
+        <dc:contributor xml:lang="en">Alfred Hero</dc:contributor>
+        <dc:contributor xml:lang="en">Anna Maria Masci</dc:contributor>
+        <dc:contributor xml:lang="en">Barry Smith</dc:contributor>
+        <dc:contributor xml:lang="en">Chris Stoeckert </dc:contributor>
+        <dc:creator xml:lang="en">Jie Zheng</dc:creator>
+        <dc:creator xml:lang="en">Marcy Harris</dc:creator>
         <dc:description xml:lang="en">OBCS stands for the Ontology of Biological and Clinical Statistics. OBCS is an ontology in the domain of biological and clinical statistics. It is aligned with the Basic Formal Ontology (BFO) and the Ontology for Biomedical Investigations (OBI). OBCS imports all possible biostatistics terms in OBI and includes many additional biostatistics terms, some of which were proposed and discussed in the OBI face-to-face workshop in Ann Arbor in 2012.  </dc:description>
+        <dc:title xml:lang="en">OBCS: Ontology of Biological and Clinical Statistics</dc:title>
+        <dc:format xml:lang="en">OWL-DL</dc:format>
+        <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
+        <dc:contributor xml:lang="en">Yu Lin</dc:contributor>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
     </owl:Ontology>
     
