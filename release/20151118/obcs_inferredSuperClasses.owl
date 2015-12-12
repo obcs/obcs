@@ -1,6 +1,7 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.obolibrary.org/obo/obcs/obcs_inferredSuperClasses.owl#"
      xml:base="http://purl.obolibrary.org/obo/obcs/obcs_inferredSuperClasses.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -38,10 +39,41 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000012 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000012">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000220"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000013 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000013">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000220"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000014 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000014">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000220"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000015">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000219"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBCS_0000016 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000016">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000649"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000674"/>
     </owl:Class>
     
@@ -71,6 +103,22 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000048 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000048">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000220"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000049 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000049">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000220"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBCS_0000050 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000050">
@@ -79,10 +127,66 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBCS_0000051 -->
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000052 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000051">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000052">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000220"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000054 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000054">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000220"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000055 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000055">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000220"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000056 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000056">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000220"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000057 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000057">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000220"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000058 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000058">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000220"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000059 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000059">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000220"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000060 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000060">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000220"/>
     </owl:Class>
     
 
@@ -90,8 +194,15 @@
     <!-- http://purl.obolibrary.org/obo/OBCS_0000114 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000114">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000649"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000674"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000117 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000117">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000220"/>
     </owl:Class>
     
 
@@ -134,6 +245,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000220"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBCS_0000168 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000168">
@@ -142,11 +261,76 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000198 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000198"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000213 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000213"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000214 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000214">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000198"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000213"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000218 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000218"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000219 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000219">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000218"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000220 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000220">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000218"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000224 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000224"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000225 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000225">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000224"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000023 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000023">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000051"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000123"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000220"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000071 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000071">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000220"/>
     </owl:Class>
     
 
@@ -162,8 +346,8 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000648 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000648">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000051"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000123"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000220"/>
     </owl:Class>
     
 
@@ -171,8 +355,8 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000649 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000649">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000051"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000123"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000219"/>
     </owl:Class>
     
 
@@ -180,8 +364,8 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000656 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000656">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000051"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000123"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000220"/>
     </owl:Class>
     
 
@@ -220,15 +404,17 @@
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000674 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000674"/>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000674">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000219"/>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBI_0000676 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000676">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000051"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000123"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000220"/>
     </owl:Class>
     
 
@@ -236,7 +422,7 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000679 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000679">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000649"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000219"/>
     </owl:Class>
     
 
@@ -261,6 +447,22 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000861">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000121"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001265 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001265">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000662"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001442 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001442">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000662"/>
     </owl:Class>
     
 
@@ -313,6 +515,20 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0200150 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200150">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200169"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200169 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200169"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0200170 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200170">
@@ -325,6 +541,14 @@
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200175">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000121"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0200181 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200181">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200184"/>
     </owl:Class>
     
 
@@ -354,5 +578,5 @@
 
 
 
-<!-- Generated by the OWL API (version 1.3.8.1099) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 1.3.4.992) http://owlapi.sourceforge.net -->
 
