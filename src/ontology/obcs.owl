@@ -20,8 +20,8 @@
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;obcs.owl">
-        <owl:versionInfo rdf:datatype="&xsd;decimal">1.57</owl:versionInfo>
-        <dc:date rdf:datatype="&xsd;decimal">2015-12-10</dc:date>
+        <owl:versionInfo rdf:datatype="&xsd;decimal">1.58</owl:versionInfo>
+        <dc:date rdf:datatype="&xsd;decimal">2015-12-11</dc:date>
         <dc:subject xml:lang="en">A formal ontology in the domain of biological and clinical statistics</dc:subject>
         <dc:contributor xml:lang="en">Alfred Hero</dc:contributor>
         <dc:contributor xml:lang="en">Anna Maria Masci</dc:contributor>
@@ -85,6 +85,18 @@
     <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
 
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000221 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;OBCS_0000221">
+        <rdfs:label xml:lang="en">mathematical formula</rdfs:label>
+        <obo:IAO_0000115>an annotation property that represents a mathematical formula.</obo:IAO_0000115>
+        <obo:IAO_0000117>Asiyah Yu Lin, Jie Zheng, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000112>A normal distribution probability density function has a formula of:
+f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
+    </owl:AnnotationProperty>
     
 
 
@@ -276,13 +288,8 @@
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
-                        <owl:someValuesFrom rdf:resource="&obo;OBCS_0000137"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="&obo;IAO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -293,8 +300,13 @@
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="&obo;IAO_0000027"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBCS_0000137"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Data_collection </obo:IAO_0000119>
@@ -445,7 +457,13 @@
 
     <owl:Class rdf:about="&obo;OBCS_0000013">
         <rdfs:label>test statistic</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000051"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000673"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>a statistic measure that is a function of the samples and considered as a numberical summary of a data-set that reduces the data to one value that can be used to perform a hypothesis test. It can be used to test a finding for statistical signifiance</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Test_statistic</obo:IAO_0000119>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
@@ -708,13 +726,13 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000675"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000675"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Levene%27s_test</obo:IAO_0000119>
@@ -803,6 +821,18 @@
     <owl:Class rdf:about="&obo;OBCS_0000038">
         <rdfs:label>statistical variable</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000033"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000100"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Variable_%28mathematics%29</obo:IAO_0000119>
         <obo:IAO_0000118>variable</obo:IAO_0000118>
@@ -985,25 +1015,12 @@
     <!-- http://purl.obolibrary.org/obo/OBCS_0000051 -->
 
     <owl:Class rdf:about="&obo;OBCS_0000051">
-        <rdfs:label>statistic</rdfs:label>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000100"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <obo:IAO_0000116>http://en.wikipedia.org/wiki/Statistic
-A statistic (singular) is a single measure of some attribute of a sample (e.g., its arithmetic mean value). It is calculated by applying a function (statistical algorithm) to the values of the items of the sample, which are known together as a set of data.</obo:IAO_0000116>
-        <obo:IAO_0000119>WEB: SAS users guide</obo:IAO_0000119>
-        <obo:IAO_0000118>statistical measure</obo:IAO_0000118>
-        <obo:IAO_0000115>a measurement datum that represents a number (statistic) whose size indicates the magnitude of some quantity of interest.</obo:IAO_0000115>
-        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
+        <rdfs:label xml:lang="en">normal distribution probability density function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000116"/>
+        <obo:OBCS_0000221>f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:OBCS_0000221>
+        <obo:IAO_0000115>A probability density function that is for normal distribution probability</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng, Asiyah Yu Lin, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: https://stat.ethz.ch/R-manual/R-devel/library/stats/html/Normal.html</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -2156,11 +2173,18 @@ A statistic (singular) is a single measure of some attribute of a sample (e.g., 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000136 -->
 
     <owl:Class rdf:about="&obo;OBCS_0000136">
-        <rdfs:label xml:lang="en">numeric data</rdfs:label>
+        <rdfs:label>numerical data item</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002351"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000193"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000119>WEB: http://www.ask.com/question/what-is-numerical-data</obo:IAO_0000119>
         <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>A data item which consists of digits as opposed to letters of the alphabet of special characters</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">numeric data</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -3323,9 +3347,11 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
-        <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
-        <obo:IAO_0000115>A data item that is derived from a statistical data analysis</obo:IAO_0000115>
+        <obo:IAO_0000118>statistic</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Statistic</obo:IAO_0000119>
+        <obo:IAO_0000115>A data item that is derived from a statistical data analysis.</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://www.ask.com/question/what-is-numerical-data</obo:IAO_0000119>
+        <obo:IAO_0000117>Jie Zheng, Yongqun He, Marcy Harris, Asiyah Yu Lin</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -3345,10 +3371,12 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000218"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <obo:IAO_0000118>descriptive statistic</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://www.ask.com/question/what-is-numerical-data</obo:IAO_0000119>
-        <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000117>Jie Zheng, Yongqun He, Asiyah Yu Lin</obo:IAO_0000117>
         <obo:IAO_0000115>A data item that is derived from a statistical data analysis</obo:IAO_0000115>
+        <obo:IAO_0000118>WEB: https://en.wikipedia.org/wiki/Descriptive_statistics</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -3368,10 +3396,12 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000218"/>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <obo:IAO_0000119>WEB: http://psc.dss.ucdavis.edu/sommerb/sommerdemo/stat_inf/intro.htm</obo:IAO_0000119>
         <obo:IAO_0000115>A data item that is derived from a statistical data analysis</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://www.ask.com/question/what-is-numerical-data</obo:IAO_0000119>
         <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000118>inferential statistic</obo:IAO_0000118>
     </owl:Class>
     
 
