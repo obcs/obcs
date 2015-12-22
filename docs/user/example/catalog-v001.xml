@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/obcs/obcs_subset.owl" uri="obcs_subset.owl.xml"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1450762410543" name="http://purl.obolibrary.org/obo/obcs/example.owl" uri="example.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1450762410543" name="http://purl.obolibrary.org/obo/obcs/example_merged.owl" uri="example_merged.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1450762410543" name="http://purl.obolibrary.org/obo/obcs/import_OBO.owl" uri="import_OBO-old.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1450762410543" name="duplicate:http://purl.obolibrary.org/obo/obcs/obcs_subset.owl" uri="obcs_subset-old.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1450762410543" name="duplicate:http://purl.obolibrary.org/obo/obcs/obcs_subset.owl" uri="obcs_subset.owl.xml"/>
+    </group>
+</catalog>
