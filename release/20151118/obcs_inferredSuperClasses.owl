@@ -282,14 +282,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBCS_0000216 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000216">
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBCS_0000218 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000218"/>

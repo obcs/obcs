@@ -11,7 +11,7 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/obcs.owl">
         <dc:subject xml:lang="en">A formal ontology in the domain of biological and clinical statistics</dc:subject>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.66</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.68</owl:versionInfo>
         <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/obcs/2015-11-18/obcs.owl"/>
         <dc:contributor xml:lang="en">Alfred Hero</dc:contributor>
         <dc:contributor xml:lang="en">Anna Maria Masci</dc:contributor>
@@ -23,7 +23,7 @@
         <dc:title xml:lang="en">OBCS: Ontology of Biological and Clinical Statistics</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
-        <dc:contributor xml:lang="en">Yu Lin</dc:contributor>
+        <dc:creator xml:lang="en">Yu Lin</dc:creator>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
     </owl:Ontology>
     
@@ -1836,6 +1836,12 @@ Previous. An information content entity is a non-realizable information entity t
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001938"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001931"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
@@ -1844,12 +1850,6 @@ Previous. An information content entity is a non-realizable information entity t
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000004"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001938"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001931"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 xml:lang="en">10 feet. 3 ml.</obo:IAO_0000112>
@@ -2151,14 +2151,14 @@ Cons sometimes specifies a quality which is not a realizable.</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001909"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000124"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000338"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000338"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000124"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000116 xml:lang="en">2009/09/28 Alan Ruttenberg. Fucoidan-use-case</obo:IAO_0000116>
@@ -2386,14 +2386,14 @@ F   |  F    F</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000407"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000018"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000018"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000407"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000232>AR notes: We need to discuss whether it should include site.</obo:IAO_0000232>
@@ -2414,6 +2414,12 @@ F   |  F    F</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000400"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000404"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -2426,12 +2432,6 @@ F   |  F    F</obo:IAO_0000112>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000404"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A cartesion spatial coordinate datum that  uses one value to specify a position along a one dimensional spatial region</obo:IAO_0000115>
@@ -2447,12 +2447,6 @@ F   |  F    F</obo:IAO_0000112>
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000402">
         <rdfs:label xml:lang="en">two dimensional cartesian spatial coordinate datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000400"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000404"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000406"/>
@@ -2475,6 +2469,12 @@ F   |  F    F</obo:IAO_0000112>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000404"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A cartesion spatial coordinate datum that  uses two values to specify a position within a two dimensional spatial region</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en">two dimensional cartesian spatial coordinate datum</obo:IAO_0000111>
@@ -2490,24 +2490,6 @@ F   |  F    F</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000400"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000404"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000405"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000406"/>
-                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000219"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -2520,6 +2502,24 @@ F   |  F    F</obo:IAO_0000112>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000406"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000405"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000404"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:cardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A cartesion spatial coordinate datum that  uses three values to specify a position within a three dimensional spatial region</obo:IAO_0000115>
@@ -2907,12 +2907,6 @@ interpreter.</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2925,6 +2919,12 @@ interpreter.</obo:IAO_0000115>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000137"/>
                     </owl:Restriction>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>a planned process that gathers and measures information on variables of interest, in an established systematic fashion that enables one to answer stated research questions, test hypotheses, and evaluate outcomes. Data collection results in a collection of data.</obo:IAO_0000115>
@@ -3368,13 +3368,13 @@ interpreter.</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000124"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000675"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000675"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>a data transformation used for both hypothesis testing and model building to examine the relationship between more than two categorical variables; uses a likelihood ratio statistic that has an approximate chi-square distribution when the sample size is large</obo:IAO_0000115>
@@ -4859,13 +4859,13 @@ interpreter.</obo:IAO_0000115>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000666"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200028"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200028"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000666"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>http://www.ncbi.nlm.nih.gov/pubmed/12925520
@@ -5952,7 +5952,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000216">
         <rdfs:label xml:lang="en">mathematic graph</rdfs:label>
-        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <obo:IAO_0000117>Yongqun He, Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Graph_(mathematics)</obo:IAO_0000119>
     </owl:Class>
@@ -6300,7 +6300,13 @@ objectives is a planned process.</obo:IAO_0000116>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000471"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000572"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000338"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -6322,13 +6328,7 @@ objectives is a planned process.</obo:IAO_0000116>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000572"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000338"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000471"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000232 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Could add specific objective specification</obo:IAO_0000232>
@@ -6536,7 +6536,19 @@ In regard to the statement that reagents are &#39;distinct&#39; from the specifi
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -6544,18 +6556,6 @@ In regard to the statement that reagents are &#39;distinct&#39; from the specifi
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000047"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A cell lysis, production of a cloning vector, creating a buffer.</obo:IAO_0000112>
@@ -6716,14 +6716,14 @@ specimen can later be subject.</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000731"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000643"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000731"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0600064"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0600064"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000643"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000731"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119 xml:lang="en">GROUP: PSI</obo:IAO_0000119>
@@ -6940,12 +6940,6 @@ for now.</obo:IAO_0000116>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000444"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -6972,6 +6966,12 @@ for now.</obo:IAO_0000116>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000444"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BP</obo:IAO_0000117>
@@ -7008,14 +7008,14 @@ for now.</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001909"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001909"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bjoern Peters</obo:IAO_0000119>
@@ -7491,13 +7491,13 @@ Proposal is to obsolete.
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -7977,17 +7977,8 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000164"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000722"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000736"/>
-                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_1000029"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000456"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -8005,8 +7996,17 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000456"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000164"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000722"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0000736"/>
+                            <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_1000029"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PMID: 19570239. Construction and analysis of cotton (Gossypium arboreum L.) drought-related cDNA library. Zhang L, Li FG, Liu CL, Zhang CJ, Zhang XY. BMC Res Notes. 2009 Jul 2;2:120.</obo:IAO_0000112>
@@ -8075,12 +8075,6 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200172"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -8097,6 +8091,12 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200172"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">k-NN</obo:IAO_0000118>
         <obo:IAO_0000115 xml:lang="en">A k-nearest neighbors is a data transformation which achieves a class discovery or partitioning objective, in which an input data object with vector y is assigned to a class label based upon the k closest training data set points to y; where k is the largest value that class label is assigned.</obo:IAO_0000115>
@@ -8182,14 +8182,14 @@ http://sourceforge.net/p/obi/obi-terms/716/</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000673"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000175"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000675"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000675"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000175"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James Malone</obo:IAO_0000117>
@@ -8678,14 +8678,14 @@ In the examples above, a reagent is an operational component of a device, but th
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000004"/>
-                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000004"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">questionaire score</obo:IAO_0000118>
@@ -8846,12 +8846,6 @@ In the examples above, a reagent is an operational component of a device, but th
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000970"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000221"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/PATO_0002201"/>
             </owl:Restriction>
@@ -8860,6 +8854,12 @@ In the examples above, a reagent is an operational component of a device, but th
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000004"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edinburgh score</obo:IAO_0000111>
@@ -8943,14 +8943,14 @@ JZ: based on textual definition of edited document, it can be defined as N&amp;S
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000944"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/OBI_0001004"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000991"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000991"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:hasValue rdf:resource="http://purl.obolibrary.org/obo/OBI_0001004"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000111 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Edinburgh handedness assay</obo:IAO_0000111>
@@ -8970,6 +8970,12 @@ JZ: based on textual definition of edited document, it can be defined as N&amp;S
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000188"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000101"/>
             </owl:Restriction>
@@ -8978,12 +8984,6 @@ JZ: based on textual definition of edited document, it can be defined as N&amp;S
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200005"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
@@ -9377,14 +9377,14 @@ stages in development are currently handled with controlled vocabulary, such as 
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0000051"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001172"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001172"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/UO_0000051"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bjoern Peters; Randi Vita</obo:IAO_0000117>
@@ -9405,12 +9405,6 @@ stages in development are currently handled with controlled vocabulary, such as 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000242"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -9422,6 +9416,12 @@ stages in development are currently handled with controlled vocabulary, such as 
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000242"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person: Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
@@ -9555,6 +9555,12 @@ stages in development are currently handled with controlled vocabulary, such as 
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -9566,12 +9572,6 @@ stages in development are currently handled with controlled vocabulary, such as 
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person: Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
@@ -9818,6 +9818,12 @@ http://svitsrv25.epfl.ch/R-doc/library/qvalue.html</obo:IAO_0000119>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000015"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
@@ -9836,12 +9842,6 @@ http://svitsrv25.epfl.ch/R-doc/library/qvalue.html</obo:IAO_0000119>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person: Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
@@ -10412,19 +10412,13 @@ Concluding that a gene is upregulated in a tissue sample based on the band inten
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000973"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001940"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001939"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000973"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -10442,6 +10436,12 @@ Concluding that a gene is upregulated in a tissue sample based on the band inten
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000973"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001939"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>NIAID GSCID-BRC metadata working group</obo:IAO_0000119>
@@ -10565,14 +10565,14 @@ last accessed: 2013-12-02</obo:IAO_0000119>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000124"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000338"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000338"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000124"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>Group:2013 Philly Workshop group</obo:IAO_0000119>
@@ -10634,13 +10634,13 @@ See Table 4</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001933"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001937"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0001937"/>
                 <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -10707,6 +10707,12 @@ PMID: 23587118.
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000032"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001872"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000039"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000003"/>
             </owl:Restriction>
@@ -10715,12 +10721,6 @@ PMID: 23587118.
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/SO_0001248"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001872"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>the weighted median item size or N50 is a weighted median of the lengths of items, equal to the length of the longest item i such that the sum of the lengths of items greater than or equal in length to i is greater than or equal to half the length of all of the items. With regard to assemblies the items are typically contigs or scaffolds. It therefore denotes the ability of the software to create contigs and provides information about the resulting sequence assembly</obo:IAO_0000115>
@@ -10833,12 +10833,6 @@ PMID: 23587118.
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200187"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200081"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000062"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -10851,6 +10845,12 @@ PMID: 23587118.
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200081"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117 xml:lang="en">PERSON: Philippe Rocca-Serra</obo:IAO_0000117>
@@ -10897,14 +10897,14 @@ PMID: 23587118.
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Operational Taxonomic Unit matrix  is a data item, organized as a table, where organismal taxonomic units, computed by sequence analysis and genetic distance calculation, are counted in a set of biological or environmental samples. The table is  used to appraise biodiversity of a population or community of living organism.
@@ -11019,7 +11019,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OBI_0200000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200000">
-        <rdfs:label xml:lang="en">data processing</rdfs:label>
+        <rdfs:label xml:lang="en">data transformation</rdfs:label>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
@@ -11031,18 +11031,6 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -11072,8 +11060,21 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Philippe Rocca-Serra</obo:IAO_0000117>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The application of a clustering protocol to microarray data or the application of a statistical testing method on a primary data set to determine a p-value.</obo:IAO_0000112>
+        <obo:IAO_0000118>data operation</obo:IAO_0000118>
         <obo:IAO_0000115 xml:lang="en">A planned process that produces output data from input data.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="en">Branch editors</obo:IAO_0000119>
         <obo:IAO_0000117 xml:lang="en">Elisabetta Manduchi</obo:IAO_0000117>
@@ -11084,7 +11085,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <obo:IAO_0000117 xml:lang="en">Ryan Brinkman</obo:IAO_0000117>
         <obo:IAO_0000117 xml:lang="en">Tina Hernandez-Boussard</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">data analysis</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">data transformation</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">data processing</obo:IAO_0000118>
         <obo:IAO_0000111 xml:lang="en">data transformation</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
     </owl:Class>
@@ -11536,14 +11537,14 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200185"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200183"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200024"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002087"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200024"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200183"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A loess scale group transformation is a data transformation consisting in the application of a scale adjustment following a loess group transformation, to render the group variances for the second variable (y) similar.  Has objective scaling.</obo:IAO_0000115>
@@ -11613,12 +11614,6 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200169"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200181"/>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200167"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
@@ -11631,6 +11626,12 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200167"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A quantile transformation is a data transformation that takes as input a collection of data sets, where each can be thought as an n-dimensional (real) vector, and which transforms each data set so that the resulting output data sets have equal quantiles.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Elisabetta Manduchi</obo:IAO_0000117>
@@ -11795,13 +11796,7 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000662"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000791"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001442"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -11813,7 +11808,13 @@ This issue is outside the scope of OBI.</obo:IAO_0000116>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001442"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000662"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000791"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data transformation process in which the Benjamini and Hochberg method sequential p-value procedure  is applied with the aim of correcting false discovery rate</obo:IAO_0000115>
@@ -11871,6 +11872,12 @@ specified input and output of dt which were missing</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200171"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200175"/>
         <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000124"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
@@ -11883,12 +11890,6 @@ specified input and output of dt which were missing</obo:IAO_0000116>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000124"/>
-            </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -11984,8 +11985,8 @@ specified input and output of dt which were missing</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200163"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001442"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000791"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -11996,14 +11997,14 @@ specified input and output of dt which were missing</obo:IAO_0000116>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000175"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001442"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000791"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000175"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data transformation in which the Benjamini and Yekutieli method is applied with the aim of correcting false discovery rate</obo:IAO_0000115>
@@ -12324,12 +12325,6 @@ specified input and output of dt which were missing</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200073"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001265"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000175"/>
             </owl:Restriction>
@@ -12338,6 +12333,12 @@ specified input and output of dt which were missing</obo:IAO_0000116>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000791"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001265"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Person:Helen Parkinson</obo:IAO_0000117>
@@ -12526,12 +12527,6 @@ allows correct classification of FWER dt</obo:IAO_0000116>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000124"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200157"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -12539,6 +12534,12 @@ allows correct classification of FWER dt</obo:IAO_0000116>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200172"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">Gating is a property-based vector selection with the objective of partitioning a data vector set into vector subsets based on dimension values of individual vectors (events), in which vectors represent individual physical particles (often cells) of a sample and dimension values represent light intensity qualities as measured by flow cytometry.</obo:IAO_0000115>
@@ -12596,11 +12597,11 @@ allows correct classification of FWER dt</obo:IAO_0000116>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000679"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000674"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000425"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200177"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -12610,11 +12611,11 @@ allows correct classification of FWER dt</obo:IAO_0000116>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000674"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000679"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200177"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000425"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -12753,13 +12754,13 @@ allows correct classification of FWER dt</obo:IAO_0000116>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200083"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000124"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200083"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: James Malone</obo:IAO_0000117>
@@ -12826,14 +12827,14 @@ Examples include joint-probability of agreement, Cohen&#39;s kappa and the relat
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200073"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000791"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001265"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0001265"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000791"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -12991,13 +12992,13 @@ variable; a*x*y+b*y+c, with a non-zero, is a polynomial of degree 2 in 2 variabl
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200172"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000124"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200172"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118 xml:lang="en">CVA</obo:IAO_0000118>
@@ -13247,6 +13248,18 @@ In this equation b0 is the regression coefficient for the intercept and the bi v
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:allValuesFrom>
                     <owl:Class>
@@ -13269,18 +13282,6 @@ In this equation b0 is the regression coefficient for the intercept and the bi v
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Generation of a heatmap from a microarray dataset</obo:IAO_0000112>
@@ -13447,12 +13448,6 @@ information_encoding
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200181"/>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200184"/>
         <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200078"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
@@ -13465,6 +13460,12 @@ information_encoding
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200078"/>
+            </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 xml:lang="en">A median calculation is a  descriptive statistics calculation in which the midpoint of the data set (the 0.5 quantile) is calculated.  First, the observations are sorted in increasing order.  For an odd number of observations, the median is the middle value of the sorted data.  For an even number of observations, the median is the average of the two middle values.</obo:IAO_0000115>
         <obo:IAO_0000232 xml:lang="en">From Monnie&#39;s file comments - need to add center_calculation role but it doesn&#39;t exist yet - (editor note added by James Jan 2008)</obo:IAO_0000232>
@@ -14201,14 +14202,14 @@ information_encoding
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200089"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000175"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000791"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000791"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000175"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dudoit, Sandrine and van der Laan, Mark J. (2008) Multiple Testing Procedures with Applications to Genomics.  New York: Springer , p. 21 and http://www.wikidoc.org/index.php/False_discovery_rate</obo:IAO_0000119>
@@ -14668,7 +14669,13 @@ class labels for these objects. The resulting predictor can be used to attach cl
     <!-- http://purl.obolibrary.org/obo/OBI_0200184 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200184">
-        <rdfs:label xml:lang="en">descriptive statistical data analysis</rdfs:label>
+        <rdfs:label>descriptive statistical calculation data transformation</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200078"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -14683,18 +14690,12 @@ class labels for these objects. The resulting predictor can be used to attach cl
                 </owl:unionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200078"/>
-            </owl:Restriction>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000001"/>
-        <obo:IAO_0000118>descriptive statistical calculation data transformation</obo:IAO_0000118>
         <obo:IAO_0000115 xml:lang="en">A descriptive statistical calculation data transformation is a data transformation that has objective descriptive statistical calculation and which concerns any calculation intended to describe a feature of a data set, for example, its center or its variability.</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">James Malone</obo:IAO_0000117>
         <obo:IAO_0000119 xml:lang="en">PERSON: James Malone</obo:IAO_0000119>
         <obo:IAO_0000111 xml:lang="en">descriptive statistical calculation data transformation</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">descriptive statistical data analysis</obo:IAO_0000118>
         <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
     </owl:Class>
     
@@ -14793,12 +14794,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200111"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000648"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -14811,6 +14806,12 @@ class labels for these objects. The resulting predictor can be used to attach cl
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000648"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data visualization which has input of a clustered data set and produces an output of a report graph which is capable of rendering data of this type.</obo:IAO_0000115>
@@ -14828,14 +14829,14 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200111"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000306"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000118"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000118"/>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000306"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adata visualization which has input of a gene list and produces an output of a report graph which is capable of rendering data of this type.</obo:IAO_0000115>
@@ -14885,6 +14886,12 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200111"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000660"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -14894,12 +14901,6 @@ class labels for these objects. The resulting predictor can be used to attach cl
                         </owl:unionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000660"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A data visualization which has input of a background corrected data set and produces an output of a report graph which is capable of rendering data of this type.</obo:IAO_0000115>
@@ -14940,13 +14941,13 @@ class labels for these objects. The resulting predictor can be used to attach cl
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000124"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200083"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200083"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cox model</obo:IAO_0000118>
@@ -15422,12 +15423,6 @@ Nat Protoc. 2008;3(10):1550-8. PMID: 18802436</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -15440,6 +15435,12 @@ Nat Protoc. 2008;3(10):1550-8. PMID: 18802436</obo:IAO_0000112>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0100026"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cohort assignment</obo:IAO_0000118>
@@ -15541,26 +15542,8 @@ Nat Protoc. 2008;3(10):1550-8. PMID: 18802436</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000094"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000411"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000731"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000737"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000456"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -15577,6 +15560,24 @@ Nat Protoc. 2008;3(10):1550-8. PMID: 18802436</obo:IAO_0000112>
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000411"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000731"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000456"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">molecular cloning</obo:IAO_0000118>
