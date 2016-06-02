@@ -183,6 +183,14 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000162 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/BFO_0000162">
+        <rdfs:label xml:lang="en">has disposition at all times</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000295 -->
 
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBI_0000295">
