@@ -2944,33 +2944,19 @@ interpreter.</obo:IAO_0000115>
 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000190 -->
 
-    <owl:Class rdf:about="&obo;OBCS_0000190">
-        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000188"/>
-        <obo:IAO_0000115 xml:lang="en">A data transformation that performs an operation of square root.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Jie Zheng, Yongqun He</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">WEB: https://en.wikipedia.org/wiki/Square_root</obo:IAO_0000119>
-    </owl:Class>
+    <owl:Class rdf:about="&obo;OBCS_0000190"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000191 -->
 
-    <owl:Class rdf:about="&obo;OBCS_0000191">
-        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000188"/>
-        <obo:IAO_0000117 xml:lang="en">Jie Zheng, Yongqun He</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">WEB: https://en.wikipedia.org/wiki/Anscombe_transform</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en">a variance-stabilizing transformation that transforms a random variable with a Poisson distribution into one with an approximately standard Gaussian distribution.</obo:IAO_0000115>
-    </owl:Class>
+    <owl:Class rdf:about="&obo;OBCS_0000191"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OBCS_0000192 -->
 
-    <owl:Class rdf:about="&obo;OBCS_0000192">
-        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000188"/>
-        <obo:IAO_0000115 xml:lang="en">A data transformation that lists data items in a sequential arrangement</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Jie Zheng, Yongqun He</obo:IAO_0000117>
-    </owl:Class>
+    <owl:Class rdf:about="&obo;OBCS_0000192"/>
     
 
 
@@ -12930,27 +12916,6 @@ This interpretation is *not* the same as an at-all-times relation
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="&obo;OBCS_0000189">
-        <obo:IAO_0000115 xml:lang="en">A logarithmic transformation that uses the base-2 logarithm.</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Jie Zheng, Yongqun He</obo:IAO_0000117>
-        <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Logarithm</obo:IAO_0000119>
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;OBCS_0000224">
-        <obo:IAO_0000115 xml:lang="en">A data set that follows a probabililty distribution</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Yongqun He, Jie Zheng, Yu Lin</obo:IAO_0000117>
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;OBCS_0000225">
-        <obo:IAO_0000115 xml:lang="en">A data set that follows a probabililty distribution</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">Yongqun He, Jie Zheng, Yu Lin</obo:IAO_0000117>
-    </rdf:Description>
 </rdf:RDF>
 
 

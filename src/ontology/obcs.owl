@@ -385,7 +385,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000008">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000066"/>
-        <obo:IAO_0000115>a continuous probability that is the distribution of a random variable X if ln(X) is normally distributed</obo:IAO_0000115>
+        <obo:IAO_0000115>A continuous probability that is the distribution of a random variable X if ln(X) is normally distributed</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000118>log normal, lognormal</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://www.statistics.com</obo:IAO_0000119>
@@ -415,7 +415,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>an information content entity that refers to a distribution of a random variable that can be described using a mathematical formula.</obo:IAO_0000115>
+        <obo:IAO_0000115>An information content entity that refers to a distribution of a random variable that can be described using a mathematical formula.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He, Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Probability_distribution</obo:IAO_0000119>
         <rdfs:label>probability distribution</rdfs:label>
@@ -427,7 +427,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115>an information content entity that represents a type of scale on which a variable is measured, including nominal, ordinal, interval, ratio.</obo:IAO_0000115>
+        <obo:IAO_0000115>An information content entity that represents a type of scale on which a variable is measured, including nominal, ordinal, interval, ratio.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000118>level of measurement</obo:IAO_0000118>
         <obo:IAO_0000118>scale of  measure</obo:IAO_0000118>
@@ -447,7 +447,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000121"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a data item that is numerically distant from the rest of the data; often indicative either measurement error or that the population has a high kurtosis</obo:IAO_0000115>
+        <obo:IAO_0000115>A data item that is numerically distant from the rest of the data; often indicative either measurement error or that the population has a high kurtosis.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Outlier</obo:IAO_0000119>
         <rdfs:label>outlier</rdfs:label>
@@ -465,7 +465,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000673"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a statistic measure that is a function of the samples and considered as a numberical summary of a data-set that reduces the data to one value that can be used to perform a hypothesis test. It can be used to test a finding for statistical signifiance</obo:IAO_0000115>
+        <obo:IAO_0000115>A statistic measure that is a function of the samples and considered as a numberical summary of a data-set that reduces the data to one value that can be used to perform a hypothesis test. It can be used to test a finding for statistical signifiance</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Test_statistic</obo:IAO_0000119>
         <rdfs:label>test statistic</rdfs:label>
@@ -501,7 +501,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200184"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a data item that represents a typical value of a set of values. This term relates to the way in which quantitative data tend to cluster around some value</obo:IAO_0000115>
+        <obo:IAO_0000115>A data item that represents a typical value of a set of values. This term relates to the way in which quantitative data tend to cluster around some value.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Central_tendency</obo:IAO_0000119>
         <rdfs:label>central tendency</rdfs:label>
@@ -519,7 +519,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200117"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a data item that is the value that appears most frequent in a set of data. In a normal distribution the numerical value of the mode is the same as that of the mean and median</obo:IAO_0000115>
+        <obo:IAO_0000115>A data item that is the value that appears most frequent in a set of data. In a normal distribution the numerical value of the mode is the same as that of the mean and median.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Mode_%28statistics%29</obo:IAO_0000119>
         <rdfs:label>mode</rdfs:label>
@@ -531,7 +531,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000017">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000109"/>
-        <obo:IAO_0000115>a statistical measure of agreement for categorical data; a measure of inter-rater agreement or inter-annotator agreement</obo:IAO_0000115>
+        <obo:IAO_0000115>A statistical measure of agreement for categorical data; a measure of inter-rater agreement or inter-annotator agreement.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000118>inter-rater agreement, inter-annotator agreement</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Cohen%27s_kappa</obo:IAO_0000119>
@@ -544,10 +544,10 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000018">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000035"/>
-        <obo:IAO_0000115>an abstract, quantitative model of the causal dependencies and other interrelationships among observed or hypothetical models; an ordered triple , where U is a set of exogenous variables whose values are determined by factors outside the model; V is a set of endogenous variables whose values are determined by factors within the model; and E is a set of structural equations that express the value of each endogenous variable as a function of the values of the other variables in U and V.</obo:IAO_0000115>
+        <obo:IAO_0000115>A statistical model that an abstract, quantitative model of the causal dependencies and other interrelationships among observed or hypothetical models; an ordered triple , where U is a set of exogenous variables whose values are determined by factors outside the model; V is a set of endogenous variables whose values are determined by factors within the model; and E is a set of structural equations that express the value of each endogenous variable as a function of the values of the other variables in U and V.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Causal_model</obo:IAO_0000119>
-        <rdfs:label>causal  model</rdfs:label>
+        <rdfs:label>causal model</rdfs:label>
     </owl:Class>
     
 
@@ -562,7 +562,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a meaure of the linear association between two variables that are measured on ordinal, interval or ratio scales</obo:IAO_0000115>
+        <obo:IAO_0000115>A measure of the linear association between two variables that are measured on ordinal, interval or ratio scales</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.statistics.com</obo:IAO_0000119>
         <rdfs:label>correlation statistical analysis</rdfs:label>
@@ -596,8 +596,8 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000022">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000035"/>
-        <obo:IAO_0000115>statistical models of parameters that vary at more than one level; a type of regression model that explicitly takes into account structured/nested data</obo:IAO_0000115>
-        <obo:IAO_0000117>Marcy Harris        SAS social science</obo:IAO_0000117>
+        <obo:IAO_0000115>A statistical model of parameters that vary at more than one level; a type of regression model that explicitly takes into account structured/nested data</obo:IAO_0000115>
+        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000118>hierarchical models</obo:IAO_0000118>
         <rdfs:label>multilevel model</rdfs:label>
     </owl:Class>
@@ -608,7 +608,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000023">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000121"/>
-        <obo:IAO_0000115>a inferential statistical data analysis that is used to analyze data that arises from more than one variable</obo:IAO_0000115>
+        <obo:IAO_0000115>An inferential statistical data analysis that is used to analyze data that arises from more than one variable</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He, Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000119>MVA</obo:IAO_0000119>
         <obo:IAO_0000119>WEB: http://www.camo.com/multivariate_analysis.html</obo:IAO_0000119>
@@ -621,7 +621,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000024">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
-        <obo:IAO_0000115>a data transformation that is used to calculate the power of a statistical analysis.</obo:IAO_0000115>
+        <obo:IAO_0000115>A data transformation that is used to calculate the power of a statistical analysis.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <rdfs:label>power calculation</rdfs:label>
@@ -633,7 +633,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000025">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000121"/>
-        <obo:IAO_0000115>an inferential statistical data analysis that has only one independent variable</obo:IAO_0000115>
+        <obo:IAO_0000115>An inferential statistical data analysis that has only one independent variable</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <rdfs:label>univariate analysis</rdfs:label>
     </owl:Class>
@@ -644,7 +644,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000026">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000121"/>
-        <obo:IAO_0000115>any relationship between two measured quantities that renders them statistically dependent</obo:IAO_0000115>
+        <obo:IAO_0000115>An inferential statistical data analysis that analyze the relationship between two measured quantities that renders them statistically dependent</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Association_%28statistics%29</obo:IAO_0000119>
         <rdfs:label>statistical association</rdfs:label>
@@ -656,7 +656,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000027">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000121"/>
-        <obo:IAO_0000115>a data transformation used in categorical data analysis when the aim is to assess for the presence of an association between a variable with two categories and a variable with k categories</obo:IAO_0000115>
+        <obo:IAO_0000115>A data transformation used in categorical data analysis when the aim is to assess for the presence of an association between a variable with two categories and a variable with k categories.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Cochran%E2%80%93Armitage_test_for_trend</obo:IAO_0000119>
         <rdfs:label>cochran-armitage test</rdfs:label>
@@ -674,7 +674,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200189"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a data transformation that combines categories or ranges of values to produce a smaller number of categories</obo:IAO_0000115>
+        <obo:IAO_0000115>A data transformation that combines categories or ranges of values to produce a smaller number of categories</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000118>bracketing, grouping</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: SAS users guide</obo:IAO_0000119>
@@ -687,7 +687,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000029">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000121"/>
-        <obo:IAO_0000115>a measure of the extent to which two variables are associated; the extent to which two random variables vary together</obo:IAO_0000115>
+        <obo:IAO_0000115>A measure of the extent to which two variables are associated; the extent to which two random variables vary together</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Covariation</obo:IAO_0000119>
         <rdfs:label>covariation</rdfs:label>
@@ -699,7 +699,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000030">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000121"/>
-        <obo:IAO_0000115>describes how well a statistical model fits a set of observations; measures of goodness of fit typically summarize the discrepancy between observed values and the values expected under the model in question.</obo:IAO_0000115>
+        <obo:IAO_0000115>An inferential statistical data analysis used to analyze how well a statistical model fits a set of observations; measures of goodness of fit typically summarize the discrepancy between observed values and the values expected under the model in question.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Goodness_of_fit</obo:IAO_0000119>
         <rdfs:label>goodness of fit</rdfs:label>
@@ -711,7 +711,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000031">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000025"/>
-        <obo:IAO_0000115>aunivariate nonparametric test for the equality of continuous, one-dimensional probability distributions that can be used to compare a sample with a reference probability distribution (one-sample K鈥揝 test), or to compare two samples (two-sample K鈥揝 test).</obo:IAO_0000115>
+        <obo:IAO_0000115>An univariate nonparametric test for the equality of continuous, one-dimensional probability distributions that can be used to compare a sample with a reference probability distribution (one-sample K鈥揝 test), or to compare two samples (two-sample K鈥揝 test).</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000118>Kolmogorov-Smirnov</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test</obo:IAO_0000119>
@@ -736,7 +736,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000675"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a data transformation that is specifically an inferential statistic to assess the equality of variances in different sample; tests the null hypothesis that the population variances are equal (called homogeneity of variance or homoscedasticity).</obo:IAO_0000115>
+        <obo:IAO_0000115>A data transformation that is specifically an inferential statistic to assess the equality of variances in different sample; tests the null hypothesis that the population variances are equal (called homogeneity of variance or homoscedasticity).</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Levene%27s_test</obo:IAO_0000119>
         <rdfs:label>levene&apos;s test</rdfs:label>
@@ -760,7 +760,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000675"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a data transformation used for both hypothesis testing and model building to examine the relationship between more than two categorical variables; uses a likelihood ratio statistic that has an approximate chi-square distribution when the sample size is large</obo:IAO_0000115>
+        <obo:IAO_0000115>A data transformation used for both hypothesis testing and model building to examine the relationship between more than two categorical variables; uses a likelihood ratio statistic that has an approximate chi-square distribution when the sample size is large.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Loglinear_analysis</obo:IAO_0000119>
         <rdfs:label>loglinear analysis</rdfs:label>
@@ -772,7 +772,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000034">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000121"/>
-        <obo:IAO_0000115>a normal approximation used on nominal data; applied to 2x2 contingency tables to determine whether the row and column marginal frequencies are equal (&quot;marginal homogeneity&quot;).</obo:IAO_0000115>
+        <obo:IAO_0000115>A normal approximation used on nominal data; applied to 2x2 contingency tables to determine whether the row and column marginal frequencies are equal (&quot;marginal homogeneity&quot;).</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/McNemar%27s_test</obo:IAO_0000119>
         <rdfs:label>mcnemar&apos;s test</rdfs:label>
@@ -784,7 +784,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000035">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <obo:IAO_0000115>a directive information entity that represents a mathematical relationship which relates changes in a given response to changes in one or more factors. A statistical model is a formalization of relationships between variables in the form of mathematical equations.</obo:IAO_0000115>
+        <obo:IAO_0000115>A directive information entity that represents a mathematical relationship which relates changes in a given response to changes in one or more factors. A statistical model is a formalization of relationships between variables in the form of mathematical equations.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000118>model</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://www.itl.nist.gov/div898/handbook/pri/section7/pri7.htm; http://en.wikipedia.org/wiki/Statistical_model</obo:IAO_0000119>
@@ -809,7 +809,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000037">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <obo:IAO_0000115>a directive information entity that shows how changing the settings of a factor changes the response. The effect of a single factor is also called a main effect.</obo:IAO_0000115>
+        <obo:IAO_0000115>A directive information entity that shows how changing the settings of a factor changes the response. The effect of a single factor is also called a main effect.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000118>effect</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://www.itl.nist.gov/div898/handbook/pri/section7/pri7.htm</obo:IAO_0000119>
@@ -842,7 +842,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000039">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <obo:IAO_0000115>a variable specification that specifie a variable that may have a causal impact on both the independent variable and dependent variable; ignoring a confounding variable may bias empirical estimates of the causal effect of the independent variable.</obo:IAO_0000115>
+        <obo:IAO_0000115>A variable specification that specifies a variable that may have a causal impact on both the independent variable and dependent variable; ignoring a confounding variable may bias empirical estimates of the causal effect of the independent variable.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000118>confounders</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Mediation_%28statistics%29#Mediator_Variable</obo:IAO_0000119>
@@ -855,7 +855,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000040">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <obo:IAO_0000115>a variable specification that specifies a variable used in statistical analysis to correct, adjust, or modify the values of a dependent variable; an independent variable not manipulated by the investigator</obo:IAO_0000115>
+        <obo:IAO_0000115>A variable specification that specifies a variable used in statistical analysis to correct, adjust, or modify the values of a dependent variable; an independent variable not manipulated by the investigator</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000118>covariate</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://www.statistics.com</obo:IAO_0000119>
@@ -868,7 +868,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000041">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <obo:IAO_0000115>a variable that has only two categories</obo:IAO_0000115>
+        <obo:IAO_0000115>A variable that has only two categories.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000118>dichotomous variable</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: SAS users guide</obo:IAO_0000119>
@@ -881,7 +881,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000042">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000038"/>
-        <obo:IAO_0000115>a statistical variable with only two categories that reflect only part of the information available in a more comprehensive variable</obo:IAO_0000115>
+        <obo:IAO_0000115>A statistical variable with only two categories that reflect only part of the information available in a more comprehensive variable</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: SAS users guide</obo:IAO_0000119>
         <rdfs:label>dummy variable</rdfs:label>
@@ -893,7 +893,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000043">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000033"/>
-        <obo:IAO_0000115>A varialbe postulated to be a predictor of one or more dependent variables, and simultaneously predicted by one or more independent variables</obo:IAO_0000115>
+        <obo:IAO_0000115>A variable postulated to be a predictor of one or more dependent variables, and simultaneously predicted by one or more independent variables</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000118>intervening variable, mediating variable</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: SAS Users Guide</obo:IAO_0000119>
@@ -930,7 +930,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000046">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000118"/>
-        <obo:IAO_0000115>a likelihood ratio that is calculated by dividing 1 minus sensitivity by specificity ((1-sensitivity)/specificity).</obo:IAO_0000115>
+        <obo:IAO_0000115>A likelihood ratio that is calculated by dividing 1 minus sensitivity by specificity ((1-sensitivity)/specificity).</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <rdfs:label>negative likelihood ratio</rdfs:label>
@@ -942,7 +942,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000047">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000118"/>
-        <obo:IAO_0000115>a likelihood ratio that is calculated by dividing sensitivity by 1 minus specificity (sensitivity/(1-specificity)).</obo:IAO_0000115>
+        <obo:IAO_0000115>A likelihood ratio that is calculated by dividing sensitivity by 1 minus specificity (sensitivity/(1-specificity)).</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <rdfs:label>positive likelihood ratio</rdfs:label>
@@ -978,7 +978,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000121"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a data item that refers to the number of true positives and true negatives divided by the total number of observations.</obo:IAO_0000115>
+        <obo:IAO_0000115>A data item that refers to the number of true positives and true negatives divided by the total number of observations.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <rdfs:label>accuracy</rdfs:label>
@@ -1000,10 +1000,10 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <obo:IAO_0000115>occurs when certain values of a measurement or observation are only partially known, not possible to observe</obo:IAO_0000115>
-        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
+        <obo:IAO_0000115>A data item collected from censoring that the value of a measurement or observation is only partially known.</obo:IAO_0000115>
+        <obo:IAO_0000117>Marcy Harris, Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000118>censoring</obo:IAO_0000118>
-        <obo:IAO_0000119>WEB: SAS users guide</obo:IAO_0000119>
+        <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Censoring_(statistics)</obo:IAO_0000119>
         <rdfs:label>censored data</rdfs:label>
     </owl:Class>
     
@@ -1045,7 +1045,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000053">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000060"/>
-        <obo:IAO_0000115>a validity that refers to the degree to which evidence and theory support the interpretations of test scores (as entailed by proposed uses of tests).</obo:IAO_0000115>
+        <obo:IAO_0000115>A validity that refers to the degree to which evidence and theory support the interpretations of test scores (as entailed by proposed uses of tests).</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Validity_(statistics)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">test validity</rdfs:label>
@@ -1119,7 +1119,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000121"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a data item that refers to the extent to which repeated measurements of a relatively stable phenomenon fall closely to each other.</obo:IAO_0000115>
+        <obo:IAO_0000115>A data item that refers to the extent to which repeated measurements of a relatively stable phenomenon fall closely to each other.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <rdfs:label>reliability</rdfs:label>
@@ -1137,7 +1137,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000121"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a data item that measures the proportion of actual positives which are correctly identified as such (e.g. the percentage of sick people who are correctly identified as having the condition). </obo:IAO_0000115>
+        <obo:IAO_0000115>A data item that measures the proportion of actual positives which are correctly identified as such (e.g. the percentage of sick people who are correctly identified as having the condition). </obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000118>true positive rate, recall</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Sensitivity_and_specificity</obo:IAO_0000119>
@@ -1156,7 +1156,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000121"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a data item that refers to the proportion of negatives in a binary classification test which are correctly identified</obo:IAO_0000115>
+        <obo:IAO_0000115>A data item that refers to the proportion of negatives in a binary classification test which are correctly identified</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000118>true negative rate</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Sensitivity_and_specificity</obo:IAO_0000119>
@@ -1175,7 +1175,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000121"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a data item that refers to the extent to which a concept conclusion or measurement is well-founded and corresponds accurately to the real world. </obo:IAO_0000115>
+        <obo:IAO_0000115>A data item that refers to the extent to which a concept conclusion or measurement is well-founded and corresponds accurately to the real world. </obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Validity_(statistics)</obo:IAO_0000119>
@@ -1189,7 +1189,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000061">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200103"/>
-        <obo:IAO_0000115>A special case of multiple linear regression in which the relationship between the independent variable x and the dependent variable y is modelled as an nth order polynomial</obo:IAO_0000115>
+        <obo:IAO_0000115>A special case of multiple linear regression in which the relationship between the independent variable x and the dependent variable y is modeled as an nth order polynomial</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Polynomial_regression</obo:IAO_0000119>
         <rdfs:label>polynomial regression</rdfs:label>
@@ -1201,7 +1201,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000062">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000137"/>
-        <obo:IAO_0000115>a plan specification that provides a detailed outline of which measurements will be taken at what times, on which material, in what manner, and by whom. Sampling plans should be designed in such a way that the resulting data will contain a representative sample of the parameters of interest and allow for all questions, as stated in the goals, to be answered. </obo:IAO_0000115>
+        <obo:IAO_0000115>A plan specification that provides a detailed outline of which measurements will be taken at what times, on which material, in what manner, and by whom. Sampling plans should be designed in such a way that the resulting data will contain a representative sample of the parameters of interest and allow for all questions, as stated in the goals, to be answered. </obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000118>sampling design</obo:IAO_0000118>
         <obo:IAO_0000118>sampling plan</obo:IAO_0000118>
@@ -1227,7 +1227,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000064">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000055"/>
-        <obo:IAO_0000115>a prevalence rate that occurs at a specific period of time</obo:IAO_0000115>
+        <obo:IAO_0000115>A prevalence rate that occurs at a specific period of time.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <rdfs:label>period prevalence rate</rdfs:label>
@@ -1239,7 +1239,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000065">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000055"/>
-        <obo:IAO_0000115>a prevalence rate that occurs at a specific point of time</obo:IAO_0000115>
+        <obo:IAO_0000115>A prevalence rate that occurs at a specific point of time.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <rdfs:label>point prevalence rate</rdfs:label>
@@ -1275,7 +1275,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000068">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000010"/>
-        <obo:IAO_0000115>a tabular summary of a set of data showing the number of items in each of several non-overlapping classes or groupings</obo:IAO_0000115>
+        <obo:IAO_0000115>A tabular summary of a set of data showing the number of items in each of several non-overlapping classes or groupings</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://statistics.com</obo:IAO_0000119>
         <rdfs:label>frequency distribution</rdfs:label>
@@ -1287,7 +1287,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000069">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000071"/>
-        <obo:IAO_0000115>a statistical measure of inter-rater agreement or inter-annotator agreement for qualitative (categorical) items.</obo:IAO_0000115>
+        <obo:IAO_0000115>A statistical measure of inter-rater agreement or inter-annotator agreement for qualitative (categorical) items.</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Cohen%27s_kappa</obo:IAO_0000119>
         <rdfs:label>cohen&apos;s kappa coefficient</rdfs:label>
     </owl:Class>
@@ -1420,7 +1420,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000080">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000071"/>
-        <obo:IAO_0000115>a quantitative confidence value that is a general statistical term meaning a systematic (not random) deviation from the true value</obo:IAO_0000115>
+        <obo:IAO_0000115>A quantitative confidence value that is a general statistical term meaning a systematic (not random) deviation from the true value</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.statistics.com</obo:IAO_0000119>
         <rdfs:label>bias</rdfs:label>
@@ -1445,7 +1445,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000082">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000071"/>
-        <obo:IAO_0000115>a quantitative confidence value that represents unexplained variation in a collection of observations; comopnents of error include random error and lack of fit error</obo:IAO_0000115>
+        <obo:IAO_0000115>A quantitative confidence value that represents unexplained variation in a collection of observations; comopnents of error include random error and lack of fit error</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000118>error</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://www.itl.nist.gov/div898/handbook/pri/section7/pri7.htm</obo:IAO_0000119>
@@ -1470,7 +1470,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000084">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000071"/>
-        <obo:IAO_0000115>a quantitative confidence value that is a descriptive statistic and can be used to describe how strongly units in the same group resemble each other; unlike other correlation measures it operates on data structured as groups, rather than data structured as paired observations.</obo:IAO_0000115>
+        <obo:IAO_0000115>A quantitative confidence value that is a descriptive statistic and can be used to describe how strongly units in the same group resemble each other; unlike other correlation measures it operates on data structured as groups, rather than data structured as paired observations.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000118>ICC</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Intraclass_correlation</obo:IAO_0000119>
@@ -1483,7 +1483,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000085">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000071"/>
-        <obo:IAO_0000115>a quantitative confidence value that has been standardized so that they have variances of 1.0; produces standardized regression coefficients (betas)</obo:IAO_0000115>
+        <obo:IAO_0000115>A quantitative confidence value that has been standardized so that they have variances of 1.0; produces standardized regression coefficients (betas)</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: SAS users guide</obo:IAO_0000119>
         <rdfs:label>standardized coefficient</rdfs:label>
@@ -1495,7 +1495,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000086">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200102"/>
-        <obo:IAO_0000115>a type of regression analysis used for predicting the outcome of a categorical dependent variable</obo:IAO_0000115>
+        <obo:IAO_0000115>A type of regression analysis used for predicting the outcome of a categorical dependent variable</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000118>logistic regression</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Logistic_regression</obo:IAO_0000119>
@@ -1508,7 +1508,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000087">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200102"/>
-        <obo:IAO_0000115>a form of regression analysis in which observational data are modeled by a function which is a nonlinear combination of the model parameters and depends on one or more independent variables</obo:IAO_0000115>
+        <obo:IAO_0000115>A form of regression analysis in which observational data are modeled by a function which is a nonlinear combination of the model parameters and depends on one or more independent variables</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Nonlinear_regression</obo:IAO_0000119>
         <rdfs:label>nonlinear regression</rdfs:label>
@@ -1520,7 +1520,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000088">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000062"/>
-        <obo:IAO_0000115>a data sampling design that does not use randomization for sample selection</obo:IAO_0000115>
+        <obo:IAO_0000115>A data sampling design that does not use randomization for sample selection</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris, Jie Zheng, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000118>non-randomization sampling plan</obo:IAO_0000118>
         <rdfs:label>non-randomization sampling design</rdfs:label>
@@ -1532,7 +1532,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000089">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000062"/>
-        <obo:IAO_0000115>a data sampling design that uses randomization for sample selection</obo:IAO_0000115>
+        <obo:IAO_0000115>A data sampling design that uses randomization for sample selection</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris, Jie Zheng, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000118>randomization sampling plan</obo:IAO_0000118>
         <rdfs:label>randomization sampling design</rdfs:label>
@@ -1593,7 +1593,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000094">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000058"/>
-        <obo:IAO_0000115>a sensitivity that refers to the number of patients with a positive test who have a disease divided by all patients who have the disease. A test with high sensitivity will not miss many patients who have the disease (i.e., few false negative results).</obo:IAO_0000115>
+        <obo:IAO_0000115>A sensitivity that refers to the number of patients with a positive test who have a disease divided by all patients who have the disease. A test with high sensitivity will not miss many patients who have the disease (i.e., few false negative results).</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <rdfs:label>disease test sensitivity</rdfs:label>
@@ -1605,7 +1605,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000095">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000059"/>
-        <obo:IAO_0000115>a specificity that refers to the number of patients who have a negative test and do not have the disease divided by the number of patients who do not have the disease. A test with high specificity will infrequently identify patients as having a disease when they do not (i.e., few false positive results).</obo:IAO_0000115>
+        <obo:IAO_0000115>A specificity that refers to the number of patients who have a negative test and do not have the disease divided by the number of patients who do not have the disease. A test with high specificity will infrequently identify patients as having a disease when they do not (i.e., few false positive results).</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <rdfs:label>disease test specificity</rdfs:label>
@@ -1629,7 +1629,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000097">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000037"/>
-        <obo:IAO_0000115>a statistical effect that represents the role of a variable in an estimated model (most often a regression model) and its effect on the dependent variable. A variable that has an interaction effect will have a different effect on the dependent variable, depending on the level of some third variable.</obo:IAO_0000115>
+        <obo:IAO_0000115>A statistical effect that represents the role of a variable in an estimated model (most often a regression model) and its effect on the dependent variable. A variable that has an interaction effect will have a different effect on the dependent variable, depending on the level of some third variable.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000118>moderation</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://www.itl.nist.gov/div898/handbook/pri/section7/pri7.htm</obo:IAO_0000119>
@@ -1654,7 +1654,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000099">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000082"/>
-        <obo:IAO_0000115>A statistical error that occurs when the analysis omits one or more important terms or factors from the model</obo:IAO_0000115>
+        <obo:IAO_0000115>A statistical error that occurs when the analysis omits one or more important terms or factors from the model.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.itl.nist.gov/div898/handbook/pri/section7/pri7.htm</obo:IAO_0000119>
         <rdfs:label>lack of fit error</rdfs:label>
@@ -1666,7 +1666,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000100">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000082"/>
-        <obo:IAO_0000115>the null hypothesis is true but has been rejected; a test result that indicates a given condition has been fulfilled, when it actually has not been fulfilled</obo:IAO_0000115>
+        <obo:IAO_0000115>A statistical error that the null hypothesis is true but has been rejected; a test result that indicates a given condition has been fulfilled, when it actually has not been fulfilled</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000118>false positive</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Type_I_and_type_II_errors</obo:IAO_0000119>
@@ -1679,7 +1679,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000101">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000082"/>
-        <obo:IAO_0000115>the null hypothesis is false but has been accepted; a test result indicates that a condition failed, while it actually was successful.</obo:IAO_0000115>
+        <obo:IAO_0000115>A statistical error that the null hypothesis is false but has been accepted; a test result indicates that a condition failed, while it actually was successful.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000118>false negative</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Type_I_and_type_II_errors</obo:IAO_0000119>
@@ -1692,7 +1692,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000102">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000673"/>
-        <obo:IAO_0000115>any statistical test in which the test statistic has an F-distribution under the null hypothesis</obo:IAO_0000115>
+        <obo:IAO_0000115>A statistical hypothesis test in which the test statistic has an F-distribution under the null hypothesis</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/F_test</obo:IAO_0000119>
         <rdfs:label>F test</rdfs:label>
@@ -1704,7 +1704,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000103">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000673"/>
-        <obo:IAO_0000115>a non-parametric test of the null hypothesis that two populations are the same against an alternative hypothesis</obo:IAO_0000115>
+        <obo:IAO_0000115>A non-parametric test of the null hypothesis that two populations are the same against an alternative hypothesis</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000118>Wilcoxon rank-sum test</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U</obo:IAO_0000119>
@@ -1729,7 +1729,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000105">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
-        <obo:IAO_0000115>a study design that starts with the outcome of interest and works backward to the exposure. For instance, patients with a disease are identified and compared with controls for exposure to a risk factor.</obo:IAO_0000115>
+        <obo:IAO_0000115>A study design that starts with the outcome of interest and works backward to the exposure. For instance, patients with a disease are identified and compared with controls for exposure to a risk factor.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <rdfs:label>case-control study design</rdfs:label>
@@ -1741,7 +1741,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000106">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
-        <obo:IAO_0000115>a study design that starts with an exposure and moves forward to the outcome of interest, even if the data are collected retrospectively. As an example, a group of patients who have variable exposure to a risk factor of interest can be followed over time for an outcome.</obo:IAO_0000115>
+        <obo:IAO_0000115>A study design that starts with an exposure and moves forward to the outcome of interest, even if the data are collected retrospectively. As an example, a group of patients who have variable exposure to a risk factor of interest can be followed over time for an outcome.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <rdfs:label>cohort study design</rdfs:label>
@@ -1753,7 +1753,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000107">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0500000"/>
-        <obo:IAO_0000115>a study design in which patients are randomly assigned to two or more interventions.</obo:IAO_0000115>
+        <obo:IAO_0000115>A study design in which patients are randomly assigned to two or more interventions.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <rdfs:label>randomized controlled trial design</rdfs:label>
@@ -1777,7 +1777,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000109">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000013"/>
-        <obo:IAO_0000115>a generic term for several similar measures of agreement used with categorical data; typically used in assessing the degree to which two or more raters, examining the same data, agree on assigning data to categories</obo:IAO_0000115>
+        <obo:IAO_0000115>A statistic test for several similar measures of agreement used with categorical data; typically used in assessing the degree to which two or more raters, examining the same data, agree on assigning data to categories</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.statistics.com</obo:IAO_0000119>
         <rdfs:label>kappa statistic</rdfs:label>
@@ -1789,7 +1789,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000110">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000013"/>
-        <obo:IAO_0000115>a statistial test of whether k samples are from populations with equal variances.</obo:IAO_0000115>
+        <obo:IAO_0000115>A test statistic of whether k samples are from populations with equal variances.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Bartlett%27s_test</obo:IAO_0000119>
         <rdfs:label>bartlett&apos;s test</rdfs:label>
@@ -1801,7 +1801,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000111">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000038"/>
-        <obo:IAO_0000115>a statistical variable that specifies a variable describing how, rather than when, effects will occur by accounting for the relationship between the independent and dependent variables. A mediating relationship is one in which the path relating A to C is mediated by a third variable (B).</obo:IAO_0000115>
+        <obo:IAO_0000115>A statistical variable that specifies a variable describing how, rather than when, effects will occur by accounting for the relationship between the independent and dependent variables. A mediating relationship is one in which the path relating A to C is mediated by a third variable (B).</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000118>intervening variable</obo:IAO_0000118>
         <obo:IAO_0000118>mediating variable, mediation</obo:IAO_0000118>
@@ -1815,7 +1815,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000112">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000038"/>
-        <obo:IAO_0000115>a statistical variable that specifies a variable affecting the direction and/or strength of the relation between dependent and independent variables; occurs when the relationship between two variables depends on a third variable</obo:IAO_0000115>
+        <obo:IAO_0000115>A statistical variable that specifies a variable affecting the direction and/or strength of the relation between dependent and independent variables; occurs when the relationship between two variables depends on a third variable</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000118>moderator, interaction</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Moderator_variable</obo:IAO_0000119>
@@ -1828,7 +1828,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000113">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000014"/>
-        <obo:IAO_0000115>a weighted data that measures the agreeement for categorical data; a generalization of the Kappa statistics to situations in which the categories are not equal in some respect so weighted by an objective or subjective function</obo:IAO_0000115>
+        <obo:IAO_0000115>A weighted data that measures the agreement for categorical data; a generalization of the Kappa statistics to situations in which the categories are not equal in some respect so weighted by an objective or subjective function</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.statistics.com</obo:IAO_0000119>
         <rdfs:label>weighted kappa</rdfs:label>
@@ -1846,7 +1846,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200119"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>the middle value that separates the higher half from the lower half of the data sample, population, or probability distribution</obo:IAO_0000115>
+        <obo:IAO_0000115>A center value that separates the higher half from the lower half of the data sample, population, or probability distribution</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Median</obo:IAO_0000119>
         <rdfs:label>median</rdfs:label>
@@ -1858,7 +1858,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000115">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000035"/>
-        <obo:IAO_0000115>a statistical model containing both fixed effects and random effects, that is mixed effects;</obo:IAO_0000115>
+        <obo:IAO_0000115>A statistical model containing both fixed effects and random effects, that is mixed effects;</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Mixed_model</obo:IAO_0000119>
         <rdfs:label>mixed model</rdfs:label>
@@ -1870,7 +1870,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000116">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
-        <obo:IAO_0000115>A data transoformation that represents a mathematical function describing the relative likelihood of a continuous random variable to take on a value</obo:IAO_0000115>
+        <obo:IAO_0000115>A data transformation that represents a mathematical function describing the relative likelihood of a continuous random variable to take on a value.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000118>density function</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Probability_density_function</obo:IAO_0000119>
@@ -1889,7 +1889,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000121"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a data item that represents an arrangement according to a rank, i.e., the position of a partiuclar case relative to other cases on a defined scale</obo:IAO_0000115>
+        <obo:IAO_0000115>A data item that represents an arrangement according to a rank, i.e., the position of a particular case relative to other cases on a defined scale.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.merriam-webster.com/dictionary/rank%20order</obo:IAO_0000119>
         <rdfs:label>rank order</rdfs:label>
@@ -1901,7 +1901,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000118">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000071"/>
-        <obo:IAO_0000115>a quantitative confidence value that expresses how many times more likely the data are under one model than the other. </obo:IAO_0000115>
+        <obo:IAO_0000115>A quantitative confidence value that expresses how many times more likely the data are under one model than the other. </obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Likelihood-ratio_test</obo:IAO_0000119>
         <rdfs:label>likelihood ratio</rdfs:label>
@@ -1959,7 +1959,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000001"/>
-        <obo:IAO_0000115>a statistical data analysis that  uses patterns in the sample data to draw inferences about the population represented, accounting for randomness.</obo:IAO_0000115>
+        <obo:IAO_0000115>A statistical data analysis that  uses patterns in the sample data to draw inferences about the population represented, accounting for randomness.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000118>significantly statistical data analysis
 </obo:IAO_0000118>
@@ -2021,7 +2021,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000124">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200166"/>
-        <obo:IAO_0000115>a statistical data analysis objective where the aim is to make inference using population sample data. </obo:IAO_0000115>
+        <obo:IAO_0000115>A statistical data analysis objective where the aim is to make inference using population sample data. </obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">inferential statistical data analysis objective</rdfs:label>
     </owl:Class>
@@ -2056,7 +2056,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000127">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000005"/>
-        <obo:IAO_0000115>an objective specification where the aim is to collect data. </obo:IAO_0000115>
+        <obo:IAO_0000115>An objective specification where the aim is to collect data. </obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">data collection objective</rdfs:label>
     </owl:Class>
@@ -2067,7 +2067,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000128">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000002"/>
-        <obo:IAO_0000115>a data collection process that results in a collection of data generated from an experiment(s).</obo:IAO_0000115>
+        <obo:IAO_0000115>A data collection process that results in a collection of data generated from an experiment(s).</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">data collection from experiment</rdfs:label>
     </owl:Class>
@@ -2078,7 +2078,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000129">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000132"/>
-        <obo:IAO_0000115>a data collection by sampling process that results in a collection of data generated from an survey(s).</obo:IAO_0000115>
+        <obo:IAO_0000115>A data collection by sampling process that results in a collection of data generated from an survey(s).</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">data collection from survey</rdfs:label>
     </owl:Class>
@@ -2089,7 +2089,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000130">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000002"/>
-        <obo:IAO_0000115>a data collection process that results in a collection of data from the literature.</obo:IAO_0000115>
+        <obo:IAO_0000115>A data collection process that results in a collection of data from the literature.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">data collection from literature</rdfs:label>
     </owl:Class>
@@ -2123,7 +2123,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a data collection process that results in a collection of data from a sampling process</obo:IAO_0000115>
+        <obo:IAO_0000115>A data collection process that results in a collection of data from a sampling process.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000118>data sampling</obo:IAO_0000118>
         <rdfs:label xml:lang="en">data collection by sampling</rdfs:label>
@@ -2148,7 +2148,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000134">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000126"/>
-        <obo:IAO_0000115>A random variable which can take an infinite number of possible values</obo:IAO_0000115>
+        <obo:IAO_0000115>A random variable which can take an infinite number of possible values.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.stats.gla.ac.uk/steps/glossary/probability_distributions.html#contvar </obo:IAO_0000119>
         <rdfs:label xml:lang="en">continuous random variable</rdfs:label>
@@ -2203,7 +2203,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000138">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000060"/>
-        <obo:IAO_0000115>a validity that refers to the validity of a diagnosis, and associated diagnostic tests or screening tests in a clinical field such as medicine.</obo:IAO_0000115>
+        <obo:IAO_0000115>A validity that refers to the validity of a diagnosis, and associated diagnostic tests or screening tests in a clinical field such as medicine.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Validity_(statistics)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">diagnostic validity</rdfs:label>
@@ -2221,7 +2221,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000050"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a data collection by sampling process that results in a collection of data generated from an censoring.</obo:IAO_0000115>
+        <obo:IAO_0000115>A data collection by sampling process that results in a collection of data generated from an censoring.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">data collection by censoring</rdfs:label>
     </owl:Class>
@@ -2301,7 +2301,7 @@ http://www.ncbi.nlm.nih.gov/pubmed/10521349
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000143">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000060"/>
-        <obo:IAO_0000115>a validity that refers to whether an experiment (or a study) is able to scientifically answer the questions it is intended to answer.</obo:IAO_0000115>
+        <obo:IAO_0000115>A validity that refers to whether an experiment (or a study) is able to scientifically answer the questions it is intended to answer.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Validity_(statistics)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">experimental validity</rdfs:label>
@@ -2416,7 +2416,7 @@ http://www.ncbi.nlm.nih.gov/pubmed/10521349
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000151">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000143"/>
-        <obo:IAO_0000115>an experimental validity that refers to the degree to which conclusions about the relationship among variables based on the data are correct or ‘reasonable’.</obo:IAO_0000115>
+        <obo:IAO_0000115>An experimental validity that refers to the degree to which conclusions about the relationship among variables based on the data are correct or ‘reasonable’.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Validity_(statistics)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">statistical conclusion validity</rdfs:label>
@@ -2428,7 +2428,7 @@ http://www.ncbi.nlm.nih.gov/pubmed/10521349
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000152">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000143"/>
-        <obo:IAO_0000115>an experimental validity that refers to the degree to which conclusions about causal relationships can be made (e.g. cause and effect), based on the measures used, the research setting, and the whole research design.</obo:IAO_0000115>
+        <obo:IAO_0000115>An experimental validity that refers to the degree to which conclusions about causal relationships can be made (e.g. cause and effect), based on the measures used, the research setting, and the whole research design.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Validity_(statistics)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">internal validity</rdfs:label>
@@ -2440,7 +2440,7 @@ http://www.ncbi.nlm.nih.gov/pubmed/10521349
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000153">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000143"/>
-        <obo:IAO_0000115>an experimental validity that refers to the extent to which the (internally valid) results of a study can be held to be true for other cases, for example to different people, places or times. In other words, it is about whether findings can be validly generalized. If the same research study was conducted in those other cases, would it get the same results?</obo:IAO_0000115>
+        <obo:IAO_0000115>An experimental validity that refers to the extent to which the (internally valid) results of a study can be held to be true for other cases, for example to different people, places or times. In other words, it is about whether findings can be validly generalized. If the same research study was conducted in those other cases, would it get the same results?</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Validity_(statistics)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">external validity</rdfs:label>
@@ -2452,7 +2452,7 @@ http://www.ncbi.nlm.nih.gov/pubmed/10521349
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000154">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000153"/>
-        <obo:IAO_0000115>an external validity that refers to the extent to which research results can be applied to real life situations outside of research settings.</obo:IAO_0000115>
+        <obo:IAO_0000115>An external validity that refers to the extent to which research results can be applied to real life situations outside of research settings.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Validity_(statistics)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">ecological validity</rdfs:label>
@@ -2464,7 +2464,7 @@ http://www.ncbi.nlm.nih.gov/pubmed/10521349
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000155">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000053"/>
-        <obo:IAO_0000115>a test validity that refers to the extent to which operationalizations of a construct (i.e., practical tests developed from a theory) do actually measure what the theory says they do. For example, to what extent is a questionnaire actually measuring &quot;intelligence&quot;?</obo:IAO_0000115>
+        <obo:IAO_0000115>A test validity that refers to the extent to which operationalizations of a construct (i.e., practical tests developed from a theory) do actually measure what the theory says they do. For example, to what extent is a questionnaire actually measuring &quot;intelligence&quot;?</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Validity_(statistics)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">construct validity</rdfs:label>
@@ -2476,7 +2476,7 @@ http://www.ncbi.nlm.nih.gov/pubmed/10521349
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000156">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000155"/>
-        <obo:IAO_0000115>a construct validity that refers to the degree to which a measure is correlated with other measures that it is theoretically predicted to correlate with.</obo:IAO_0000115>
+        <obo:IAO_0000115>A construct validity that refers to the degree to which a measure is correlated with other measures that it is theoretically predicted to correlate with.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Validity_(statistics)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">convergent validity</rdfs:label>
@@ -2488,7 +2488,7 @@ http://www.ncbi.nlm.nih.gov/pubmed/10521349
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000157">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000155"/>
-        <obo:IAO_0000115>a construct validity that tests whether concepts or measurements that are supposed to be unrelated are, in fact, unrelated.</obo:IAO_0000115>
+        <obo:IAO_0000115>A construct validity that tests whether concepts or measurements that are supposed to be unrelated are, in fact, unrelated.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Validity_(statistics)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">discriminant validity</rdfs:label>
@@ -2500,7 +2500,7 @@ http://www.ncbi.nlm.nih.gov/pubmed/10521349
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000158">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000053"/>
-        <obo:IAO_0000115>a test validity that determine whether it covers a representative sample of the behavior domain to be measured through systematic examination of the test content. For example, does an IQ questionnaire have items covering all areas of intelligence discussed in the scientific literature?</obo:IAO_0000115>
+        <obo:IAO_0000115>A test validity that determine whether it covers a representative sample of the behavior domain to be measured through systematic examination of the test content. For example, does an IQ questionnaire have items covering all areas of intelligence discussed in the scientific literature?</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Validity_(statistics)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">content validity</rdfs:label>
@@ -2512,7 +2512,7 @@ http://www.ncbi.nlm.nih.gov/pubmed/10521349
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000159">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000053"/>
-        <obo:IAO_0000115>a test validity that refers to the correlation between the test and a criterion variable (or variables) taken as representative of the construct. In other words, it compares the test with other measures or outcomes (the criteria) already held to be valid. For example, employee selection tests are often validated against measures of job performance (the criterion), and IQ tests are often validated against measures of academic performance (the criterion).</obo:IAO_0000115>
+        <obo:IAO_0000115>A test validity that refers to the correlation between the test and a criterion variable (or variables) taken as representative of the construct. In other words, it compares the test with other measures or outcomes (the criteria) already held to be valid. For example, employee selection tests are often validated against measures of job performance (the criterion), and IQ tests are often validated against measures of academic performance (the criterion).</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Validity_(statistics)</obo:IAO_0000119>
         <rdfs:comment>If the test data and criterion data are collected at the same time, this is referred to as concurrent validity evidence. If the test data are collected first in order to predict criterion data collected at a later point in time, then this is referred to as predictive validity evidence.</rdfs:comment>
@@ -2525,7 +2525,7 @@ http://www.ncbi.nlm.nih.gov/pubmed/10521349
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000160">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000159"/>
-        <obo:IAO_0000115>a criterion validity that refers to the degree to which the operationalization correlates with other measures of the same construct that are measured at the same time. When the measure is compared to another measure of the same type, they will be related (or correlated). In the selection test example, this would mean that the tests are administered to current employees and then correlated with their scores on performance reviews.</obo:IAO_0000115>
+        <obo:IAO_0000115>A criterion validity that refers to the degree to which the operationalization correlates with other measures of the same construct that are measured at the same time. When the measure is compared to another measure of the same type, they will be related (or correlated). In the selection test example, this would mean that the tests are administered to current employees and then correlated with their scores on performance reviews.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Validity_(statistics)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">concurrent validity</rdfs:label>
@@ -2537,7 +2537,7 @@ http://www.ncbi.nlm.nih.gov/pubmed/10521349
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000161">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000159"/>
-        <obo:IAO_0000115>a criterion validity that refers to the degree to which the operationalization can predict (or correlate with) other measures of the same construct that are measured at some time in the future. With the selection test example, this would mean that the tests are administered to applicants, all applicants are hired, their performance is reviewed at a later time, and then their scores on the two measures are correlated.</obo:IAO_0000115>
+        <obo:IAO_0000115>A criterion validity that refers to the degree to which the operationalization can predict (or correlate with) other measures of the same construct that are measured at some time in the future. With the selection test example, this would mean that the tests are administered to applicants, all applicants are hired, their performance is reviewed at a later time, and then their scores on the two measures are correlated.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Validity_(statistics)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">predictive validity</rdfs:label>
@@ -2549,7 +2549,7 @@ http://www.ncbi.nlm.nih.gov/pubmed/10521349
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000162">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000158"/>
-        <obo:IAO_0000115>a content validity that refers to the extent to which an abstract theoretical construct can be turned into a specific practical test.</obo:IAO_0000115>
+        <obo:IAO_0000115>A content validity that refers to the extent to which an abstract theoretical construct can be turned into a specific practical test.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000118>translation validity</obo:IAO_0000118>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Validity_(statistics)</obo:IAO_0000119>
@@ -2562,7 +2562,7 @@ http://www.ncbi.nlm.nih.gov/pubmed/10521349
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000163">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000158"/>
-        <obo:IAO_0000115>a content validity that estimates whether a test appears to measure a certain criterion. It is not guaranteed that the test actually measures phenomena in that domain. When the test does not appear to be measuring what it is, it has low face validity.</obo:IAO_0000115>
+        <obo:IAO_0000115>A content validity that estimates whether a test appears to measure a certain criterion. It is not guaranteed that the test actually measures phenomena in that domain. When the test does not appear to be measuring what it is, it has low face validity.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000118>translation validity</obo:IAO_0000118>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Validity_(statistics)</obo:IAO_0000119>
@@ -2729,7 +2729,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a data collection process that is conducted  through an online process.</obo:IAO_0000115>
+        <obo:IAO_0000115>A data collection process that is conducted  through an online process.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">data collection from online resource</rdfs:label>
     </owl:Class>
@@ -2740,7 +2740,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000172">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000171"/>
-        <obo:IAO_0000115>an online data collection process that extracts data from an online database</obo:IAO_0000115>
+        <obo:IAO_0000115>An online data collection process that extracts data from an online database</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Online_database</obo:IAO_0000119>
         <rdfs:label xml:lang="en">data collection from online database</rdfs:label>
@@ -2763,7 +2763,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>an online data collection process that extracts data from online using a web crawler. A Web crawler is an Internet bot which systematically browses the World Wide Web and gets data from WWW.</obo:IAO_0000115>
+        <obo:IAO_0000115>An online data collection process that extracts data from online using a web crawler. A Web crawler is an Internet bot which systematically browses the World Wide Web and gets data from WWW.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000118>data collection using Web spider</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Web_crawler</obo:IAO_0000119>
@@ -2787,7 +2787,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a data collection process that deals with incommensurate fields in the data.</obo:IAO_0000115>
+        <obo:IAO_0000115>A data collection process that deals with incommensurate fields in the data.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.ncbi.nlm.nih.gov/pubmed/26428398</obo:IAO_0000119>
         <rdfs:label xml:lang="en">collection of incommensurate data</rdfs:label>
@@ -2822,7 +2822,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000176">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000188"/>
-        <obo:IAO_0000115>a data transformation process that re-arrange the order of all or part of a set of data items.</obo:IAO_0000115>
+        <obo:IAO_0000115>A data transformation process that re-arrange the order of all or part of a set of data items.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://stattrek.com/statistics/dictionary.aspx?definition=Permutation</obo:IAO_0000119>
         <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Permutation</obo:IAO_0000119>
@@ -2846,7 +2846,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a planned process that generates possible values of missing data</obo:IAO_0000115>
+        <obo:IAO_0000115>A planned process that generates possible values of missing data</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: https://www.niehs.nih.gov/about/visiting/events/pastmtg/assets/docs_k_m/missingdatar.r</obo:IAO_0000119>
         <rdfs:label xml:lang="en">generation of missing data</rdfs:label>
@@ -2858,7 +2858,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000178">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
-        <obo:IAO_0000115>a data transformation process that transforms incompatible data to compatible data.</obo:IAO_0000115>
+        <obo:IAO_0000115>A data transformation process that transforms incompatible data to compatible data.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Loglinear_analysis</obo:IAO_0000119>
         <rdfs:label xml:lang="en">processing incompatible data</rdfs:label>
@@ -2870,7 +2870,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000179">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000176"/>
-        <obo:IAO_0000115>a permutation process that randomly orders a set of data items.</obo:IAO_0000115>
+        <obo:IAO_0000115>A permutation process that randomly orders a set of data items.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Random_permutation</obo:IAO_0000119>
         <rdfs:label xml:lang="en">random permutation</rdfs:label>
@@ -2882,7 +2882,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000180">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000023"/>
-        <obo:IAO_0000115>a multivariate analysis that uncovers the latent structure (dimensions) of a set of variables. It reduces attribute space from a larger number of variables to a smaller number of factors.</obo:IAO_0000115>
+        <obo:IAO_0000115>A multivariate analysis that uncovers the latent structure (dimensions) of a set of variables. It reduces attribute space from a larger number of variables to a smaller number of factors.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He, Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Factor_analysis</obo:IAO_0000119>
         <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Multivariate_analysis</obo:IAO_0000119>
@@ -2895,7 +2895,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000181">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000023"/>
-        <obo:IAO_0000115>a multivariate analysis that compares multivariate sample means. As a multivariate procedure, it is used when there are two or more dependent variables.</obo:IAO_0000115>
+        <obo:IAO_0000115>A multivariate analysis that compares multivariate sample means. As a multivariate procedure, it is used when there are two or more dependent variables.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He, Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Multivariate_analysis_of_variance</obo:IAO_0000119>
         <obo:IAO_0000119>multivariate analysis of variance</obo:IAO_0000119>
@@ -2908,7 +2908,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000182">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200102"/>
-        <obo:IAO_0000115>a regression method of interpolation for which the interpolated values are modeled by a Gaussian process governed by prior covariances, as opposed to a piecewise-polynomial spline chosen to optimize smoothness of the fitted values.</obo:IAO_0000115>
+        <obo:IAO_0000115>A regression method of interpolation for which the interpolated values are modeled by a Gaussian process governed by prior covariances, as opposed to a piecewise-polynomial spline chosen to optimize smoothness of the fitted values.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000118>Gaussian process regression</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Kriging</obo:IAO_0000119>
@@ -2933,7 +2933,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000184">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000179"/>
-        <obo:IAO_0000115>a random permutation process that generates a permutation of n items uniformly at random without retries. Specifically, it is to start with any permutation (for example, the identity permutation), and then go through the positions 1 through n − 1, and for each position i swap the element currently there with a randomly chosen element from positions i through n, inclusive.</obo:IAO_0000115>
+        <obo:IAO_0000115>A random permutation process that generates a permutation of n items uniformly at random without retries. Specifically, it is to start with any permutation (for example, the identity permutation), and then go through the positions 1 through n − 1, and for each position i swap the element currently there with a randomly chosen element from positions i through n, inclusive.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Random_permutation</obo:IAO_0000119>
         <rdfs:label xml:lang="en">knuth shuffle</rdfs:label>
@@ -2945,7 +2945,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000185">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000188"/>
-        <obo:IAO_0000115>a data transformation process that puts the data items in a set in a certain order.</obo:IAO_0000115>
+        <obo:IAO_0000115>A data transformation process that puts the data items in a set in a certain order.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Sorting_algorithm</obo:IAO_0000119>
         <rdfs:label xml:lang="en">sorting</rdfs:label>
@@ -2957,7 +2957,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000186">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000185"/>
-        <obo:IAO_0000115>a sorting process that sorts a set of data items based on the numberical order.</obo:IAO_0000115>
+        <obo:IAO_0000115>A sorting process that sorts a set of data items based on the numberical order.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Sorting_algorithm</obo:IAO_0000119>
         <rdfs:label xml:lang="en">sorting based on numerical order</rdfs:label>
@@ -2969,7 +2969,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000187">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000185"/>
-        <obo:IAO_0000115>a sorting process that sorts a set of data items based on a lexicorgraphic order</obo:IAO_0000115>
+        <obo:IAO_0000115>A sorting process that sorts a set of data items based on a lexicorgraphic order</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Sorting_algorithm</obo:IAO_0000119>
         <rdfs:label xml:lang="en">sorting based on lexicorgraphic order</rdfs:label>
@@ -2981,7 +2981,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000188">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
-        <obo:IAO_0000115>a data processing that applies a deterministic mathematical function to each point in a data set; that is, each data point zi is replaced with the transformed value yi = f(zi), where f is a function.</obo:IAO_0000115>
+        <obo:IAO_0000115>A data processing that applies a deterministic mathematical function to each point in a data set; that is, each data point zi is replaced with the transformed value yi = f(zi), where f is a function.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Data_transformation_(statistics)</obo:IAO_0000119>
         <rdfs:label xml:lang="en">data transformation in statistics</rdfs:label>
@@ -2994,6 +2994,9 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000189">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200094"/>
         <rdfs:label xml:lang="en">log2 transformation</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A logarithmic transformation that uses the base-2 logarithm.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Jie Zheng, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">WEB: http://en.wikipedia.org/wiki/Logarithm</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -3002,6 +3005,10 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000190">
         <rdfs:label xml:lang="en">square root transformation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000188"/>
+        <obo:IAO_0000115 xml:lang="en">A data transformation that performs an operation of square root.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Jie Zheng, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">WEB: https://en.wikipedia.org/wiki/Square_root</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -3010,6 +3017,10 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000191">
         <rdfs:label xml:lang="en">Anscombe transformation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000188"/>
+        <obo:IAO_0000117 xml:lang="en">Jie Zheng, Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">WEB: https://en.wikipedia.org/wiki/Anscombe_transform</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A variance-stabilizing transformation that transforms a random variable with a Poisson distribution into one with an approximately standard Gaussian distribution.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3018,6 +3029,9 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000192">
         <rdfs:label xml:lang="en">rank-order transformation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000188"/>
+        <obo:IAO_0000115 xml:lang="en">A data transformation that lists data items in a sequential arrangement</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Jie Zheng, Yongqun He</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -3051,7 +3065,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000195">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000193"/>
-        <obo:IAO_0000115>a data value that is descrete, ie, counted.</obo:IAO_0000115>
+        <obo:IAO_0000115>A data value that is discrete, ie, counted.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He, Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: https://www.mathsisfun.com/data/data-discrete-continuous.html</obo:IAO_0000119>
         <rdfs:label xml:lang="en">discrete data value</rdfs:label>
@@ -3063,7 +3077,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000196">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000193"/>
-        <obo:IAO_0000115>a data value that is an ordinal number, ie., a number that tells the position of something in a list.</obo:IAO_0000115>
+        <obo:IAO_0000115>A data value that is an ordinal number, ie., a number that tells the position of something in a list.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He, Jie Zheng</obo:IAO_0000117>
         <rdfs:label xml:lang="en">ordinal data value</rdfs:label>
     </owl:Class>
@@ -3074,7 +3088,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000197">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000193"/>
-        <obo:IAO_0000115>a data value that is a cardinal number, i.e., a number that says how many of something there are, such as one, two, three, four, five.</obo:IAO_0000115>
+        <obo:IAO_0000115>A data value that is a cardinal number, i.e., a number that says how many of something there are, such as one, two, three, four, five.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He, Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: https://www.mathsisfun.com/numbers/cardinal-ordinal-nominal.html</obo:IAO_0000119>
         <rdfs:label xml:lang="en">cardinal data value</rdfs:label>
@@ -3099,7 +3113,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000199">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000193"/>
-        <obo:IAO_0000115>a data value that is a nominal number, ie., a number used only as a name, or to identify something (not as an actual value or position)</obo:IAO_0000115>
+        <obo:IAO_0000115>A data value that is a nominal number, ie., a number used only as a name, or to identify something (not as an actual value or position).</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He, Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: https://www.mathsisfun.com/numbers/cardinal-ordinal-nominal.html</obo:IAO_0000119>
         <rdfs:label xml:lang="en">nominal data value</rdfs:label>
@@ -3124,13 +3138,13 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000201">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000038"/>
-        <obo:IAO_0000115>a discrete variable over a particular range of real values is one for which, for any value in the range that the variable is permitted to take on, there is a positive minimum distance to the nearest other permissible value.</obo:IAO_0000115>
-        <obo:IAO_0000116>We will link descrete variable to measurement scale.</obo:IAO_0000116>
+        <obo:IAO_0000115>A statistical variable over a particular range of real values is one for which, for any value in the range that the variable is permitted to take on, there is a positive minimum distance to the nearest other permissible value.</obo:IAO_0000115>
+        <obo:IAO_0000116>We will link discrete variable to measurement scale.</obo:IAO_0000116>
         <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000118>categorical variable</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://www.unesco.org/webworld/idams/advguide/Chapt1_3.htm</obo:IAO_0000119>
         <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Continuous_and_discrete_variables</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">descrete variable</rdfs:label>
+        <rdfs:label xml:lang="en">discrete variable</rdfs:label>
     </owl:Class>
     
 
@@ -3175,7 +3189,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000205">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000201"/>
-        <obo:IAO_0000115>A descrete variable that allows for only qualitative classification</obo:IAO_0000115>
+        <obo:IAO_0000115>A discrete variable that allows for only qualitative classification</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.unesco.org/webworld/idams/advguide/Chapt1_3.htm</obo:IAO_0000119>
         <rdfs:label xml:lang="en">nominal variable</rdfs:label>
@@ -3187,10 +3201,10 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000206">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000205"/>
-        <obo:IAO_0000115>A discrete ordinal variable is a nominal variable, but its different states are ordered in a meaningful sequence</obo:IAO_0000115>
+        <obo:IAO_0000115>A nominal variable, but its different states are ordered in a meaningful sequence</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.unesco.org/webworld/idams/advguide/Chapt1_3.htm</obo:IAO_0000119>
-        <rdfs:label xml:lang="en">descrete ordinal variable</rdfs:label>
+        <rdfs:label xml:lang="en">discrete ordinal variable</rdfs:label>
     </owl:Class>
     
 
@@ -3223,7 +3237,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000209">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000201"/>
-        <obo:IAO_0000115>Multiple response variables are those, which can assume more than one value. A typical example is a survey questionnaire about the use of computers in research. The respondents were asked to indicate the purpose(s) for which they use computers in their research work. The respondents could score more than one category.</obo:IAO_0000115>
+        <obo:IAO_0000115>A discrete variable which can assume more than one value. A typical example is a survey questionnaire about the use of computers in research. The respondents were asked to indicate the purpose(s) for which they use computers in their research work. The respondents could score more than one category.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.unesco.org/webworld/idams/advguide/Chapt1_3.htm</obo:IAO_0000119>
         <rdfs:label xml:lang="en">multiple response variable</rdfs:label>
@@ -3397,7 +3411,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000222">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000188"/>
-        <obo:IAO_0000115>a data transformation process that transforms a data set to a normal distribution.</obo:IAO_0000115>
+        <obo:IAO_0000115>A data transformation process that transforms a data set to a normal distribution.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Oliver He, Asiyah Yu Lin</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Normal_distribution</obo:IAO_0000119>
         <rdfs:label xml:lang="en">normal distribution transformation</rdfs:label>
@@ -3415,7 +3429,9 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-        <rdfs:label xml:lang="en">data set following probablility distribution</rdfs:label>
+        <rdfs:label xml:lang="en">data set following probability distribution</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A data set that follows a probability distribution</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Yongqun He, Jie Zheng, Yu Lin</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -3431,6 +3447,8 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
         <rdfs:label xml:lang="en">normally distributed data set</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A data set that follows a probability distribution</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Yongqun He, Jie Zheng, Yu Lin</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -3467,7 +3485,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000002"/>
-        <obo:IAO_0000115>a data collection process that results in a collection of data generated from document(s).</obo:IAO_0000115>
+        <obo:IAO_0000115>A data collection process that results in a collection of data generated from document(s).</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">data collection from document</rdfs:label>
     </owl:Class>
@@ -3484,7 +3502,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000002"/>
-        <obo:IAO_0000115>a data collection process that results in a collection of data generated from eMedical record(s).</obo:IAO_0000115>
+        <obo:IAO_0000115>A data collection process that results in a collection of data generated from eMedical record(s).</obo:IAO_0000115>
         <rdfs:label xml:lang="en">data collection from eMedical record</rdfs:label>
     </owl:Class>
     
@@ -3494,7 +3512,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000231">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000161"/>
-        <obo:IAO_0000115>a rate of deaths (in general, or due to a specific cause) that in a particular population, scaled to the size of that population, per unit of time. </obo:IAO_0000115>
+        <obo:IAO_0000115>A rate of deaths (in general, or due to a specific cause) that in a particular population, scaled to the size of that population, per unit of time. </obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Mortality_rate</obo:IAO_0000119>
         <rdfs:label xml:lang="en">mortality rate</rdfs:label>
@@ -3506,7 +3524,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000232">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/PATO_0000161"/>
-        <obo:IAO_0000115>a rate of unit shif in a hospital. </obo:IAO_0000115>
+        <obo:IAO_0000115>A rate of unit shif in a hospital. </obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
         <rdfs:label xml:lang="en">hospital unit  shift rate</rdfs:label>
     </owl:Class>
