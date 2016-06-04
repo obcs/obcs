@@ -18,6 +18,11 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">definition</rdfs:label>
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">textual definition</rdfs:label>
@@ -26,20 +31,14 @@
         <obo:IAO_0000115 xml:lang="en">The official OBI definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">The official definition, explaining the meaning of a class or property. Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions.</obo:IAO_0000115>
     </owl:AnnotationProperty>
-    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
-        <rdfs:label xml:lang="en">imported from</rdfs:label>
-    </owl:AnnotationProperty>
     
 
 
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
 
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412">
+        <rdfs:label xml:lang="en">imported from</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -159,7 +158,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/PATO_0000161">
         <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rate</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000019"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality of a single process inhering in a bearer by virtue of the bearer&#39;s occurrence per unit time.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A quality of a single process inhering in a bearer by virtue of the bearer&apos;s occurrence per unit time.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/pato.owl"/>
     </owl:Class>
     
@@ -168,9 +167,9 @@
     <!-- http://purl.obolibrary.org/obo/STATO_0000017 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000017">
-        <rdfs:label xml:lang="en">Wilk&#39;s lambda distribution</rdfs:label>
+        <rdfs:label xml:lang="en">Wilk&apos;s lambda distribution</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000010"/>
-        <obo:IAO_0000115 xml:lang="en">Wilks&#39; lambda distribution (named for Samuel S. Wilks), is a probability distribution used in multivariate hypothesis testing, especially with regard to the likelihood-ratio test and Multivariate analysis of variance. It is a multivariate generalization of the univariate F-distribution, and generalizes the F-distribution in the same way that the Hotelling&#39;s T-squared distribution generalizes Student&#39;s t-distribution.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Wilks&apos; lambda distribution (named for Samuel S. Wilks), is a probability distribution used in multivariate hypothesis testing, especially with regard to the likelihood-ratio test and Multivariate analysis of variance. It is a multivariate generalization of the univariate F-distribution, and generalizes the F-distribution in the same way that the Hotelling&apos;s T-squared distribution generalizes Student&apos;s t-distribution.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
     </owl:Class>
     
@@ -181,6 +180,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000023">
         <rdfs:label xml:lang="en">studentized range distribution</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000066"/>
+        <obo:IAO_0000115>The studentized range (q) distribution is a probability distribution used by the Tukey Honestly Significant Difference test. The distribution of the statistic [x̄(k)- x̄(1)]/(s/√n) where random samples of size n have been taken from k independent and identically distributed normal populations, with x̄(1) and x̄(k) being, respectively, the smallest and largest of the k sample means, and s2 being the pooled estimate of the common variance. This statistic is particularly used in multiple comparison tests.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
     </owl:Class>
     
@@ -202,6 +202,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000057">
         <rdfs:label xml:lang="en">null hypothesis</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0001908"/>
+        <obo:IAO_0000115>A null hypothesis is a statistical hypothesis that is tested for possible rejection under the assumption that it is true (usually that observations are the result of chance). The concept was introduced by R. A. Fisher. The hypothesis contrary to the null hypothesis, usually that the observations are the result of a real effect, is known as the alternative hypothesis.[wolfram alpha]</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
     </owl:Class>
     
@@ -256,6 +257,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000112">
         <rdfs:label xml:lang="en">Funnel plot</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000184"/>
+        <obo:IAO_0000115>A Funnel plot is a scatter plot of treatment effect versus a measure of study size and aims to provide a visual aid to detecting bias or systematic heterogeneity. A symmetric inverted funnel shape arises from a ‘well-behaved’ data set, in which publication bias is unlikely. An asymmetric funnel indicates a relationship between treatment effect and study size. Known caveats: If high precision studies really are different from low precision studies with respect to effect size (e.g., due to different populations examined) a funnel plot may give a wrong impression of publication bias. The appearance of the funnel plot can change quite dramatically depending on the scale on the y-axis — whether it is the inverse square error or the trial size. Funnel plot was introduced by Light and Palmer in 1984.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
     </owl:Class>
     
@@ -266,6 +268,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000120">
         <rdfs:label>bean plot</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
+        <obo:IAO_0000115>Beanplot is a plot in which (one or) multiple batches (&quot;beans&quot;) are shown. Each bean consists of a density trace, which is mirrored to form a polygon shape. Next to that, a one-dimensional scatter plot shows all the individual measurements, like in a stripchart. The name beanplot stems from green beans. The density shape can be seen as the pod of a green bean, while the scatter plot shows the seeds inside the pod.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
     </owl:Class>
     
@@ -298,6 +301,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000126">
         <rdfs:label xml:lang="en">volcano plot</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000184"/>
+        <obo:IAO_0000115>Volcano plot is a kind of scatter plot which graphs the negative log of the p-value  (significance) on the y-axis versus log2 of fold-change between 2  conditions on the x-axis. It is a popular method for visualizing  differential occurence of variables between 2 conditions.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
     </owl:Class>
     
@@ -308,7 +312,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000128">
         <rdfs:label>Altman box and whisker plot</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000243"/>
-        <obo:IAO_0000115 xml:lang="en">Altman Box and Whisker plot is a variation of Tukey Box and Whisker plot which use the criteria of Altman to create the &#39;whisker&#39; of the plot.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Altman Box and Whisker plot is a variation of Tukey Box and Whisker plot which use the criteria of Altman to create the &apos;whisker&apos; of the plot.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
     </owl:Class>
     
@@ -319,6 +323,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000132">
         <rdfs:label xml:lang="en">Hotelling T2 distribution</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000010"/>
+        <obo:IAO_0000115>Hotelling T squared distribution is a probability distribution used in multivariate hypothesis testing, which is a univariate distribution proportional to the F-distribution and arises importantly as the distribution of a set of statistics which are natural generalizations of the statistics underlying Student&apos;s t-distribution. In particular, the distribution arises in multivariate statistics in undertaking tests of the differences between the (multivariate) means of different populations, where tests for univariate problems would make use of a t-test. The distribution is named for Harold Hotelling, who developed it[1] as a generalization of Student&apos;s t-distribution. This distribution is commonly used to describe the sample Mahalanobis  distance between two populations.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
     </owl:Class>
     
@@ -350,6 +355,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000154">
         <rdfs:label>violin plot</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
+        <obo:IAO_0000115>A violin plot is a plot combining the features of box plot and kernel density plot. The violin plot is therefore similar to box plot but it incorporated in the display the probability density of the data at different values. Typically violin plots will include a marker for the median of the data and a box indicating the interquartile range, as in standard box plots.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
     </owl:Class>
     
@@ -404,7 +410,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000171">
         <rdfs:label>Spear box and whisker plot</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/STATO_0000243"/>
-        <obo:IAO_0000115 xml:lang="en">Spear Box and Whisker plot is a variation of Tukey Box and Whisker plot which use the criteria of Spear to create the &#39;whisker&#39; of the plot.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Spear Box and Whisker plot is a variation of Tukey Box and Whisker plot which use the criteria of Spear to create the &apos;whisker&apos; of the plot.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
     </owl:Class>
     
@@ -448,6 +454,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000186">
         <rdfs:label xml:lang="en">Lineweaver-Burk plot</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000038"/>
+        <obo:IAO_0000115>Lineweaver-Burk plot is a graph which is the graphical representation of the Lineweaver–Burk equation of enzyme kinetics, described by Hans Lineweaver and Dean Burk in 1934. The plot provides a useful graphical method for analysis of the Michaelis–Menten equation. It was widely used to determine important terms in enzymology and enzyme kinetics as the x-intercept of the graph represents -1/Km and the y-intercept of such a graph is equivalent to the inverse of Vmax</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
     </owl:Class>
     
@@ -502,6 +509,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000262">
         <rdfs:label xml:lang="en">Bernoulli distribution</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000044"/>
+        <obo:IAO_0000115>Bernoulli distribution is a binomial distribution where the number of trials is equal to 1. notation: B(1,p) The mean is p The variance is p*q</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
     </owl:Class>
     
@@ -512,6 +520,7 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000263">
         <rdfs:label xml:lang="en">Galbraith plot</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000184"/>
+        <obo:IAO_0000115>Galbraith (Radial) plot is a scatter plot which can be used in the meta-analytic context to examine the data for heterogeneity. For a fixed-effects model, the plot shows the inverse of the standard errors on the horizontal axis against the individual observed effect sizes or outcomes standardized by their corresponding standard errors on the vertical axis. Radial plots were introduced by Rex Galbraith (1988a, 1988b, 1994).</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
     </owl:Class>
     
@@ -544,11 +553,12 @@
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000283">
         <rdfs:label xml:lang="en">negative binomial distribution</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000067"/>
+        <obo:IAO_0000115>Negative binomial probability distribution is a discrete probability distribution of the number of successes in a sequence of Bernoulli trials before a specified (non-random) number of failures (denoted r) occur. The negative binomial distribution, also known as the Pascal distribution or Pólya distribution, gives the probability of r-1 successes and x failures in x+r-1 trials, and success on the (x+r)th trial.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obofoundry.org/obo/stato.owl"/>
     </owl:Class>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 3.2.4.1806) http://owlapi.sourceforge.net -->
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
 
