@@ -7,7 +7,8 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/obcs.owl">
         <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.68</owl:versionInfo>
         <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2015-12-21</dc:date>
@@ -92,6 +93,14 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
     <!-- http://purl.org/dc/elements/1.1/source -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/source"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">database_cross_reference</rdfs:label>
+    </owl:AnnotationProperty>
     
 
 
@@ -295,6 +304,12 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
                 <owl:someValuesFrom>
                     <owl:Restriction>
@@ -302,12 +317,6 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                         <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000137"/>
                     </owl:Restriction>
                 </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
-                <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>a planned process that gathers and measures information on variables of interest, in an established systematic fashion that enables one to answer stated research questions, test hypotheses, and evaluate outcomes. Data collection results in a collection of data.</obo:IAO_0000115>
@@ -323,6 +332,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <rdfs:label>F distribution</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000066"/>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>STATO_0000204</oboInOwl:hasDbXref>
         <obo:IAO_0000115>A continuous probability distribution that is associated with the f statistic.</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://stattrek.com/probability-distributions/f-distribution.aspx</obo:IAO_0000119>
         <obo:IAO_0000118>Fisher-Snedecor distribution</obo:IAO_0000118>
@@ -336,6 +346,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <rdfs:label>gamma distribution</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000066"/>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>STATO_0000268</oboInOwl:hasDbXref>
         <obo:IAO_0000115>A continuous probability distribution that is a two-parameter family of continuous probability distributions.</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Gamma_distribution</obo:IAO_0000119>
     </owl:Class>
@@ -348,6 +359,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <rdfs:label>normal distribution</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000066"/>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>STATO_0000227</oboInOwl:hasDbXref>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Normal_distribution</obo:IAO_0000119>
         <obo:IAO_0000115>A continuous probability distribution that has a symmetrical curve, whose position and shape is determined by its location and scale parameters, the mean and standard deviation respectively.</obo:IAO_0000115>
         <obo:IAO_0000118>Gaussian distribution</obo:IAO_0000118>
@@ -364,6 +376,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://stattrek.com/probability-distributions/t-distribution.aspx</obo:IAO_0000119>
         <obo:IAO_0000118>t-distribution</obo:IAO_0000118>
+        <oboInOwl:hasDbXref>STATO_0000059</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -450,6 +463,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A data item that is numerically distant from the rest of the data; often indicative either measurement error or that the population has a high kurtosis.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>STATO_0000036</oboInOwl:hasDbXref>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Outlier</obo:IAO_0000119>
     </owl:Class>
     
@@ -504,6 +518,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         </rdfs:subClassOf>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>A data item that represents a typical value of a set of values. This term relates to the way in which quantitative data tend to cluster around some value.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>STATO_0000029</oboInOwl:hasDbXref>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Central_tendency</obo:IAO_0000119>
     </owl:Class>
     
@@ -728,13 +743,13 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000675"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000124"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000675"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Levene%27s_test</obo:IAO_0000119>
@@ -752,13 +767,13 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000675"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000124"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000675"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Loglinear_analysis</obo:IAO_0000119>
@@ -1064,6 +1079,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000121"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <oboInOwl:hasDbXref>STATO_0000182</oboInOwl:hasDbXref>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000115>A data item that refers to the odds that an individual with a specific condition has been exposed to a risk factor divided by the odds that a control has been exposed. The odds ratio is used in case-control studies. The odds ratio provides a reasonable estimate of the relative risk for uncommon conditions.</obo:IAO_0000115>
@@ -1140,6 +1156,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         </rdfs:subClassOf>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Sensitivity_and_specificity</obo:IAO_0000119>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>STATO_0000233</oboInOwl:hasDbXref>
         <obo:IAO_0000115>A data item that measures the proportion of actual positives which are correctly identified as such (e.g. the percentage of sick people who are correctly identified as having the condition). </obo:IAO_0000115>
         <obo:IAO_0000118>true positive rate, recall</obo:IAO_0000118>
     </owl:Class>
@@ -1160,6 +1177,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <obo:IAO_0000118>true negative rate</obo:IAO_0000118>
         <obo:IAO_0000115>A data item that refers to the proportion of negatives in a binary classification test which are correctly identified</obo:IAO_0000115>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Sensitivity_and_specificity</obo:IAO_0000119>
+        <oboInOwl:hasDbXref>STATO_0000134</oboInOwl:hasDbXref>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
     </owl:Class>
     
@@ -1399,6 +1417,8 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <obo:IAO_0000115>A quantitative confidence value that refers to the probability of incorrectly concluding that there is a statistically significant difference in a dataset. Alpha is the number after a p-value. Thus, a statistically significant difference reported as p&lt;0.05 means that there is less than a 5 percent chance that the difference could have occurred by chance.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <obo:IAO_0000118>false positive rate</obo:IAO_0000118>
+        <oboInOwl:hasDbXref>STATO_0000053</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -1410,7 +1430,9 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000071"/>
         <obo:IAO_0000118>beta error</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
+        <obo:IAO_0000118>false negative rate</obo:IAO_0000118>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>STATO_0000220</oboInOwl:hasDbXref>
         <obo:IAO_0000115>A quantitative confidence value that refers to the probability of incorrectly concluding that there was no statistically significant difference in a dataset. This error often reflects insufficient power of the study.</obo:IAO_0000115>
     </owl:Class>
     
@@ -1916,6 +1938,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000066"/>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Chi-square_distribution</obo:IAO_0000119>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>STATO_0000229</oboInOwl:hasDbXref>
         <obo:IAO_0000115>A probability distribution that with k degrees of freedom is the distribution of a sum of the squares of k independent standard normal random variables.</obo:IAO_0000115>
     </owl:Class>
     
@@ -2036,6 +2059,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Exponential_distribution</obo:IAO_0000119>
         <obo:IAO_0000115>A continuous probability distribution that describes the time between events in a Poisson process, i.e. a process in which events occur continuously and independently at a constant average rate.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>STATO_0000160</oboInOwl:hasDbXref>
     </owl:Class>
     
 
@@ -2236,13 +2260,13 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000666"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200028"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0200028"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000666"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>http://www.ncbi.nlm.nih.gov/pubmed/12925520
@@ -2346,6 +2370,7 @@ http://www.ncbi.nlm.nih.gov/pubmed/10521349
 </obo:IAO_0000115>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Confusion_matrix</obo:IAO_0000119>
         <obo:IAO_0000117>Person: Jie Zheng, Oliver He</obo:IAO_0000117>
+        <oboInOwl:hasDbXref>STATO_0000138</oboInOwl:hasDbXref>
     </owl:Class>
     
 
