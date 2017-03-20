@@ -24,8 +24,8 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;obcs.owl">
-        <dc:date rdf:datatype="&xsd;decimal">2017-03-13</dc:date>
-        <owl:versionInfo rdf:datatype="&xsd;decimal">87</owl:versionInfo>
+        <dc:date rdf:datatype="&xsd;decimal">2017-03-20</dc:date>
+        <owl:versionInfo rdf:datatype="&xsd;decimal">88</owl:versionInfo>
         <dc:creator rdf:datatype="&xsd;decimal">Jean-François Ethier</dc:creator>
         <dc:creator rdf:datatype="&xsd;decimal">Yu Lin</dc:creator>
         <dc:subject xml:lang="en">A formal ontology in the domain of biological and clinical statistics</dc:subject>
@@ -795,13 +795,13 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000675"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000675"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
@@ -1178,14 +1178,14 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000214"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000121"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000121"/>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000214"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A data item that measures the proportion of actual positives which are correctly identified as such (e.g. the percentage of sick people who are correctly identified as having the condition). </obo:IAO_0000115>
@@ -2328,12 +2328,6 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0200169"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000123"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBI_0200028"/>
             </owl:Restriction>
@@ -2342,6 +2336,12 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBI_0000666"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000123"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -3413,10 +3413,11 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
     <owl:Class rdf:about="&obo;OBCS_0000214">
         <rdfs:label xml:lang="en">sensitivity disposition</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
-        <obo:IAO_0000115>A disposition that inheres in a population and is realized in a test process (e.g., disease diagnosis).</obo:IAO_0000115>
         <rdfs:comment>This term is generated in OBCS based on BIPO: https://github.com/OpenLHS/BIPO. See more from OBCS track issue: https://github.com/obcs/obcs/issues/9</rdfs:comment>
         <obo:IAO_0000119>https://jbiomedsem.biomedcentral.com/articles/10.1186/s13326-016-0099-4</obo:IAO_0000119>
+        <obo:IAO_0000115>A disposition that inheres in a population of continuant and is realized in a test process (e.g., disease diagnosis).</obo:IAO_0000115>
         <dc:creator>AB, JZ, JFE, YH</dc:creator>
+        <rdfs:comment>Traditionally, sensitivity inheres in a population of material entity like human. However, it raises a concern in the existance of such sensitivity disposition in the context of machine learning using syntheti data generated with mathematical formula. In this case, the population of disposition bearer are not population of organisms or material entities. Here the bearer of the disposition is not independent continuant.</rdfs:comment>
     </owl:Class>
     
 
@@ -3540,14 +3541,14 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000188"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000226"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000225"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000225"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000226"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A data transformation process that transforms a data set to a normal distribution.</obo:IAO_0000115>
@@ -3715,6 +3716,17 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A data transformation in statistics that processes the data matrix collected from eMedical records to a form that is ready for further data analysis.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000235 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000235">
+        <rdfs:label xml:lang="en">medical test sensitivity disposition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000214"/>
+        <obo:IAO_0000115>A sensitivity disposition that is related to a medical test and inheres in a population of organism.</obo:IAO_0000115>
+        <obo:IAO_0000117>AB, JZ, JFE, YH</obo:IAO_0000117>
     </owl:Class>
     
 
