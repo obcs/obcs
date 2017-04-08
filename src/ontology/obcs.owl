@@ -24,11 +24,12 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;obcs.owl">
-        <dc:date rdf:datatype="&xsd;decimal">2017-03-20</dc:date>
-        <owl:versionInfo rdf:datatype="&xsd;decimal">88</owl:versionInfo>
+        <dc:date rdf:datatype="&xsd;decimal">2017-04-08</dc:date>
+        <owl:versionInfo rdf:datatype="&xsd;decimal">89</owl:versionInfo>
         <dc:creator rdf:datatype="&xsd;decimal">Jean-François Ethier</dc:creator>
         <dc:creator rdf:datatype="&xsd;decimal">Yu Lin</dc:creator>
         <dc:subject xml:lang="en">A formal ontology in the domain of biological and clinical statistics</dc:subject>
+        <obo:IAO_0000117>Qingzhi Liu</obo:IAO_0000117>
         <dc:creator>Adrien Barton</dc:creator>
         <dc:contributor xml:lang="en">Alfred Hero</dc:contributor>
         <dc:contributor xml:lang="en">Anna Maria Masci</dc:contributor>
@@ -185,6 +186,17 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000237 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBCS_0000237">
+        <rdfs:label xml:lang="en">test follows probability distribution</rdfs:label>
+        <obo:IAO_0000112>A student t-test follows the probability distribution of a student distribution.</obo:IAO_0000112>
+        <obo:IAO_0000115>An object property that represents a relation between a statistical test and a probability distribution.</obo:IAO_0000115>
+        <obo:IAO_0000117>Yongqun He, Qingzhi Liu</obo:IAO_0000117>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
 
     <owl:ObjectProperty rdf:about="&obo;OBI_0000299"/>
@@ -320,8 +332,13 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000027"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBCS_0000137"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -332,13 +349,8 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
-                        <owl:someValuesFrom rdf:resource="&obo;OBCS_0000137"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Data_collection </obo:IAO_0000119>
@@ -1761,7 +1773,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="&obo;OBCS_0000103">
         <rdfs:label>mann-whitney U test</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000673"/>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000236"/>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Mann%E2%80%93Whitney_U</obo:IAO_0000119>
         <obo:IAO_0000118>Wilcoxon rank-sum test</obo:IAO_0000118>
         <obo:IAO_0000115>A non-parametric test of the null hypothesis that two populations are the same against an alternative hypothesis</obo:IAO_0000115>
@@ -2328,18 +2340,6 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0200169"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0200028"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000666"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBCS_0000123"/>
             </owl:Restriction>
@@ -2348,6 +2348,18 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="&obo;IAO_0000100"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0200028"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000666"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>Person:Jie Zheng, Oliver He</obo:IAO_0000117>
@@ -3547,6 +3559,12 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBCS_0000237"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000005"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBCS_0000226"/>
             </owl:Restriction>
@@ -3731,6 +3749,42 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000236 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000236">
+        <rdfs:label xml:lang="en">non-parametric test</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000673"/>
+        <obo:IAO_0000117>QL, YH</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Nonparametric_statistics</obo:IAO_0000119>
+        <obo:IAO_0000115>A statistical hypothesis test that is not based on any parameterized family of probability distributions.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000238 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000238">
+        <rdfs:label xml:lang="en">Durbin test</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000236"/>
+        <obo:IAO_0000115>A non-parametric test that was proposed by James Durbin and is used for for balanced incomplete designs.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Durbin_test</obo:IAO_0000119>
+        <obo:IAO_0000117>QL, YH</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000239 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000239">
+        <rdfs:label xml:lang="en">Friedman test</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000238"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Friedman_test</obo:IAO_0000119>
+        <obo:IAO_0000117>QL, YH</obo:IAO_0000117>
+        <obo:IAO_0000115>A special case of the Durbin test that was proposed by Milton Frieman and is applicable to complete block designs. Friedman test detects the differences in treatments across multiple test attempts. The procedure involves ranking each row (or block) together, then considering the values of ranks by columns.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
     <owl:Class rdf:about="&obo;OBI_0000011"/>
@@ -3816,6 +3870,19 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBCS_0000124"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000739 -->
+
+    <rdf:Description rdf:about="&obo;OBI_0000739">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBCS_0000237"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000006"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
