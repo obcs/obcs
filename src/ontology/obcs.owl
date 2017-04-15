@@ -24,13 +24,12 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;obcs.owl">
-        <dc:date rdf:datatype="&xsd;decimal">2017-04-08</dc:date>
+        <dc:date rdf:datatype="&xsd;decimal">2017-04-15</dc:date>
         <owl:versionInfo rdf:datatype="&xsd;decimal">89</owl:versionInfo>
+        <dc:creator rdf:datatype="&xsd;decimal">Huan Li</dc:creator>
         <dc:creator rdf:datatype="&xsd;decimal">Jean-François Ethier</dc:creator>
         <dc:creator rdf:datatype="&xsd;decimal">Yu Lin</dc:creator>
         <dc:subject xml:lang="en">A formal ontology in the domain of biological and clinical statistics</dc:subject>
-        <obo:IAO_0000117>Qingzhi Liu</obo:IAO_0000117>
-        <dc:creator>Adrien Barton</dc:creator>
         <dc:contributor xml:lang="en">Alfred Hero</dc:contributor>
         <dc:contributor xml:lang="en">Anna Maria Masci</dc:contributor>
         <dc:contributor xml:lang="en">Barry Smith</dc:contributor>
@@ -39,6 +38,8 @@
         <dc:creator xml:lang="en">Marcy Harris</dc:creator>
         <dc:description xml:lang="en">OBCS stands for the Ontology of Biological and Clinical Statistics. OBCS is an ontology in the domain of biological and clinical statistics. It is aligned with the Basic Formal Ontology (BFO) and the Ontology for Biomedical Investigations (OBI). OBCS imports all possible biostatistics terms in OBI and includes many additional biostatistics terms, some of which were proposed and discussed in the OBI face-to-face workshop in Ann Arbor in 2012.  </dc:description>
         <dc:title xml:lang="en">OBCS: Ontology of Biological and Clinical Statistics</dc:title>
+        <obo:IAO_0000117>Qingzhi Liu</obo:IAO_0000117>
+        <dc:creator>Adrien Barton</dc:creator>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
@@ -332,13 +333,8 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
-                        <owl:someValuesFrom rdf:resource="&obo;OBCS_0000137"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -349,8 +345,13 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000027"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBCS_0000137"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Data_collection </obo:IAO_0000119>
@@ -765,12 +766,13 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
     <!-- http://purl.obolibrary.org/obo/OBCS_0000031 -->
 
     <owl:Class rdf:about="&obo;OBCS_0000031">
-        <rdfs:label>kolmogorov-smirnov two sample test</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000025"/>
-        <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
-        <obo:IAO_0000115>An univariate nonparametric test for the equality of continuous, one-dimensional probability distributions that can be used to compare a sample with a reference probability distribution (one-sample K鈥揝 test), or to compare two samples (two-sample K鈥揝 test).</obo:IAO_0000115>
+        <rdfs:label>Kolmogorov-Smirnov two sample test</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000241"/>
+        <obo:IAO_0000115>A Kolmogorov-Smirnov test that compares two samples.</obo:IAO_0000115>
+        <obo:IAO_0000118>two-sample KS test</obo:IAO_0000118>
+        <obo:IAO_0000118>two-sample K-S test</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test</obo:IAO_0000119>
-        <obo:IAO_0000118>Kolmogorov-Smirnov</obo:IAO_0000118>
+        <obo:IAO_0000117>Marcy Harris, Huan Li, Qingzhi Liu, Oliver He</obo:IAO_0000117>
     </owl:Class>
     
 
@@ -783,13 +785,13 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000675"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000675"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Levene%27s_test</obo:IAO_0000119>
@@ -807,13 +809,13 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000675"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000675"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
@@ -1376,7 +1378,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
     <owl:Class rdf:about="&obo;OBCS_0000071">
         <rdfs:label>credible interval</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000071"/>
-        <obo:IAO_0000115>A quantitative confidence value that refers to</obo:IAO_0000115>
+        <obo:IAO_0000115>A quantitative confidence value that is used  in Bayesian analysis to describe the range in which a posterior probability estimate is likely to reside.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
     </owl:Class>
@@ -2340,26 +2342,26 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0200169"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000123"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="&obo;IAO_0000100"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0200028"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000123"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBI_0000666"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0200028"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>Person:Jie Zheng, Oliver He</obo:IAO_0000117>
@@ -3553,14 +3555,14 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000188"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000225"/>
+                <owl:onProperty rdf:resource="&obo;OBCS_0000237"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000005"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBCS_0000237"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000005"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000225"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -3779,8 +3781,117 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
         <rdfs:label xml:lang="en">Friedman test</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBCS_0000238"/>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Friedman_test</obo:IAO_0000119>
-        <obo:IAO_0000117>QL, YH</obo:IAO_0000117>
+        <obo:IAO_0000117>QL, YH, HL</obo:IAO_0000117>
         <obo:IAO_0000115>A special case of the Durbin test that was proposed by Milton Frieman and is applicable to complete block designs. Friedman test detects the differences in treatments across multiple test attempts. The procedure involves ranking each row (or block) together, then considering the values of ranks by columns.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000240 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000240">
+        <rdfs:label xml:lang="en">intent-to-treat analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000121"/>
+        <obo:IAO_0000115>HL, QL, YH</obo:IAO_0000115>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3159210/</obo:IAO_0000119>
+        <obo:IAO_0000118>ITT analysis</obo:IAO_0000118>
+        <obo:IAO_0000115>An inferential statistical data analysis that  includes all randomized patients in the groups to which they were randomly assigned. The intent-to-treat analysis  is based on the initial treatment assignment and not on the treatment eventually received.  ITT analysis includes every subject who is randomized according to randomized treatment assignment. It ignores noncompliance, protocol deviations, withdrawal, and anything that happens after randomization.</obo:IAO_0000115>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Intention-to-treat_analysis</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000241 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000241">
+        <rdfs:label xml:lang="en">Kolmogorov–Smirnov test</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000236"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test</obo:IAO_0000119>
+        <obo:IAO_0000118>KS test</obo:IAO_0000118>
+        <obo:IAO_0000115>A non-parametric test of the equality of continuous, one-dimensional probability distributions that can be used to compare a sample with a reference probability distribution (one-sample K–S test), or to compare two samples (two-sample K–S test). The distributions considered under the null hypothesis are continuous distributions but are otherwise unrestricted.</obo:IAO_0000115>
+        <obo:IAO_0000117>HL, QL, YH</obo:IAO_0000117>
+        <obo:IAO_0000118>K-S test</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000242 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000242">
+        <rdfs:label xml:lang="en">Kolmogorov-Smirnov one sample test</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000241"/>
+        <obo:IAO_0000118>one-sample K-S test</obo:IAO_0000118>
+        <obo:IAO_0000117>Huan Li, Qingzhi Liu, Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118>one-sample KS test</obo:IAO_0000118>
+        <obo:IAO_0000115>A Kolmogorov-Smirnov test that compares a sample with a reference probability distribution.</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Kolmogorov%E2%80%93Smirnov_test</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000243 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000243">
+        <rdfs:label xml:lang="en">log-rank test</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBCS_0000236"/>
+        <obo:IAO_0000118>Mantel–Cox test</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Log-rank_test</obo:IAO_0000119>
+        <obo:IAO_0000118>KS test</obo:IAO_0000118>
+        <obo:IAO_0000117>HL, QL, YH</obo:IAO_0000117>
+        <obo:IAO_0000115>A non-parametric test that compares the survival distributions of two samples, and iis appropriate to use when the data are right skewed and censored (technically, the censoring must be non-informative). It is widely used in clinical trials to establish the efficacy of a new treatment in comparison with a control treatment when the measurement is the time to event (such as the time from initial treatment to a heart attack).</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000244 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000244">
+        <rdfs:label xml:lang="en">Pearson&apos;s chi-square test</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0200200"/>
+        <obo:IAO_0000117>HL, QL, YH</obo:IAO_0000117>
+        <obo:IAO_0000115>A chi square test that is applied to sets of categorical data to evaluate how likely it is that any observed difference between the sets arose by chance. It is suitable for unpaired data from large samples. It is also the most widely used of many chi-squared tests.</obo:IAO_0000115>
+        <obo:IAO_0000118>Pearson&apos;s Chi square test</obo:IAO_0000118>
+        <obo:IAO_0000118>Pearson&apos;s X^2 test</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Pearson%27s_chi-squared_test</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000245 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000245">
+        <rdfs:label xml:lang="en">Yates&apos; chi-squared test</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0200200"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Yates%27s_correction_for_continuity</obo:IAO_0000119>
+        <obo:IAO_0000115>A chi square test that is used in certain situations when testing for independence in a contingency table. In some cases, Yates&apos; correction may adjust too far, and so its current use is limited.</obo:IAO_0000115>
+        <obo:IAO_0000118>Yates&apos; correction for continuity</obo:IAO_0000118>
+        <obo:IAO_0000117>HL, QL, YH</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000246 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000246">
+        <rdfs:label xml:lang="en">Cochran–Mantel–Haenszel test</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0200200"/>
+        <obo:IAO_0000115>A chi square test that is used in the analysis of stratified or matched categorical data. It allows an investigator to test the association between a binary predictor or treatment and a binary outcome such as case or control status while taking into account the stratification. Unlike the McNemar test which can only handle pairs, the CMH test handles arbitrary strata size. It is named after William G. Cochran, Nathan Mantel and William Haenszel.</obo:IAO_0000115>
+        <obo:IAO_0000118>CMH test</obo:IAO_0000118>
+        <obo:IAO_0000117>HL, QL, YH</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Cochran%E2%80%93Mantel%E2%80%93Haenszel_statistics</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000247 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000247">
+        <rdfs:label xml:lang="en">McNemar&apos;s test</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0200200"/>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/McNemar%27s_test</obo:IAO_0000119>
+        <obo:IAO_0000117>HL, QL, YH</obo:IAO_0000117>
+        <obo:IAO_0000118>CMH test</obo:IAO_0000118>
+        <obo:IAO_0000115>A chi square test that is used on paired nominal data. It is applied to 2 × 2 contingency tables with a dichotomous trait, with matched pairs of subjects, to determine whether the row and column marginal frequencies are equal (that is, whether there is &quot;marginal homogeneity&quot;). It is named after Quinn McNemar, who introduced it in 1947.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -4207,6 +4318,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
                 <owl:someValuesFrom rdf:resource="&obo;OBCS_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Analysis_of_variance</obo:IAO_0000119>
     </owl:Class>
     
 

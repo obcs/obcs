@@ -76,6 +76,14 @@ http://purl.obolibrary.org/obo/STATO_0000262
 http://purl.obolibrary.org/obo/STATO_0000132
 http://purl.obolibrary.org/obo/STATO_0000017
 
+http://purl.obolibrary.org/obo/STATO_0000044 #one-way ANOVA
+http://purl.obolibrary.org/obo/STATO_0000045 #two-way ANOVA
+http://purl.obolibrary.org/obo/STATO_0000048 #multiway ANOVA
+http://purl.obolibrary.org/obo/STATO_0000260 #repeated measure ANOVA
+
+http://purl.obolibrary.org/obo/STATO_0000142 # correlation coefficient
+includeAllChildren
+
 [Top level source term URIs and target direct superclass URIs]
 http://purl.obolibrary.org/obo/STATO_0000166 #bar chart
 subClassOf http://purl.obolibrary.org/obo/IAO_0000038 #graph
@@ -149,6 +157,18 @@ http://purl.obolibrary.org/obo/STATO_0000132
 subClassOf http://purl.obolibrary.org/obo/OBCS_0000010
 http://purl.obolibrary.org/obo/STATO_0000017
 subClassOf http://purl.obolibrary.org/obo/OBCS_0000010
+
+http://purl.obolibrary.org/obo/STATO_0000142 # correlation coefficient
+subClassOf http://purl.obolibrary.org/obo/OBI_0000071
+
+http://purl.obolibrary.org/obo/STATO_0000044 #one-way ANOVA
+subClassOf http://purl.obolibrary.org/obo/OBI_0200201 #anova
+http://purl.obolibrary.org/obo/STATO_0000045 #two-way ANOVA
+subClassOf http://purl.obolibrary.org/obo/OBI_0200201 #anova
+http://purl.obolibrary.org/obo/STATO_0000048 #multiway ANOVA
+subClassOf http://purl.obolibrary.org/obo/OBI_0200201 #anova
+http://purl.obolibrary.org/obo/STATO_0000260 #repeated measure ANOVA
+subClassOf http://purl.obolibrary.org/obo/OBI_0200201 #anova
 
 [Source term retrieval setting]
 includeNoIntermediates
