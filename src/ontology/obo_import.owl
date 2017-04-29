@@ -155,6 +155,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000673 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000673"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0001908 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001908"/>
@@ -288,6 +294,17 @@ The hypothesis contrary to the null hypothesis, usually that the observations ar
         <rdfs:label xml:lang="en">rarefaction curve</rdfs:label>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000573"/>
         <obo:IAO_0000115 xml:lang="en">a rarefaction curve is a graph used for estimating species richness in ecology studies</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000095 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000095">
+        <rdfs:label xml:lang="en">paired t-test</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000673"/>
+        <obo:IAO_0000115 xml:lang="en">paired t-test is a statistical test which is specifically designed to analysis differences between paired observations in the case of studies realizing repeated measures design with only 2 repeated measurements per subject (before and after treatment for example)</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/stato.owl"/>
     </owl:Class>
     
@@ -734,6 +751,30 @@ The coefficient is calculated by dividing their covariance with the product of t
         <obo:IAO_0000115 xml:lang="en">negative binomial probability distribution is a discrete probability distribution of the number of successes in a sequence of Bernoulli trials before a specified (non-random) number of failures (denoted r) occur.
 
 The negative binomial distribution, also known as the Pascal distribution or Pólya distribution, gives the probability of  r-1 successes and x  failures in x+r-1 trials, and success on the (x+r)th trial. </obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000286 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000286">
+        <rdfs:label xml:lang="en">one tailed test</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000673"/>
+        <obo:IAO_0000115 xml:lang="en">a one-tailed test is a statistical test which, assuming an unskewed probability distribution, allocates all of the significance level to evaluate only one hypothesis to explain a difference.
+The one-tailed test provides more power to detect an effect in one direction by not testing the effect in the other direction.
+one-tailed test should be preceded by two-tailed test in order to avoid missing out on detecting alternate effect explaining an observed difference. </obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/stato.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/STATO_0000287 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/STATO_0000287">
+        <rdfs:label xml:lang="en">two tailed test</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000673"/>
+        <obo:IAO_0000115 xml:lang="en">a two tailed test is a statistical test which assess the null hypothesis of absence of difference assuming a symmetric (not skewed) underlying probability distribution by allocating half of the significance level selected to each of the direction of change which could explain a difference (for example, a difference can be an excess or a loss).</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/stato.owl"/>
     </owl:Class>
 </rdf:RDF>

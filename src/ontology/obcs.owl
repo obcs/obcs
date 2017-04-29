@@ -24,8 +24,8 @@
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="&obo;obcs.owl">
-        <dc:date rdf:datatype="&xsd;decimal">2017-04-15</dc:date>
-        <owl:versionInfo rdf:datatype="&xsd;decimal">89</owl:versionInfo>
+        <dc:date rdf:datatype="&xsd;decimal">2017-04-29</dc:date>
+        <owl:versionInfo rdf:datatype="&xsd;decimal">90</owl:versionInfo>
         <dc:creator rdf:datatype="&xsd;decimal">Huan Li</dc:creator>
         <dc:creator rdf:datatype="&xsd;decimal">Jean-François Ethier</dc:creator>
         <dc:creator rdf:datatype="&xsd;decimal">Yu Lin</dc:creator>
@@ -35,11 +35,11 @@
         <dc:contributor xml:lang="en">Barry Smith</dc:contributor>
         <dc:contributor xml:lang="en">Chris Stoeckert </dc:contributor>
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
-        <dc:creator xml:lang="en">Marcy Harris</dc:creator>
         <dc:description xml:lang="en">OBCS stands for the Ontology of Biological and Clinical Statistics. OBCS is an ontology in the domain of biological and clinical statistics. It is aligned with the Basic Formal Ontology (BFO) and the Ontology for Biomedical Investigations (OBI). OBCS imports all possible biostatistics terms in OBI and includes many additional biostatistics terms, some of which were proposed and discussed in the OBI face-to-face workshop in Ann Arbor in 2012.  </dc:description>
-        <dc:title xml:lang="en">OBCS: Ontology of Biological and Clinical Statistics</dc:title>
         <obo:IAO_0000117>Qingzhi Liu</obo:IAO_0000117>
         <dc:creator>Adrien Barton</dc:creator>
+        <dc:creator xml:lang="en">Marcy Harris</dc:creator>
+        <dc:title xml:lang="en">OBCS: Ontology of Biological and Clinical Statistics</dc:title>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
@@ -809,13 +809,13 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000675"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000124"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000124"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000675"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
@@ -2342,14 +2342,14 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0200169"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;IAO_0000100"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0200028"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000123"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;IAO_0000100"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2360,8 +2360,8 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0200028"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000123"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000117>Person:Jie Zheng, Oliver He</obo:IAO_0000117>
@@ -3561,14 +3561,14 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000225"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000226"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000226"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBCS_0000225"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A data transformation process that transforms a data set to a normal distribution.</obo:IAO_0000115>
@@ -3837,6 +3837,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
         <obo:IAO_0000118>Mantel–Cox test</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Log-rank_test</obo:IAO_0000119>
         <obo:IAO_0000118>KS test</obo:IAO_0000118>
+        <obo:IAO_0000118>log-rank analysis</obo:IAO_0000118>
         <obo:IAO_0000117>HL, QL, YH</obo:IAO_0000117>
         <obo:IAO_0000115>A non-parametric test that compares the survival distributions of two samples, and iis appropriate to use when the data are right skewed and censored (technically, the censoring must be non-informative). It is widely used in clinical trials to establish the efficacy of a new treatment in comparison with a control treatment when the measurement is the time to event (such as the time from initial treatment to a heart attack).</obo:IAO_0000115>
     </owl:Class>
@@ -3892,6 +3893,25 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
         <obo:IAO_0000117>HL, QL, YH</obo:IAO_0000117>
         <obo:IAO_0000118>CMH test</obo:IAO_0000118>
         <obo:IAO_0000115>A chi square test that is used on paired nominal data. It is applied to 2 × 2 contingency tables with a dichotomous trait, with matched pairs of subjects, to determine whether the row and column marginal frequencies are equal (that is, whether there is &quot;marginal homogeneity&quot;). It is named after Quinn McNemar, who introduced it in 1947.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000248 -->
+
+    <owl:Class rdf:about="&obo;OBCS_0000248">
+        <rdfs:label xml:lang="en">Receiver operating characteristic curve analysis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0200000"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;STATO_0000274"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000118>ROC curve analysis</obo:IAO_0000118>
+        <obo:IAO_0000117>Yongqun He, Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000115>A data transformation that is used to calculate a ROC curve.</obo:IAO_0000115>
+        <obo:IAO_0000119>WEB: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3755824/</obo:IAO_0000119>
     </owl:Class>
     
 

@@ -76,6 +76,12 @@ http://purl.obolibrary.org/obo/STATO_0000262
 http://purl.obolibrary.org/obo/STATO_0000132
 http://purl.obolibrary.org/obo/STATO_0000017
 
+http://purl.obolibrary.org/obo/STATO_0000095 #Student paired t test
+http://purl.obolibrary.org/obo/STATO_0000286 #one tailed test
+http://purl.obolibrary.org/obo/STATO_0000287 #two-tailed test
+http://purl.obolibrary.org/obo/STATO_0000274 #receiver operational characteristics curve
+
+
 http://purl.obolibrary.org/obo/STATO_0000044 #one-way ANOVA
 http://purl.obolibrary.org/obo/STATO_0000045 #two-way ANOVA
 http://purl.obolibrary.org/obo/STATO_0000048 #multiway ANOVA
@@ -157,6 +163,16 @@ http://purl.obolibrary.org/obo/STATO_0000132
 subClassOf http://purl.obolibrary.org/obo/OBCS_0000010
 http://purl.obolibrary.org/obo/STATO_0000017
 subClassOf http://purl.obolibrary.org/obo/OBCS_0000010
+
+http://purl.obolibrary.org/obo/STATO_0000095 #Student paired t test
+subClassOf http://purl.obolibrary.org/obo/OBI_0000673 #statistical hypothesis test
+
+http://purl.obolibrary.org/obo/STATO_0000286 #one tailed test
+subClassOf http://purl.obolibrary.org/obo/OBI_0000673 #statistical hypothesis test
+
+http://purl.obolibrary.org/obo/STATO_0000287 #two-tailed test
+subClassOf http://purl.obolibrary.org/obo/OBI_0000673 #statistical hypothesis test
+
 
 http://purl.obolibrary.org/obo/STATO_0000142 # correlation coefficient
 subClassOf http://purl.obolibrary.org/obo/OBI_0000071
