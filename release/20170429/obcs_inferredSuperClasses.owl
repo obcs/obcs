@@ -238,14 +238,6 @@
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OBCS_0000148 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000148">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000673"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/OBCS_0000150 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000150">
@@ -600,7 +592,7 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0200201 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200201">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000121"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000673"/>
     </owl:Class>
 </rdf:RDF>
 

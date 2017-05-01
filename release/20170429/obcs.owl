@@ -27,10 +27,10 @@
         <dc:creator xml:lang="en">Yongqun &quot;Oliver&quot; He</dc:creator>
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:creator xml:lang="en">Qingzhi Liu</dc:creator>
-        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">94</owl:versionInfo>
         <dc:title xml:lang="en">OBCS: Ontology of Biological and Clinical Statistics</dc:title>
         <dc:creator xml:lang="en">Huan Li</dc:creator>
         <dc:creator xml:lang="en">Jie Zheng</dc:creator>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">97</owl:versionInfo>
         <dc:creator>Adrien Barton</dc:creator>
     </owl:Ontology>
     
@@ -2475,13 +2475,7 @@ http://www.ncbi.nlm.nih.gov/pubmed/10521349
     <!-- http://purl.obolibrary.org/obo/OBCS_0000148 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000148">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000121"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000675"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000236"/>
         <obo:IAO_0000115>An inferential statistical data analysis used when comparing two related samples, matched samples, or repeated measurements on a single sample to assess whether their population mean ranks differ (i.e. it is a paired difference test). It can be used as an alternative to the paired Student&apos;s t-test, t-test for matched pairs, or the t-test for dependent samples when the population cannot be assumed to be normally distributed.</obo:IAO_0000115>
         <obo:IAO_0000117>Person: Jie Zheng, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Wilcoxon_signed-rank_test</obo:IAO_0000119>
@@ -3887,7 +3881,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
     <!-- http://purl.obolibrary.org/obo/OBCS_0000248 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000248">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200184"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000299"/>
@@ -3899,6 +3893,31 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
         <obo:IAO_0000118>ROC curve analysis</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3755824/</obo:IAO_0000119>
         <rdfs:label xml:lang="en">Receiver operating characteristic curve analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000249 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000249">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000121"/>
+        <obo:IAO_0000115>An inferential statistical data analysis which is used to find the independent components (also called factors, latent variables or sources) by maximizing the statistical independence of the estimated components.</obo:IAO_0000115>
+        <obo:IAO_0000117>Person: Oliver He and Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000118>ICA</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Independent_component_analysis</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">independent component analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000250 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000250">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200102"/>
+        <obo:IAO_0000115>A regression analysis method that the overall solution minimizes the sum of the squares of the residuals made in the results of every single equation.</obo:IAO_0000115>
+        <obo:IAO_0000117>Person: Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Least_squares</obo:IAO_0000119>
+        <rdfs:label xml:lang="en">least square regression</rdfs:label>
     </owl:Class>
     
 
@@ -4323,6 +4342,12 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000124"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/OBI_0000417"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBI_0000675"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Analysis_of_variance</obo:IAO_0000119>
