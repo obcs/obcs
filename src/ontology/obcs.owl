@@ -12,8 +12,8 @@
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/obcs.owl">
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obcs/OBI_existing_stat_allAxioms.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obcs/obo_import.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obcs/OBI_statisitics_imports.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obcs/OBO_imports.owl"/>
         <dc:contributor xml:lang="en">Alfred Hero</dc:contributor>
 	<dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dc:creator xml:lang="en">Jean-François Ethier</dc:creator>
