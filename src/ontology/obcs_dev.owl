@@ -1,21 +1,21 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/obcs.owl#"
-     xml:base="http://purl.obolibrary.org/obo/obcs.owl"
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/obcs_dev.owl#"
+     xml:base="http://purl.obolibrary.org/obo/obcs_dev.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:dc="http://purl.org/dc/elements/1.1/">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/obcs.owl">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/obcs_dev.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obcs/OBI_statisitics_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obcs/OBO_imports.owl"/>
+        <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dc:contributor xml:lang="en">Alfred Hero</dc:contributor>
-	<dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <dc:creator xml:lang="en">Jean-François Ethier</dc:creator>
         <dc:creator xml:lang="en">Yu Lin</dc:creator>
         <dc:description xml:lang="en">OBCS stands for the Ontology of Biological and Clinical Statistics. OBCS is an ontology in the domain of biological and clinical statistics. It is aligned with the Basic Formal Ontology (BFO) and the Ontology for Biomedical Investigations (OBI). OBCS imports all possible biostatistics terms in OBI and includes many additional biostatistics terms, some of which were proposed and discussed in the OBI face-to-face workshop in Ann Arbor in 2012.  </dc:description>
@@ -3775,7 +3775,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000240">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000121"/>
         <obo:IAO_0000115>An inferential statistical data analysis that  includes all randomized patients in the groups to which they were randomly assigned. The intent-to-treat analysis  is based on the initial treatment assignment and not on the treatment eventually received.  ITT analysis includes every subject who is randomized according to randomized treatment assignment. It ignores noncompliance, protocol deviations, withdrawal, and anything that happens after randomization.</obo:IAO_0000115>
-        <obo:IAO_0000115>HL, QL, YH</obo:IAO_0000115>
+        <obo:IAO_0000117>HL, QL, YH</obo:IAO_0000117>
         <obo:IAO_0000118>ITT analysis</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Intention-to-treat_analysis</obo:IAO_0000119>
         <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3159210/</obo:IAO_0000119>
@@ -4378,7 +4378,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:NamedIndividual rdf:about="http://purl.obolibrary.org/obo/OBCS_0000228">
         <rdf:type rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000070"/>
-        <obo:IAO_0000115>An confidence interval with 95 percent probability that the true population value can be found. </obo:IAO_0000115>
+        <obo:IAO_0000115>An confidence interval with 95 percent probability that the true population value can be found.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
         <rdfs:label xml:lang="en">95% confidence interval</rdfs:label>
     </owl:NamedIndividual>
