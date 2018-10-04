@@ -82,11 +82,16 @@ obcs.owl: build/obcs_merged.owl
 	--annotation owl:versionInfo "$(TODAY)" \
 	--output $@
 
+test_report.tsv: build/obcs_merged.owl
+	$(ROBOT) report \
+	--input $< \
+        --fail-on none \
+	--output $@
+
 ### Test
 #
 # Run main tests
 MERGED_VIOLATION_QUERIES := $(wildcard src/sparql/*-violation.rq)
-EDIT_VIOLATION_QUERIES := $(wildcard src/sparql/*-violation-edit.rq)
 
 build/terms-report.csv: build/obcs_merged.owl src/sparql/terms-report.rq | build
 	$(ROBOT) query --input $< --select $(word 2,$^) $@
@@ -105,13 +110,7 @@ build/dropped-entities.tsv: build/released-entities.tsv build/current-entities.t
 
 # Run all validation queries and exit on error.
 .PHONY: verify
-verify: verify-edit verify-merged verify-entities
-
-# Run validation queries on obcs_dev and exit on error.
-.PHONY: verify-edit
-verify-edit: src/ontology/obcs_dev.owl $(EDIT_VIOLATION_QUERIES) | build/robot.jar
-	$(ROBOT) verify --input $< --output-dir build \
-	--queries $(EDIT_VIOLATION_QUERIES)
+verify: verify-merged verify-entities
 
 # Run validation queries on obcs_merged and exit on error.
 .PHONY: verify-merged
@@ -134,7 +133,7 @@ reason: build/obcs_merged.owl | build/robot.jar
 test: reason verify
 
 
-### General
+### General/Users/jiezheng/Documents/ontology/obcs
 #
 # Full build
 .PHONY: all
@@ -145,3 +144,12 @@ all: test obcs.owl build/terms-report.csv
 clean:
 	rm -rf build
 
+# Check for problems such as bad line-endings
+.PHONY: check
+check:
+	src/scripts/check-line-endings.sh tsv
+
+# Fix simple problems such as bad line-endings
+.PHONY: fix
+fix:
+	src/scripts/fix-eol-all.sh
