@@ -1,5 +1,5 @@
 [URI of the OWL(RDF/XML) output file]
-http://purl.obolibrary.org/obo/obcs/OBI_statisitics_imports.owl
+http://purl.obolibrary.org/obo/obcs/dev/OBI_imports.owl
 
 [Source ontology]
 OBI
@@ -35,7 +35,8 @@ http://purl.obolibrary.org/obo/OBI_0000338 #interpreting data
 includeAllChildren
 
 [Top level source term URIs and target direct superclass URIs]
-http://www.ifomis.org/bfo/1.1#Entity
+http://purl.obolibrary.org/obo/BFO_0000002
+http://purl.obolibrary.org/obo/BFO_0000003
 
 [Source term retrieval setting]
 includeAllIntermediates 
