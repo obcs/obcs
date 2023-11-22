@@ -1,0 +1,25 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/obcs/dev/GO_imports.owl
+
+[Source ontology]
+GO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/GO_0006306 #DNA methylation
+http://purl.obolibrary.org/obo/GO_0050896 #response to stimulus
+http://purl.obolibrary.org/obo/GO_0008150 #biological process
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/GO_0006306 #DNA methylation
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological process
+http://purl.obolibrary.org/obo/GO_0050896 #response to stimulus
+subClassOf http://purl.obolibrary.org/obo/GO_0008150 #biological process
+http://purl.obolibrary.org/obo/GO_0008150 #biological process
+subClassOf http://purl.obolibrary.org/obo/BFO_0000015 #process
+
+[Source term retrieval setting]
+includeNoIntermediates 
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+

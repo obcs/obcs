@@ -1,0 +1,28 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/obcs/dev/CL_imports.owl
+
+[Source ontology]
+CL
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/CL_0000010 #cultured cell
+http://purl.obolibrary.org/obo/CL_0000578 #experimentally modified cell in vitro
+http://purl.obolibrary.org/obo/CL_0001034 #cell in vitro
+http://purl.obolibrary.org/obo/CL_0000000 #cell
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/CL_0000010 #cultured cell
+subClassOf http://purl.obolibrary.org/obo/CL_0000578 #experimentally modified cell in vitro
+http://purl.obolibrary.org/obo/CL_0000578 #experimentally modified cell in vitro
+subClassOf http://purl.obolibrary.org/obo/CL_0001034 #cell in vitro
+http://purl.obolibrary.org/obo/CL_0001034 #cell in vitro
+subClassOf http://purl.obolibrary.org/obo/CL_0000000 #cell
+http://purl.obolibrary.org/obo/CL_0000000 #cell
+subClassOf http://purl.obolibrary.org/obo/BFO_0000040
+
+
+[Source term retrieval setting]
+includeNoIntermediates 
+
+[Source annotation URIs]
+includeAllAnnotationProperties

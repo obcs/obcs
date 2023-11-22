@@ -1,0 +1,94 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/obcs/dev/STATO_imports.owl
+
+[Source ontology]
+STATO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/STATO_0000166 #bar chart
+http://purl.obolibrary.org/obo/STATO_0000267
+http://purl.obolibrary.org/obo/STATO_0000159
+http://purl.obolibrary.org/obo/STATO_0000120 #bean plot
+http://purl.obolibrary.org/obo/STATO_0000243
+http://purl.obolibrary.org/obo/STATO_0000128
+http://purl.obolibrary.org/obo/STATO_0000171
+http://purl.obolibrary.org/obo/STATO_0000066
+http://purl.obolibrary.org/obo/STATO_0000125
+http://purl.obolibrary.org/obo/STATO_0000174
+http://purl.obolibrary.org/obo/STATO_0000147
+http://purl.obolibrary.org/obo/STATO_0000168
+http://purl.obolibrary.org/obo/STATO_0000219
+http://purl.obolibrary.org/obo/STATO_0000186
+http://purl.obolibrary.org/obo/STATO_0000122
+http://purl.obolibrary.org/obo/STATO_0000165
+http://purl.obolibrary.org/obo/STATO_0000241
+http://purl.obolibrary.org/obo/STATO_0000274
+http://purl.obolibrary.org/obo/STATO_0000112
+http://purl.obolibrary.org/obo/STATO_0000263
+http://purl.obolibrary.org/obo/STATO_0000040
+http://purl.obolibrary.org/obo/STATO_0000256
+http://purl.obolibrary.org/obo/STATO_0000126
+http://purl.obolibrary.org/obo/STATO_0000154
+http://purl.obolibrary.org/obo/STATO_0000057
+http://purl.obolibrary.org/obo/STATO_0000177
+http://purl.obolibrary.org/obo/STATO_0000023
+http://purl.obolibrary.org/obo/STATO_0000180
+http://purl.obolibrary.org/obo/STATO_0000060
+http://purl.obolibrary.org/obo/STATO_0000103
+http://purl.obolibrary.org/obo/STATO_0000283
+http://purl.obolibrary.org/obo/STATO_0000145
+http://purl.obolibrary.org/obo/STATO_0000262
+http://purl.obolibrary.org/obo/STATO_0000132
+http://purl.obolibrary.org/obo/STATO_0000017
+
+http://purl.obolibrary.org/obo/STATO_0000095 #Student paired t test
+http://purl.obolibrary.org/obo/STATO_0000286 #one tailed test
+http://purl.obolibrary.org/obo/STATO_0000287 #two-tailed test
+http://purl.obolibrary.org/obo/STATO_0000274 #receiver operational characteristics curve
+
+http://purl.obolibrary.org/obo/STATO_0000044 #one-way ANOVA
+http://purl.obolibrary.org/obo/STATO_0000045 #two-way ANOVA
+http://purl.obolibrary.org/obo/STATO_0000048 #multiway ANOVA
+http://purl.obolibrary.org/obo/STATO_0000260 #repeated measure ANOVA
+
+http://purl.obolibrary.org/obo/STATO_0000142 # correlation coefficient
+includeAllChildren
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/IAO_0000038 #graph
+subClassOf http://purl.obolibrary.org/obo/IAO_0000309 #diagram
+http://purl.obolibrary.org/obo/OBI_0000673 #statistical hypothesis test
+subClassOf http://purl.obolibrary.org/obo/OBI_0200000 #data transformation
+http://purl.obolibrary.org/obo/OBI_0200201 #anova
+subClassOf http://purl.obolibrary.org/obo/OBI_0200000 #data transformation
+
+http://purl.obolibrary.org/obo/STATO_0000057
+subClassOf http://purl.obolibrary.org/obo/OBI_0001908
+http://purl.obolibrary.org/obo/STATO_0000177
+subClassOf http://purl.obolibrary.org/obo/OBCS_0000066 #continuous probability distribution
+http://purl.obolibrary.org/obo/STATO_0000023
+subClassOf http://purl.obolibrary.org/obo/OBCS_0000066 #continuous probability distribution
+http://purl.obolibrary.org/obo/STATO_0000180
+subClassOf http://purl.obolibrary.org/obo/OBCS_0000005
+http://purl.obolibrary.org/obo/STATO_0000060
+subClassOf http://purl.obolibrary.org/obo/OBCS_0000067 #discrete probability distribution
+http://purl.obolibrary.org/obo/STATO_0000103
+subClassOf http://purl.obolibrary.org/obo/OBCS_0000067 #discrete probability distribution
+http://purl.obolibrary.org/obo/STATO_0000283
+subClassOf http://purl.obolibrary.org/obo/OBCS_0000067 #discrete probability distribution
+http://purl.obolibrary.org/obo/STATO_0000262
+subClassOf http://purl.obolibrary.org/obo/OBCS_0000044
+http://purl.obolibrary.org/obo/STATO_0000132
+subClassOf http://purl.obolibrary.org/obo/OBCS_0000010
+http://purl.obolibrary.org/obo/STATO_0000017
+subClassOf http://purl.obolibrary.org/obo/OBCS_0000010
+http://purl.obolibrary.org/obo/STATO_0000142 # correlation coefficient
+subClassOf http://purl.obolibrary.org/obo/OBI_0000071
+
+
+[Source term retrieval setting]
+includeComputedIntermediates
+
+[Source annotation URIs]
+http://www.w3.org/2000/01/rdf-schema#label
+http://purl.obolibrary.org/obo/IAO_0000115

@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/obcs/dev/SO_imports.owl#"
+     xml:base="http://purl.obolibrary.org/obo/obcs/dev/SO_imports.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/obcs/dev/SO_imports.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000031"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000031"/>
+        <obo:IAO_0000115>A sequence_feature with an extent greater than zero. A nucleotide region is composed of bases and a polypeptide region is composed of amino acids.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/so.owl"/>
+        <oboInOwl:hasExactSynonym>sequence</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SO:0000001</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/so#SOFA"/>
+        <rdfs:label>region</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0000148 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000148">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000353"/>
+        <obo:IAO_0000115>One or more contigs that have been ordered and oriented using end-read information. Contains gaps that are filled with N&apos;s.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/so.owl"/>
+        <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>scaffold</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>SO:0000148</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/so#SOFA"/>
+        <rdfs:label>supercontig</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0000149 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000149">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000353"/>
+        <obo:IAO_0000115>A contiguous sequence derived from sequence assembly. Has no gaps, but may contain N&apos;s from unavailable bases.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/so.owl"/>
+        <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/Contig</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SO:0000149</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/so#SOFA"/>
+        <rdfs:label>contig</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0000353 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0000353">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0001248"/>
+        <obo:IAO_0000115>A sequence of nucleotides that has been algorithmically derived from an alignment of two or more different sequences.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/so.owl"/>
+        <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/Sequence_assembly</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>sequence assembly</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SO:0000353</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/so#SOFA"/>
+        <rdfs:label>sequence_assembly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0001248 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001248">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0001410"/>
+        <obo:IAO_0000115>A region of the genome of known length that is composed by ordering and aligning two or more different regions.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/so.owl"/>
+        <oboInOwl:hasDbXref>http://en.wikipedia.org/wiki/Genome_assembly#Genome_assembly</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
+        <oboInOwl:id>SO:0001248</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/so#SOFA"/>
+        <rdfs:label>assembly</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SO_0001410 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SO_0001410">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SO_0000001"/>
+        <obo:IAO_0000115>A region which is the result of some arbitrary experimental procedure. The procedure may be carried out with biological material or inside a computer.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/so.owl"/>
+        <oboInOwl:hasExactSynonym>experimental output artefact</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>experimental_output_artefact</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>sequence</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>analysis feature</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>SO:0001410</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/so#SOFA"/>
+        <rdfs:label>experimental_feature</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25) https://github.com/owlcs/owlapi -->
+

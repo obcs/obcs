@@ -20,6 +20,8 @@ http://purl.obolibrary.org/obo/OBI_0000356 #hypothesis generating investigation
 http://purl.obolibrary.org/obo/OBI_0300311 #observation design
 http://purl.obolibrary.org/obo/OBI_0302900 #group randomization
 http://purl.obolibrary.org/obo/OBI_0600015 #group assignment
+http://purl.obolibrary.org/obo/OBI_0000078
+http://purl.obolibrary.org/obo/OBI_0001908
 
 http://purl.obolibrary.org/obo/OBI_0200000 #data transformation
 includeAllChildren
@@ -31,7 +33,7 @@ http://purl.obolibrary.org/obo/IAO_0000027 #data item
 includeAllChildren
 http://purl.obolibrary.org/obo/OBI_0200166 #data transformation objective
 includeAllChildren
-http://purl.obolibrary.org/obo/OBI_0000338 #interpreting data 
+http://purl.obolibrary.org/obo/OBI_0000338 #drawing a conclusion based on data
 includeAllChildren
 
 [Top level source term URIs and target direct superclass URIs]

@@ -1133,6 +1133,21 @@ editor = PRS</obo:IAO_0000232>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000078 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000078">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000111 xml:lang="en">eMedical record</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000125"/>
+        <obo:IAO_0000115 xml:lang="en">An eMedical record is a digital document derived from a computer system used primarily for patient care in a clinical setting.  Not required to be compliant with requirements of 21 CFR Part 11.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">person:Jennifer Fostel</obo:IAO_0000117>
+        <obo:IAO_0000119>article-without-pmid-or-doi:CDISCglossary</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label xml:lang="en">eMedical record</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000079 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000079">
@@ -5614,6 +5629,24 @@ PMID: 23587118.
 last accessed: 2013-12-02</obo:IAO_0000119>
         <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
         <rdfs:label xml:lang="en">random access memory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001908 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0001908">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000111>testable hypothesis</obo:IAO_0000111>
+        <obo:IAO_0000112>that fucoidan has a small statistically significant effect on AT3 level but no useful clinical effect as in-vivo anticoagulant, a paraphrase of part of the last paragraph of the discussion section of the paper &apos;Pilot clinical study to evaluate the anticoagulant activity of fucoidan&apos;, by Lowenthal et. al.PMID:19696660</obo:IAO_0000112>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000122"/>
+        <obo:IAO_0000115>An information content entity that expresses an assertion that is intended to be tested.</obo:IAO_0000115>
+        <obo:IAO_0000116>In the Philly 2013 workshop, we recognized the limitations of &quot;hypothesis textual entity&quot;, and we introduced this as more general. The need for the &apos;textual entity&apos; term going forward is up for future debate.</obo:IAO_0000116>
+        <obo:IAO_0000117>Group:2013 Philly Workshop group</obo:IAO_0000117>
+        <obo:IAO_0000118>hypothesis</obo:IAO_0000118>
+        <obo:IAO_0000119>Group:2013 Philly Workshop group</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/obi.owl"/>
+        <rdfs:label>testable hypothesis</rdfs:label>
     </owl:Class>
     
 
