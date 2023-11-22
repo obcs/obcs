@@ -1,0 +1,24 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/obcs/dev/PATO_imports.owl
+
+[Source ontology]
+PATO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/PATO_0000161 #rate
+http://purl.obolibrary.org/obo/PATO_0000011 #age
+http://purl.obolibrary.org/obo/PATO_0000122 #length
+http://purl.obolibrary.org/obo/PATO_0000125
+http://purl.obolibrary.org/obo/PATO_0001421 #alive
+http://purl.obolibrary.org/obo/PATO_0001422 #dead
+http://purl.obolibrary.org/obo/PATO_0002201 #handedness
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/PATO_0000001 #quality
+subClassOf http://purl.obolibrary.org/obo/BFO_0000020 #specifically dependent continuant
+
+[Source term retrieval setting]
+includeComputedIntermediates
+
+[Source annotation URIs]
+includeAllAnnotationProperties

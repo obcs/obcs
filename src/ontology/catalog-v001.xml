@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri name="http://purl.obolibrary.org/obo/obcs_dev.owl" uri="obcs_dev.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/obcs/OBI_statisitics_imports.owl" uri="imports/OBI_statisitics_imports.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/obcs/OBO_imports.owl" uri="imports/OBO_imports.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obcs/dev/APOLLO_SV_imports.owl" uri="imports/APOLLO_SV_imports.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obcs/dev/CHEBI_imports.owl" uri="imports/CHEBI_imports.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obcs/dev/CL_imports.owl" uri="imports/CL_imports.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obcs/dev/GO_imports.owl" uri="imports/GO_imports.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obcs/dev/IAO_imports.owl" uri="imports/IAO_imports.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obcs/dev/NCBITaxon_imports.owl" uri="imports/NCBITaxon_imports.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obcs/dev/OBI_imports.owl" uri="imports/OBI_imports.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obcs/dev/OGMS_imports.owl" uri="imports/OGMS_imports.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obcs/dev/PATO_imports.owl" uri="imports/PATO_imports.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obcs/dev/PR_imports.owl" uri="imports/PR_imports.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obcs/dev/RO_imports.owl" uri="imports/RO_imports.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obcs/dev/SO_imports.owl" uri="imports/SO_imports.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obcs/dev/STATO_imports.owl" uri="imports/STATO_imports.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obcs/dev/UBERON_imports.owl" uri="imports/UBERON_imports.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obcs/dev/UO_imports.owl" uri="imports/UO_imports.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obcs/dev/externalByHand.owl" uri="imports/externalByHand.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obcs/dev/obcs_uncertainty.owl" uri="modules/obcs_uncertainty.owl"/>
 </catalog>

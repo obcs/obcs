@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/obcs/dev/CHEBI_imports.owl#"
+     xml:base="http://purl.obolibrary.org/obo/obcs/dev/CHEBI_imports.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/obcs/dev/CHEBI_imports.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasAlternativeId"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#inSubset"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000040"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_16991 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_16991">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33696"/>
+        <obo:IAO_0000115>High molecular weight, linear polymers, composed of nucleotides containing deoxyribose and linked by phosphodiester bonds; DNA contain the genetic information of organisms.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <oboInOwl:hasAlternativeId>CHEBI:13302</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>CHEBI:21123</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>CHEBI:33698</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId>CHEBI:4291</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref>CAS:9007-49-2</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>KEGG:C00039</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>Deoxyribonucleic acid</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym>deoxyribonucleic acids</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>(Deoxyribonucleotide)m</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>(Deoxyribonucleotide)n</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>(Deoxyribonucleotide)n+m</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>DNA</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>DNAn</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>DNAn+1</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>DNS</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Desoxyribonukleinsaeure</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>deoxyribonucleic acids</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>desoxyribose nucleic acid</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>thymus nucleic acid</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>CHEBI:16991</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
+        <rdfs:label>deoxyribonucleic acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_23367 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_23367">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115>Any constitutionally or isotopically distinct atom, molecule, ion, ion pair, radical, radical ion, complex, conformer etc., identifiable as a separately distinguishable entity.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <oboInOwl:hasExactSynonym>molecular entity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>entidad molecular</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>entidades moleculares</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>entite moleculaire</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>molecular entities</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>molekulare Entitaet</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>CHEBI:23367</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
+        <rdfs:label>molecular entity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33696 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33696">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_33839"/>
+        <obo:IAO_0000115>A macromolecule made up of nucleotide units and hydrolysable into certain pyrimidine or purine bases (usually adenine, cytosine, guanine, thymine, uracil), D-ribose or 2-deoxy-D-ribose and phosphoric acid.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <oboInOwl:hasExactSynonym>nucleic acids</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>NA</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Nukleinsaeure</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>Nukleinsaeuren</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>acide nucleique</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>acides nucleiques</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>acido nucleico</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>acidos nucleicos</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>CHEBI:33696</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
+        <rdfs:label>nucleic acid</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CHEBI_33839 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/CHEBI_33839">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CHEBI_23367"/>
+        <obo:IAO_0000115>A macromolecule is a molecule of high relative molecular mass, the structure of which essentially comprises the multiple repetition of units derived, actually or conceptually, from molecules of low relative molecular mass.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/chebi.owl"/>
+        <oboInOwl:hasDbXref>Wikipedia:Macromolecule</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym>macromolecule</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace>chebi_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym>macromolecules</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>polymer</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>polymer molecule</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym>polymers</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id>CHEBI:33839</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR"/>
+        <rdfs:label>macromolecule</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,34 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/obcs/dev/SO_imports.owl
+
+[Source ontology]
+SO
+
+[Low level source term URIs]
+http://purl.obolibrary.org/obo/SO_0000001 #region
+http://purl.obolibrary.org/obo/SO_0001410 #experimental_feature
+http://purl.obolibrary.org/obo/SO_0001248 #assembly
+http://purl.obolibrary.org/obo/SO_0000353 #sequence_assembly
+http://purl.obolibrary.org/obo/SO_0000149 #contig
+http://purl.obolibrary.org/obo/SO_0000148 #supercontig
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/SO_0000001 #region
+subClassOf http://purl.obolibrary.org/obo/BFO_0000031 #GDC
+http://purl.obolibrary.org/obo/SO_0001410 #experimental_feature
+subClassOf http://purl.obolibrary.org/obo/SO_0000001 #region
+http://purl.obolibrary.org/obo/SO_0001248 #assembly
+subClassOf http://purl.obolibrary.org/obo/SO_0001410 #experimental_feature
+http://purl.obolibrary.org/obo/SO_0000353 #sequence_assembly
+subClassOf http://purl.obolibrary.org/obo/SO_0001248 #assembly
+http://purl.obolibrary.org/obo/SO_0000149 #contig
+subClassOf http://purl.obolibrary.org/obo/SO_0000353 #sequence_assembly
+http://purl.obolibrary.org/obo/SO_0000148 #supercontig
+subClassOf http://purl.obolibrary.org/obo/SO_0000353 #sequence_assembly
+
+[Source term retrieval setting]
+includeNoIntermediates 
+
+[Source annotation URIs]
+includeAllAnnotationProperties
+
