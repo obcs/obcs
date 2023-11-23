@@ -1,0 +1,2015 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/obcs/dev/uncertainty.owl#"
+     xml:base="http://purl.obolibrary.org/obo/obcs/dev/uncertainty.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/obcs/dev/uncertainty.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000117"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000016"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/BFO_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000251 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000251">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000016"/>
+        <obo:IAO_0000115>A disposition that inheres in some objects, which prevents accurate prediction or determination of the quality of a material entity. It is realized in objective process or subjective process.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">不确定性</obo:IAO_0000118>
+        <rdfs:label>uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000252 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000252">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000251"/>
+        <obo:IAO_0000115>An uncertainty that inheres in an objective continuant.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">Aleatory uncertainty</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">Chance</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">External uncertainty</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">Natural variability</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">Ontological uncertainty</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">Random or stochastic variation</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">Statistical probability</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="zh">客观不确定性</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2002561/</obo:IAO_0000119>
+        <rdfs:label>objective uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000253 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000253">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000251"/>
+        <obo:IAO_0000115>An uncertainty that inheres in an organism (in especial human) and results from subjective cognition.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">Epistemic uncertainty</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">Functional uncertainty</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">Inductive probability</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">Internal uncertainty</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">Knowledge uncertainty</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">probability</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="zh">主观不确定性</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2002561/</obo:IAO_0000119>
+        <rdfs:label>subjective uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000254 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000254">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000030"/>
+        <obo:IAO_0000115>An object with subjective cognition.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">带有主观性的客体</obo:IAO_0000118>
+        <rdfs:label>subjective object</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000255 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000255">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>A process in which tangible substances or objects undergo movement or change in a way that can be observed and measured independently, regardless of subjective interpretations or perceptions. It is a concept often used in scientific and objective contexts to describe the physical changes and movements of matter in the external world.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">客观过程</obo:IAO_0000118>
+        <obo:IAO_0000119>https://iep.utm.edu/objectiv/</obo:IAO_0000119>
+        <rdfs:label>objective process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000256 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000256">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000115>A process refers to the mental processes involved in gaining knowledge and comprehension. Some of the many different cognitive processes include thinking, knowing, remembering, judging, and problem-solving.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">主观过程</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.verywellmind.com/what-is-cognition-2794982</obo:IAO_0000119>
+        <rdfs:label>subjective process</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000257 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000257">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000256"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">决策</obo:IAO_0000118>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>decision making</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000258 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000258">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">不确定性分析</obo:IAO_0000118>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>uncertainty analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000259 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000259">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000258"/>
+        <obo:IAO_0000115>Study of how the uncertainty in the output of a mathematical model or system (numerical or otherwise) can be divided and allocated to different sources of uncertainty in its inputs.Conducted to understand the factors and processes that most (or least) control a model’s outputs </obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">灵敏度分析</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Sensitivity_analysis</obo:IAO_0000119>
+        <rdfs:label>sensitivity analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000260 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000260">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000259"/>
+        <obo:IAO_0000115>Model evaluation performed by varying uncertain factors around specific reference values.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">局部灵敏度分析</obo:IAO_0000118>
+        <obo:IAO_0000119>https://uc-ebook.org/docs/html/6_glossary.html</obo:IAO_0000119>
+        <rdfs:label>local sensitivity analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000261 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000261">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000259"/>
+        <obo:IAO_0000115>Model evaluation performed by varying uncertain factors throughout their entire feasible value space.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">全局灵敏度分析</obo:IAO_0000118>
+        <obo:IAO_0000119>https://uc-ebook.org/docs/html/6_glossary.html</obo:IAO_0000119>
+        <rdfs:label>global sensitivity analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000262 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000262">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000259"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <rdfs:comment>to be confirmed</rdfs:comment>
+        <rdfs:label>screening sensitivity analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000263 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000263">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000258"/>
+        <obo:IAO_0000115>Equations aimed to assess how the quantified uncertainties in model  inputs propagate in model calculations to produce and uncertainty range in a given model  outcome of interest.In statistics, propagation of uncertainty (or propagation of error) is the effect of variables&apos; uncertainties (or errors, more specifically random errors) on the uncertainty of a function based on them. When the variables are the values of experimental measurements they have uncertainties due to measurement limitations (e.g., instrument precision) which propagate due to the combination of variables in the function.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">propagation of error</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">propagation of uncertainty</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="zh">误差传播方程</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Propagation_of_uncertainty</obo:IAO_0000119>
+        <rdfs:label>error propagation equations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000264 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000264">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000258"/>
+        <obo:IAO_0000115>A broad class of computational algorithms that rely on repeated random sampling to obtain numerical results.The goal of Monte Carlo analysis is to trace out the structure of the distributions of model output that results from specified uncertainty distributions of model inputs and model parameters.  </obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">Monte Carlo experiments</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">Monte Carlo methods</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="zh">蒙特卡罗分析</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Monte_Carlo_method</obo:IAO_0000119>
+        <rdfs:label>Monte Carlo analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000265 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000265">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000258"/>
+        <obo:IAO_0000115>A structured process to elicit subjective judgements from experts. Expert elicitation in the context of uncertainty quantification aims at a credible and traceable  account of specifying probabilistic information regarding uncertainty, in a structured and documented way.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">专家启发法</obo:IAO_0000118>
+        <obo:IAO_0000119>http://www.nusap.net/downloads/toolcatalogue.pdf</obo:IAO_0000119>
+        <rdfs:label>expert elicitation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000266 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000266">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000258"/>
+        <obo:IAO_0000115>The NUSAP (Numeral Unit Spread Assessment, Pedigree) method aims to provide an analysis and diagnosis of uncertainty. It captures both quantitative dimensions and qualitative dimensions of uncertainty (Funtowicz and Ravetz 1990).</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">数字单元传播评估谱系</obo:IAO_0000118>
+        <obo:IAO_0000119>https://scholarsarchive.byu.edu/cgi/viewcontent.cgi?article=3855&amp;context=iemssconference;https://link.springer.com/book/10.1007/978-94-009-0621-1</obo:IAO_0000119>
+        <rdfs:label>Numeral Unit Spread Assessment Pedigree(NUSAP)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000267 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000267">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000258"/>
+        <obo:IAO_0000115>A method that tries to describe logical and internally consistent sequences  of events to explore how the future might, could or should evolve from the past and present.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">情境分析</obo:IAO_0000118>
+        <obo:IAO_0000119>http://www.nusap.net/downloads/toolcatalogue.pdf</obo:IAO_0000119>
+        <rdfs:label>Scenario Analysis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000268 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000268">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000258"/>
+        <obo:IAO_0000115>A meta approach (organising  framework) to structure the process of uncertainty management</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">综合不确定性管理和风险分析的多元框架</obo:IAO_0000118>
+        <obo:IAO_0000119>https://link.springer.com/chapter/10.1007/978-94-017-2583-5_6</obo:IAO_0000119>
+        <rdfs:label>Pluralistic fRamework of Integrated uncertainty Management and risk Analysis(PRIMA)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000269 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000269">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000258"/>
+        <obo:IAO_0000115>An instrument for internal use to assist  modellers and users of models in the process of quality control.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">模型质量协助清单</obo:IAO_0000118>
+        <obo:IAO_0000119>http://www.nusap.net/downloads/toolcatalogue.pdf</obo:IAO_0000119>
+        <rdfs:label>Checklist for Model Quality Assistance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000270 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000270">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000258"/>
+        <obo:IAO_0000115>A method that enables to systematically identify and prioritize critical assumptions in (chains of linked) models and provides a framework for the critical appraisal of model assumptions.This method aims to systematically identify, prioritise and analyse importance and strength of assumptions in models.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">模型中假设的批判性审查</obo:IAO_0000118>
+        <obo:IAO_0000119>http://www.nusap.net/downloads/toolcatalogue.pdf</obo:IAO_0000119>
+        <rdfs:label>Critical Review of Assumptions in models</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000271 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000271">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">elimiation of uncertainty</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="zh">不确定性消除</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.ctillc.com/blog/rd-four-part-test-and-elimination-of-uncertainty</obo:IAO_0000119>
+        <rdfs:comment>to be confirmed</rdfs:comment>
+        <rdfs:label>uncertainty elimination</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000272 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000272">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">source of uncertainty</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="zh">不确定性缘由</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>uncertainty arise conditions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000273 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000273">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">solutions of uncertainty</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="zh">不确定性应对措施</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>uncertainty response activity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000274 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000274">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000115>Rare or extreme events are events that occur with low frequency, and often refers to infrequent events that have a widespread effect and which might destabilize systems</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">事件罕见</obo:IAO_0000118>
+        <obo:IAO_0000119>https://en.wikipedia.org/wiki/Rare_events</obo:IAO_0000119>
+        <rdfs:label>rarity of events</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000275 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000275">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">单一原因的多重影响</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>multiple effects from single causes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000276 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000276">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">个体差异</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>individual differences</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000277 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000277">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">材料难以获取</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>materials difficult to obtain</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000278 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000278">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">事件不稳定（偶发、自我逆转、扩散）</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>instability of events (episodic, self-reversing, spreading)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000279 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000279">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">limited and inaccurate data</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="zh">部分可用数据</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition and classification to be confirmed</rdfs:comment>
+        <rdfs:label>partially available data</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000280 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000280">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">研究人群不同</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>diverse populations for study</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000281 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000281">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">因果现象界限不清</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>unclear boundaries of causal phenomena</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000282 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000282">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">缺乏因果模型</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>lack of causal models</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000283 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000283">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">不可控的实验条件</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>uncontrollable experimental conditions</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000284 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000284">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">缺乏可供比较的信息</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>lack of information for comparison</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000285 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000285">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">不稳定和不断扩散的症状和副作用</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>labile and spreading symptoms and side effects</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000286 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000286">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">延迟的信息</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition and classification to be confirmed</rdfs:comment>
+        <rdfs:label>delayed information</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000287 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000287">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">同一案例的专业/非专业处理</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>specialist/nonspecialist handling of the same cases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000288 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000288">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">调查者间地位不平等</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>unequal status between investigators</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000289 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000289">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">管理层与员工关系不佳</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>poor management-staff relations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000290 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000290">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">资金不足</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>lack of funding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000291 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000291">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">资金分散</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>sporadic funding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000292 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000292">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">缺乏制度保障</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>lack of institutional security</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000293 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000293">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">调查人员间的延误和缺乏沟通</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>delays and lack of communication between investigators</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000294 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000294">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>reacting subjects</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000295 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000295">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">手术并发症（实验性）</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>operative complications (experimental)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000296 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000296">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">无法控制的程序</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>uncontrollable procedures</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000297 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000297">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">观察困难</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>observational difficulties</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000298 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000298">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000273"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">按顺序或空间位置对数据进行排序</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>order data sequentially or by spatial location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000299 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000299">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000273"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">标准化</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>standardize</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000300 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000300">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000273"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">范例筛选</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>find exemplars-filter for clear-cut cases</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000301 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000301">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000273"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">不确定性分割</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>segmentation of uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000302 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000302">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000273"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">诊断分类替代</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>substitution of taxonomy for diagnosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000303 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000303">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000273"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">劳动分工</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>division of labor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000304 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000304">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000273"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">寻找病症</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>search for pathognomonic signs</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000305 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000305">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000273"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">散弹枪疗法</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>shotgun treatments</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000306 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000306">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000273"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">按照政治路线清晰划分数据</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>division of data along political lines for clarity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000307 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000307">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000273"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">按照技术/实质性原则分工</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>division of labor along technical/substantive lines</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000308 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000308">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000273"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">观察限于现有材料</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>observations limited to available materials</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000309 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000309">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000273"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">强调实际结果的功利主义</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>utilitarian emphasis on practical results</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000310 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000310">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000299"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">技术和材料标准化</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>standardization of techniques and materials</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000311 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000311">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000299"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">观察技术（形式）和协议标准化</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>standardization of observational techniques (forms) and protocols</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000312 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000312">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000273"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">观察向下聚焦到更小的领域</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>observations down-focused to smaller areas</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000313 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000313">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000273"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">用理论有效性替代技术一致性</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>substitution of theoretical validity for technical consistency</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000314 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000314">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">测量误差</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>measurement error</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000315 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000315">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">不完整的知识</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>incomplete knowledge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000316 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000316">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">有限的理解</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>limited understanding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000317 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000317">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">不完美的模型</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>imperfect models</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000318 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000318">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">主观判断</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>subjective judgement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000319 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000319">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000115>the chaotic and unpredictable nature of natural processes</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">自然固有的随机性</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
+        <rdfs:label>inherent randomness of nature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000320 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000320">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000115>‘non-rational’behaviour, discrepancies between what people say and what they actually do (cognitive dissonance), or deviations of ‘standard’ behavioural patterns (micro-level behaviour).</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">Human behaviour</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="zh">行为可变性</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
+        <rdfs:label>behavioural variability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000321 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000321">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000115>the chaotic and unpredictable nature of societal  processes (macro-level behaviour). The need to consider  societal and institutional processes as a major contributor  to uncertainty due to variability can be inferred from  various papers of Funtowicz, Ravetz, and de Marchi.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">Social, economic, and cultural dynamics</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="zh">社会可变性</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
+        <rdfs:label>societal variability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000322 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000322">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000115>New developments or breakthroughs in technology or unexpected consequences (‘side-effects’) of technologies.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
+        <rdfs:label>technological surprise</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000323 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000323">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000272"/>
+        <obo:IAO_0000115>Sampling error is the error associated with the degree to which the sample is representative.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">抽样误差</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
+        <rdfs:label>sampling error in the measurements</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000324 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000324">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000251"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">可能</obo:IAO_0000118>
+        <rdfs:comment>definition and classification to be confirmed</rdfs:comment>
+        <rdfs:label>probability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000325 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000325">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000253"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">复杂引起的不确定性</obo:IAO_0000118>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>complexity-induced uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000326 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000326">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000251"/>
+        <obo:IAO_0000115>vagueness is associated with the lack of precise or sharp distinctions or boundaries</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">cloudiness</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">fuzziness</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">haziness</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">imprecision</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">indefiniteness</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">indistinctiveness</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">sharplessness</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">unclearness</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="zh">模糊</obo:IAO_0000118>
+        <obo:IAO_0000119>GEORGE J. KLIR (1989) IS THERE MORE TO UNCERTAINTY THAN SOME PROBABILITY THEORISTS MIGHT HAVE US BELIEVE?*, International Journal Of General System, 15:4, 347-378, DOI: 10.1080/03081078908935057.</obo:IAO_0000119>
+        <rdfs:comment>classification to be confirmed</rdfs:comment>
+        <rdfs:label>vagueness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000327 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000327">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000253"/>
+        <obo:IAO_0000115>Ambiguity, on the other hand, is associated with one-to-many relations, that is, situations in which several alternatives are left unspecified or a desired categorization of an element is left undecided due to ignorance.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">disagreement</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">discrepancy</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">dissonance</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">divergence</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">diversity</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">equivocation</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">generality</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">imprecision</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">incongruity</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">nonspecificity</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">variety</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="zh">歧义</obo:IAO_0000118>
+        <obo:IAO_0000119>GEORGE J. KLIR (1989) IS THERE MORE TO UNCERTAINTY THAN SOME PROBABILITY THEORISTS MIGHT HAVE US BELIEVE?*, International Journal Of General System, 15:4, 347-378, DOI: 10.1080/03081078908935057.</obo:IAO_0000119>
+        <rdfs:comment>classification to be confirmed</rdfs:comment>
+        <rdfs:label>ambiguity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000328 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000328">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000252"/>
+        <obo:IAO_0000115>Taxonomic uncertainty arose as they tried to develop classification systems (for example, what kind of thing was epilepsy?).</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">分类不确定性</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:label>taxonomic uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000329 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000329">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000253"/>
+        <obo:IAO_0000115>Diagnostic uncertainty arose when investigators attempted to fit a particular case into their taxonomies.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">诊断不确定性</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:label>diagnostic uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000330 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000330">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000253"/>
+        <obo:IAO_0000115>Organizational uncertainty arose when information was lost or trapped owing to the local division of labor or the circumstances of alliances and collaborations. </obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">组织不确定性</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:label>organizational uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000331 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000331">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000252"/>
+        <obo:IAO_0000115>Technical uncertainty developed as a result of inadequate tools or ambiguous information about techniques. Technical uncertainty arose from difficulties with subjects, equipment, and procedures, including the lack of standard  measurement techniques. </obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">技术不确定性</obo:IAO_0000118>
+        <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
+        <rdfs:label>technical uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000332 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000332">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000253"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">预后不确定性</obo:IAO_0000118>
+        <obo:IAO_0000119>https://uts.nlm.nih.gov/uts/umls/vocabulary/NANDA-I/03312</obo:IAO_0000119>
+        <rdfs:comment>definition and classification to be confirmed</rdfs:comment>
+        <rdfs:label>prognosis uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000333 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000333">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000251"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">确定性（正面或中性）</obo:IAO_0000118>
+        <obo:IAO_0000119>https://pubmed.ncbi.nlm.nih.gov/1608829/</obo:IAO_0000119>
+        <rdfs:comment>definition and classification to be confirmed</rdfs:comment>
+        <rdfs:label>certainty(positive or neutral)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000334 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000334">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000251"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">确定性（有害的）</obo:IAO_0000118>
+        <obo:IAO_0000119>https://pubmed.ncbi.nlm.nih.gov/1608829/</obo:IAO_0000119>
+        <rdfs:comment>definition and classification to be confirmed</rdfs:comment>
+        <rdfs:label>certainty(detrimental)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000335 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000335">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000251"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">中等不确定性</obo:IAO_0000118>
+        <obo:IAO_0000119>https://pubmed.ncbi.nlm.nih.gov/1608829/</obo:IAO_0000119>
+        <rdfs:comment>definition and classification to be confirmed</rdfs:comment>
+        <rdfs:label>moderate degree of certainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000336 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000336">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000251"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">不确定性（有害的）</obo:IAO_0000118>
+        <obo:IAO_0000119>https://pubmed.ncbi.nlm.nih.gov/1608829/</obo:IAO_0000119>
+        <rdfs:comment>definition and classification to be confirmed</rdfs:comment>
+        <rdfs:label>uncertainty(detrimental)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000337 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000337">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000251"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">不确定性（正面）</obo:IAO_0000118>
+        <obo:IAO_0000119>https://pubmed.ncbi.nlm.nih.gov/1608829/</obo:IAO_0000119>
+        <rdfs:comment>definition and classification to be confirmed</rdfs:comment>
+        <rdfs:label>uncertainty(positive)</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000338 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000338">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000251"/>
+        <obo:IAO_0000115>Determinism is the ideal situation in which we know everything precisely. It is not attainable, but acts as a limiting characteristic at one end of the spectrum.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">决定论</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
+        <rdfs:comment>classification to be confirmed</rdfs:comment>
+        <rdfs:label>determinism</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000339 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000339">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000252"/>
+        <obo:IAO_0000115>Statistical uncertainty is any uncertainty that can be  described adequately in statistical terms. Statistical uncertainty can apply to any location in the model, even to model structure uncertainties, as long as the deviation from the true value can be characterised statistically.Statistical uncertainty is what is usually referred to as‘‘uncertainty’’in the natural sciences.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">统计不确定性</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
+        <rdfs:label>statistical uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000340 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000340">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000339"/>
+        <obo:IAO_0000115>Measurement uncertainty stems from the fact that measurements can practically never precisely represent the ‘‘true’’ value of that which is being measured.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">测量不确定性</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
+        <rdfs:label>measurement uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000341 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000341">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000251"/>
+        <obo:IAO_0000115>Scenario uncertainty can manifest itself in various ways –  for example, (a) as a range in the outcomes of an analysis  due to different underlying assumptions, (b) as uncertainty  about which changes and developments (e.g., in driving  forces or in system characteristics) are relevant for the  outcomes of interest, or (c) as uncertainty about the levels of  these relevant changes.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">情景不确定性</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
+        <rdfs:comment>classification to be confirmed</rdfs:comment>
+        <rdfs:label>scenario uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000342 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000342">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000251"/>
+        <obo:IAO_0000115>Recognised ignorance is fundamental uncertainty about  the mechanisms and functional relationships being studied. We know neither the functional relationships nor the  statistical properties and the scientific basis for developing  scenarios is weak.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">公认的无知</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
+        <rdfs:comment>classification to be confirmed</rdfs:comment>
+        <rdfs:label>recognized ignorance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000343 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000343">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000342"/>
+        <obo:IAO_0000115>Reducible  ignorance may be resolved by conducting further research,  which implies that it might be possible to somehow achieve a  better understanding. </obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">可还原的无知</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
+        <rdfs:label>reducible ignorance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000344 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000344">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000342"/>
+        <obo:IAO_0000115>Irreducible ignorance applies when neither research nor development can provide sufficient knowledge about the essential relationships. </obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">indeterminacy</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="zh">不可还原的无知</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
+        <rdfs:label>irreducible ignorance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000345 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000345">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000251"/>
+        <obo:IAO_0000115>Total ignorance is the other extreme from determinism on the scale of uncertainty, which implies a deep level of uncertainty, to the extent that we do not even know that we do not know. </obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">完全无知</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
+        <rdfs:comment>classification to be confirmed</rdfs:comment>
+        <rdfs:label>total ignorance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000346 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000346">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000252"/>
+        <obo:IAO_0000115>Context uncertainty includes uncertainty about the external economic, environmental, political, social, and technological situation that forms the context for the problem being examined. The context could fall within the past, the present, or the future. </obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">Situational uncertainty</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="zh">场景不确定性</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
+        <rdfs:label>context uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000347 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000347">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000253"/>
+        <obo:IAO_0000115>Model uncertainty is associated with both the conceptual model (i.e., the variables and their relationships that are chosen to describe the system located within the boundaries and thus constituting the model complex) and the computer model.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">模型不确定性</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
+        <rdfs:label>model uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000348 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000348">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000347"/>
+        <obo:IAO_0000115>uncertainty about the form of the model itself. Model structure uncertainty arises from a lack of sufficient understanding of the system (past, present, or future) that is the subject of the policy analysis, including the behaviour of the system and the interrelationships among its elements.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">模型结构不确定性</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
+        <rdfs:label>model structure uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000349 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000349">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000347"/>
+        <obo:IAO_0000115>uncertainty arising from the computer implementation of the model.Model technical uncertainty is the uncertainty generated  by software or hardware errors, i.e. hidden flaws in the  technical equipment. Software errors arise from bugs in  software, design errors in algorithms and typing errors in  model source code. Hardware errors arise from bugs, such as  the bug in the early version of the Pentium processor, which gave rise to numerical error in a broad range of floating-point calculations performed on the processor.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">模型技术不确定性</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
+        <rdfs:label>model technical uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000350 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000350">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000251"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">输入不确定性</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
+        <rdfs:comment>definition and classification to be confirmed</rdfs:comment>
+        <rdfs:label>input uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000351 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000351">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000350"/>
+        <obo:IAO_0000115>Uncertainty about the external driving forces that produce changes within the system (the relevant scenario variables and policy variables) and the magnitude of the forces (the values of the scenario and policy variables). </obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">外部驱动力量不确定性</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
+        <rdfs:label>external driving forces uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000352 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000352">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000350"/>
+        <obo:IAO_0000115>Uncertainty about the systemdata that ‘drive’ themodel and typically quantify relevant features of the reference system and its behaviour (e.g. land-use maps, data on infrastructure (roads, houses)). Uncertainty about system data is generated by a lack of knowledge of the properties (including both the deterministic and the stochastic properties) of the underlying system and deficiencies in the description of the variability that can be an inherent feature of some of the phenomena under observation. </obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">系统数据不确定性</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
+        <rdfs:label>system data uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000353 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000353">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000252"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">参数不确定性</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
+        <rdfs:comment>definition and classification to be confirmed</rdfs:comment>
+        <rdfs:label>parameters uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000354 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000354">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000251"/>
+        <obo:IAO_0000115>This is the accumulated uncertainty caused by the uncertainties in all of the above locations (context, model, inputs, and parameters) that are propagated through the model and are reflected in the resulting estimates of the outcomes of interest.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">prediction error</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="zh">模型产出不确定性</obo:IAO_0000118>
+        <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
+        <rdfs:comment>classification to be confirmed</rdfs:comment>
+        <rdfs:label>model outcome uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000355 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000355">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000251"/>
+        <obo:IAO_0000115>Scientific uncertainty refers to uncertainty which emanates from the scientific and technical dimensions of a problem as opposed to the legal, moral, societal, institutional, proprietary, and situational dimensions outlined by De Marchi et al. Scientific uncertainty is intrinsic to the processes of risk assessment and forecasting.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">科学不确定性</obo:IAO_0000118>
+        <obo:IAO_0000119>http://www.nusap.net/modules.php?op=modload&amp;name=NS-Glossary&amp;file=index</obo:IAO_0000119>
+        <rdfs:comment>classification to be confirmed</rdfs:comment>
+        <rdfs:label>scientific uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000356 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000356">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000251"/>
+        <obo:IAO_0000115>Legal uncertainty is relevant &quot;wherever agents must consider future contingencies of personal liability for their actions (or inactions)&quot;. High legal uncertainty can result in defensive responses in regard to both decision making and release of information. Legal uncertainty may also play a role where actions are conditioned on the clarity or otherwise of a legal framework in allowing one to predict the consequences of particular actions.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">法律不确定性</obo:IAO_0000118>
+        <obo:IAO_0000119>http://www.nusap.net/modules.php?op=modload&amp;name=NS-Glossary&amp;file=index</obo:IAO_0000119>
+        <rdfs:comment>classification to be confirmed</rdfs:comment>
+        <rdfs:label>legal uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000357 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000357">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000251"/>
+        <obo:IAO_0000115>Moral uncertainty stems from the underlying moral issues related to action and inaction in any given case. De Marchi notes that, though similar to legal responsibility, moral guilt may occur absent legal responsibility when negative consequences might have been limited by the dissemination of prior information or more effective management for example. &quot;Moral uncertainty is linked to the ethical tradition of a given country be it or not enacted in legislation (juridical and societal norms, shared moral values, mores), as well as the psychological characteristics of persons in charge, their social status and professional roles&quot; (De Marchi, 1994). Moral uncertainty would typically be high when moral and ethical dimensions of an issue are central and participants have a range of understandings of the moral imperatives at stake.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">道德不确定性</obo:IAO_0000118>
+        <obo:IAO_0000119>http://www.nusap.net/modules.php?op=modload&amp;name=NS-Glossary&amp;file=index</obo:IAO_0000119>
+        <rdfs:comment>classification to be confirmed</rdfs:comment>
+        <rdfs:label>moral uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000358 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000358">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000251"/>
+        <obo:IAO_0000115>Communities from one region to another may differ in the set of norms, values, and manner of relating characteristic of their societies. This in turn can result in differences in approach to decision making and assessment. Some salient characteristics of these differences will be different views about the role of consensus versus conflict, on locating responsibility between individuals and larger groups, on views about the legitimacy and role of social and private institutions, and on attitudes to authority and expertise. From De Marchi (1994). Societal uncertainty would typically be high when decisions involve substantial collaboration among groups characterized by divergent decision making styles.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">社会不确定性</obo:IAO_0000118>
+        <obo:IAO_0000119>http://www.nusap.net/modules.php?op=modload&amp;name=NS-Glossary&amp;file=index</obo:IAO_0000119>
+        <rdfs:comment>classification to be confirmed</rdfs:comment>
+        <rdfs:label>societal uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000359 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000359">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000358"/>
+        <obo:IAO_0000115>Institutional uncertainty is in some sense a subset of societal uncertainty, and refers more specifically to the role and actions of institutions and their members. Institutional uncertainty stems from the &quot;diverse cultures and traditions, divergent missions and values, different structures, and work styles among personnel of different agencies&quot; (De Marchi, 1994). High institutional uncertainty can hinder collaboration or understanding among agencies, and can make the actions of institutions difficult to predict.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">机制不确定性</obo:IAO_0000118>
+        <obo:IAO_0000119>http://www.nusap.net/modules.php?op=modload&amp;name=NS-Glossary&amp;file=index</obo:IAO_0000119>
+        <rdfs:comment>classification to be confirmed</rdfs:comment>
+        <rdfs:label>institutional uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000360 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000360">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000251"/>
+        <obo:IAO_0000115>Proprietary uncertainty occurs due to the fact that information and knowledge about an issue are not uniformly shared among all those who could potentially use it. That is, some people or groups have information that others don&apos;t and may assert ownership or control over it. &quot;Proprietary uncertainty becomes most salient when it is necessary to reconcile the general needs for safety, health, and environment protection with more sectorial needs pertaining, for instance, to industrial production and process, or to licensing and control procedures&quot; (De Marchi, 1994). De Marchi notes that &apos;whistle blowing&apos; is another source of proprietary uncertainty in that there is a need for protection of those who act in sharing information for the public good. Proprietary uncertainty would typically be high when knowledge plays a key role in assessment, but is not widely shared among participants. An example of such would be the case of external safety of military nuclear production facilities.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">所有权不确定性</obo:IAO_0000118>
+        <obo:IAO_0000119>http://www.nusap.net/modules.php?op=modload&amp;name=NS-Glossary&amp;file=index</obo:IAO_0000119>
+        <rdfs:comment>classification to be confirmed</rdfs:comment>
+        <rdfs:label>proprietary uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000361 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000361">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000251"/>
+        <obo:IAO_0000115>Situational uncertainty relates to &quot;the predicament of the person responsible for a crisis, either in the phase of preparation and planning, or of actual emergency. It refers to individual behaviours or personal interventions in crisis situations&quot; (De Marchi, 1994) and as such represents a form of integration over the other six types of uncertainty. That is, it tends to combine the uncertainties one has to face in a given situation or on a particular issue. High situational uncertainty would be characterized by situations where individual decisions play a substantial role and there is uncertainty about the nature of those decisions.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">context uncertainty</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="zh">情境不确定性</obo:IAO_0000118>
+        <obo:IAO_0000119>http://www.nusap.net/modules.php?op=modload&amp;name=NS-Glossary&amp;file=index</obo:IAO_0000119>
+        <rdfs:comment>classification to be confirmed</rdfs:comment>
+        <rdfs:label>situational uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000362 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000362">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000253"/>
+        <obo:IAO_0000115>A belief is psychologically certain when the subject who has it is supremely convinced of its truth. Certainty in this sense is similar to incorrigibility, which is the property a belief has of being such that the subject is incapable of giving it up. But psychological certainty is not the same thing as incorrigibility. A belief can be certain in this sense without being incorrigible; this may happen, for example, when the subject receives a very compelling bit of counterevidence to the (previously) certain belief and gives it up for that reason. Moreover, a belief can be incorrigible without being psychologically certain. For example, a mother may be incapable of giving up the belief that her son did not commit a gruesome murder, and yet, compatible with that inextinguishable belief, she may be tortured by doubt. </obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">心理不确定性</obo:IAO_0000118>
+        <obo:IAO_0000119>https://plato.stanford.edu/entries/certainty/?fbclid=IwAR3vA0iSWlxBOy5xH5IJ6kJCpqxGtweFO07bJCEzgw4cnF7viviAkt006qo#pagetopright</obo:IAO_0000119>
+        <rdfs:comment>classification to be confirmed</rdfs:comment>
+        <rdfs:label>psychological uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000363 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000363">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000253"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">identity disorder</obo:IAO_0000118>
+        <obo:IAO_0000119>https://uts.nlm.nih.gov/uts/umls/vocabulary/MEDCIN/1416</obo:IAO_0000119>
+        <rdfs:comment>classification to be confirmed</rdfs:comment>
+        <rdfs:label>identity uncertainty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000364 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000364">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000363"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://uts.nlm.nih.gov/uts/umls/vocabulary/MEDCIN/1417</obo:IAO_0000119>
+        <rdfs:comment>classification to be confirmed</rdfs:comment>
+        <rdfs:label>uncertainty about gender role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000365 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000365">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000363"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://uts.nlm.nih.gov/uts/umls/vocabulary/MEDCIN/1418</obo:IAO_0000119>
+        <rdfs:comment>classification to be confirmed</rdfs:comment>
+        <rdfs:label>uncertainty about long-term goals</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000366 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000366">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000363"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000119>https://uts.nlm.nih.gov/uts/umls/vocabulary/MEDCIN/1419</obo:IAO_0000119>
+        <rdfs:comment>classification to be confirmed</rdfs:comment>
+        <rdfs:label>uncertainty about value systems</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000367 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000367">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>uncertainty degree level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000368 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000368">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000367"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">No equivocation</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="zh">绝对确定</obo:IAO_0000118>
+        <obo:IAO_0000119>https://pubmed.ncbi.nlm.nih.gov/29274047/</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>definitive certainty level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000369 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000369">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000367"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">Minimal equivocation</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="zh">高度确定</obo:IAO_0000118>
+        <obo:IAO_0000119>https://pubmed.ncbi.nlm.nih.gov/29274047/</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>high certainty level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000370 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000370">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000367"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">Intermediate degree of equivocation</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="zh">中度确定</obo:IAO_0000118>
+        <obo:IAO_0000119>https://pubmed.ncbi.nlm.nih.gov/29274047/</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>intermediate certainty level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000371 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000371">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000367"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">High degree of equivocation</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="zh">最高程度不确定</obo:IAO_0000118>
+        <obo:IAO_0000119>https://pubmed.ncbi.nlm.nih.gov/29274047/</obo:IAO_0000119>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>highest uncertainty degree</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000372 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000372">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000367"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">非常高度不确定</obo:IAO_0000118>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>very high uncertainty level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000373 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000373">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000367"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">低程度不确定</obo:IAO_0000118>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>low uncertainty level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000374 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000374">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000367"/>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">非常低程度不确定</obo:IAO_0000118>
+        <rdfs:comment>definition to be confirmed</rdfs:comment>
+        <rdfs:label>very low uncertainty level</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBCS_0000375 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000375">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115>Representation of model output uncertainty using probability distributions.</obo:IAO_0000115>
+        <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
+        <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="zh">不确定性量化</obo:IAO_0000118>
+        <obo:IAO_0000119>https://uc-ebook.org/docs/html/6_glossary.html</obo:IAO_0000119>
+        <rdfs:comment>classification to be confirmed</rdfs:comment>
+        <rdfs:label>uncertainty quantification</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0000011"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25) https://github.com/owlcs/owlapi -->
+

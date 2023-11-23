@@ -31,7 +31,7 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obcs/dev/UBERON_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obcs/dev/UO_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obcs/dev/externalByHand.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obcs/dev/obcs_uncertainty.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obcs/dev/uncertainty.owl"/>
         <dc:contributor xml:lang="en">Alfred Hero</dc:contributor>
         <dc:contributor xml:lang="en">Anna Maria Masci</dc:contributor>
         <dc:contributor xml:lang="en">Chris Stoeckert </dc:contributor>
@@ -49,7 +49,6 @@
         <dc:format xml:lang="en">OWL-DL</dc:format>
         <dc:subject xml:lang="en">A formal ontology in the domain of biological and clinical statistics</dc:subject>
         <dc:title xml:lang="en">OBCS: Ontology of Biological and Clinical Statistics</dc:title>
-        <dc:description>The Ontology of Biological and Clinical Statistics (OBCS) is a biomedical ontology in the domain of biological and clinical statistics. OBCS is primarily targeted for statistical term representation in the fields in biological, biomedical, and clinical domains.</dc:description>
         <dcterms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
     </owl:Ontology>
     
@@ -4274,9 +4273,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <!-- http://purl.obolibrary.org/obo/OBI_0200125 -->
 
-    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/OBI_0200125">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
-    </rdf:Description>
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0200125"/>
     
 
 
@@ -4362,7 +4359,6 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:label>descriptive statistical calculation data transformation</rdfs:label>
     </owl:Class>
     
 
@@ -4409,35 +4405,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
     <!-- http://purl.obolibrary.org/obo/OBI_0500000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500000"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/obcs_dev.owl#objective_uncertainty_process -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/obcs_dev.owl#objective_uncertainty_process">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/obcs_dev.owl#uncertainty_process"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/obcs_dev.owl#subjective_uncertainty_process -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/obcs_dev.owl#subjective_uncertainty_process">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/obcs_dev.owl#uncertainty_process"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/obcs_dev.owl#uncertainty_process -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/obcs_dev.owl#uncertainty_process">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000015"/>
-        <obo:IAO_0000115>Uncertainty has two aspects: on one hand, it refers to objective uncertainty caused by the inherent stochastic characteristics of material objects resulting in natural changes over time or space; on the other hand, it refers to subjective uncertainty caused by incomplete (limited or lacking) information or knowledge in different contexts.</obo:IAO_0000115>
-        <obo:IAO_0000119>Ayyub, B., &amp; Gupta, M. M. (Eds.). (1997). Uncertainty analysis in engineering and sciences: fuzzy logic, statistics, and neural network approach (Vol. 11). Springer Science &amp; Business Media.</obo:IAO_0000119>
-        <dc:creator>Jinjing Guo;Oliver He</dc:creator>
-        <rdfs:label>uncertainty process</rdfs:label>
-    </owl:Class>
-    
+        
 
 
     <!-- 

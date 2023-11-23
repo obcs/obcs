@@ -1,0 +1,149 @@
+# Uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000251 #uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000252 #objective uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000253 #subjective uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000254 #subjective object
+http://purl.obolibrary.org/obo/OBCS_0000255 #objective process
+http://purl.obolibrary.org/obo/OBCS_0000256 #subjective process
+http://purl.obolibrary.org/obo/OBCS_0000257 #decision making
+http://purl.obolibrary.org/obo/OBCS_0000258 #uncertainty analysis
+http://purl.obolibrary.org/obo/OBCS_0000259 #sensitivity analysis
+http://purl.obolibrary.org/obo/OBCS_0000260 #local sensitivity analysis
+http://purl.obolibrary.org/obo/OBCS_0000261 #global sensitivity analysis
+http://purl.obolibrary.org/obo/OBCS_0000262 #screening sensitivity analysis
+http://purl.obolibrary.org/obo/OBCS_0000263 #error propagation equations
+http://purl.obolibrary.org/obo/OBCS_0000264 #Monte Carlo analysis
+http://purl.obolibrary.org/obo/OBCS_0000265 #expert elicitation
+http://purl.obolibrary.org/obo/OBCS_0000266 #Numeral Unit Spread Assessment Pedigree(NUSAP)
+http://purl.obolibrary.org/obo/OBCS_0000267 #Scenario Analysis
+http://purl.obolibrary.org/obo/OBCS_0000268 #Pluralistic fRamework of Integrated uncertainty Management and risk Analysis(PRIMA)
+http://purl.obolibrary.org/obo/OBCS_0000269 #Checklist for Model Quality Assistance
+http://purl.obolibrary.org/obo/OBCS_0000270 #Critical Review of Assumptions in models
+http://purl.obolibrary.org/obo/OBCS_0000271 #uncertainty elimination
+http://purl.obolibrary.org/obo/OBCS_0000272 #uncertainty arise conditions
+http://purl.obolibrary.org/obo/OBCS_0000273 #uncertainty response activity
+http://purl.obolibrary.org/obo/OBCS_0000274 #rarity of events
+http://purl.obolibrary.org/obo/OBCS_0000275 #multiple effects from single causes
+http://purl.obolibrary.org/obo/OBCS_0000276 #individual differences
+http://purl.obolibrary.org/obo/OBCS_0000277 #materials difficult to obtain
+http://purl.obolibrary.org/obo/OBCS_0000278 #instability of events (episodic, self-reversing, spreading)
+http://purl.obolibrary.org/obo/OBCS_0000279 #partially available data
+http://purl.obolibrary.org/obo/OBCS_0000280 #diverse populations for study
+http://purl.obolibrary.org/obo/OBCS_0000281 #unclear boundaries of causal phenomena
+http://purl.obolibrary.org/obo/OBCS_0000282 #lack of causal models
+http://purl.obolibrary.org/obo/OBCS_0000283 #uncontrollable experimental conditions
+http://purl.obolibrary.org/obo/OBCS_0000284 #lack of information for comparison
+http://purl.obolibrary.org/obo/OBCS_0000285 #labile and spreading symptoms and side effects
+http://purl.obolibrary.org/obo/OBCS_0000286 #delayed information
+http://purl.obolibrary.org/obo/OBCS_0000287 #specialist/nonspecialist handling of the same cases
+http://purl.obolibrary.org/obo/OBCS_0000288 #unequal status between investigators
+http://purl.obolibrary.org/obo/OBCS_0000289 #poor management-staff relations
+http://purl.obolibrary.org/obo/OBCS_0000290 #lack of funding
+http://purl.obolibrary.org/obo/OBCS_0000291 #sporadic funding
+http://purl.obolibrary.org/obo/OBCS_0000292 #lack of institutional security
+http://purl.obolibrary.org/obo/OBCS_0000293 #delays and lack of communication between investigators
+http://purl.obolibrary.org/obo/OBCS_0000294 #reacting subjects
+http://purl.obolibrary.org/obo/OBCS_0000295 #operative complications (experimental)
+http://purl.obolibrary.org/obo/OBCS_0000296 #uncontrollable procedures
+http://purl.obolibrary.org/obo/OBCS_0000297 #observational difficulties
+http://purl.obolibrary.org/obo/OBCS_0000298 #order data sequentially or by spatial location
+http://purl.obolibrary.org/obo/OBCS_0000299 #standardize
+http://purl.obolibrary.org/obo/OBCS_0000300 #find exemplars-filter for clear-cut cases
+http://purl.obolibrary.org/obo/OBCS_0000301 #segmentation of uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000302 #substitution of taxonomy for diagnosis
+http://purl.obolibrary.org/obo/OBCS_0000303 #division of labor
+http://purl.obolibrary.org/obo/OBCS_0000304 #search for pathognomonic signs
+http://purl.obolibrary.org/obo/OBCS_0000305 #shotgun treatments
+http://purl.obolibrary.org/obo/OBCS_0000306 #division of data along political lines for clarity
+http://purl.obolibrary.org/obo/OBCS_0000307 #division of labor along technical/substantive lines
+http://purl.obolibrary.org/obo/OBCS_0000308 #observations limited to available materials
+http://purl.obolibrary.org/obo/OBCS_0000309 #utilitarian emphasis on practical results
+http://purl.obolibrary.org/obo/OBCS_0000310 #standardization of techniques and materials
+http://purl.obolibrary.org/obo/OBCS_0000311 #standardization of observational techniques (forms) and protocols
+http://purl.obolibrary.org/obo/OBCS_0000312 #observations down-focused to smaller areas
+http://purl.obolibrary.org/obo/OBCS_0000313 #substitution of theoretical validity for technical consistency
+http://purl.obolibrary.org/obo/OBCS_0000314 #measurement error
+http://purl.obolibrary.org/obo/OBCS_0000315 #incomplete knowledge
+http://purl.obolibrary.org/obo/OBCS_0000316 #limited understanding
+http://purl.obolibrary.org/obo/OBCS_0000317 #imperfect models
+http://purl.obolibrary.org/obo/OBCS_0000318 #subjective judgement
+http://purl.obolibrary.org/obo/OBCS_0000319 #inherent randomness of nature
+http://purl.obolibrary.org/obo/OBCS_0000320 #behavioural variability
+http://purl.obolibrary.org/obo/OBCS_0000321 #societal variability
+http://purl.obolibrary.org/obo/OBCS_0000322 #technological surprise
+http://purl.obolibrary.org/obo/OBCS_0000323 #sampling error in the measurements
+http://purl.obolibrary.org/obo/OBCS_0000324 #probability
+http://purl.obolibrary.org/obo/OBCS_0000325 #complexity-induced uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000326 #vagueness
+http://purl.obolibrary.org/obo/OBCS_0000327 #ambiguity
+http://purl.obolibrary.org/obo/OBCS_0000328 #taxonomic uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000329 #diagnostic uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000330 #organizational uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000331 #technical uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000332 #prognosis uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000333 #certainty(positive or neutral)
+http://purl.obolibrary.org/obo/OBCS_0000334 #certainty(detrimental)
+http://purl.obolibrary.org/obo/OBCS_0000335 #moderate degree of certainty
+http://purl.obolibrary.org/obo/OBCS_0000336 #uncertainty(detrimental)
+http://purl.obolibrary.org/obo/OBCS_0000337 #uncertainty(positive)
+http://purl.obolibrary.org/obo/OBCS_0000338 #determinism
+http://purl.obolibrary.org/obo/OBCS_0000339 #statistical uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000340 #measurement uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000341 #scenario uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000342 #recognized ignorance
+http://purl.obolibrary.org/obo/OBCS_0000343 #reducible ignorance
+http://purl.obolibrary.org/obo/OBCS_0000344 #irreducible ignorance
+http://purl.obolibrary.org/obo/OBCS_0000345 #total ignorance
+http://purl.obolibrary.org/obo/OBCS_0000346 #context uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000347 #model uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000348 #model structure uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000349 #model technical uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000350 #input uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000351 #external driving forces uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000352 #system data uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000353 #parameters uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000354 #model outcome uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000355 #scientific uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000356 #legal uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000357 #moral uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000358 #societal uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000359 #institutional uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000360 #proprietary uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000361 #situational uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000362 #psychological uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000363 #identity uncertainty
+http://purl.obolibrary.org/obo/OBCS_0000364 #uncertainty about gender role
+http://purl.obolibrary.org/obo/OBCS_0000365 #uncertainty about long-term goals
+http://purl.obolibrary.org/obo/OBCS_0000366 #uncertainty about value systems
+http://purl.obolibrary.org/obo/OBCS_0000367 #uncertainty degree level
+http://purl.obolibrary.org/obo/OBCS_0000368 #definitive certainty level
+http://purl.obolibrary.org/obo/OBCS_0000369 #high certainty level
+http://purl.obolibrary.org/obo/OBCS_0000370 #intermediate certainty level
+http://purl.obolibrary.org/obo/OBCS_0000371 #highest uncertainty degree
+http://purl.obolibrary.org/obo/OBCS_0000372 #very high uncertainty level
+http://purl.obolibrary.org/obo/OBCS_0000373 #low uncertainty level
+http://purl.obolibrary.org/obo/OBCS_0000374 #very low uncertainty level
+http://purl.obolibrary.org/obo/OBCS_0000375 #uncertainty quantification
+
+# Annotation Properties
+http://purl.obolibrary.org/obo/BFO_0000179 # BFO OWL specification label
+http://purl.obolibrary.org/obo/BFO_0000180 # BFO CLIF specification label
+http://purl.obolibrary.org/obo/IAO_0000111 # editor preferred term
+http://purl.obolibrary.org/obo/IAO_0000112 # example of usage
+http://purl.obolibrary.org/obo/IAO_0000114 # has curation status
+http://purl.obolibrary.org/obo/IAO_0000115 # definition
+http://purl.obolibrary.org/obo/IAO_0000116 # editor note
+http://purl.obolibrary.org/obo/IAO_0000117 # term editor
+http://purl.obolibrary.org/obo/IAO_0000118 # alternative term
+http://purl.obolibrary.org/obo/IAO_0000119 # definition source
+http://purl.obolibrary.org/obo/IAO_0000232 # curator note
+http://purl.obolibrary.org/obo/IAO_0000233 # term tracker item
+http://purl.obolibrary.org/obo/IAO_0000234 # ontology term requester
+http://purl.obolibrary.org/obo/IAO_0000412 # imported from
+http://purl.obolibrary.org/obo/IAO_0000600 # elucidation
+http://purl.obolibrary.org/obo/IAO_0000601 # has associated axiom(nl)
+http://purl.obolibrary.org/obo/IAO_0000602 # has associated axiom(fol)
+http://purl.obolibrary.org/obo/IAO_0010000 # has axiom label
+http://purl.obolibrary.org/obo/RO_0001900  # temporal interpretation
+
+

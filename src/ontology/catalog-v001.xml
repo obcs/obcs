@@ -17,5 +17,5 @@
     <uri name="http://purl.obolibrary.org/obo/obcs/dev/UBERON_imports.owl" uri="imports/UBERON_imports.owl"/>
     <uri name="http://purl.obolibrary.org/obo/obcs/dev/UO_imports.owl" uri="imports/UO_imports.owl"/>
     <uri name="http://purl.obolibrary.org/obo/obcs/dev/externalByHand.owl" uri="imports/externalByHand.owl"/>
-    <uri name="http://purl.obolibrary.org/obo/obcs/dev/obcs_uncertainty.owl" uri="modules/obcs_uncertainty.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obcs/dev/uncertainty.owl" uri="modules/uncertainty.owl"/>
 </catalog>
