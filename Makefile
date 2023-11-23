@@ -60,6 +60,42 @@ IMPORT_FILES := $(wildcard src/ontology/imports/*_imports.owl)
 .PHONY: imports
 imports: $(IMPORT_FILES)
 
+### Templates
+#
+src/ontology/modules/%.owl: src/ontology/templates/%.csv | build/robot.jar
+	echo '' > $@
+	$(ROBOT) merge \
+	--input src/ontology/obcs_dev.owl \
+	template \
+	--template $< \
+	--prefix "OBCS: http://purl.obolibrary.org/obo/OBCS_" \
+	--ontology-iri "http://purl.obolibrary.org/obo/obcs/dev/$(notdir $@)" \
+	--output $@
+
+# Update all modules
+MODULE_NAMES := uncertainty
+
+MODULE_FILES := $(foreach x,$(MODULE_NAMES),src/ontology/modules/$(x).owl)
+
+.PHONY: modules
+modules: $(MODULE_FILES)
+
+### Views
+# Build uncertainty view
+views/obcs_uncertainty.owl: obcs.owl src/ontology/views/uncertainty.txt | build/robot.jar
+	$(ROBOT) extract \
+	--input $< \
+	--method STAR \
+	--term-file $(word 2,$^) \
+	--individuals definitions \
+	--copy-ontology-annotations true \
+	annotate \
+	--ontology-iri "$(OBO)/obcs/obcs_uncertainty.owl" \
+	--version-iri "$(OBO)/obcs/$(TODAY)/obcs_uncertainty.owl" \
+	--output $@
+.PHONY: views
+views: views/obcs_uncertainty.owl
+
 
 ### Build
 #
@@ -87,7 +123,7 @@ obcs.owl: build/obcs_merged.owl
 	--annotation owl:versionInfo "$(TODAY)" \
 	--output $@
 
-test_report.tsv: build/obcs_merged.owl
+robot_report.tsv: build/obcs_merged.owl
 	$(ROBOT) report \
 	--input $< \
         --fail-on none \
@@ -137,12 +173,11 @@ reason: build/obcs_merged.owl | build/robot.jar
 .PHONY: test
 test: reason verify
 
-
 ### General/Users/jiezheng/Documents/ontology/obcs
 #
 # Full build
 .PHONY: all
-all: test obcs.owl build/terms-report.csv
+all: obcs.owl robot_report.tsv
 
 # Remove generated files
 .PHONY: clean
