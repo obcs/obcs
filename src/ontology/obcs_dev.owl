@@ -8,13 +8,15 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:pato="http://purl.obolibrary.org/obo/pato#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:dcterms="http://purl.org/dc/terms/"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:ncbitaxon="http://purl.obolibrary.org/obo/ncbitaxon#">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/obcs_dev.owl">
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/bfo.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/omo.owl"/>
-        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/core.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obcs/dev/APOLLO_SV_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obcs/dev/CHEBI_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obcs/dev/CL_imports.owl"/>
@@ -32,6 +34,7 @@
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obcs/dev/UO_imports.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obcs/dev/externalByHand.owl"/>
         <owl:imports rdf:resource="http://purl.obolibrary.org/obo/obcs/dev/uncertainty.owl"/>
+        <owl:imports rdf:resource="http://purl.obolibrary.org/obo/ro/core.owl"/>
         <dc:contributor xml:lang="en">Alfred Hero</dc:contributor>
         <dc:contributor xml:lang="en">Anna Maria Masci</dc:contributor>
         <dc:contributor xml:lang="en">Chris Stoeckert </dc:contributor>
@@ -106,7 +109,7 @@
     <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/OBCS_0000221">
         <obo:IAO_0000112>A normal distribution probability density function has a formula of:
 f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
-        <obo:IAO_0000115>an annotation property that represents a mathematical formula.</obo:IAO_0000115>
+        <obo:IAO_0000115>An annotation property that represents a mathematical formula.</obo:IAO_0000115>
         <obo:IAO_0000117>Asiyah Yu Lin, Jie Zheng, Yongqun He</obo:IAO_0000117>
         <rdfs:label xml:lang="en">mathematical formula</rdfs:label>
     </owl:AnnotationProperty>
@@ -203,7 +206,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBCS_0000223">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000010"/>
-        <obo:IAO_0000115>a relation between a data set and a probability distribution</obo:IAO_0000115>
+        <obo:IAO_0000115>A relation between a data set and a probability distribution.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He, Jie Zheng, Asiyah Yu Lin</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has probability distribution</rdfs:label>
     </owl:ObjectProperty>
@@ -215,7 +218,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
     <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/OBCS_0000227">
         <rdfs:domain rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000010"/>
         <rdfs:range rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000116"/>
-        <obo:IAO_0000115>a relation between a probability distribution and probability.</obo:IAO_0000115>
+        <obo:IAO_0000115>A relation between a probability distribution and probability.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He, Jie Zheng, Asiyah Yu Lin</obo:IAO_0000117>
         <rdfs:label xml:lang="en">has probability density function</rdfs:label>
     </owl:ObjectProperty>
@@ -347,7 +350,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0200000"/>
-        <obo:IAO_0000115>a data transformation that has input of mulitple data and report overall trend of the data. </obo:IAO_0000115>
+        <obo:IAO_0000115>A data transformation that has input of mulitple data and report overall trend of the data.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: https://en.wikipedia.org/wiki/Statistics</obo:IAO_0000119>
         <rdfs:label xml:lang="en">statistical data analysis</rdfs:label>
@@ -388,9 +391,9 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                 <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>a planned process that gathers and measures information on variables of interest, in an established systematic fashion that enables one to answer stated research questions, test hypotheses, and evaluate outcomes. Data collection results in a collection of data.</obo:IAO_0000115>
+        <obo:IAO_0000115>A planned process that gathers and measures information on variables of interest, in an established systematic fashion that enables one to answer stated research questions, test hypotheses, and evaluate outcomes. Data collection results in a collection of data.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
-        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Data_collection </obo:IAO_0000119>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Data_collection</obo:IAO_0000119>
         <rdfs:label xml:lang="en">data collection</rdfs:label>
     </owl:Class>
     
@@ -404,7 +407,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000118>Fisher-Snedecor distribution</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://stattrek.com/probability-distributions/f-distribution.aspx</obo:IAO_0000119>
-        <oboInOwl:hasDbXref>STATO_0000204</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>STATO:0000204</oboInOwl:hasDbXref>
         <rdfs:label>F distribution</rdfs:label>
     </owl:Class>
     
@@ -417,7 +420,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <obo:IAO_0000115>A continuous probability distribution that is a two-parameter family of continuous probability distributions.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Gamma_distribution</obo:IAO_0000119>
-        <oboInOwl:hasDbXref>STATO_0000268</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>STATO:0000268</oboInOwl:hasDbXref>
         <rdfs:label>gamma distribution</rdfs:label>
     </owl:Class>
     
@@ -437,7 +440,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000118>Gaussian distribution</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Normal_distribution</obo:IAO_0000119>
-        <oboInOwl:hasDbXref>STATO_0000227</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>STATO:0000227</oboInOwl:hasDbXref>
         <rdfs:label>normal distribution</rdfs:label>
     </owl:Class>
     
@@ -451,7 +454,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000118>t-distribution</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://stattrek.com/probability-distributions/t-distribution.aspx</obo:IAO_0000119>
-        <oboInOwl:hasDbXref>STATO_0000059</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>STATO:0000059</oboInOwl:hasDbXref>
         <rdfs:label>Student&apos;s t distribution</rdfs:label>
     </owl:Class>
     
@@ -516,6 +519,12 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000011">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000109"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <obo:IAO_0000115>An information content entity that represents a type of scale on which a variable is measured, including nominal, ordinal, interval, ratio.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000118>level of measurement</obo:IAO_0000118>
@@ -594,7 +603,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <obo:IAO_0000115>A data item that represents a typical value of a set of values. This term relates to the way in which quantitative data tend to cluster around some value.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris, Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Central_tendency</obo:IAO_0000119>
-        <oboInOwl:hasDbXref>STATO_0000029</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>STATO:0000029</oboInOwl:hasDbXref>
         <rdfs:label>central tendency</rdfs:label>
     </owl:Class>
     
@@ -1092,6 +1101,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000115>A data item collected from censoring that the value of a measurement or observation is only partially known.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris, Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000118>censoring</obo:IAO_0000118>
@@ -1158,7 +1168,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <obo:IAO_0000115>A data item that refers to the odds that an individual with a specific condition has been exposed to a risk factor divided by the odds that a control has been exposed. The odds ratio is used in case-control studies. The odds ratio provides a reasonable estimate of the relative risk for uncommon conditions.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
-        <oboInOwl:hasDbXref>STATO_0000182</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>STATO:0000182</oboInOwl:hasDbXref>
         <rdfs:label>odds ratio</rdfs:label>
     </owl:Class>
     
@@ -1236,12 +1246,12 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000121"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A data item that measures the proportion of actual positives which are correctly identified as such (e.g. the percentage of sick people who are correctly identified as having the condition). </obo:IAO_0000115>
+        <obo:IAO_0000115>A data item that measures the proportion of actual positives which are correctly identified as such (e.g. the percentage of sick people who are correctly identified as having the condition).</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000118>sensitivity estimate</obo:IAO_0000118>
         <obo:IAO_0000118>true positive rate, recall</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Sensitivity_and_specificity</obo:IAO_0000119>
-        <oboInOwl:hasDbXref>STATO_0000233</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>STATO:0000233</oboInOwl:hasDbXref>
         <rdfs:label>sensitivity</rdfs:label>
     </owl:Class>
     
@@ -1261,7 +1271,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000118>true negative rate</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Sensitivity_and_specificity</obo:IAO_0000119>
-        <oboInOwl:hasDbXref>STATO_0000134</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>STATO:0000134</oboInOwl:hasDbXref>
         <rdfs:label>specificity</rdfs:label>
     </owl:Class>
     
@@ -1277,7 +1287,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000121"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A data item that refers to the extent to which a concept conclusion or measurement is well-founded and corresponds accurately to the real world. </obo:IAO_0000115>
+        <obo:IAO_0000115>A data item that refers to the extent to which a concept conclusion or measurement is well-founded and corresponds accurately to the real world.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Validity_(statistics)</obo:IAO_0000119>
@@ -1316,8 +1326,19 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
     <!-- http://purl.obolibrary.org/obo/OBCS_0000063 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000063">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
-        <obo:IAO_0000115>Any method of sampling that uses some form of random selection, that is, one that will ensure that all units in the population have an equal probability or chance of being selected.</obo:IAO_0000115>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000055"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0000059"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000089"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000132"/>
+        <obo:IAO_0000115>A data collection by sampling process that uses some form of random selection, that is, one that will ensure that all units in the population have an equal probability or chance of being selected.</obo:IAO_0000115>
         <obo:IAO_0000117>Marcy Harris</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://srmo.sagepub.com/view/the-sage-dictionary-of-social-research-methods/SAGE.xml</obo:IAO_0000119>
         <rdfs:label>random selection</rdfs:label>
@@ -1501,7 +1522,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <obo:IAO_0000118>alpha error</obo:IAO_0000118>
         <obo:IAO_0000118>false positive rate</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
-        <oboInOwl:hasDbXref>STATO_0000053</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>STATO:0000053</oboInOwl:hasDbXref>
         <rdfs:label>type 1 error rate</rdfs:label>
     </owl:Class>
     
@@ -1516,7 +1537,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <obo:IAO_0000118>beta error</obo:IAO_0000118>
         <obo:IAO_0000118>false negative rate</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://www.uptodate.com/contents/glossary-of-common-biostatistical-and-epidemiological-terms</obo:IAO_0000119>
-        <oboInOwl:hasDbXref>STATO_0000220</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>STATO:0000220</oboInOwl:hasDbXref>
         <rdfs:label>type 2 error rate</rdfs:label>
     </owl:Class>
     
@@ -2022,7 +2043,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <obo:IAO_0000115>A probability distribution that with k degrees of freedom is the distribution of a sum of the squares of k independent standard normal random variables.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Chi-square_distribution</obo:IAO_0000119>
-        <oboInOwl:hasDbXref>STATO_0000229</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>STATO:0000229</oboInOwl:hasDbXref>
         <rdfs:label>chi-square distribution</rdfs:label>
     </owl:Class>
     
@@ -2047,6 +2068,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000115>A data item that is more specifically a rectangular array of numbers, symbols, or expressions, arranged in rows and columns.</obo:IAO_0000115>
         <obo:IAO_0000117>Person: Oliver He, Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">set of data sets</obo:IAO_0000118>
@@ -2072,10 +2094,9 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                 <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115>A statistical data analysis that  uses patterns in the sample data to draw inferences about the population represented, accounting for randomness.</obo:IAO_0000115>
+        <obo:IAO_0000115>A statistical data analysis that uses patterns in the sample data to draw inferences about the population represented, accounting for randomness.</obo:IAO_0000115>
         <obo:IAO_0000117>Jie Zheng, Oliver He</obo:IAO_0000117>
-        <obo:IAO_0000118>significantly statistical data analysis
-</obo:IAO_0000118>
+        <obo:IAO_0000118>significantly statistical data analysis</obo:IAO_0000118>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Statistics</obo:IAO_0000119>
         <rdfs:label xml:lang="en">inferential statistical data analysis</rdfs:label>
     </owl:Class>
@@ -2091,7 +2112,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/IAO_0000027"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
-                        <owl:allValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000123"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000123"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002351"/>
@@ -2101,6 +2122,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000027"/>
         <obo:IAO_0000115>A data item that consists of two or more data sets that are produced as the output of a data transformation.</obo:IAO_0000115>
         <obo:IAO_0000117>Person: Oliver He, Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">set of transformed data sets</obo:IAO_0000118>
@@ -2154,7 +2176,7 @@ f(x) = 1/(√(2 π) σ) e^-((x - μ)^2/(2 σ^2))</obo:IAO_0000112>
         <obo:IAO_0000115>A continuous probability distribution that describes the time between events in a Poisson process, i.e. a process in which events occur continuously and independently at a constant average rate.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He</obo:IAO_0000117>
         <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Exponential_distribution</obo:IAO_0000119>
-        <oboInOwl:hasDbXref>STATO_0000160</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>STATO:0000160</oboInOwl:hasDbXref>
         <rdfs:label>exponential distribution</rdfs:label>
     </owl:Class>
     
@@ -2497,11 +2519,10 @@ http://www.ncbi.nlm.nih.gov/pubmed/10521349
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000146">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBCS_0000145"/>
-        <obo:IAO_0000115>A contingency table with two rows and two columns that reports the number of false positives, false negatives, true positives, and true negatives. This allows more detailed analysis than mere proportion of correct guesses (accuracy). 
-</obo:IAO_0000115>
+        <obo:IAO_0000115>A contingency table with two rows and two columns that reports the number of false positives, false negatives, true positives, and true negatives. This allows more detailed analysis than mere proportion of correct guesses (accuracy).</obo:IAO_0000115>
         <obo:IAO_0000117>Person: Jie Zheng, Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>http://en.wikipedia.org/wiki/Confusion_matrix</obo:IAO_0000119>
-        <oboInOwl:hasDbXref>STATO_0000138</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref>STATO:0000138</oboInOwl:hasDbXref>
         <rdfs:label xml:lang="en">2x2 contingency table</rdfs:label>
     </owl:Class>
     
@@ -2788,8 +2809,7 @@ Grant G.R., Liu J., Stoeckert C.J.Jr. (2005) A practical false discovery rate ap
         <obo:IAO_0000117>Elisabetta Manduchi, Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000118>GLITR</obo:IAO_0000118>
         <obo:IAO_0000119>PMID:19553195
-Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription factor targets from ChIP-Seq data. Nucleic Acids Res., 37(17): e113. doi: 10.1093/nar/gkp536.
-</obo:IAO_0000119>
+Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription factor targets from ChIP-Seq data. Nucleic Acids Res., 37(17): e113. doi:10.1093/nar/gkp536.</obo:IAO_0000119>
         <dc:source>Beta Cell Biology Consortium</dc:source>
         <rdfs:label xml:lang="en">GLobal Identifier of Target Regions software</rdfs:label>
     </owl:Class>
@@ -3198,7 +3218,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBCS_0000193">
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
-        <obo:IAO_0000115>an information content entity that refers to a number value of a data item.</obo:IAO_0000115>
+        <obo:IAO_0000115>An information content entity that refers to a number value of a data item.</obo:IAO_0000115>
         <obo:IAO_0000117>Yongqun He, Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000118>mathematical data value</obo:IAO_0000118>
         <obo:IAO_0000118>mathematical value</obo:IAO_0000118>
@@ -3636,9 +3656,10 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000100"/>
-        <obo:IAO_0000115 xml:lang="en">A data set that follows a probability distribution</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A data set that follows a normal distribution</obo:IAO_0000115>
         <obo:IAO_0000117 xml:lang="en">Yongqun He, Jie Zheng, Yu Lin</obo:IAO_0000117>
-        <rdfs:label xml:lang="en">normally distributed data set</rdfs:label>
+        <obo:IAO_0000118>normally distributed data set</obo:IAO_0000118>
+        <rdfs:label xml:lang="en">data set following normal distribution</rdfs:label>
     </owl:Class>
     
 
@@ -4405,7 +4426,7 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
     <!-- http://purl.obolibrary.org/obo/OBI_0500000 -->
 
     <owl:Class rdf:about="http://purl.obolibrary.org/obo/OBI_0500000"/>
-        
+    
 
 
     <!-- 
@@ -4445,5 +4466,5 @@ Tuteja G., White P., Schug J., Kaestner K.H. (2009) Extracting transcription fac
 
 
 
-<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
 
