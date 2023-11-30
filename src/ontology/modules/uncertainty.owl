@@ -325,9 +325,10 @@
         <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">NUSAP</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="zh">数字单元传播评估谱系</obo:IAO_0000118>
         <obo:IAO_0000119>https://scholarsarchive.byu.edu/cgi/viewcontent.cgi?article=3855&amp;context=iemssconference;https://link.springer.com/book/10.1007/978-94-009-0621-1</obo:IAO_0000119>
-        <rdfs:label>Numeral Unit Spread Assessment Pedigree(NUSAP)</rdfs:label>
+        <rdfs:label>Numeral Unit Spread Assessment Pedigree</rdfs:label>
     </owl:Class>
     
 
@@ -355,9 +356,10 @@
         <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
+        <obo:IAO_0000118 xml:lang="en">PRIMA</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="zh">综合不确定性管理和风险分析的多元框架</obo:IAO_0000118>
         <obo:IAO_0000119>https://link.springer.com/chapter/10.1007/978-94-017-2583-5_6</obo:IAO_0000119>
-        <rdfs:label>Pluralistic fRamework of Integrated uncertainty Management and risk Analysis(PRIMA)</rdfs:label>
+        <rdfs:label>Pluralistic fRamework of Integrated uncertainty Management and risk Analysis</rdfs:label>
     </owl:Class>
     
 
@@ -510,7 +512,7 @@
         <obo:IAO_0000118 xml:lang="zh">事件不稳定（偶发、自我逆转、扩散）</obo:IAO_0000118>
         <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
         <rdfs:comment>definition to be confirmed</rdfs:comment>
-        <rdfs:label>instability of events (episodic, self-reversing, spreading)</rdfs:label>
+        <rdfs:label>instability of event (episodic, self-reversing, spreading)</rdfs:label>
     </owl:Class>
     
 
@@ -1355,7 +1357,7 @@
         <obo:IAO_0000118 xml:lang="zh">确定性（正面或中性）</obo:IAO_0000118>
         <obo:IAO_0000119>https://pubmed.ncbi.nlm.nih.gov/1608829/</obo:IAO_0000119>
         <rdfs:comment>definition and classification to be confirmed</rdfs:comment>
-        <rdfs:label>certainty(positive or neutral)</rdfs:label>
+        <rdfs:label>positive or neutral certainty</rdfs:label>
     </owl:Class>
     
 
@@ -1370,7 +1372,7 @@
         <obo:IAO_0000118 xml:lang="zh">确定性（有害的）</obo:IAO_0000118>
         <obo:IAO_0000119>https://pubmed.ncbi.nlm.nih.gov/1608829/</obo:IAO_0000119>
         <rdfs:comment>definition and classification to be confirmed</rdfs:comment>
-        <rdfs:label>certainty(detrimental)</rdfs:label>
+        <rdfs:label>detrimental certainty</rdfs:label>
     </owl:Class>
     
 
@@ -1400,7 +1402,7 @@
         <obo:IAO_0000118 xml:lang="zh">不确定性（有害的）</obo:IAO_0000118>
         <obo:IAO_0000119>https://pubmed.ncbi.nlm.nih.gov/1608829/</obo:IAO_0000119>
         <rdfs:comment>definition and classification to be confirmed</rdfs:comment>
-        <rdfs:label>uncertainty(detrimental)</rdfs:label>
+        <rdfs:label>detrimental uncertainty</rdfs:label>
     </owl:Class>
     
 
@@ -1415,7 +1417,7 @@
         <obo:IAO_0000118 xml:lang="zh">不确定性（正面）</obo:IAO_0000118>
         <obo:IAO_0000119>https://pubmed.ncbi.nlm.nih.gov/1608829/</obo:IAO_0000119>
         <rdfs:comment>definition and classification to be confirmed</rdfs:comment>
-        <rdfs:label>uncertainty(positive)</rdfs:label>
+        <rdfs:label>positive uncertainty</rdfs:label>
     </owl:Class>
     
 

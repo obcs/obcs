@@ -35,7 +35,7 @@ build:
 #
 # We use the official development version of ROBOT for most things.
 build/robot.jar: | build
-	curl -L -o $@ "https://github.com/ontodev/robot/releases/download/v1.1.0/robot.jar"
+	curl -L -o $@ "https://github.com/ontodev/robot/releases/download/v1.9.5/robot.jar"
 
 ROBOT := java -jar build/robot.jar
 
@@ -177,7 +177,7 @@ test: reason verify
 #
 # Full build
 .PHONY: all
-all: obcs.owl robot_report.tsv
+all: obcs.owl views/obcs_uncertainty.owl robot_report.tsv
 
 # Remove generated files
 .PHONY: clean
