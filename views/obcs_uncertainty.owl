@@ -12,7 +12,7 @@
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/obcs/obcs_uncertainty.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/obcs/2023-11-30/obcs_uncertainty.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/obcs/2023-12-08/obcs_uncertainty.owl"/>
         <dc:contributor xml:lang="en">Alfred Hero</dc:contributor>
         <dc:contributor xml:lang="en">Anna Maria Masci</dc:contributor>
         <dc:contributor xml:lang="en">Chris Stoeckert </dc:contributor>
@@ -31,7 +31,7 @@
         <dc:subject xml:lang="en">A formal ontology in the domain of biological and clinical statistics</dc:subject>
         <dc:title xml:lang="en">OBCS: Ontology of Biological and Clinical Statistics</dc:title>
         <terms:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <owl:versionInfo>2023-11-30</owl:versionInfo>
+        <owl:versionInfo>2023-12-08</owl:versionInfo>
     </owl:Ontology>
     
 
@@ -1848,7 +1848,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000118 xml:lang="en">propagation of uncertainty</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="zh">误差传播方程</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Propagation_of_uncertainty</obo:IAO_0000119>
-        <rdfs:label>error propagation equations</rdfs:label>
+        <rdfs:label>error propagation equation</rdfs:label>
     </owl:Class>
     
 
@@ -1861,8 +1861,8 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en">Monte Carlo experiments</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">Monte Carlo methods</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">Monte Carlo experiment</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">Monte Carlo method</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="zh">蒙特卡罗分析</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Monte_Carlo_method</obo:IAO_0000119>
         <rdfs:label>Monte Carlo analysis</rdfs:label>
@@ -1911,7 +1911,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="zh">情境分析</obo:IAO_0000118>
         <obo:IAO_0000119>http://www.nusap.net/downloads/toolcatalogue.pdf</obo:IAO_0000119>
-        <rdfs:label>Scenario Analysis</rdfs:label>
+        <rdfs:label>scenario analysis</rdfs:label>
     </owl:Class>
     
 
@@ -1957,7 +1957,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="zh">模型中假设的批判性审查</obo:IAO_0000118>
         <obo:IAO_0000119>http://www.nusap.net/downloads/toolcatalogue.pdf</obo:IAO_0000119>
-        <rdfs:label>Critical Review of Assumptions in models</rdfs:label>
+        <rdfs:label>critical review of assumptions in model</rdfs:label>
     </owl:Class>
     
 
@@ -1989,7 +1989,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000118 xml:lang="zh">不确定性缘由</obo:IAO_0000118>
         <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
         <rdfs:comment>definition to be confirmed</rdfs:comment>
-        <rdfs:label>uncertainty arise conditions</rdfs:label>
+        <rdfs:label>uncertainty arise condition</rdfs:label>
     </owl:Class>
     
 
@@ -2020,7 +2020,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="zh">事件罕见</obo:IAO_0000118>
         <obo:IAO_0000119>https://en.wikipedia.org/wiki/Rare_events</obo:IAO_0000119>
-        <rdfs:label>rarity of events</rdfs:label>
+        <rdfs:label>rarity of event</rdfs:label>
     </owl:Class>
     
 
@@ -2035,7 +2035,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000118 xml:lang="zh">单一原因的多重影响</obo:IAO_0000118>
         <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
         <rdfs:comment>definition to be confirmed</rdfs:comment>
-        <rdfs:label>multiple effects from single causes</rdfs:label>
+        <rdfs:label>multiple effects from single cause</rdfs:label>
     </owl:Class>
     
 
@@ -2050,7 +2050,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000118 xml:lang="zh">个体差异</obo:IAO_0000118>
         <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
         <rdfs:comment>definition to be confirmed</rdfs:comment>
-        <rdfs:label>individual differences</rdfs:label>
+        <rdfs:label>individual difference</rdfs:label>
     </owl:Class>
     
 
@@ -2065,7 +2065,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000118 xml:lang="zh">材料难以获取</obo:IAO_0000118>
         <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
         <rdfs:comment>definition to be confirmed</rdfs:comment>
-        <rdfs:label>materials difficult to obtain</rdfs:label>
+        <rdfs:label>material difficult to obtain</rdfs:label>
     </owl:Class>
     
 
@@ -2141,7 +2141,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000118 xml:lang="zh">缺乏因果模型</obo:IAO_0000118>
         <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
         <rdfs:comment>definition to be confirmed</rdfs:comment>
-        <rdfs:label>lack of causal models</rdfs:label>
+        <rdfs:label>lack of causal model</rdfs:label>
     </owl:Class>
     
 
@@ -2156,7 +2156,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000118 xml:lang="zh">不可控的实验条件</obo:IAO_0000118>
         <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
         <rdfs:comment>definition to be confirmed</rdfs:comment>
-        <rdfs:label>uncontrollable experimental conditions</rdfs:label>
+        <rdfs:label>uncontrollable experimental condition</rdfs:label>
     </owl:Class>
     
 
@@ -2186,7 +2186,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000118 xml:lang="zh">不稳定和不断扩散的症状和副作用</obo:IAO_0000118>
         <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
         <rdfs:comment>definition to be confirmed</rdfs:comment>
-        <rdfs:label>labile and spreading symptoms and side effects</rdfs:label>
+        <rdfs:label>labile and spreading symptom and side effect</rdfs:label>
     </owl:Class>
     
 
@@ -2216,7 +2216,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000118 xml:lang="zh">同一案例的专业/非专业处理</obo:IAO_0000118>
         <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
         <rdfs:comment>definition to be confirmed</rdfs:comment>
-        <rdfs:label>specialist/nonspecialist handling of the same cases</rdfs:label>
+        <rdfs:label>specialist/nonspecialist handling of the same case</rdfs:label>
     </owl:Class>
     
 
@@ -2246,7 +2246,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000118 xml:lang="zh">管理层与员工关系不佳</obo:IAO_0000118>
         <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
         <rdfs:comment>definition to be confirmed</rdfs:comment>
-        <rdfs:label>poor management-staff relations</rdfs:label>
+        <rdfs:label>poor management-staff relation</rdfs:label>
     </owl:Class>
     
 
@@ -2306,7 +2306,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000118 xml:lang="zh">调查人员间的延误和缺乏沟通</obo:IAO_0000118>
         <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
         <rdfs:comment>definition to be confirmed</rdfs:comment>
-        <rdfs:label>delays and lack of communication between investigators</rdfs:label>
+        <rdfs:label>delay and lack of communication between investigators</rdfs:label>
     </owl:Class>
     
 
@@ -2320,7 +2320,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
         <rdfs:comment>definition to be confirmed</rdfs:comment>
-        <rdfs:label>reacting subjects</rdfs:label>
+        <rdfs:label>reacting subject</rdfs:label>
     </owl:Class>
     
 
@@ -2335,7 +2335,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000118 xml:lang="zh">手术并发症（实验性）</obo:IAO_0000118>
         <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
         <rdfs:comment>definition to be confirmed</rdfs:comment>
-        <rdfs:label>operative complications (experimental)</rdfs:label>
+        <rdfs:label>operative complication (experimental)</rdfs:label>
     </owl:Class>
     
 
@@ -2350,7 +2350,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000118 xml:lang="zh">无法控制的程序</obo:IAO_0000118>
         <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
         <rdfs:comment>definition to be confirmed</rdfs:comment>
-        <rdfs:label>uncontrollable procedures</rdfs:label>
+        <rdfs:label>uncontrollable procedure</rdfs:label>
     </owl:Class>
     
 
@@ -2365,7 +2365,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000118 xml:lang="zh">观察困难</obo:IAO_0000118>
         <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
         <rdfs:comment>definition to be confirmed</rdfs:comment>
-        <rdfs:label>observational difficulties</rdfs:label>
+        <rdfs:label>observational difficulty</rdfs:label>
     </owl:Class>
     
 
@@ -2410,7 +2410,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000118 xml:lang="zh">范例筛选</obo:IAO_0000118>
         <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
         <rdfs:comment>definition to be confirmed</rdfs:comment>
-        <rdfs:label>find exemplars-filter for clear-cut cases</rdfs:label>
+        <rdfs:label>find exemplars-filter for clear-cut case</rdfs:label>
     </owl:Class>
     
 
@@ -2470,7 +2470,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000118 xml:lang="zh">寻找病症</obo:IAO_0000118>
         <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
         <rdfs:comment>definition to be confirmed</rdfs:comment>
-        <rdfs:label>search for pathognomonic signs</rdfs:label>
+        <rdfs:label>search for pathognomonic sign</rdfs:label>
     </owl:Class>
     
 
@@ -2485,7 +2485,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000118 xml:lang="zh">散弹枪疗法</obo:IAO_0000118>
         <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
         <rdfs:comment>definition to be confirmed</rdfs:comment>
-        <rdfs:label>shotgun treatments</rdfs:label>
+        <rdfs:label>shotgun treatment</rdfs:label>
     </owl:Class>
     
 
@@ -2500,7 +2500,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000118 xml:lang="zh">按照政治路线清晰划分数据</obo:IAO_0000118>
         <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
         <rdfs:comment>definition to be confirmed</rdfs:comment>
-        <rdfs:label>division of data along political lines for clarity</rdfs:label>
+        <rdfs:label>division of data along political line for clarity</rdfs:label>
     </owl:Class>
     
 
@@ -2515,7 +2515,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000118 xml:lang="zh">按照技术/实质性原则分工</obo:IAO_0000118>
         <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
         <rdfs:comment>definition to be confirmed</rdfs:comment>
-        <rdfs:label>division of labor along technical/substantive lines</rdfs:label>
+        <rdfs:label>division of labor along technical/substantive line</rdfs:label>
     </owl:Class>
     
 
@@ -2530,7 +2530,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000118 xml:lang="zh">观察限于现有材料</obo:IAO_0000118>
         <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
         <rdfs:comment>definition to be confirmed</rdfs:comment>
-        <rdfs:label>observations limited to available materials</rdfs:label>
+        <rdfs:label>observations limited to available material</rdfs:label>
     </owl:Class>
     
 
@@ -2545,7 +2545,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000118 xml:lang="zh">强调实际结果的功利主义</obo:IAO_0000118>
         <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
         <rdfs:comment>definition to be confirmed</rdfs:comment>
-        <rdfs:label>utilitarian emphasis on practical results</rdfs:label>
+        <rdfs:label>utilitarian emphasis on practical result</rdfs:label>
     </owl:Class>
     
 
@@ -2560,7 +2560,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000118 xml:lang="zh">技术和材料标准化</obo:IAO_0000118>
         <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
         <rdfs:comment>definition to be confirmed</rdfs:comment>
-        <rdfs:label>standardization of techniques and materials</rdfs:label>
+        <rdfs:label>standardization of techniques and material</rdfs:label>
     </owl:Class>
     
 
@@ -2575,7 +2575,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000118 xml:lang="zh">观察技术（形式）和协议标准化</obo:IAO_0000118>
         <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
         <rdfs:comment>definition to be confirmed</rdfs:comment>
-        <rdfs:label>standardization of observational techniques (forms) and protocols</rdfs:label>
+        <rdfs:label>standardization of observational technique (form) and protocol</rdfs:label>
     </owl:Class>
     
 
@@ -2590,7 +2590,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000118 xml:lang="zh">观察向下聚焦到更小的领域</obo:IAO_0000118>
         <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
         <rdfs:comment>definition to be confirmed</rdfs:comment>
-        <rdfs:label>observations down-focused to smaller areas</rdfs:label>
+        <rdfs:label>observations down-focused to smaller area</rdfs:label>
     </owl:Class>
     
 
@@ -2665,7 +2665,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000118 xml:lang="zh">不完美的模型</obo:IAO_0000118>
         <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
         <rdfs:comment>definition to be confirmed</rdfs:comment>
-        <rdfs:label>imperfect models</rdfs:label>
+        <rdfs:label>imperfect model</rdfs:label>
     </owl:Class>
     
 
@@ -2724,7 +2724,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000117>Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000117>Jinjing Guo</obo:IAO_0000117>
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
-        <obo:IAO_0000118 xml:lang="en">Social, economic, and cultural dynamics</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="en">Social, economic, and cultural dynamic</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="zh">社会可变性</obo:IAO_0000118>
         <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
         <rdfs:label>societal variability</rdfs:label>
@@ -2756,7 +2756,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="zh">抽样误差</obo:IAO_0000118>
         <obo:IAO_0000119>https://www.tandfonline.com/doi/abs/10.1076/iaij.4.1.5.16466</obo:IAO_0000119>
-        <rdfs:label>sampling error in the measurements</rdfs:label>
+        <rdfs:label>sampling error in the measurement</rdfs:label>
     </owl:Class>
     
 
@@ -3420,7 +3420,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>https://uts.nlm.nih.gov/uts/umls/vocabulary/MEDCIN/1418</obo:IAO_0000119>
         <rdfs:comment>classification to be confirmed</rdfs:comment>
-        <rdfs:label>uncertainty about long-term goals</rdfs:label>
+        <rdfs:label>uncertainty about long-term goal</rdfs:label>
     </owl:Class>
     
 
@@ -3434,7 +3434,7 @@ Request that IAO either clarify these or change definitions not to use them</rdf
         <obo:IAO_0000117>Oliver He</obo:IAO_0000117>
         <obo:IAO_0000119>https://uts.nlm.nih.gov/uts/umls/vocabulary/MEDCIN/1419</obo:IAO_0000119>
         <rdfs:comment>classification to be confirmed</rdfs:comment>
-        <rdfs:label>uncertainty about value systems</rdfs:label>
+        <rdfs:label>uncertainty about value system</rdfs:label>
     </owl:Class>
     
 
