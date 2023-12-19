@@ -12,7 +12,7 @@
      xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/obcs/obcs_uncertainty.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/obcs/2023-12-08/obcs_uncertainty.owl"/>
+        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/obcs/2023-12-09/obcs_uncertainty.owl"/>
         <dc:contributor xml:lang="en">Alfred Hero</dc:contributor>
         <dc:contributor xml:lang="en">Anna Maria Masci</dc:contributor>
         <dc:contributor xml:lang="en">Chris Stoeckert </dc:contributor>
@@ -203,7 +203,6 @@ We also have the outstanding issue of how to aim different definitions to differ
         <rdfs:comment>Consider re-defing to: An alternative name for a class or property which can mean the same thing as the preferred name (semantically equivalent, narrow, broad or related).</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://purl.obolibrary.org/obo/iao.owl"/>
         <rdfs:label xml:lang="en">alternative label</rdfs:label>
-        <rdfs:label xml:lang="en">alternative term</rdfs:label>
     </owl:AnnotationProperty>
     
 

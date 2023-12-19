@@ -558,7 +558,7 @@
         <obo:IAO_0000118 xml:lang="zh">因果现象界限不清</obo:IAO_0000118>
         <obo:IAO_0000119>Star, S. L. (1989). Regions of the mind: Brain research and the quest for scientific certainty. Stanford Univ. Press.</obo:IAO_0000119>
         <rdfs:comment>definition to be confirmed</rdfs:comment>
-        <rdfs:label>unclear boundaries of causal phenomena</rdfs:label>
+        <rdfs:label>unclear boundary of causal phenomena</rdfs:label>
     </owl:Class>
     
 

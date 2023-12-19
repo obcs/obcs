@@ -1,0 +1,512 @@
+Level	Rule Name	Subject	Property	Value
+WARN	annotation_whitespace	BFO:0000002	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (continuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [009-002] 
+WARN	annotation_whitespace	BFO:0000002	IAO:0000602	(forall (x y) (if (and (Continuant x) (exists (t) (hasContinuantPartOfAt y x t))) (Continuant y))) // axiom label in BFO2 CLIF: [126-001] 
+WARN	annotation_whitespace	BFO:0000002	IAO:0000602	(forall (x) (if (Continuant x) (Entity x))) // axiom label in BFO2 CLIF: [008-002] 
+WARN	annotation_whitespace	BFO:0000002	IAO:0000602	(forall (x) (if (Material Entity x) (exists (t) (and (TemporalRegion t) (existsAt x t))))) // axiom label in BFO2 CLIF: [011-002] 
+WARN	annotation_whitespace	BFO:0000003	IAO:0000602	(forall (x) (if (Occurrent x) (exists (r) (and (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion x r))))) // axiom label in BFO2 CLIF: [108-001] 
+WARN	annotation_whitespace	BFO:0000003	IAO:0000602	(forall (x) (iff (Occurrent x) (and (Entity x) (exists (y) (temporalPartOf y x))))) // axiom label in BFO2 CLIF: [079-001] 
+WARN	annotation_whitespace	BFO:0000004	IAO:0000602	(forall (x t) (if (IndependentContinuant x) (exists (r) (and (SpatialRegion r) (locatedInAt x r t))))) // axiom label in BFO2 CLIF: [134-001] 
+WARN	annotation_whitespace	BFO:0000004	IAO:0000602	(forall (x t) (if (and (IndependentContinuant x) (existsAt x t)) (exists (y) (and (Entity y) (specificallyDependsOnAt y x t))))) // axiom label in BFO2 CLIF: [018-002] 
+WARN	annotation_whitespace	BFO:0000004	IAO:0000602	(iff (IndependentContinuant a) (and (Continuant a) (not (exists (b t) (specificallyDependsOnAt a b t))))) // axiom label in BFO2 CLIF: [017-002] 
+WARN	annotation_whitespace	BFO:0000006	IAO:0000602	(forall (x y t) (if (and (SpatialRegion x) (continuantPartOfAt y x t)) (SpatialRegion y))) // axiom label in BFO2 CLIF: [036-001] 
+WARN	annotation_whitespace	BFO:0000006	IAO:0000602	(forall (x) (if (SpatialRegion x) (Continuant x))) // axiom label in BFO2 CLIF: [035-001] 
+WARN	annotation_whitespace	BFO:0000008	IAO:0000602	(forall (r) (if (TemporalRegion r) (occupiesTemporalRegion r r))) // axiom label in BFO2 CLIF: [119-002] 
+WARN	annotation_whitespace	BFO:0000008	IAO:0000602	(forall (x y) (if (and (TemporalRegion x) (occurrentPartOf y x)) (TemporalRegion y))) // axiom label in BFO2 CLIF: [101-001] 
+WARN	annotation_whitespace	BFO:0000008	IAO:0000602	(forall (x) (if (TemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [100-001] 
+WARN	annotation_whitespace	BFO:0000009	IAO:0000602	(forall (x) (if (TwoDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [039-001] 
+WARN	annotation_whitespace	BFO:0000011	IAO:0000602	(forall (r) (if (SpatioTemporalRegion r) (occupiesSpatioTemporalRegion r r))) // axiom label in BFO2 CLIF: [107-002] 
+WARN	annotation_whitespace	BFO:0000011	IAO:0000602	(forall (x t) (if (SpatioTemporalRegion x) (exists (y) (and (SpatialRegion y) (spatiallyProjectsOntoAt x y t))))) // axiom label in BFO2 CLIF: [099-001] 
+WARN	annotation_whitespace	BFO:0000011	IAO:0000602	(forall (x y) (if (and (SpatioTemporalRegion x) (occurrentPartOf y x)) (SpatioTemporalRegion y))) // axiom label in BFO2 CLIF: [096-001] 
+WARN	annotation_whitespace	BFO:0000011	IAO:0000602	(forall (x) (if (SpatioTemporalRegion x) (Occurrent x))) // axiom label in BFO2 CLIF: [095-001] 
+WARN	annotation_whitespace	BFO:0000011	IAO:0000602	(forall (x) (if (SpatioTemporalRegion x) (exists (y) (and (TemporalRegion y) (temporallyProjectsOnto x y))))) // axiom label in BFO2 CLIF: [098-001] 
+WARN	annotation_whitespace	BFO:0000015	IAO:0000602	(iff (Process a) (and (Occurrent a) (exists (b) (properTemporalPartOf b a)) (exists (c t) (and (MaterialEntity c) (specificallyDependsOnAt a c t))))) // axiom label in BFO2 CLIF: [083-003] 
+WARN	annotation_whitespace	BFO:0000016	IAO:0000602	(forall (x t) (if (and (RealizableEntity x) (existsAt x t)) (exists (y) (and (MaterialEntity y) (specificallyDepends x y t))))) // axiom label in BFO2 CLIF: [063-002] 
+WARN	annotation_whitespace	BFO:0000016	IAO:0000602	(forall (x) (if (Disposition x) (and (RealizableEntity x) (exists (y) (and (MaterialEntity y) (bearerOfAt x y t)))))) // axiom label in BFO2 CLIF: [062-002] 
+WARN	annotation_whitespace	BFO:0000017	IAO:0000602	(forall (x t) (if (RealizableEntity x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (bearerOfAt y x t))))) // axiom label in BFO2 CLIF: [060-002] 
+WARN	annotation_whitespace	BFO:0000017	IAO:0000602	(forall (x) (if (RealizableEntity x) (and (SpecificallyDependentContinuant x) (exists (y) (and (IndependentContinuant y) (not (SpatialRegion y)) (inheresIn x y)))))) // axiom label in BFO2 CLIF: [058-002] 
+WARN	annotation_whitespace	BFO:0000018	IAO:0000602	(forall (x) (if (ZeroDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [037-001] 
+WARN	annotation_whitespace	BFO:0000019	IAO:0000602	(forall (x) (if (Quality x) (SpecificallyDependentContinuant x))) // axiom label in BFO2 CLIF: [055-001] 
+WARN	annotation_whitespace	BFO:0000019	IAO:0000602	(forall (x) (if (exists (t) (and (existsAt x t) (Quality x))) (forall (t_1) (if (existsAt x t_1) (Quality x))))) // axiom label in BFO2 CLIF: [105-001] 
+WARN	annotation_whitespace	BFO:0000020	IAO:0000602	(iff (SpecificallyDependentContinuant a) (and (Continuant a) (forall (t) (if (existsAt a t) (exists (b) (and (IndependentContinuant b) (not (SpatialRegion b)) (specificallyDependsOnAt a b t))))))) // axiom label in BFO2 CLIF: [050-003] 
+WARN	annotation_whitespace	BFO:0000023	IAO:0000602	(forall (x) (if (Role x) (RealizableEntity x))) // axiom label in BFO2 CLIF: [061-001] 
+WARN	annotation_whitespace	BFO:0000024	IAO:0000602	(forall (x) (if (FiatObjectPart x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y) (and (Object y) (properContinuantPartOfAt x y t)))))))) // axiom label in BFO2 CLIF: [027-004] 
+WARN	annotation_whitespace	BFO:0000026	IAO:0000602	(forall (x) (if (OneDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [038-001] 
+WARN	annotation_whitespace	BFO:0000027	IAO:0000116	An entity a is an object aggregate if and only if there is a mutually exhaustive and pairwise disjoint partition of a into objects 
+WARN	annotation_whitespace	BFO:0000027	IAO:0000602	(forall (x) (if (ObjectAggregate x) (and (MaterialEntity x) (forall (t) (if (existsAt x t) (exists (y z) (and (Object y) (Object z) (memberPartOfAt y x t) (memberPartOfAt z x t) (not (= y z)))))) (not (exists (w t_1) (and (memberPartOfAt w x t_1) (not (Object w)))))))) // axiom label in BFO2 CLIF: [025-004] 
+WARN	annotation_whitespace	BFO:0000028	IAO:0000602	(forall (x) (if (ThreeDimensionalSpatialRegion x) (SpatialRegion x))) // axiom label in BFO2 CLIF: [040-001] 
+WARN	annotation_whitespace	BFO:0000029	IAO:0000602	(forall (x) (if (Site x) (ImmaterialEntity x))) // axiom label in BFO2 CLIF: [034-002] 
+WARN	annotation_whitespace	BFO:0000031	IAO:0000602	(iff (GenericallyDependentContinuant a) (and (Continuant a) (exists (b t) (genericallyDependsOnAt a b t)))) // axiom label in BFO2 CLIF: [074-001] 
+WARN	annotation_whitespace	BFO:0000034	IAO:0000602	(forall (x) (if (Function x) (Disposition x))) // axiom label in BFO2 CLIF: [064-001] 
+WARN	annotation_whitespace	BFO:0000035	IAO:0000602	(forall (x) (if (ProcessBoundary x) (exists (y) (and (ZeroDimensionalTemporalRegion y) (occupiesTemporalRegion x y))))) // axiom label in BFO2 CLIF: [085-002] 
+WARN	annotation_whitespace	BFO:0000035	IAO:0000602	(iff (ProcessBoundary a) (exists (p) (and (Process p) (temporalPartOf a p) (not (exists (b) (properTemporalPartOf b a)))))) // axiom label in BFO2 CLIF: [084-001] 
+WARN	annotation_whitespace	BFO:0000038	IAO:0000602	(forall (x) (if (OneDimensionalTemporalRegion x) (TemporalRegion x))) // axiom label in BFO2 CLIF: [103-001] 
+WARN	annotation_whitespace	BFO:0000040	IAO:0000602	(forall (x) (if (MaterialEntity x) (IndependentContinuant x))) // axiom label in BFO2 CLIF: [019-002] 
+WARN	annotation_whitespace	BFO:0000040	IAO:0000602	(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt x y t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [021-002] 
+WARN	annotation_whitespace	BFO:0000040	IAO:0000602	(forall (x) (if (and (Entity x) (exists (y t) (and (MaterialEntity y) (continuantPartOfAt y x t)))) (MaterialEntity x))) // axiom label in BFO2 CLIF: [020-002] 
+WARN	annotation_whitespace	BFO:0000140	IAO:0000602	(iff (ContinuantFiatBoundary a) (and (ImmaterialEntity a) (exists (b) (and (or (ZeroDimensionalSpatialRegion b) (OneDimensionalSpatialRegion b) (TwoDimensionalSpatialRegion b)) (forall (t) (locatedInAt a b t)))) (not (exists (c t) (and (SpatialRegion c) (continuantPartOfAt c a t)))))) // axiom label in BFO2 CLIF: [029-001] 
+WARN	annotation_whitespace	BFO:0000142	IAO:0000602	(iff (OneDimensionalContinuantFiatBoundary a) (and (ContinuantFiatBoundary a) (exists (b) (and (OneDimensionalSpatialRegion b) (forall (t) (locatedInAt a b t)))))) // axiom label in BFO2 CLIF: [032-001] 
+WARN	annotation_whitespace	BFO:0000144	IAO:0000602	(forall (x y) (if (processProfileOf x y) (and (properContinuantPartOf x y) (exists (z t) (and (properOccurrentPartOf z y) (TemporalRegion t) (occupiesSpatioTemporalRegion x t) (occupiesSpatioTemporalRegion y t) (occupiesSpatioTemporalRegion z t) (not (exists (w) (and (occurrentPartOf w x) (occurrentPartOf w z))))))))) // axiom label in BFO2 CLIF: [094-005] 
+WARN	annotation_whitespace	BFO:0000144	IAO:0000602	(iff (ProcessProfile a) (exists (b) (and (Process b) (processProfileOf a b)))) // axiom label in BFO2 CLIF: [093-002] 
+WARN	annotation_whitespace	BFO:0000145	IAO:0000602	(iff (RelationalQuality a) (exists (b c t) (and (IndependentContinuant b) (IndependentContinuant c) (qualityOfAt a b t) (qualityOfAt a c t)))) // axiom label in BFO2 CLIF: [057-001] 
+WARN	annotation_whitespace	BFO:0000146	IAO:0000602	(iff (TwoDimensionalContinuantFiatBoundary a) (and (ContinuantFiatBoundary a) (exists (b) (and (TwoDimensionalSpatialRegion b) (forall (t) (locatedInAt a b t)))))) // axiom label in BFO2 CLIF: [033-001] 
+WARN	annotation_whitespace	BFO:0000147	IAO:0000602	(iff (ZeroDimensionalContinuantFiatBoundary a) (and (ContinuantFiatBoundary a) (exists (b) (and (ZeroDimensionalSpatialRegion b) (forall (t) (locatedInAt a b t)))))) // axiom label in BFO2 CLIF: [031-001] 
+WARN	annotation_whitespace	BFO:0000148	IAO:0000602	(forall (x) (if (ZeroDimensionalTemporalRegion x) (TemporalRegion x))) // axiom label in BFO2 CLIF: [102-001] 
+WARN	annotation_whitespace	IAO:0000009	IAO:0000232	"9/22/11 BP: changed the rdfs:label for this class from 'label' to 'datum label' to convey that this class is not intended to cover all kinds of labels (stickers, radiolabels, etc.), and not even all kind of textual labels, but rather the kind of labels occuring in a datum. 
+"
+WARN	annotation_whitespace	IAO:0000115	IAO:0000116	"2012-04-05: 
+Barry Smith
+
+The official OBI definition, explaining the meaning of a class or property: 'Shall be Aristotelian, formalized and normalized. Can be augmented with colloquial definitions'  is terrible.
+
+Can you fix to something like:
+
+A statement of necessary and sufficient conditions explaining the meaning of an expression referring to a class or property.
+
+Alan Ruttenberg
+
+Your proposed definition is a reasonable candidate, except that it is very common that necessary and sufficient conditions are not given. Mostly they are necessary, occasionally they are necessary and sufficient or just sufficient. Often they use terms that are not themselves defined and so they effectively can't be evaluated by those criteria. 
+
+On the specifics of the proposed definition:
+
+We don't have definitions of 'meaning' or 'expression' or 'property'. For 'reference' in the intended sense I think we use the term 'denotation'. For 'expression', I think we you mean symbol, or identifier. For 'meaning' it differs for class and property. For class we want documentation that let's the intended reader determine whether an entity is instance of the class, or not. For property we want documentation that let's the intended reader determine, given a pair of potential relata, whether the assertion that the relation holds is true. The 'intended reader' part suggests that we also specify who, we expect, would be able to understand the definition, and also generalizes over human and computer reader to include textual and logical definition. 
+
+Personally, I am more comfortable weakening definition to documentation, with instructions as to what is desirable. 
+
+We also have the outstanding issue of how to aim different definitions to different audiences. A clinical audience reading chebi wants a different sort of definition documentation/definition from a chemistry trained audience, and similarly there is a need for a definition that is adequate for an ontologist to work with.  @en"
+WARN	annotation_whitespace	IAO:0000424	IAO:0000112	"ObjectProperty: RO_0002104
+Label: has plasma membrane part
+Annotations: IAO_0000424 \""http://purl.obolibrary.org/obo/BFO_0000051 some (http://purl.org/obo/owl/GO#GO_0005886 and http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)\""
+@en"
+WARN	annotation_whitespace	IAO:0000425	IAO:0000112	"ObjectProperty: RO???
+Label: spatially disjoint from
+Annotations: expand_assertion_to \""DisjointClasses: (http://purl.obolibrary.org/obo/BFO_0000051 some ?X)  (http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)\""
+@en"
+WARN	annotation_whitespace	IAO:0000597	IAO:0000112	"Datatype: idrange:1
+Annotations: 'has ID range allocated to': \""Chris Mungall\""
+EquivalentTo: xsd:integer[> 2151 , <= 2300]
+@en"
+WARN	annotation_whitespace	OBCS:0000062	IAO:0000115	"A plan specification that provides a detailed outline of which measurements will be taken at what times, on which material, in what manner, and by whom. Sampling plans should be designed in such a way that the resulting data will contain a representative sample of the parameters of interest and allow for all questions, as stated in the goals, to be answered. "
+WARN	annotation_whitespace	OBCS:0000118	IAO:0000115	A quantitative confidence value that expresses how many times more likely the data are under one model than the other. 
+WARN	annotation_whitespace	OBCS:0000124	IAO:0000115	A statistical data analysis objective where the aim is to make inference using population sample data. 
+WARN	annotation_whitespace	OBCS:0000126	IAO:0000119	WEB: http://en.wikipedia.org/wiki/Random_variable  
+WARN	annotation_whitespace	OBCS:0000127	IAO:0000115	An objective specification where the aim is to collect data. 
+WARN	annotation_whitespace	OBCS:0000134	IAO:0000119	WEB: http://www.stats.gla.ac.uk/steps/glossary/probability_distributions.html#contvar 
+WARN	annotation_whitespace	OBCS:0000135	IAO:0000119	WEB: http://www.stats.gla.ac.uk/steps/glossary/probability_distributions.html#contvar 
+WARN	annotation_whitespace	OBCS:0000140	IAO:0000115	"A normalization data transformation that used to create normalized gene expression level from microarray raw data. The raw intensity values are background corrected, log2 transformed and then quantile normalized in the RMA normalization process. "
+WARN	annotation_whitespace	OBCS:0000141	IAO:0000119	http://www.ncbi.nlm.nih.gov/pmc/articles/PMC33173/http://en.wikipedia.org/wiki/Significance_analysis_of_microarrays
+WARN	annotation_whitespace	OBCS:0000142	IAO:0000119	http://en.wikipedia.org/wiki/Signal-to-noise_ratiohttp://www.ncbi.nlm.nih.gov/pubmed/10521349
+WARN	annotation_whitespace	OBCS:0000147	IAO:0000119	http://www.pnas.org/content/102/43/15545.abstract
+WARN	annotation_whitespace	OBCS:0000164	IAO:0000119	"Storey J.D. (2007) The optimal discovery procedure: A new approach to simultaneous significance testing, Journal of the Royal Statistical Society, Series B, 69: 347-368.
+Storey J.D., Dai J.Y., and Leek J.T. (2007) The optimal discovery procedure for large-scale significance testing, with applications to comparative microarray experiments, Biostatistics, 8: 414-432.
+Leek J.T,. Monsen E.C., Dabney A.R., and Storey J.D. (2006) EDGE: Extraction and analysis of differential gene expression, Bioinformatics, 22: 507-508.
+Storey J.D., Xiao W., Leek J.T., Tompkins R.G., and Davis R.W. (2005) Significance analysis of time course microarray experiments, Proceedings of the National Academy of Sciences, 102: 12837-12842.
+"
+WARN	annotation_whitespace	OBCS:0000165	IAO:0000115	"A software that can be used to produce lists of differentially expressed genes with confidence measures attached. These lists are generated via a False Discovery Rate (FDR) method of controlling the false positives. Patterns from Gene Expression (PaGE) is more than a differential expression analysis tool.  PaGE is a tool to attach descriptive, dependable, and easily interpretable expression patterns to genes across multiple conditions, each represented by a set of replicated array experiments. 
+"
+WARN	annotation_whitespace	OBCS:0000165	IAO:0000116	"The input consists of (replicated) intensities from a collection of array experiments from two or more conditions (or from a collection of direct comparisons on 2-channel arrays). The output consists of patterns, one for each row identifier in the data file. One condition is used as a reference to which the other types are compared. The length of a pattern equals the number of non-reference sample types. The symbols in the patterns are integers, where positive integers represent up-regulation as compared to the reference sample type and negative integers represent down-regulation. The patterns are based on the false discovery rates for each position in the pattern, so that the number of positive and negative symbols that appear in each position of the pattern is as descriptive as the data variability allows. The patterns generated are easily interpretable in that integers are used to represent different levels of up- or down-regulation as compared to the reference sample type. "
+WARN	annotation_whitespace	OBCS:0000167	IAO:0000119	http://en.wikipedia.org/wiki/Peak_calling
+WARN	annotation_whitespace	OBCS:0000226	IAO:0000115	A data set that is an aggregate of numerical data item. 
+WARN	annotation_whitespace	OBCS:0000231	IAO:0000115	"A rate of deaths (in general, or due to a specific cause) that in a particular population, scaled to the size of that population, per unit of time. "
+WARN	annotation_whitespace	OBCS:0000232	IAO:0000115	A rate of unit shif in a hospital. 
+WARN	annotation_whitespace	OBCS:0000264	IAO:0000115	A broad class of computational algorithms that rely on repeated random sampling to obtain numerical results.The goal of Monte Carlo analysis is to trace out the structure of the distributions of model output that results from specified uncertainty distributions of model inputs and model parameters.  
+WARN	annotation_whitespace	OBCS:0000330	IAO:0000115	Organizational uncertainty arose when information was lost or trapped owing to the local division of labor or the circumstances of alliances and collaborations. 
+WARN	annotation_whitespace	OBCS:0000331	IAO:0000115	"Technical uncertainty developed as a result of inadequate tools or ambiguous information about techniques. Technical uncertainty arose from difficulties with subjects, equipment, and procedures, including the lack of standard  measurement techniques. "
+WARN	annotation_whitespace	OBCS:0000343	IAO:0000115	"Reducible  ignorance may be resolved by conducting further research,  which implies that it might be possible to somehow achieve a  better understanding. "
+WARN	annotation_whitespace	OBCS:0000344	IAO:0000115	Irreducible ignorance applies when neither research nor development can provide sufficient knowledge about the essential relationships. 
+WARN	annotation_whitespace	OBCS:0000345	IAO:0000115	"Total ignorance is the other extreme from determinism on the scale of uncertainty, which implies a deep level of uncertainty, to the extent that we do not even know that we do not know. "
+WARN	annotation_whitespace	OBCS:0000346	IAO:0000115	"Context uncertainty includes uncertainty about the external economic, environmental, political, social, and technological situation that forms the context for the problem being examined. The context could fall within the past, the present, or the future. "
+WARN	annotation_whitespace	OBCS:0000351	IAO:0000115	Uncertainty about the external driving forces that produce changes within the system (the relevant scenario variables and policy variables) and the magnitude of the forces (the values of the scenario and policy variables). 
+WARN	annotation_whitespace	OBCS:0000352	IAO:0000115	"Uncertainty about the systemdata that ‘drive’ themodel and typically quantify relevant features of the reference system and its behaviour (e.g. land-use maps, data on infrastructure (roads, houses)). Uncertainty about system data is generated by a lack of knowledge of the properties (including both the deterministic and the stochastic properties) of the underlying system and deficiencies in the description of the variability that can be an inherent feature of some of the phenomena under observation. "
+WARN	annotation_whitespace	OBCS:0000362	IAO:0000115	"A belief is psychologically certain when the subject who has it is supremely convinced of its truth. Certainty in this sense is similar to incorrigibility, which is the property a belief has of being such that the subject is incapable of giving it up. But psychological certainty is not the same thing as incorrigibility. A belief can be certain in this sense without being incorrigible; this may happen, for example, when the subject receives a very compelling bit of counterevidence to the (previously) certain belief and gives it up for that reason. Moreover, a belief can be incorrigible without being psychologically certain. For example, a mother may be incapable of giving up the belief that her son did not commit a gruesome murder, and yet, compatible with that inextinguishable belief, she may be tortured by doubt. "
+WARN	annotation_whitespace	OMO:0001002	IAO:0000116	"This obsolesence reason should be used conservatively. For example: Obsoleting class that describes a breed of cow based on a record in an existing database, that was later retracted as faulty (breed does not exist). Do not use this term to obsolete a historic concept (that was once valid, but not anymore). @en"
+WARN	annotation_whitespace	RO:0002161	IAO:0000425	Class: ?X DisjointWith: RO_0002162 some ?Y 
+WARN	annotation_whitespace	STATO:0000263	IAO:0000115	"Galbraith (Radial) plot is a scatter plot which can be used in the meta-analytic context to examine the data for heterogeneity. For a fixed-effects model, the plot shows the inverse of the standard errors on the horizontal axis against the individual observed effect sizes or outcomes standardized by their corresponding standard errors on the vertical axis.
+Radial plots were introduced by Rex Galbraith (1988a, 1988b, 1994).
+@en"
+WARN	annotation_whitespace	http://purl.obolibrary.org/obo/obcs/obcs_merged.owl	dc11:contributor	Chris Stoeckert @en
+WARN	annotation_whitespace	http://purl.obolibrary.org/obo/obcs/obcs_merged.owl	dc11:description	"OBCS stands for the Ontology of Biological and Clinical Statistics. OBCS is an ontology in the domain of biological and clinical statistics. It is aligned with the Basic Formal Ontology (BFO) and the Ontology for Biomedical Investigations (OBI). OBCS imports all possible biostatistics terms in OBI and includes many additional biostatistics terms, some of which were proposed and discussed in the OBI face-to-face workshop in Ann Arbor in 2012.  @en"
+WARN	duplicate_exact_synonym	OBCS:0000162	IAO:0000118	translation validity
+WARN	duplicate_exact_synonym	OBCS:0000163	IAO:0000118	translation validity
+WARN	duplicate_exact_synonym	OBCS:0000241	IAO:0000118	KS test
+WARN	duplicate_exact_synonym	OBCS:0000243	IAO:0000118	KS test
+WARN	duplicate_exact_synonym	OBCS:0000326	IAO:0000118	imprecision@en
+WARN	duplicate_exact_synonym	OBCS:0000327	IAO:0000118	imprecision@en
+WARN	duplicate_exact_synonym	OBCS:0000005	IAO:0000118	Gaussian distribution
+WARN	duplicate_exact_synonym	OBCS:0000211	IAO:0000118	Gaussian distribution
+WARN	duplicate_exact_synonym	OBCS:0000133	IAO:0000118	dependent variable
+WARN	duplicate_exact_synonym	OBI:0000751	IAO:0000118	dependent variable
+WARN	duplicate_exact_synonym	OBCS:0000246	IAO:0000118	CMH test
+WARN	duplicate_exact_synonym	OBCS:0000247	IAO:0000118	CMH test
+WARN	duplicate_label_synonym	CHEBI:23367	oboInOwl:hasExactSynonym	molecular entity
+WARN	duplicate_label_synonym	CHEBI:33839	oboInOwl:hasExactSynonym	macromolecule
+WARN	duplicate_label_synonym	OBCS:0000114	IAO:0000118	median
+WARN	duplicate_label_synonym	OBI:0000566	IAO:0000118	NMR instrument
+WARN	duplicate_label_synonym	OBI:0002988	IAO:0000118	specimen collection duration
+WARN	duplicate_label_synonym	OBI:0200082	IAO:0000118	longitudinal data analysis@en
+WARN	duplicate_label_synonym	UBERON:0000463	oboInOwl:hasExactSynonym	organism substance
+WARN	duplicate_label_synonym	UBERON:0013755	oboInOwl:hasExactSynonym	arterial blood
+WARN	duplicate_scoped_synonym	CHEBI:16991	oboInOwl:hasExactSynonym	deoxyribonucleic acids
+WARN	duplicate_scoped_synonym	CHEBI:16991	oboInOwl:hasRelatedSynonym	deoxyribonucleic acids
+WARN	duplicate_scoped_synonym	NCBITaxon:2759	oboInOwl:hasExactSynonym	eukaryotes
+WARN	duplicate_scoped_synonym	NCBITaxon:2759	oboInOwl:hasRelatedSynonym	eukaryotes
+WARN	equivalent_class_axiom_no_genus	OBCS:0000002	OBI:0000417	OBCS:0000127
+WARN	equivalent_class_axiom_no_genus	OBCS:0000121	OBI:0000417	OBCS:0000124
+WARN	equivalent_class_axiom_no_genus	OBCS:0000170	OBI:0000312	OBCS:0000169
+WARN	equivalent_class_axiom_no_genus	OBCS:0000224	OBCS:0000223	OBCS:0000010
+WARN	equivalent_class_axiom_no_genus	OBCS:0000225	OBCS:0000223	OBCS:0000005
+WARN	equivalent_class_axiom_no_genus	OBCS:0000230	OBI:0000293	OBI:0000078
+WARN	equivalent_class_axiom_no_genus	OBI:0000023	OBI:0000312	OBI:0000663
+WARN	equivalent_class_axiom_no_genus	OBI:0000070	OBI:0000417	OBI:0000441
+WARN	equivalent_class_axiom_no_genus	OBI:0000094	OBI:0000417	OBI:0000456
+WARN	equivalent_class_axiom_no_genus	OBI:0000274	OBI:0000417	OBI:0000434
+WARN	equivalent_class_axiom_no_genus	OBI:0000451	OBI:0000312	OBI:0200169
+WARN	equivalent_class_axiom_no_genus	OBI:0000648	OBI:0000312	OBI:0200175
+WARN	equivalent_class_axiom_no_genus	OBI:0000649	OBI:0000312	OBI:0200184
+WARN	equivalent_class_axiom_no_genus	OBI:0000650	OBI:0000417	OBI:0200031
+WARN	equivalent_class_axiom_no_genus	OBI:0000652	OBI:0000417	OBI:0000686
+WARN	equivalent_class_axiom_no_genus	OBI:0000656	OBI:0000312	OBI:0200072
+WARN	equivalent_class_axiom_no_genus	OBI:0000660	OBI:0000312	OBI:0000666
+WARN	equivalent_class_axiom_no_genus	OBI:0000662	OBI:0000312	OBI:0000668
+WARN	equivalent_class_axiom_no_genus	OBI:0000668	OBI:0000417	OBI:0200186
+WARN	equivalent_class_axiom_no_genus	OBI:0000673	OBI:0000417	OBI:0000675
+WARN	equivalent_class_axiom_no_genus	OBI:0000674	OBI:0000312	OBI:0200181
+WARN	equivalent_class_axiom_no_genus	OBI:0000676	OBI:0000312	OBI:0200182
+WARN	equivalent_class_axiom_no_genus	OBI:0000679	OBI:0000312	OBI:0200170
+WARN	equivalent_class_axiom_no_genus	OBI:0000707	OBI:0000417	OBI:0000704
+WARN	equivalent_class_axiom_no_genus	OBI:0000792	OBI:0000417	OBI:0200188
+WARN	equivalent_class_axiom_no_genus	OBI:0000838	OBI:0000417	OBI:0000806
+WARN	equivalent_class_axiom_no_genus	OBI:0001834	OBI:0000299	IAO:0000144
+WARN	equivalent_class_axiom_no_genus	OBI:0002599	OBI:0000312	OBI:0002600
+WARN	equivalent_class_axiom_no_genus	OBI:0200000	OBI:0000417	OBI:0200166
+WARN	equivalent_class_axiom_no_genus	OBI:0200073	OBI:0000299	OBI:0001265
+WARN	equivalent_class_axiom_no_genus	OBI:0200085	OBI:0000417	OBI:0200197
+WARN	equivalent_class_axiom_no_genus	OBI:0200086	OBI:0000417	OBI:0200180
+WARN	equivalent_class_axiom_no_genus	OBI:0200089	OBI:0000417	OBI:0000791
+WARN	equivalent_class_axiom_no_genus	OBI:0200163	OBI:0000299	OBI:0001442
+WARN	equivalent_class_axiom_no_genus	OBI:0200171	OBI:0000417	OBI:0200172
+WARN	equivalent_class_axiom_no_genus	OBI:0200184	OBI:0000417	OBI:0200078
+WARN	equivalent_class_axiom_no_genus	OBI:0200185	OBI:0000417	OBI:0200183
+WARN	equivalent_class_axiom_no_genus	OBI:0200187	OBI:0000417	OBI:0200081
+WARN	equivalent_class_axiom_no_genus	OBI:0200194	OBI:0000417	OBI:0200083
+WARN	equivalent_class_axiom_no_genus	OBI:0302867	OBI:0000312	OBI:0302910
+WARN	equivalent_class_axiom_no_genus	OBI:0302868	OBI:0000312	OBI:0200029
+WARN	equivalent_class_axiom_no_genus	OBI:0600014	OBI:0000417	OBI:0000639
+WARN	invalid_xref	OBCS:0000012	oboInOwl:hasDbXref	STATO_0000036
+WARN	missing_definition	BFO:0000141	IAO:0000115	
+WARN	missing_definition	IAO:0000004	IAO:0000115	
+WARN	missing_definition	IAO:0000039	IAO:0000115	
+WARN	missing_definition	IAO:0000057	IAO:0000115	
+WARN	missing_definition	IAO:0000114	IAO:0000115	
+WARN	missing_definition	IAO:0000404	IAO:0000115	
+WARN	missing_definition	IAO:0000405	IAO:0000115	
+WARN	missing_definition	IAO:0000406	IAO:0000115	
+WARN	missing_definition	IAO:0000407	IAO:0000115	
+WARN	missing_definition	IAO:0000426	IAO:0000115	
+WARN	missing_definition	IAO:0000582	IAO:0000115	
+WARN	missing_definition	IAO:8000000	IAO:0000115	
+WARN	missing_definition	IAO:8000016	IAO:0000115	
+WARN	missing_definition	IAO:8000017	IAO:0000115	
+WARN	missing_definition	IAO:8000019	IAO:0000115	
+WARN	missing_definition	IAO:8000020	IAO:0000115	
+WARN	missing_definition	NCBITaxon:10239	IAO:0000115	
+WARN	missing_definition	NCBITaxon:2	IAO:0000115	
+WARN	missing_definition	NCBITaxon:2157	IAO:0000115	
+WARN	missing_definition	NCBITaxon:2759	IAO:0000115	
+WARN	missing_definition	OBCS:0000020	IAO:0000115	
+WARN	missing_definition	OBCS:0000257	IAO:0000115	
+WARN	missing_definition	OBCS:0000258	IAO:0000115	
+WARN	missing_definition	OBCS:0000262	IAO:0000115	
+WARN	missing_definition	OBCS:0000271	IAO:0000115	
+WARN	missing_definition	OBCS:0000272	IAO:0000115	
+WARN	missing_definition	OBCS:0000273	IAO:0000115	
+WARN	missing_definition	OBCS:0000275	IAO:0000115	
+WARN	missing_definition	OBCS:0000276	IAO:0000115	
+WARN	missing_definition	OBCS:0000277	IAO:0000115	
+WARN	missing_definition	OBCS:0000278	IAO:0000115	
+WARN	missing_definition	OBCS:0000279	IAO:0000115	
+WARN	missing_definition	OBCS:0000280	IAO:0000115	
+WARN	missing_definition	OBCS:0000281	IAO:0000115	
+WARN	missing_definition	OBCS:0000282	IAO:0000115	
+WARN	missing_definition	OBCS:0000283	IAO:0000115	
+WARN	missing_definition	OBCS:0000284	IAO:0000115	
+WARN	missing_definition	OBCS:0000285	IAO:0000115	
+WARN	missing_definition	OBCS:0000286	IAO:0000115	
+WARN	missing_definition	OBCS:0000287	IAO:0000115	
+WARN	missing_definition	OBCS:0000288	IAO:0000115	
+WARN	missing_definition	OBCS:0000289	IAO:0000115	
+WARN	missing_definition	OBCS:0000290	IAO:0000115	
+WARN	missing_definition	OBCS:0000291	IAO:0000115	
+WARN	missing_definition	OBCS:0000292	IAO:0000115	
+WARN	missing_definition	OBCS:0000293	IAO:0000115	
+WARN	missing_definition	OBCS:0000294	IAO:0000115	
+WARN	missing_definition	OBCS:0000295	IAO:0000115	
+WARN	missing_definition	OBCS:0000296	IAO:0000115	
+WARN	missing_definition	OBCS:0000297	IAO:0000115	
+WARN	missing_definition	OBCS:0000298	IAO:0000115	
+WARN	missing_definition	OBCS:0000299	IAO:0000115	
+WARN	missing_definition	OBCS:0000300	IAO:0000115	
+WARN	missing_definition	OBCS:0000301	IAO:0000115	
+WARN	missing_definition	OBCS:0000302	IAO:0000115	
+WARN	missing_definition	OBCS:0000303	IAO:0000115	
+WARN	missing_definition	OBCS:0000304	IAO:0000115	
+WARN	missing_definition	OBCS:0000305	IAO:0000115	
+WARN	missing_definition	OBCS:0000306	IAO:0000115	
+WARN	missing_definition	OBCS:0000307	IAO:0000115	
+WARN	missing_definition	OBCS:0000308	IAO:0000115	
+WARN	missing_definition	OBCS:0000309	IAO:0000115	
+WARN	missing_definition	OBCS:0000310	IAO:0000115	
+WARN	missing_definition	OBCS:0000311	IAO:0000115	
+WARN	missing_definition	OBCS:0000312	IAO:0000115	
+WARN	missing_definition	OBCS:0000313	IAO:0000115	
+WARN	missing_definition	OBCS:0000314	IAO:0000115	
+WARN	missing_definition	OBCS:0000315	IAO:0000115	
+WARN	missing_definition	OBCS:0000316	IAO:0000115	
+WARN	missing_definition	OBCS:0000317	IAO:0000115	
+WARN	missing_definition	OBCS:0000318	IAO:0000115	
+WARN	missing_definition	OBCS:0000324	IAO:0000115	
+WARN	missing_definition	OBCS:0000325	IAO:0000115	
+WARN	missing_definition	OBCS:0000332	IAO:0000115	
+WARN	missing_definition	OBCS:0000333	IAO:0000115	
+WARN	missing_definition	OBCS:0000334	IAO:0000115	
+WARN	missing_definition	OBCS:0000335	IAO:0000115	
+WARN	missing_definition	OBCS:0000336	IAO:0000115	
+WARN	missing_definition	OBCS:0000337	IAO:0000115	
+WARN	missing_definition	OBCS:0000350	IAO:0000115	
+WARN	missing_definition	OBCS:0000353	IAO:0000115	
+WARN	missing_definition	OBCS:0000363	IAO:0000115	
+WARN	missing_definition	OBCS:0000364	IAO:0000115	
+WARN	missing_definition	OBCS:0000365	IAO:0000115	
+WARN	missing_definition	OBCS:0000366	IAO:0000115	
+WARN	missing_definition	OBCS:0000367	IAO:0000115	
+WARN	missing_definition	OBCS:0000368	IAO:0000115	
+WARN	missing_definition	OBCS:0000369	IAO:0000115	
+WARN	missing_definition	OBCS:0000370	IAO:0000115	
+WARN	missing_definition	OBCS:0000371	IAO:0000115	
+WARN	missing_definition	OBCS:0000372	IAO:0000115	
+WARN	missing_definition	OBCS:0000373	IAO:0000115	
+WARN	missing_definition	OBCS:0000374	IAO:0000115	
+WARN	missing_definition	RO:0000092	IAO:0000115	
+WARN	missing_definition	RO:0002086	IAO:0000115	
+WARN	missing_definition	RO:0002087	IAO:0000115	
+WARN	missing_definition	RO:0002091	IAO:0000115	
+WARN	missing_definition	RO:0002092	IAO:0000115	
+WARN	missing_definition	RO:0002093	IAO:0000115	
+WARN	missing_definition	RO:0002222	IAO:0000115	
+WARN	missing_definition	UBERON:0013522	IAO:0000115	
+WARN	missing_definition	UO:0000001	IAO:0000115	
+WARN	missing_definition	UO:0000002	IAO:0000115	
+WARN	missing_definition	UO:0000003	IAO:0000115	
+WARN	missing_definition	UO:0000005	IAO:0000115	
+WARN	missing_definition	UO:0000051	IAO:0000115	
+WARN	missing_definition	oboInOwl:hasDbXref	IAO:0000115	
+WARN	missing_obsolete_label	RO:0004096	rdfs:label	DEPRECATED inheres in@en
+WARN	missing_obsolete_label	RO:0004097	rdfs:label	DEPRECATED bearer of@en
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/chebi#3_STAR	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#gocheck_do_not_manually_annotate	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_agr	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_candida	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_chembl	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_flybase_ribbon	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_metagenomics	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_mouse	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pir	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_plant	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_pombe	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#goslim_yeast	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/go#prokaryote_subset	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/pato#attribute_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/pato#disposition_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/pato#mpath_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/pato#relational_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/pato#scalar_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/pato#value_slim	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/ro/subsets#ro-eco	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/so#SOFA	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/ubprop#_upper_level	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/valid_for_go_annotation_extension	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/valid_for_go_ontology	rdfs:subPropertyOf	
+WARN	missing_subset_declaration	http://purl.oboInOwllibrary.org/oboInOwl/valid_for_gocam	rdfs:subPropertyOf	
+INFO	lowercase_definition	BFO:0000004	IAO:0000115	b is an independent continuant = Def. b is a continuant which is such that there is no c and no t such that b s-depends_on c at t. (axiom label in BFO2 Reference: [017-002])@en
+INFO	lowercase_definition	BFO:0000015	IAO:0000115	"p is a process = Def. p is an occurrent that has temporal proper parts and for some time t, p s-depends_on some material entity at t. (axiom label in BFO2 Reference: [083-003])@en"
+INFO	lowercase_definition	BFO:0000016	IAO:0000600	"b is a disposition means: b is a realizable entity & b’s bearer is some material entity & b is such that if it ceases to exist, then its bearer is physically changed, & b’s realization occurs when and because this bearer is in some special physical circumstances, & this realization occurs in virtue of the bearer’s physical make-up. (axiom label in BFO2 Reference: [062-002])@en"
+INFO	lowercase_definition	BFO:0000019	IAO:0000600	"a quality is a specifically dependent continuant that, in contrast to roles and dispositions, does not require any further process in order to be realized. (axiom label in BFO2 Reference: [055-001])@en"
+INFO	lowercase_definition	BFO:0000020	IAO:0000115	b is a specifically dependent continuant = Def. b is a continuant & there is some independent continuant c which is not a spatial region and which is such that b s-depends_on c at every time t during the course of b’s existence. (axiom label in BFO2 Reference: [050-003])@en
+INFO	lowercase_definition	BFO:0000023	IAO:0000600	"b is a role means: b is a realizable entity & b exists because there is some single bearer that is in some special physical, social, or institutional set of circumstances in which this bearer does not have to be& b is not such that, if it ceases to exist, then the physical make-up of the bearer is thereby changed. (axiom label in BFO2 Reference: [061-001])@en"
+INFO	lowercase_definition	BFO:0000024	IAO:0000600	"b is a fiat object part = Def. b is a material entity which is such that for all times t, if b exists at t then there is some object c such that b proper continuant_part of  c at t and c is demarcated from the remainder of c by a two-dimensional continuant fiat boundary. (axiom label in BFO2 Reference: [027-004])@en"
+INFO	lowercase_definition	BFO:0000027	IAO:0000600	b is an object aggregate means: b is a material entity consisting exactly of a plurality of objects as member_parts at all times at which b exists. (axiom label in BFO2 Reference: [025-004])@en
+INFO	lowercase_definition	BFO:0000029	IAO:0000600	b is a site means: b is a three-dimensional immaterial entity that is (partially or wholly) bounded by a material entity or it is a three-dimensional immaterial part thereof. (axiom label in BFO2 Reference: [034-002])@en
+INFO	lowercase_definition	BFO:0000030	IAO:0000600	b is an object means: b is a material entity which manifests causal unity of one or other of the types CUn listed above & is of a type (a material universal) instances of which are maximal relative to this criterion of causal unity. (axiom label in BFO2 Reference: [024-001])@en
+INFO	lowercase_definition	BFO:0000031	IAO:0000115	b is a generically dependent continuant = Def. b is a continuant that g-depends_on one or more other entities. (axiom label in BFO2 Reference: [074-001])@en
+INFO	lowercase_definition	BFO:0000035	IAO:0000115	p is a process boundary =Def. p is a temporal part of a process & p has no proper temporal parts. (axiom label in BFO2 Reference: [084-001])@en
+INFO	lowercase_definition	BFO:0000050	IAO:0000115	a core relation that holds between a part and its whole@en
+INFO	lowercase_definition	BFO:0000051	IAO:0000115	a core relation that holds between a whole and its part@en
+INFO	lowercase_definition	BFO:0000054	IAO:0000600	[copied from inverse property 'realizes'] to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
+INFO	lowercase_definition	BFO:0000055	IAO:0000600	to say that b realizes c at t is to assert that there is some material entity d & b is a process which has participant d at t & c is a disposition or role of which d is bearer_of at t& the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])@en
+INFO	lowercase_definition	BFO:0000062	IAO:0000115	"x is preceded by y if and only if the time point at which y ends is before or equivalent to the time point at which x starts. Formally: x preceded by y iff ω(y) <= α(x), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en"
+INFO	lowercase_definition	BFO:0000063	IAO:0000115	"x precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) <= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.@en"
+INFO	lowercase_definition	BFO:0000066	IAO:0000115	b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t@en
+INFO	lowercase_definition	BFO:0000067	IAO:0000115	[copied from inverse property 'occurs in'] b occurs_in c =def b is a process and c is a material entity or immaterial entity& there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.& forall(t) if b exists_at t then c exists_at t & there exist spatial regions s and s’ where & b spatially_projects_onto s at t& c is occupies_spatial_region s’ at t& s is a proper_continuant_part_of s’ at t@en
+INFO	lowercase_definition	BFO:0000140	IAO:0000115	"b is a continuant fiat boundary = Def. b is an immaterial entity that is of zero, one or two dimensions and does not include a spatial region as part. (axiom label in BFO2 Reference: [029-001])@en"
+INFO	lowercase_definition	BFO:0000142	IAO:0000600	a one-dimensional continuant fiat boundary is a continuous fiat line whose location is defined in relation to some material entity. (axiom label in BFO2 Reference: [032-001])@en
+INFO	lowercase_definition	BFO:0000144	IAO:0000115	b is a process_profile =Def. there is some process c such that b process_profile_of c (axiom label in BFO2 Reference: [093-002])@en
+INFO	lowercase_definition	BFO:0000144	IAO:0000600	"b process_profile_of c holds when b proper_occurrent_part_of c& there is some proper_occurrent_part d of c which has no parts in common with b & is mutually dependent on b& is such that b, c and d occupy the same temporal region (axiom label in BFO2 Reference: [094-005])@en"
+INFO	lowercase_definition	BFO:0000145	IAO:0000115	"b is a relational quality = Def. for some independent continuants c, d and for some time t: b quality_of c at t & b quality_of d at t. (axiom label in BFO2 Reference: [057-001])@en"
+INFO	lowercase_definition	BFO:0000146	IAO:0000600	a two-dimensional continuant fiat boundary (surface) is a self-connected fiat surface whose location is defined in relation to some material entity. (axiom label in BFO2 Reference: [033-001])@en
+INFO	lowercase_definition	BFO:0000147	IAO:0000600	a zero-dimensional continuant fiat boundary is a fiat point whose location is defined in relation to some material entity. (axiom label in BFO2 Reference: [031-001])@en
+INFO	lowercase_definition	IAO:0000221	IAO:0000115	"m is a quality measurement of q at t. When q is a quality, there is a measurement process p that has specified output m, a measurement datum, that is about q@en"
+INFO	lowercase_definition	IAO:0000235	IAO:0000115	inverse of the relation 'denotes'@en
+INFO	lowercase_definition	IAO:0000413	IAO:0000115	relates a process to a time-measurement-datum that represents the duration of the process@en
+INFO	lowercase_definition	IAO:0000417	IAO:0000115	inverse of the relation of is quality measurement of@en
+INFO	lowercase_definition	IAO:0000581	IAO:0000115	relates a time stamped measurement datum to the time measurement datum that denotes the time when the measurement was taken@en
+INFO	lowercase_definition	IAO:0000583	IAO:0000115	relates a time stamped measurement datum to the measurement datum that was measured@en
+INFO	lowercase_definition	OBCS:0000319	IAO:0000115	the chaotic and unpredictable nature of natural processes
+INFO	lowercase_definition	OBCS:0000320	IAO:0000115	"‘non-rational’behaviour, discrepancies between what people say and what they actually do (cognitive dissonance), or deviations of ‘standard’ behavioural patterns (micro-level behaviour)."
+INFO	lowercase_definition	OBCS:0000321	IAO:0000115	"the chaotic and unpredictable nature of societal  processes (macro-level behaviour). The need to consider  societal and institutional processes as a major contributor  to uncertainty due to variability can be inferred from  various papers of Funtowicz, Ravetz, and de Marchi."
+INFO	lowercase_definition	OBCS:0000326	IAO:0000115	vagueness is associated with the lack of precise or sharp distinctions or boundaries
+INFO	lowercase_definition	OBCS:0000348	IAO:0000115	"uncertainty about the form of the model itself. Model structure uncertainty arises from a lack of sufficient understanding of the system (past, present, or future) that is the subject of the policy analysis, including the behaviour of the system and the interrelationships among its elements."
+INFO	lowercase_definition	OBCS:0000349	IAO:0000115	"uncertainty arising from the computer implementation of the model.Model technical uncertainty is the uncertainty generated  by software or hardware errors, i.e. hidden flaws in the  technical equipment. Software errors arise from bugs in  software, design errors in algorithms and typing errors in  model source code. Hardware errors arise from bugs, such as  the bug in the early version of the Pentium processor, which gave rise to numerical error in a broad range of floating-point calculations performed on the processor."
+INFO	lowercase_definition	OBI:0000066	IAO:0000115	"a planned process that consists of parts: planning, study design execution, documentation and which produce conclusion(s).@en"
+INFO	lowercase_definition	OBI:0000067	IAO:0000115	a role that inheres in a material entity that is realized in an assay in which data is generated about the bearer of the evaluant role@en
+INFO	lowercase_definition	OBI:0000079	IAO:0000115	a processed material that provides the needed nourishment for microorganisms or cells grown in vitro.
+INFO	lowercase_definition	OBI:0000112	IAO:0000115	a role borne by a material entity that is gained during a specimen collection process and that can be realized by use of the specimen in an investigation@en
+INFO	lowercase_definition	OBI:0000274	IAO:0000115	is a process with the objective to place a material entity bearing the 'material to be added role' into a material bearing the 'target of material addition role'.@en
+INFO	lowercase_definition	OBI:0000292	IAO:0000115	"has_feature_value datatype property is used to describe the feature values which the feature class can contain, for example has_base can have feature values of nonNegativeInteger values.@en"
+INFO	lowercase_definition	OBI:0000339	IAO:0000115	a process of creating or modifying a plan specification@en
+INFO	lowercase_definition	OBI:0000343	IAO:0000115	"a interpreting data that is used to ascribe properties or relations to types based on an observation instance (i.e., on a number of observations or experiences); or to formulate laws based on limited observations of recurring phenomenal patterns.@en"
+INFO	lowercase_definition	OBI:0000355	IAO:0000115	is an investigation with the goal to test one or more hypothesis@en
+INFO	lowercase_definition	OBI:0000356	IAO:0000115	is an investigation in which data is generated and analyzed with the purpose of generating new hypothesis@en
+INFO	lowercase_definition	OBI:0000423	IAO:0000115	an extract is a material entity which results from an extraction process@en
+INFO	lowercase_definition	OBI:0000434	IAO:0000115	is the specification of an objective to add a material into a target material. The adding is asymmetric in the sense that the target material largely retains its identity@en
+INFO	lowercase_definition	OBI:0000437	IAO:0000115	an assay objective to determine the presence or concentration of an analyte in the evaluant@en
+INFO	lowercase_definition	OBI:0000441	IAO:0000115	an objective specification to determine a specified type of information about an evaluated entity (the material entity bearing evaluant role)@en
+INFO	lowercase_definition	OBI:0000456	IAO:0000115	an objective specifiction that creates an specific output object from input materials.@en
+INFO	lowercase_definition	OBI:0000471	IAO:0000115	a planned process that carries out a study design
+INFO	lowercase_definition	OBI:0000639	IAO:0000115	is an objective to transform a material entity into spatially separated components.
+INFO	lowercase_definition	OBI:0000643	IAO:0000115	"the relation of the cells in the finger of the skin to the finger, in which an indeterminate number of grains are parts of the whole by virtue of being grains in a collective that is part of the whole, and in which removing one granular part does not nec- essarily damage or diminish the whole. Ontological Whether there is a fixed, or nearly fixed number of parts - e.g. fingers of the hand, chambers of the heart, or wheels of a car - such that there can be a notion of a single one being missing, or whether, by contrast, the number of parts is indeterminate - e.g., cells in the skin of the hand, red cells in blood, or rubber molecules in the tread of the tire of the wheel of the car."
+INFO	lowercase_definition	OBI:0000651	IAO:0000115	a portion of urine collected from an organism
+INFO	lowercase_definition	OBI:0000652	IAO:0000115	is a material processing with the objective to combine two or more material entities as input into a single material entity as output.
+INFO	lowercase_definition	OBI:0000655	IAO:0000115	a material entity derived from a portion of blood collected from an organism
+INFO	lowercase_definition	OBI:0000671	IAO:0000115	a material obtained from an organism in order to be a representative of the whole
+INFO	lowercase_definition	OBI:0000675	IAO:0000115	is a data transformation objective where the aim is to estimate statistical significance with the aim of proving or disproving a hypothesis by means of some data transformation.
+INFO	lowercase_definition	OBI:0000686	IAO:0000115	is an objective to obtain an output material that contains several input materials.
+INFO	lowercase_definition	OBI:0000750	IAO:0000115	"a directive information entity that is part of a study design. Independent variables are entities whose values are selected to determine its relationship to an observed phenomenon (the dependent variable). In such an experiment, an attempt is made to find evidence that the values of the independent variable determine the values of the dependent variable (that which is being measured). The independent variable can be changed as required, and its values do not represent a problem requiring explanation in an analysis, but are taken simply as given. The dependent variable on the other hand, usually cannot be directly controlled@en"
+INFO	lowercase_definition	OBI:0000751	IAO:0000115	dependent variable specification is part of a study design. The dependent variable is the event studied and expected to change when the independent variable varies.@en
+INFO	lowercase_definition	OBI:0000811	IAO:0000115	a quality of a DNA molecule that inheres in its bearer due to the order of its DNA nucleotide residues.
+INFO	lowercase_definition	OBI:0000873	IAO:0000115	a specimen that was taken from a live organism
+INFO	lowercase_definition	OBI:0000951	IAO:0000115	an intervention design in which the treatment is the administration of a compound
+INFO	lowercase_definition	OBI:0000969	IAO:0000115	a directive information entity that describes the dose that will be administered to a target
+INFO	lowercase_definition	OBI:0001151	IAO:0000115	"a material entity, organism or cell,  that is the output of a genetic transformation process.@en"
+INFO	lowercase_definition	OBI:0001153	IAO:0000115	a material transformation objective aims to create genetically modified organism or cell@en
+INFO	lowercase_definition	OBI:0001180	IAO:0000115	half maximal effective concentration (EC50) is a scalar measurement datum corresponding to the concentration of a compound which induces a response halfway between the baseline and maximum after some specified exposure time.
+INFO	lowercase_definition	OBI:0001225	IAO:0000115	a genetic characteristics information which is a part of genotype information that identifies the population of organisms@en
+INFO	lowercase_definition	OBI:0001294	IAO:0000115	a genotype information about an organism and includes information that there are no known modifications to the genetic background. Generally it is the genotype information of a representative individual from a class of organisms.@en
+INFO	lowercase_definition	OBI:0001305	IAO:0000115	"a genetic characteristics information that is about the genetic material of an organism and minimally includes information about the genetic background and can in addition contain information about specific alleles, genetic modifications, etc.@en"
+INFO	lowercase_definition	OBI:0001352	IAO:0000115	a genetic alteration information that about one of two or more alternative forms of a gene or marker sequence and differing from other alleles at one or more mutational sites based on sequence. Polymorphisms are included in this definition.@en
+INFO	lowercase_definition	OBI:0001364	IAO:0000115	"a genetic characteristics information that is about known changes or the lack thereof from the genetic background, including allele information, duplication, insertion, deletion, etc.@en"
+INFO	lowercase_definition	OBI:0001369	IAO:0000115	"an allele information that is about the allele found most frequently in natural populations, or in standard laboratory stocks for a given organism.@en"
+INFO	lowercase_definition	OBI:0001404	IAO:0000115	"a data item that is about genetic material including polymorphisms, disease alleles, and haplotypes.@en"
+INFO	lowercase_definition	OBI:0001873	IAO:0000115	"a data item that is the number of times that a given process failed, as an integer@en"
+INFO	lowercase_definition	OBI:0001874	IAO:0000115	random access memory size is a scalar measurement datum which denotes the amount of physical memory know as random access memory present of a computer or required by a computational process or data transformation@en
+INFO	lowercase_definition	OBI:0001913	IAO:0000115	"computation run time is a time measurement datum which corresponds the time expressed in second, minute, hour necessary for a computer program to complete a process execution, for example genome assembly. It is an important metrics as it indicates the resource occupancy and computer program efficiency.@en"
+INFO	lowercase_definition	OBI:0001940	IAO:0000115	"the weighted median item size or N50 is a weighted median of the lengths of items, equal to the length of the longest item i such that the sum of the lengths of items greater than or equal in length to i is greater than or equal to half the length of all of the items. With regard to assemblies the items are typically contigs or scaffolds. It therefore denotes the ability of the software to create contigs and provides information about the resulting sequence assembly"
+INFO	lowercase_definition	OBI:0001966	IAO:0000115	is a data transformation which uses sequence alignment and  'multiplex identifier sequence' information to separate all reads belonging to a given single sample following the sequencing of a multiplexed library@en
+INFO	lowercase_definition	OBI:0200033	IAO:0000115	"is a data transformation :  leave-one-out cross-validation (LOOCV) involves using a single observation from the original sample as the validation data, and the remaining observations as the training data. This is repeated such that each observation in the sample is used once as the validation data"
+INFO	lowercase_definition	OBI:0200044	IAO:0000115	"an agglomerative hierarchical clustering which generates successive clusters based on a distance measure, where the distance between two clusters is calculated as the maximum distance between objects from the first cluster and objects from the second cluster.@en"
+INFO	lowercase_definition	OBI:0200066	IAO:0000115	"a data transformation that performs more than one hypothesis test simultaneously, a closed-test procedure, that  controls the familywise error rate for all the k hypotheses at level α in the strong sense. Objective: multiple testing correction"
+INFO	lowercase_definition	OBI:0200088	IAO:0000115	"a nonparametric (actuarial) data transformation technique for estimating time-related events. It is a univariate analysis that estimates the probability of the proportion of subjects in remission at a particular time, starting from the initiation of active date (time zero), and takes into account those lost to follow-up or not yet in remission at end of study (censored)"
+INFO	lowercase_definition	OBI:0200091	IAO:0000115	a data transformation objective of determining the concordance or agreement between human judges.
+INFO	lowercase_definition	OBI:0200100	IAO:0000115	"canonical variate analysis is a form of discriminant analysis that takes several continuous predictor variables and uses the entire set to predict several criterion variables, each of which is also continuous. CVA simultaneously calculates a linear composite of all x variables and  a linear composite of all y variables. Unlike other multivariate techniques, these weighted composites are derived in pairs. Each linear combination is called a canonical variate and takes the general linear form.@en"
+INFO	lowercase_definition	OBI:0200103	IAO:0000115	"multiple linear regression is a regression method that models the relationship between a dependent variable Y, independent variables Xi, i = 1, ..., p, and a random term epsilon. The model can be written as
+    Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + \cdots +\beta_p X_p + \varepsilon
+where \beta_0 =  0 is the intercept (\""constant\"" term), the \beta_i s  are the respective parameters of independent variables, and p is the number of parameters to be estimated in the linear regression.@en"
+INFO	lowercase_definition	OBI:0200140	IAO:0000115	"feature is a (parent_class) that describes a characteristic, trait or quality of a data transformation@en"
+INFO	lowercase_definition	OBI:0200180	IAO:0000115	"is a data transformation objective whereby the aim is to the calculate the spread of a dataset, spread is a descriptive statistic which describes the variability of values in a data set."
+INFO	lowercase_definition	OBI:0200183	IAO:0000115	"is a data transformation objective where all, or some of a data set is adjusted by some data transformation according to some scale, for example a user defined minimum or maximum"
+INFO	lowercase_definition	OBI:0200197	IAO:0000115	is a data transformation objective where the aim is to analyse some aspect of spectral data by some data transformation process.
+INFO	lowercase_definition	OBI:0300311	IAO:0000115	observation design is a study design in which subjects are monitored in the absence of any active intervention by experimentalists.
+INFO	lowercase_definition	OBI:0302859	IAO:0000115	an organism that is the output of a genetic transformation process@en
+INFO	lowercase_definition	OBI:0302868	IAO:0000115	a data item which has been processed by a mean centering data transformation where each output value is produced by subtracting the mean from the inout value
+INFO	lowercase_definition	OBI:0302910	IAO:0000115	a process by which an  event or an entity is described before it actually happens or is being discovered and identified.@en
+INFO	lowercase_definition	OBI:0500002	IAO:0000115	a study design which use the same individuals and exposure them to a set of conditions. The effect of order and practice can be confounding factor in such designs
+INFO	lowercase_definition	OBI:0500003	IAO:0000115	"a repeated measure design which ensures that experimental units receive, in sequence, the treatment (or the control), and then, after a specified time interval (aka *wash-out periods*), switch to the control (or treatment). In this design, subjects (patients in human context) serve as their own controls, and randomization may be used to determine the ordering which a subject receives the treatment and control"
+INFO	lowercase_definition	OBI:0600005	IAO:0000115	a process with the objective to obtain a material entity that was part of an organism for potential future use in an investigation@en
+INFO	lowercase_definition	OBI:0600014	IAO:0000115	a material processing in which components of an input material become segregated in space@en
+INFO	lowercase_definition	OBI:0600015	IAO:0000115	group assignment is a process which has an organism as specified input and during which a role is assigned@en
+INFO	lowercase_definition	OBI:0600036	IAO:0000115	"a process through which a new type of cell culture or cell line is created, either through the isolation and culture of one or more cells from a fresh source, or the deliberate experimental modification of an existing cell culture (e.g passaging a primary culture to become a secondary culture or line, or the immortalization or stable genetic modification of an existing culture or line)."
+INFO	lowercase_definition	OBI:0600043	IAO:0000115	the introduction. alteration or integration of genetic material into a cell or organism@en
+INFO	lowercase_definition	OBI:0666667	IAO:0000115	a material separation to recover the nucleic acid fraction of an input material@en
+INFO	lowercase_definition	RO:0000052	IAO:0000115	"a relation between a specifically dependent continuant (the characteristic) and any other entity (the bearer), in which the characteristic depends on the bearer for its existence.@en"
+INFO	lowercase_definition	RO:0000056	IAO:0000115	"a relation between a continuant and a process, in which the continuant is somehow involved in the process@en"
+INFO	lowercase_definition	RO:0000057	IAO:0000115	"a relation between a process and a continuant, in which the continuant is somehow involved in the process@en"
+INFO	lowercase_definition	RO:0000079	IAO:0000115	"a relation between a function and an independent continuant (the bearer), in which the function specifically depends on the bearer for its existence@en"
+INFO	lowercase_definition	RO:0000080	IAO:0000115	"a relation between a quality and an independent continuant (the bearer), in which the quality specifically depends on the bearer for its existence@en"
+INFO	lowercase_definition	RO:0000081	IAO:0000115	"a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence@en"
+INFO	lowercase_definition	RO:0000085	IAO:0000115	"a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence@en"
+INFO	lowercase_definition	RO:0000086	IAO:0000115	"a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence@en"
+INFO	lowercase_definition	RO:0000087	IAO:0000115	"a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence@en"
+INFO	lowercase_definition	RO:0000091	IAO:0000115	"a relation between an independent continuant (the bearer) and a disposition, in which the disposition specifically depends on the bearer for its existence@en"
+INFO	lowercase_definition	RO:0001000	IAO:0000115	"a relation between two distinct material entities, the new entity and the old entity, in which the new entity begins to exist when the old entity ceases to exist, and the new entity inherits the significant portion of the matter of the old entity@en"
+INFO	lowercase_definition	RO:0001001	IAO:0000115	"a relation between two distinct material entities, the old entity and the new entity, in which the new entity begins to exist when the old entity ceases to exist, and the new entity inherits the significant portion of the matter of the old entity@en"
+INFO	lowercase_definition	RO:0001015	IAO:0000115	"a relation between two independent continuants, the location and the target, in which the target is entirely within the location@en"
+INFO	lowercase_definition	RO:0001025	IAO:0000115	"a relation between two independent continuants, the target and the location, in which the target is entirely within the location@en"
+INFO	lowercase_definition	RO:0002000	IAO:0000115	"a relation between a 2D immaterial entity (the boundary) and a material entity, in which the boundary delimits the material entity@en"
+INFO	lowercase_definition	RO:0002002	IAO:0000115	"a relation between a material entity and a 2D immaterial entity (the boundary), in which the boundary delimits the material entity@en"
+INFO	lowercase_definition	RO:0002161	IAO:0000115	"x never in taxon T if and only if T is a class, and x does not instantiate the class expression \""in taxon some T\"". Note that this is a shortcut relation, and should be used as a hasValue restriction in OWL."
+INFO	lowercase_definition	RO:0002223	IAO:0000115	inverse of starts with
+INFO	lowercase_definition	RO:0002350	IAO:0000115	is member of is a mereological relation between a item and a collection.
+INFO	lowercase_definition	RO:0002351	IAO:0000115	has member is a mereological relation between a collection and an item.
+INFO	lowercase_definition	STATO:0000040	IAO:0000115	"an MA plot is a scatter plot of the log intensity ratios M = log_2(T/R) versus the average log intensities A = log_2(T*T)/2, where T and R represent the signal intensities in the test and reference channels respectively.@en"
+INFO	lowercase_definition	STATO:0000044	IAO:0000115	one-way anova is an analysis of variance where the different groups being compared are associated with the factor levels of only one independent variable. The null hypothesis is an absence of difference between the means calculated for each of the groups. The test assumes normality and equivariance of the data.@en
+INFO	lowercase_definition	STATO:0000045	IAO:0000115	two-way anova is an analysis of variance where the different groups being compared are associated the factor levels of exatly 2 independent variables. The null hypothesis is an absence of difference between the means calculated for each of the groups. The test assumes normality and equivariance of the data.@en
+INFO	lowercase_definition	STATO:0000060	IAO:0000115	hypergeometric distribution is a probability distribution that describes the probability of  k successes in n draws from a finite population of size  N containing  K successes without replacement@en
+INFO	lowercase_definition	STATO:0000095	IAO:0000115	paired t-test is a statistical test which is specifically designed to analysis differences between paired observations in the case of studies realizing repeated measures design with only 2 repeated measurements per subject (before and after treatment for example)@en
+INFO	lowercase_definition	STATO:0000103	IAO:0000115	"the multinomial distribution is a probability distribution which gives the probability of any particular combination of numbers of successes for various categories defined in the context of  n independent trials each of which leads to a success for exactly one of k categories, with each category having a given fixed success probability.@en"
+INFO	lowercase_definition	STATO:0000112	IAO:0000115	"a Funnel plot is a scatter plot of treatment effect versus a measure of study size and aims to provide a visual aid to detecting bias or systematic heterogeneity. A symmetric inverted funnel shape arises from a ‘well-behaved’ data set, in which publication bias is unlikely. An asymmetric funnel indicates a relationship between treatment effect and study size. 
+Known caveats: If high precision studies really are different from low precision studies with respect to effect size (e.g., due to different populations examined) a funnel plot may give a wrong impression of publication bias. The appearance of the funnel plot can change quite dramatically depending on the scale on the y-axis — whether it is the inverse square error or the trial size.
+Funnel plot was introduced by Light and Palmer in 1984.@en"
+INFO	lowercase_definition	STATO:0000120	IAO:0000115	"beanplot is a plot in which (one or) multiple batches (\""beans\"") are shown. Each bean consists of a density trace, which is mirrored to
+form a polygon shape. Next to that, a one-dimensional scatter plot shows all the individual measurements, like in a stripchart.
+
+The name beanplot stems from green beans. The density shape can be seen as the pod of a green bean, while the scatter plot shows the seeds inside the pod.@en"
+INFO	lowercase_definition	STATO:0000122	IAO:0000115	a pedigree chart is a graph which plots parent child relations@en
+INFO	lowercase_definition	STATO:0000123	IAO:0000115	r2 is a correlation coefficient which is computed over the frequency of 2 dichotomous variable and is used as a measure of Linkage Disequilibrium and as input data item to the creation of an LD plot@en
+INFO	lowercase_definition	STATO:0000126	IAO:0000115	"volcano plot is a kind of scatter plot which graphs the negative log of the p-value (significance) on the y-axis versus log2 of fold-change between 2 conditions on the  x-axis. 
+It is a popular method for visualizing differential occurence of variables between 2 conditions.@en"
+INFO	lowercase_definition	STATO:0000145	IAO:0000115	"the geometric distribution is a negative binomial distribution where r is 1.
+It is useful for modeling the runs of consecutive successes (or failures) in repeated independent trials of a system.
+
+The geometric distribution models the number of successes before one failure in an independent succession of tests where each test results in success or failure.
+
+
+The geometric distribution with prob = p has density
+
+p(x) = p (1-p)^x
+
+for x = 0, 1, 2, …, 0 < p ≤ 1.
+
+If an element of x is not integer, the result of dgeom is zero, with a warning.
+
+The quantile is defined as the smallest value x such that F(x) ≥ p, where F is the distribution function.@en"
+INFO	lowercase_definition	STATO:0000154	IAO:0000115	"a violin plot is a plot combining the features of box plot and kernel density plot. The violin plot is therefore similar to box plot but it incorporated in the display the probability density of the data at different values.
+Typically violin plots will include a marker for the median of the data and a box indicating the interquartile range, as in standard box plots.@en"
+INFO	lowercase_definition	STATO:0000165	IAO:0000115	"a pie chart is a graph in which a circular graph is divided into sector illustrating numerical proportion, meaning that the arc length of each sector (and consequently its central angle and area), is proportional to the quantity it represents.@en"
+INFO	lowercase_definition	STATO:0000166	IAO:0000115	the bart chart is a graph resulting from plotting rectangular bars with lengths proportional to the values that they represent.
+INFO	lowercase_definition	STATO:0000168	IAO:0000115	a real time quantitative pcr plot is a line graph which plots the signal fluorescence intensity as a function of the number of PCR cycle@en
+INFO	lowercase_definition	STATO:0000177	IAO:0000115	"the beta distribution is a continuous probability distributions defined on the interval [0, 1] parametrized by two positive shape parameters, denoted by α and β, that appear as exponents of the random variable and control the shape of the distribution@en"
+INFO	lowercase_definition	STATO:0000180	IAO:0000115	standard normal distribution is a normal distribution with variance = 1 and mean=0@en
+INFO	lowercase_definition	STATO:0000202	IAO:0000115	within subject comparison statistical test is a kind of statistical test which evaluates if a change occurs within one experimental unit over time following a treatment or an event@en
+INFO	lowercase_definition	STATO:0000212	IAO:0000115	a tetrachoric correlation coefficient is a polychoric correlation coefficient for 2 dichotomous variables used as proxy for correlation between 2 continuous latent variables.@en
+INFO	lowercase_definition	STATO:0000219	IAO:0000115	a real time pcr standard curve is a line graph which plots the fluorescence intensity signal as a function of the concentration of a sample used as reference  and used to determine relative abundance of test samples@en
+INFO	lowercase_definition	STATO:0000243	IAO:0000115	a box plot is a graph which plots datasets relying on their quartiles and the interquartile range to create the box and the whiskers.@en
+INFO	lowercase_definition	STATO:0000256	IAO:0000115	"a manhattan plot for gwas is a kind of scatter plot used to facilitate presentation of genome-wide association study (GWAS) data. Genomic coordinates are displayed along the X-axis, with the negative logarithm of the association P-value for each single nucleotide polymorphism displayed on the Y-axis.@en"
+INFO	lowercase_definition	STATO:0000260	IAO:0000115	"repeated measure ANOVA is a kind of ANOVA specifically developed for non-independent observations as found when repeated measurements on the sample experimental unit. 
+repeated measure ANOVA is sensitive to departure from normality (evaluation using Bartlett's test), more so in the case of unbalanced groups (i.e. different sizes of sample populations).
+Departure from sphericity (evaluation  using Mauchly'test)  used to be an issue which is now handled robustly by modern tools such as R's lme4 or nlme, which accommodate dependence assumptions other than sphericity.@en"
+INFO	lowercase_definition	STATO:0000267	IAO:0000115	"grouped bar chart is a kind of bar chart which juxtaposes the  discrete values for each of the possible value of a given categorical variable, thus providing  within group comparison. Grouped bar charts are good for comparing between each element in the categories, and comparing elements across categories. However, the grouping can make it harder to tell the difference between the total of each group.@en"
+INFO	lowercase_definition	STATO:0000269	IAO:0000115	polychoric correlation coefficient is a correlation coefficient which is computed over 2 variables to characterise an association by proxy with 2  (latent) variables which are assumed to be continuous and normally distributed.@en
+INFO	lowercase_definition	STATO:0000274	IAO:0000115	receiver operational characteristics curve is a graphical plot which illustrates the performance of a binary classifier system as its discrimination threshold (aka cut-off point) is varied by plotting  sensitivity vs (1 − specificity)@en
+INFO	lowercase_definition	STATO:0000283	IAO:0000115	"negative binomial probability distribution is a discrete probability distribution of the number of successes in a sequence of Bernoulli trials before a specified (non-random) number of failures (denoted r) occur. The negative binomial distribution, also known as the Pascal distribution or Pólya distribution, gives the probability of  r-1 successes and x  failures in x+r-1 trials, and success on the (x+r)th trial.@en"
+INFO	lowercase_definition	STATO:0000286	IAO:0000115	"a one-tailed test is a statistical test which, assuming an unskewed probability distribution, allocates all of the significance level to evaluate only one hypothesis to explain a difference.
+The one-tailed test provides more power to detect an effect in one direction by not testing the effect in the other direction.
+one-tailed test should be preceded by two-tailed test in order to avoid missing out on detecting alternate effect explaining an observed difference.@en"
+INFO	lowercase_definition	STATO:0000287	IAO:0000115	"a two tailed test is a statistical test which assess the null hypothesis of absence of difference assuming a symmetric (not skewed) underlying probability distribution by allocating half of the significance level selected to each of the direction of change which could explain a difference (for example, a difference can be an excess or a loss).@en"
