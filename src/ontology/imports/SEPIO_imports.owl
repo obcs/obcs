@@ -1,0 +1,278 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/obcs/dev/SEPIO_imports.owl#"
+     xml:base="http://purl.obolibrary.org/obo/obcs/dev/SEPIO_imports.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/obcs/dev/SEPIO_imports.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000112"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000119"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/IAO_0000412"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SEPIO_0000061 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/SEPIO_0000061">
+        <rdfs:comment>Used to capture development notes and design decisions or questions. All annotations using this property should be removed before publishing / releasing the ontology to the public (but ideally retained in some place as valuable documentation).</rdfs:comment>
+        <rdfs:label xml:lang="en">SEPIO_editor_note</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SEPIO_0000184 -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.obolibrary.org/obo/SEPIO_0000184">
+        <rdfs:label xml:lang="en">usage note</rdfs:label>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="http://www.geneontology.org/formats/oboInOwl#hasDbXref"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000310 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/IAO_0000310"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SEPIO_0000001 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SEPIO_0000001">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000174"/>
+        <obo:IAO_0000112>The following are three seperate assertion instances, that assert the same proposition (that BRCA1:2685T&gt;A causes familial breast cancer)
+
+1. Counsyl&apos;s assertion on October 5, 2009 that BRCA1:2685T&gt;A causes familial breast cancer. 
+
+2. The ENIGMA  consortium’s assertion on September 18, 2010 that BRCA1:2685T&gt;A causes familial breast cancer.
+
+3. A later assertion by the ENIGMA consortium on May 9, 2013, based on new evidence, that BRCA1:2685T&gt;A causes familial breast cancer.</obo:IAO_0000112>
+        <obo:IAO_0000115>A statement made by a particular agent on a particular occasion that a particular proposition is true, based on the evaluation of one or more lines of evidence.</obo:IAO_0000115>
+        <obo:IAO_0000116>SEPIO distinguishes two high-level subtypes of statements:
+1. Findings are statements that report the immediate, objective results of an experiment, observation, or study -  without bias or interpretation.  A finding statement results simply from the act of reporting or summarizing these direct observations, calculations, or measurements.
+2. Assertions, by contrast, result from acts of interpretation and/or inference, based on information used as evidence. The statement here is a conclusion drawn from critical evaluation of this more foundational information, and its validity depends on the quality of this information and the act of interpretating as evidence.</obo:IAO_0000116>
+        <obo:IAO_0000118>claim</obo:IAO_0000118>
+        <obo:IAO_0000118>evidence-based assertion</obo:IAO_0000118>
+        <obo:IAO_0000118>propostional assertion</obo:IAO_0000118>
+        <obo:IAO_0000119>Derived from http://purl.org/see/rdo#assertion</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sepio.owl"/>
+        <obo:SEPIO_0000184>The identity of a particular assertion is dependent upon (1) what it claims to be true (its semantic content, aka its ‘proposition’), (2) the agent asserting it, and (3) the occasion on which the assertion is made. Many agents can make assertions expressing belief in the same proposition (e.g. ENIGMA’s assertion that that BRCA1:2685T&gt;A causes familial breast cancer is a separate instance than Counsyl’s assertion of the same underlying proposition).  Likewise, a single agent can make more than one assertion of belief in the same proposition on different occasions  (e.g. ENIGMA may make a separate assertion of the same proposition that BRCA1:2685T&gt;A causes familial breast cancer at a later date, based on additional evidence).</obo:SEPIO_0000184>
+        <rdfs:comment>Assertions as defined in SEPIO are the result of some logical inference made based on the interpretation of evidence.  They put forth a proposition that may or may not be true - the validity of which ultimately rests on the quantity, quality, diversity, and concordance of evidence supporting it.
+
+Statements directly reporting study results or observations are not considered assertions in this sense, as they merely report what was observed or recorded, but do not rely on a leap of logical inference (see &apos;study finding&apos;).</rdfs:comment>
+        <rdfs:label xml:lang="en">assertion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SEPIO_0000149 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SEPIO_0000149">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000112>- the raw count data from a case-control study comparing the frequency of an allele in two cohorts or populations
+- the calculated p-value as a measure of statistical significance of the difference identified in the study
+- a published figure documenting these data
+- an author statement summarizing the outcomes of the study (i.e. a &apos;study finding&apos;)
+- a broader conclusion inferred from interpretation of the data reported in a study (i.e. an evidence-based &apos;assertion&apos;)</obo:IAO_0000112>
+        <obo:IAO_0000115>An information content entity that is used as evidence to evaluate the validity of a target assertion or proposition.</obo:IAO_0000115>
+        <obo:IAO_0000118>evidence</obo:IAO_0000118>
+        <obo:IAO_0000118>evidence information</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sepio.owl"/>
+        <rdfs:comment>&apos;Evidence Item&apos; is a broad term covering any information interpreted as evidence in the act of making an assertion.  
+
+Classes representing different types of evidence items are imported here from ontologies such as OBI, IAO, and STATO, and include:
+ - measured data values
+ - derived data values such as statistical calculations and confidence measures
+ - figures presenting or describing such data
+ - author statements representing summaries of or conclusions drawn from such data
+ - established facts in a field of research
+
+Note that publications and reports are considered separately from &apos;evidence items&apos;, as a they *contain* information (data values, figures author statements) that can be used as evidence. But on its own a publication or report is merely a proxy for this information.</rdfs:comment>
+        <rdfs:label xml:lang="en">evidence item</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SEPIO_0000173 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SEPIO_0000173">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000174"/>
+        <obo:IAO_0000112>Findings statements tend to take the form of &quot;We observed that . . . &quot;, or &quot;Assay X revelaned that . . . &quot;, or &quot;X was determined to be Y in a study of . . . &quot;.  
+For example:
+
+&quot;Smith et. al observed that a positive response to imatinib treatment was two-fold higher in a cohort of leukemia patients bearing Bcr-Abl fusions compared to those lacking this driver mutaiton.&quot; 
+
+A statement summarizing the outcome of a sequencing analysis: &quot;DNA sequencing data from patient X revealed an A-&gt;T mutation at position 2143 in gene Y&quot;.
+
+A statement summarizing the outcome of a variant population frequency study: &quot;The frequency of variant X was determined to be 0.00015 in a cohort of non-finnish european subjects described in the ExAC dataset.&quot;</obo:IAO_0000112>
+        <obo:IAO_0000115>A statement describing the immediate results of a research study, describing what was directly observed, measured, or derived through mathematical calculation.</obo:IAO_0000115>
+        <obo:IAO_0000116>In SEPIO, a high-level distinction is made between statements that are &apos;findings&apos; vs &apos;assertions&apos;.  Findings are statements that report/summarize what was directly observed or calculated in a study, and are about only the immediate  participants in the experiment or study. As such, findings involve no interpretation or inference from the data to draw broader conclusions. Assertions, by contrast, are statements that derive from some degree of interpretation or inference based on the evaluation of &apos;evidence&apos;, and often make broader claims about the types or categories to which study participants belong. This distinction is important because the provenance and validity of a &apos;finding&apos; statement does not depend on subjective interpretation of &apos;evidence&apos; in the same way that of an assertion does. This has modeling implications for how findings and assertions are linked to information that supports them.
+
+In practices, instances of &apos;study findings&apos; are used to group one or more data items from a particular research study that are relevant as evidence for an assertion.  The utility of this class is in allowing the shared provenance of these data items to be more efficiently represented - as things like agent, date, and methods can be described once for the data set and inferred to apply to all individual data items that comprise it.</obo:IAO_0000116>
+        <obo:IAO_0000118>study outcome</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sepio.owl"/>
+        <obo:SEPIO_0000061>- While the act of generating a finding is simpler, it does involve some cognitive effort that could be guided by some method (i.e., one defining what experimental context should be included in the finding statement, and how this and the observed outcomes are reported). Which means that findings are not the direct output of an assay, which merely generates data. So perhaps in SEPIO we commit to only considering research processes at the level of studies - such that even assays would potentially involve some act of summarizing the results as a finding.
+
+- Note that at present &apos;study data sets&apos; can serve the same &apos;organizational&apos; purpose as &apos;study findings&apos; - we should converge on one recommended way to perform this level of organization of evidence data.</obo:SEPIO_0000061>
+        <rdfs:comment>A study finding is a statement that summarizes the immediate results of a particular experiment or study. It describes only what was directly observed, measured, or calculated, and optionally the experimental context of these observations.  It does not describe more general conclusions that may have been inferred from such results. As such, the scope of what a finding describes is limited to the direct participants in the study - i.e. it is about only the instances observed or measured in the study.  It makes no broader inference or conclusion about types or classes to which these instances belong. 
+
+This is not to say that the onserved findings are necessarily accurate or correct - only that they were indeed made in a particular study. For example, the finding that &quot;Sequencing of DNA from patient X revealed an A-&gt;T mutation at position 2143 in gene Y&quot; is a matter of fact - this was the outcome of the assay, even if the finding is an artifact of low sequencing coverage. Metadata about the finding (e.g. sequencing methods/reagents used, coverage or read depth) are recoded so users can judge for themselves whether the objectively reported finding accurtely reflects the biology it describes.</rdfs:comment>
+        <rdfs:comment>SEPIO distinguishes two high-level subtypes of statements:
+1. Findings are statements that report the immediate, objective results of an experiment, observation, or study -  without bias or interpretation.  A finding statement results simply from an act of reporting or summarizing these direct observations, calculations, or measurements.
+2. Assertions, by contrast, result from acts of interpretation and/or inference, based on information used as evidence. The statement here is a conclusion drawn from critical evaluation of this more foundational information, and its validity depends on the quality of this information and its interpretation as evidence.</rdfs:comment>
+        <rdfs:label xml:lang="en">study finding</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SEPIO_0000174 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SEPIO_0000174">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000030"/>
+        <obo:IAO_0000112>The following is derived from https://en.wikipedia.org/wiki/Statement_(logic):
+
+Examples of sentences that are (or make) statements:
+&quot;Socrates is a man.&quot;
+&quot;A triangle has three sides.&quot;
+&quot;Madrid is the capital of Spain.&quot;
+&quot;There are five ducks on the lake&quot;
+&quot;The BRAF V600E mutation causes breast cancer&quot;
+
+Examples of sentences that are not (or do not make) statements:
+&quot;Who are you?&quot;
+&quot;Run!&quot;
+&quot;Greenness perambulates.&quot;
+&quot;I had one grunch but the eggplant over there.&quot;
+&quot;The King of France is wise.&quot;
+&quot;Broccoli tastes good.&quot;
+
+The first two examples are not declarative sentences and therefore are not (or do not make) statements. The third and fourth are declarative sentences but, lacking meaning, are neither true nor false and therefore are not (or do not make) statements. The fifth and sixth examples are meaningful declarative sentences, but are not statements but rather matters of opinion or taste.</obo:IAO_0000112>
+        <obo:IAO_0000115>An information content entity expressing a declarative sentence that is either true or false.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sepio.owl"/>
+        <rdfs:comment>From https://en.wikipedia.org/wiki/Statement_(logic) (2017-06-21):
+&quot;A statement is a declarative sentence that bears truth value, in that it can be either true or false. This definition derives from the domain of logic, where a statement is either (a) a meaningful declarative sentence that is either true or false, or (b) that which a true or false declarative sentence asserts. In the latter case, a statement is distinct from a sentence in that a sentence is only one formulation of a statement, whereas there may be many other formulations expressing the same statement . . . In (this treatment), &quot;statement&quot; is introduced in order to distinguish a sentence from its informational content. A statement is regarded as the information content of an information-bearing sentence. Thus, a sentence is related to the statement it bears like a numeral to the number it refers to. Statements are abstract logical entities, while sentences are grammatical entities.&quot;
+----
+Note that the definition in (b) describes something closer to the notion of a &apos;Proposition&apos; as defined in SEPIO?</rdfs:comment>
+        <rdfs:comment>Statements are sentences (or, more precisely, the information content of sentences) that declare a definitive or proposed fact - expressing something about the world or one&apos;s experience of it that may or may not be true. The identity of a particular Statement is dependent upon (1) what it reports as true (its semantic content), (2) the Agent stating it, and (3) the occasion on which the statement is made. 
+
+The phrase &quot;the pink elephant&quot; describes an entity, but is not a &apos;statement&apos; as it has no truth value. By contrast, the phrase &quot;the pink elephant is in the room&quot; is a statement as this can be evaluated for its truth.</rdfs:comment>
+        <rdfs:label xml:lang="en">statement</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SEPIO_0000431 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SEPIO_0000431">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000174"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sepio.owl"/>
+        <rdfs:comment>Recommendations are another type of statement besides assertions that can be supported by evidence. They don&apos;t put forth a proposed facts as true, but instead describe a recommended action on the foundation of evidence that it will be beneficial.</rdfs:comment>
+        <rdfs:label xml:lang="en">recommendation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SEPIO_0000432 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SEPIO_0000432">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SEPIO_0000174"/>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sepio.owl"/>
+        <rdfs:comment>A hypothesis is another type of statement that, like an assertion, can be supported by evidence. It puts forward a possible fact as true, but does not express an agents belief in this fact.  Rather, it is a possible fact whose truth will be explored via reasoning or experimentation.</rdfs:comment>
+        <rdfs:label xml:lang="en">hypothesis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SEPIO_000383 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SEPIO_000383">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/IAO_0000310"/>
+        <obo:IAO_0000115>A document containing a collection of data or statements about some entity.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://purl.obolibrary.org/obo/sepio.owl"/>
+        <oboInOwl:hasDbXref>SIO:000088</oboInOwl:hasDbXref>
+        <rdfs:comment>&apos;Record&apos; here is broadly defined to include any document holding (typically) structured information about a particular entity. This can include individual records from a database or knowledgebase that hold information about the subject of the record. 
+
+Specific examples include:
+- A single row of a table in a relational database.
+- A JSON or XML document holding information describing some entity.
+- A VCF File describing varaints in a patient, or a single row in this VCF file describinng a particular variant.
+- A Uniprot knowldgebase record describing the BRCA2 protein (http://www.uniprot.org/uniprot/P51587)
+- A ClinVar knwoledgebase record describing an assertion about the pathogenicity of the NM_000059.3(BRCA2):c.10G&gt;T variant (https://www.ncbi.nlm.nih.gov/clinvar/variation/51063/)
+- An EHR record for a hospital patient.</rdfs:comment>
+        <rdfs:label>record</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26) https://github.com/owlcs/owlapi -->
+

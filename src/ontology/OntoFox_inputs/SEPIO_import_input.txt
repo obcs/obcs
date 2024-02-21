@@ -1,0 +1,27 @@
+[URI of the OWL(RDF/XML) output file]
+http://purl.obolibrary.org/obo/obcs/dev/SEPIO_imports.owl
+
+[Source ontology]
+SEPIO
+
+[Low level source term URIs]
+
+http://purl.obolibrary.org/obo/SEPIO_000383 #record
+http://purl.obolibrary.org/obo/SEPIO_0000149 #evidence item
+
+http://purl.obolibrary.org/obo/SEPIO_0000174 #statement
+includeAllChildren
+
+[Top level source term URIs and target direct superclass URIs]
+http://purl.obolibrary.org/obo/SEPIO_0000174 #statement
+subClassOf http://purl.obolibrary.org/obo/IAO_0000030 #information content entity
+http://purl.obolibrary.org/obo/SEPIO_0000149 #evidence item
+subClassOf http://purl.obolibrary.org/obo/IAO_0000030 #information content entity
+http://purl.obolibrary.org/obo/SEPIO_000383 #record
+subClassOf http://purl.obolibrary.org/obo/IAO_0000310 #document
+
+[Source term retrieval setting]
+includeNoIntermediates 
+
+[Source annotation URIs]
+includeAllAnnotationProperties

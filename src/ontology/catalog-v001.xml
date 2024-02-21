@@ -12,6 +12,7 @@
     <uri name="http://purl.obolibrary.org/obo/obcs/dev/PATO_imports.owl" uri="imports/PATO_imports.owl"/>
     <uri name="http://purl.obolibrary.org/obo/obcs/dev/PR_imports.owl" uri="imports/PR_imports.owl"/>
     <uri name="http://purl.obolibrary.org/obo/obcs/dev/RO_imports.owl" uri="imports/RO_imports.owl"/>
+    <uri name="http://purl.obolibrary.org/obo/obcs/dev/SEPIO_imports.owl" uri="imports/SEPIO_imports.owl"/>
     <uri name="http://purl.obolibrary.org/obo/obcs/dev/SO_imports.owl" uri="imports/SO_imports.owl"/>
     <uri name="http://purl.obolibrary.org/obo/obcs/dev/STATO_imports.owl" uri="imports/STATO_imports.owl"/>
     <uri name="http://purl.obolibrary.org/obo/obcs/dev/UBERON_imports.owl" uri="imports/UBERON_imports.owl"/>
