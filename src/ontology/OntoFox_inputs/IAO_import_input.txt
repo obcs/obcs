@@ -16,6 +16,11 @@ http://purl.obolibrary.org/obo/IAO_0000178 #material information bearer
 http://purl.obolibrary.org/obo/IAO_0000306 #table
 http://purl.obolibrary.org/obo/IAO_0000572 #documenting
 http://purl.obolibrary.org/obo/IAO_0000104 #plan specification
+http://purl.obolibrary.org/obo/IAO_0000310 #document
+http://purl.obolibrary.org/obo/IAO_0000313 #patent
+http://purl.obolibrary.org/obo/IAO_0000311 #publication
+http://purl.obolibrary.org/obo/IAO_0000013 #journal article
+http://purl.obolibrary.org/obo/IAO_0000088 #report
 
 http://purl.obolibrary.org/obo/IAO_0000027 #data item
 includeAllChildren
